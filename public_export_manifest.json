@@ -3566,8 +3566,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5739,
-      "sha256": "8305601224978d1ac19ac8ebe83e2589cae79d649250aa468e2a736449655a03"
+      "bytes": 6117,
+      "sha256": "e0a52ac67ede5180eb6db6c0c93e9aaa3b2f93e67e89002f4a0880187950247a"
     },
     {
       "path": "report/materials/amd_health_poster_en_submission.pdf",
@@ -6800,7 +6800,7 @@
   "historical_1504_record_replay_performed": false,
   "historical_manual_session_passed": false,
   "compatibility_identifier_state": "accepted_preserved",
-  "video_revision_pending": true,
+  "video_revision_pending": false,
   "verification": {
     "files_rehashed": 1356,
     "python_syntax_files": 988,

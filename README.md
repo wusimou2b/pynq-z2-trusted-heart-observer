@@ -50,4 +50,4 @@ node public_live/tests/test_public_stop_path.cjs
 
 原创部分与第三方材料分别遵循所在许可；MIT不替代BSD、LGPL、CPython、NumPy、GCC或AMD相关条款。必要权利人署名保留。签名授权、报名身份材料、私人聊天全文及原始生理记录不在仓库中。账号URL和no-reply仍关联公开GitHub账号，不能保证互联网层面不可关联。
 
-演示视频正在按用户要求修订，当前未发布最终视频；完成后将以同一仓库Release附件提供准确链接。
+演示视频为176.66秒横版修订片，1080p/30 fps。视频与637文件完整运行包通过[本仓库 Release](https://github.com/wusimou2b/pynq-z2-trusted-heart-observer/releases)提供；191 MB 视频不作为普通Git文件提交。视频SHA256：`01a4c2c6ccc534ff42951967a261804b353fc62e05665fbf321ab9580ba0787b`。运行包SHA256：`18cc226cdddc1db8d577d7ec9e4d29d24bed5ef1d56d86fdaee77f3297ae1ab9`。运行包解压后的 `public_live/` 是同一封存版本，启动步骤见上文及包内README。
