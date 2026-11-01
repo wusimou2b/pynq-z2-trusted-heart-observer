@@ -1,0 +1,49 @@
+{
+  "official_sources": [
+    {
+      "id": "AMD-VIVADO-EULA-2024.1",
+      "url": "https://download.amd.com/docnav/documents/eula/ug1593_vivado_ml_eulas_2024.1.pdf",
+      "release_source": "https://docs.amd.com/r/2024.1-English/ug973-vivado-release-notes-install-license/Running-the-Installer",
+      "sections": "3(a)(3)A-C; 3(b); 4(a)",
+      "observed": "Covered no-additional-charge distributable components may be distributed in machine-executable form including Bitstream, only to program Xilinx devices. Third-party licenses remain separate; separately licensed cores are outside that definition."
+    },
+    {
+      "id": "AMD-VITIS-EULA-2024.1",
+      "url": "https://download.amd.com/docnav/documents/eula/end-user-license-agreement_2024.1.pdf",
+      "sections": "3(a)(3)A-C; 3(b)",
+      "observed": "The 2024.1 unified-tool agreement has a corresponding compiled-component distribution provision and retains separate third-party terms. This is not a grant to relicense generated source as MIT."
+    },
+    {
+      "id": "AMD-VTC6.2-PG016",
+      "url": "https://www.amd.com/content/dam/xilinx/support/documents/ip_documentation/v_tc/v6_2/pg016_v_tc.pdf",
+      "sections": "Licensing and Ordering, page 8",
+      "observed": "Video Timing Controller 6.2 uses the Core License Agreement and the referenced guide says it needs no additional license. It should not be classified as a fee/evaluation core merely because it uses the Core License Agreement."
+    },
+    {
+      "id": "AMD-CORE-LICENSE",
+      "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/intellectual-property/license/core-license-agreement.html",
+      "fallback_pdf": "https://www.xilinx.com/content/dam/xilinx/licenses/ip/core-license-agreement.pdf",
+      "sections": "3.2; 4.2",
+      "observed": "Allows covered material distribution in Bitstream form for a Xilinx device operating in the licensee's system-level hardware product, with original notices preserved. This is a product/target-limited grant, not a general open-source license for the core."
+    },
+    {
+      "id": "AMD-AXI-DMA7.1",
+      "url": "https://www.amd.com/content/dam/xilinx/support/documents/ip_documentation/axi_dma/v7_1/pg021_axi_dma.pdf",
+      "sections": "Licensing and Ordering",
+      "observed": "AXI DMA 7.1 is provided at no additional cost under the Xilinx End User License."
+    },
+    {
+      "id": "AMD-AXI-VDMA6.3",
+      "url": "https://docs.amd.com/r/en-US/pg020_axi_vdma/Licensing-and-Ordering",
+      "sections": "Licensing and Ordering",
+      "observed": "AXI VDMA 6.3 is provided at no additional cost under the Xilinx End User License."
+    },
+    {
+      "id": "AMD-VIDEO-OUT4.0",
+      "url": "https://docs.amd.com/r/en-US/pg044_v_axis_vid_out/Licensing-and-Ordering",
+      "sections": "Licensing and Ordering",
+      "observed": "AXI4-Stream to Video Out 4.0 is included at no additional cost under the End User License. The live guide has a later publication date than the saved implementation."
+    }
+  ],
+  "not_a_substitute_or_modified_version_of_original_agreements": true
+}
