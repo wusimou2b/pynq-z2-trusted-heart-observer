@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "confirmation_updates": 2,
+    "grid": [
+      4,
+      3
+    ],
+    "heart_control_enabled": false,
+    "independent_validation_passed": false,
+    "maximum_thresholds": [
+      12.0,
+      75.0
+    ],
+    "median_window": 3,
+    "pair_max_ns": 250000000,
+    "pixel_threshold": 8,
+    "ratio_thresholds": [
+      0.15,
+      0.5
+    ],
+    "roi": [
+      80,
+      60,
+      240,
+      180
+    ],
+    "schema": "v3b25_shadow_video_rule_v1"
+  },
+  "sha256": "5c178390d0ae63623dbc6c5ca9c59b68340912b6bc184bdada94d85ada32e8d7"
+}
