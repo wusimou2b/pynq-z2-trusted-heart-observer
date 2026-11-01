@@ -1,0 +1,42 @@
+# 第二轮：首个有效样本初始化基线；保持 16 位，信号改为 11 位小数。
+# 开发数据的运动参考峰值约 9.02；扩大到约 ±16，保留原缩放与验收门槛。
+experiment_version: v2_primed_baseline
+sample_rate_hz: 50.0
+transition_guard_seconds: 2.0
+required_phases: [still_before, light_motion, still_after]
+preprocess:
+  ppg_dc_alpha: 0.995
+  reference_dc_alpha: 0.95
+  ppg_scale_counts: 2048.0
+  reference_scale_g: 0.25
+contact:
+  low_ir_threshold: 50000.0
+  baseline_alpha: 0.01
+  baseline_jump_fraction: 0.08
+  amplitude_window_samples: 100
+  minimum_pulse_amplitude: 100.0
+  recovery_samples: 50
+lms:
+  taps: 4
+  mu_candidates: [0.0005, 0.001, 0.002, 0.005, 0.01]
+  delays_samples: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+  weight_limit: 8.0
+search:
+  tuning_interval_s: [22.0, 30.0]
+  internal_validation_interval_s: [32.0, 38.0]
+  minimum_output_rms_ratio: 0.40
+fixed_point:
+  signal_bits: 16
+  signal_fraction_bits: 11
+  weight_bits: 16
+  weight_fraction_bits: 12
+  accumulator_bits: 48
+metrics:
+  correlation_lag_samples: 10
+  pulse_band_hz: [0.7, 3.0]
+heartrate:
+  min_bpm: 40.0
+  max_bpm: 200.0
+  threshold_alpha: 0.02
+  threshold_scale: 0.5
+  ibi_history: 5
