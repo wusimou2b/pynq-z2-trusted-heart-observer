@@ -1,0 +1,4 @@
+interface:
+  display_name: "PYNQ结果审计"
+  short_description: "只读核对板端结果、无效点、心率发布、积压与自然退出，明确证据边界"
+  default_prompt: "使用 $pynq-result-audit 回读这个结果ZIP，解释首故障、心率N/A与收尾状态，不启动硬件。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "PYNQ交付与收尾"
+  short_description: "保留成功版本，校验交付身份与硬件所有权，准备新目录并核对正常停止"
+  default_prompt: "使用 $pynq-board-session 保留成功版，在新目录准备经过身份校验的板测入口，并核对停止边界。"

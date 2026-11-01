@@ -1,0 +1,122 @@
+{
+  "date": "2026-11-01",
+  "python": "3.12.7",
+  "skill_schemas_passed": 8,
+  "unit_tests": [
+    {
+      "skill": "pynq-overlay-portability",
+      "passed": 31
+    },
+    {
+      "skill": "pynq-dma-lifecycle",
+      "passed": 37
+    },
+    {
+      "skill": "pynq-notebook-delivery",
+      "passed": 37
+    },
+    {
+      "skill": "pynq-ps-pl-profiler",
+      "passed": 29
+    }
+  ],
+  "independent_archive_unit_tests": [
+    {
+      "skill": "pynq-overlay-portability",
+      "passed": 31
+    },
+    {
+      "skill": "pynq-dma-lifecycle",
+      "passed": 37
+    },
+    {
+      "skill": "pynq-notebook-delivery",
+      "passed": 37
+    },
+    {
+      "skill": "pynq-ps-pl-profiler",
+      "passed": 29
+    }
+  ],
+  "example_checks": [
+    {
+      "case": "notebook-seal-verify-real-spawn",
+      "passed": true,
+      "result": {
+        "sum": 12
+      }
+    },
+    {
+      "case": "normal_timing-synthetic",
+      "passed": true,
+      "hardware_improvement_proved": false
+    },
+    {
+      "case": "phase_profile-synthetic",
+      "passed": true,
+      "hardware_improvement_proved": false
+    },
+    {
+      "case": "bounded-host-collector-and-exact-numeric-check",
+      "passed": true,
+      "board_evidence": false
+    },
+    {
+      "case": "pynq-result-audit-CLI-load",
+      "passed": true
+    },
+    {
+      "case": "pynq-board-session-CLI-load",
+      "passed": true
+    },
+    {
+      "case": "ps-pl-performance-CLI-load",
+      "passed": true
+    }
+  ],
+  "independent_archive_example_checks": [
+    {
+      "case": "notebook-seal-verify-real-spawn",
+      "passed": true,
+      "result": {
+        "sum": 12
+      }
+    },
+    {
+      "case": "normal_timing-synthetic",
+      "passed": true,
+      "hardware_improvement_proved": false
+    },
+    {
+      "case": "phase_profile-synthetic",
+      "passed": true,
+      "hardware_improvement_proved": false
+    },
+    {
+      "case": "bounded-host-collector-and-exact-numeric-check",
+      "passed": true,
+      "board_evidence": false
+    },
+    {
+      "case": "pynq-result-audit-CLI-load",
+      "passed": true
+    },
+    {
+      "case": "pynq-board-session-CLI-load",
+      "passed": true
+    },
+    {
+      "case": "ps-pl-performance-CLI-load",
+      "passed": true
+    }
+  ],
+  "preservation": {
+    "original_four_files_unchanged": 15,
+    "first_two_package_files_unchanged": 28,
+    "successful_runtime_zip_unchanged": true
+  },
+  "hardware_accessed": false,
+  "new_ARM_or_cross_board_evidence": false,
+  "github_published": false,
+  "scope": "local/isolated standard-library tools; host fixture timing is not board performance evidence"
+}

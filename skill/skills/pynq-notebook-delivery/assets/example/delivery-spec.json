@@ -1,0 +1,18 @@
+{
+  "schema": "pynq-notebook-spec-v1",
+  "files": {
+    "delivery-spec.json": "bytes",
+    "demo.ipynb": "notebook-source-v1",
+    "demo_worker.py": "bytes"
+  },
+  "entry": {
+    "module": "demo_worker",
+    "callable": "ready",
+    "kwargs": {
+      "scale": 2
+    }
+  },
+  "runtime_dirs": [
+    "results"
+  ]
+}

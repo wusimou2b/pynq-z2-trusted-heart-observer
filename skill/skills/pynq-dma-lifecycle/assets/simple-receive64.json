@@ -1,0 +1,73 @@
+{
+  "schema": "pynq-dma-trace-v1",
+  "run_id": "synthetic",
+  "buffers": [
+    {
+      "id": "array",
+      "owner": "owner",
+      "nbytes": 64,
+      "device_address": 4294967296,
+      "itemsize": 4,
+      "coherent": true
+    }
+  ],
+  "channels": [
+    {
+      "id": "dma",
+      "owner": "owner",
+      "kind": "axi-dma-simple",
+      "direction": "receive",
+      "data_width_bytes": 4,
+      "address_bits": 64,
+      "max_transfer_bytes": 4096,
+      "dre": false
+    }
+  ],
+  "events": [
+    {
+      "event": "transfer",
+      "buffer": "array",
+      "channel": "dma",
+      "transfer": "tx1",
+      "offset": 0,
+      "nbytes": 64,
+      "seq": 0,
+      "ns": 0,
+      "run_id": "synthetic",
+      "actor": "owner"
+    },
+    {
+      "event": "complete",
+      "channel": "dma",
+      "transfer": "tx1",
+      "actual_bytes": 64,
+      "seq": 1,
+      "ns": 100,
+      "run_id": "synthetic",
+      "actor": "owner"
+    },
+    {
+      "event": "cpu_read",
+      "buffer": "array",
+      "seq": 2,
+      "ns": 200,
+      "run_id": "synthetic",
+      "actor": "owner"
+    },
+    {
+      "event": "free",
+      "buffer": "array",
+      "seq": 3,
+      "ns": 300,
+      "run_id": "synthetic",
+      "actor": "owner"
+    },
+    {
+      "event": "process_exit",
+      "seq": 4,
+      "ns": 400,
+      "run_id": "synthetic",
+      "actor": "owner"
+    }
+  ]
+}

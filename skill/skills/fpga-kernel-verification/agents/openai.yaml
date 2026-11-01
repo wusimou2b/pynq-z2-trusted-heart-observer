@@ -1,0 +1,4 @@
+interface:
+  display_name: "FPGA迁移与验证"
+  short_description: "组织软件参考、真实RTL仿真、AXI协议、整板时序及同源bit与HWH交付证据"
+  default_prompt: "使用 $fpga-kernel-verification 核查这个计算核从软件参考到RTL和上板交付的验证链，保留原版。"

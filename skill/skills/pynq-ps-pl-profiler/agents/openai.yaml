@@ -1,0 +1,4 @@
+interface:
+  display_name: "PYNQ PS/PL 分阶段计时"
+  short_description: "区分 PS、PL、C 返回与 IPC 的实测阶段，核对 ABBA 及含间隙连续块"
+  default_prompt: "使用 $pynq-ps-pl-profiler 分析这些保存记录的阶段耗时、未知区间和连续块尾延迟，并独立核对数值与普通 ABBA。"

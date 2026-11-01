@@ -1,0 +1,515 @@
+{
+  "schema": "pynq_ps_pl_trace_v1",
+  "measurement_kind": "normal_timing",
+  "provenance": "synthetic",
+  "task_hz": 500000,
+  "block_sizes": [
+    2,
+    3,
+    5
+  ],
+  "clocks": {
+    "wall": {
+      "kind": "monotonic_wall",
+      "unit": "ns",
+      "source": "synthetic integer timeline",
+      "scope": "synthetic host wall domain"
+    },
+    "cpu": {
+      "kind": "process_cpu",
+      "unit": "ns",
+      "source": "synthetic process CPU counter",
+      "scope": "synthetic one-process CPU domain"
+    },
+    "pl": {
+      "kind": "pl_cycles",
+      "unit": "cycles",
+      "source": "synthetic IP cycle counter",
+      "scope": "synthetic IP; 64-bit already-unwrapped counter",
+      "frequency_hz": 100000000,
+      "frequency_source": "synthetic fixture declaration, not a measured clock"
+    }
+  },
+  "runs": [
+    {
+      "name": "A1",
+      "implementation": "reference",
+      "workload": {
+        "name": "vector_energy",
+        "version": "1",
+        "input_set_sha256": "9a062175e6051ef3f546c19b493dc7c06a88b00ad32244658a3b2c4452b417db"
+      },
+      "config": {
+        "vector_size": 16,
+        "numeric_type": "python_int",
+        "workers": 1,
+        "task_model": "serial"
+      },
+      "instrumentation": "boundary_only",
+      "records": [
+        {
+          "sequence": 0,
+          "generation": "0",
+          "record_id": "vector-0",
+          "input_sha256": "1dde1b2629049aba608d920932a5717bd9a794c0f84e7a931df22a01fa7ec1ee",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 0,
+            "end": 1000
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 0,
+            "end": 300
+          }
+        },
+        {
+          "sequence": 1,
+          "generation": "0",
+          "record_id": "vector-1",
+          "input_sha256": "a84668fba1b36a28f51c8339ab87a1f8bae0d2cf019bdef3f30d183345d31f43",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 1100,
+            "end": 2100
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 500,
+            "end": 800
+          }
+        },
+        {
+          "sequence": 2,
+          "generation": "0",
+          "record_id": "vector-2",
+          "input_sha256": "a1e79f8215cd24431dc457ad5edd5dedfb6d570f6a5396bb60805acb2e8923e1",
+          "valid": false,
+          "wall": {
+            "clock": "wall",
+            "start": 2200,
+            "end": 3200
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 1000,
+            "end": 1300
+          }
+        },
+        {
+          "sequence": 3,
+          "generation": "0",
+          "record_id": "vector-3",
+          "input_sha256": "8e57ae69810b3ebc57d4e84d05afa4585b9917dd78766b3465cf694bfe061b6c",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 7200,
+            "end": 8200
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 1500,
+            "end": 1800
+          }
+        },
+        {
+          "sequence": 4,
+          "generation": "0",
+          "record_id": "vector-4",
+          "input_sha256": "ec7220681f2f19e41012a31b75fa479ce6652eadb6441871bafcd1f48395179c",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 8300,
+            "end": 9300
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 2000,
+            "end": 2300
+          }
+        },
+        {
+          "sequence": 5,
+          "generation": "0",
+          "record_id": "vector-5",
+          "input_sha256": "ec896231c70c78129614b0601f3a8725ee85eb820b03566d809d0e33ef096f4d",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 9400,
+            "end": 10400
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 2500,
+            "end": 2800
+          }
+        }
+      ]
+    },
+    {
+      "name": "B1",
+      "implementation": "candidate",
+      "workload": {
+        "name": "vector_energy",
+        "version": "1",
+        "input_set_sha256": "9a062175e6051ef3f546c19b493dc7c06a88b00ad32244658a3b2c4452b417db"
+      },
+      "config": {
+        "vector_size": 16,
+        "numeric_type": "python_int",
+        "workers": 1,
+        "task_model": "serial"
+      },
+      "instrumentation": "boundary_only",
+      "records": [
+        {
+          "sequence": 0,
+          "generation": "0",
+          "record_id": "vector-0",
+          "input_sha256": "1dde1b2629049aba608d920932a5717bd9a794c0f84e7a931df22a01fa7ec1ee",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 1000000,
+            "end": 1000750
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 0,
+            "end": 300
+          }
+        },
+        {
+          "sequence": 1,
+          "generation": "0",
+          "record_id": "vector-1",
+          "input_sha256": "a84668fba1b36a28f51c8339ab87a1f8bae0d2cf019bdef3f30d183345d31f43",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 1000850,
+            "end": 1001600
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 500,
+            "end": 800
+          }
+        },
+        {
+          "sequence": 2,
+          "generation": "0",
+          "record_id": "vector-2",
+          "input_sha256": "a1e79f8215cd24431dc457ad5edd5dedfb6d570f6a5396bb60805acb2e8923e1",
+          "valid": false,
+          "wall": {
+            "clock": "wall",
+            "start": 1001700,
+            "end": 1002450
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 1000,
+            "end": 1300
+          }
+        },
+        {
+          "sequence": 3,
+          "generation": "0",
+          "record_id": "vector-3",
+          "input_sha256": "8e57ae69810b3ebc57d4e84d05afa4585b9917dd78766b3465cf694bfe061b6c",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 1006450,
+            "end": 1007200
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 1500,
+            "end": 1800
+          }
+        },
+        {
+          "sequence": 4,
+          "generation": "0",
+          "record_id": "vector-4",
+          "input_sha256": "ec7220681f2f19e41012a31b75fa479ce6652eadb6441871bafcd1f48395179c",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 1007300,
+            "end": 1008050
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 2000,
+            "end": 2300
+          }
+        },
+        {
+          "sequence": 5,
+          "generation": "0",
+          "record_id": "vector-5",
+          "input_sha256": "ec896231c70c78129614b0601f3a8725ee85eb820b03566d809d0e33ef096f4d",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 1008150,
+            "end": 1008900
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 2500,
+            "end": 2800
+          }
+        }
+      ]
+    },
+    {
+      "name": "B2",
+      "implementation": "candidate",
+      "workload": {
+        "name": "vector_energy",
+        "version": "1",
+        "input_set_sha256": "9a062175e6051ef3f546c19b493dc7c06a88b00ad32244658a3b2c4452b417db"
+      },
+      "config": {
+        "vector_size": 16,
+        "numeric_type": "python_int",
+        "workers": 1,
+        "task_model": "serial"
+      },
+      "instrumentation": "boundary_only",
+      "records": [
+        {
+          "sequence": 0,
+          "generation": "0",
+          "record_id": "vector-0",
+          "input_sha256": "1dde1b2629049aba608d920932a5717bd9a794c0f84e7a931df22a01fa7ec1ee",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 2000000,
+            "end": 2000750
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 0,
+            "end": 300
+          }
+        },
+        {
+          "sequence": 1,
+          "generation": "0",
+          "record_id": "vector-1",
+          "input_sha256": "a84668fba1b36a28f51c8339ab87a1f8bae0d2cf019bdef3f30d183345d31f43",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 2000850,
+            "end": 2001600
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 500,
+            "end": 800
+          }
+        },
+        {
+          "sequence": 2,
+          "generation": "0",
+          "record_id": "vector-2",
+          "input_sha256": "a1e79f8215cd24431dc457ad5edd5dedfb6d570f6a5396bb60805acb2e8923e1",
+          "valid": false,
+          "wall": {
+            "clock": "wall",
+            "start": 2001700,
+            "end": 2002450
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 1000,
+            "end": 1300
+          }
+        },
+        {
+          "sequence": 3,
+          "generation": "0",
+          "record_id": "vector-3",
+          "input_sha256": "8e57ae69810b3ebc57d4e84d05afa4585b9917dd78766b3465cf694bfe061b6c",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 2006450,
+            "end": 2007200
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 1500,
+            "end": 1800
+          }
+        },
+        {
+          "sequence": 4,
+          "generation": "0",
+          "record_id": "vector-4",
+          "input_sha256": "ec7220681f2f19e41012a31b75fa479ce6652eadb6441871bafcd1f48395179c",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 2007300,
+            "end": 2008050
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 2000,
+            "end": 2300
+          }
+        },
+        {
+          "sequence": 5,
+          "generation": "0",
+          "record_id": "vector-5",
+          "input_sha256": "ec896231c70c78129614b0601f3a8725ee85eb820b03566d809d0e33ef096f4d",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 2008150,
+            "end": 2008900
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 2500,
+            "end": 2800
+          }
+        }
+      ]
+    },
+    {
+      "name": "A2",
+      "implementation": "reference",
+      "workload": {
+        "name": "vector_energy",
+        "version": "1",
+        "input_set_sha256": "9a062175e6051ef3f546c19b493dc7c06a88b00ad32244658a3b2c4452b417db"
+      },
+      "config": {
+        "vector_size": 16,
+        "numeric_type": "python_int",
+        "workers": 1,
+        "task_model": "serial"
+      },
+      "instrumentation": "boundary_only",
+      "records": [
+        {
+          "sequence": 0,
+          "generation": "0",
+          "record_id": "vector-0",
+          "input_sha256": "1dde1b2629049aba608d920932a5717bd9a794c0f84e7a931df22a01fa7ec1ee",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 3000000,
+            "end": 3001000
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 0,
+            "end": 300
+          }
+        },
+        {
+          "sequence": 1,
+          "generation": "0",
+          "record_id": "vector-1",
+          "input_sha256": "a84668fba1b36a28f51c8339ab87a1f8bae0d2cf019bdef3f30d183345d31f43",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 3001100,
+            "end": 3002100
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 500,
+            "end": 800
+          }
+        },
+        {
+          "sequence": 2,
+          "generation": "0",
+          "record_id": "vector-2",
+          "input_sha256": "a1e79f8215cd24431dc457ad5edd5dedfb6d570f6a5396bb60805acb2e8923e1",
+          "valid": false,
+          "wall": {
+            "clock": "wall",
+            "start": 3002200,
+            "end": 3003200
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 1000,
+            "end": 1300
+          }
+        },
+        {
+          "sequence": 3,
+          "generation": "0",
+          "record_id": "vector-3",
+          "input_sha256": "8e57ae69810b3ebc57d4e84d05afa4585b9917dd78766b3465cf694bfe061b6c",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 3007200,
+            "end": 3008200
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 1500,
+            "end": 1800
+          }
+        },
+        {
+          "sequence": 4,
+          "generation": "0",
+          "record_id": "vector-4",
+          "input_sha256": "ec7220681f2f19e41012a31b75fa479ce6652eadb6441871bafcd1f48395179c",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 3008300,
+            "end": 3009300
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 2000,
+            "end": 2300
+          }
+        },
+        {
+          "sequence": 5,
+          "generation": "0",
+          "record_id": "vector-5",
+          "input_sha256": "ec896231c70c78129614b0601f3a8725ee85eb820b03566d809d0e33ef096f4d",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 3009400,
+            "end": 3010400
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 2500,
+            "end": 2800
+          }
+        }
+      ]
+    }
+  ]
+}

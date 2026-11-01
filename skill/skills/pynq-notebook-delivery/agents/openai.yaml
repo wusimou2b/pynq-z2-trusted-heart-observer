@@ -1,0 +1,4 @@
+interface:
+  display_name: "PYNQ Notebook交付与冷启动"
+  short_description: "检查Notebook源码身份、独立依赖与真实spawn冷启动，避免旧内核掩盖交付问题"
+  default_prompt: "使用 $pynq-notebook-delivery 校验这个Notebook交付包，并在可信纯软件入口上检查冷启动。"

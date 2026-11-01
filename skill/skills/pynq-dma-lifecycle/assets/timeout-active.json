@@ -1,0 +1,65 @@
+{
+  "schema": "pynq-dma-trace-v1",
+  "run_id": "synthetic",
+  "buffers": [
+    {
+      "id": "array",
+      "owner": "owner",
+      "nbytes": 64,
+      "device_address": 4096,
+      "itemsize": 4,
+      "coherent": false
+    }
+  ],
+  "channels": [
+    {
+      "id": "dma",
+      "owner": "owner",
+      "kind": "axi-dma-simple",
+      "direction": "send",
+      "data_width_bytes": 4,
+      "address_bits": 32,
+      "max_transfer_bytes": 4096,
+      "dre": false
+    }
+  ],
+  "events": [
+    {
+      "event": "cpu_write",
+      "buffer": "array",
+      "seq": 0,
+      "ns": 0,
+      "run_id": "synthetic",
+      "actor": "owner"
+    },
+    {
+      "event": "sync_to_device",
+      "buffer": "array",
+      "via": "driver",
+      "seq": 1,
+      "ns": 100,
+      "run_id": "synthetic",
+      "actor": "owner"
+    },
+    {
+      "event": "transfer",
+      "buffer": "array",
+      "channel": "dma",
+      "transfer": "tx1",
+      "offset": 0,
+      "nbytes": 64,
+      "seq": 2,
+      "ns": 200,
+      "run_id": "synthetic",
+      "actor": "owner"
+    },
+    {
+      "event": "wait_timeout",
+      "channel": "dma",
+      "seq": 3,
+      "ns": 300,
+      "run_id": "synthetic",
+      "actor": "owner"
+    }
+  ]
+}

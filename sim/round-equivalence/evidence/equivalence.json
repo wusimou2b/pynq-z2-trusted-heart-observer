@@ -1,0 +1,33 @@
+{
+  "schema": "v3b25_main_spatial_overflow_equivalence_v1",
+  "passed": true,
+  "checked": 131072,
+  "original_sha256": "c05b9a452ce14b35d0be4a677ad46625d46f1212204793dbc0571602d29146d5",
+  "private_sha256": "bb8a0931f442e77a8cb17759dedeec85a6aac60719c42cfe9adb80cf817896cc",
+  "compile": {
+    "directory": "historical-source/v3b25-main-spatial-overflow-proof-20261027-01",
+    "top": "tb_main_spatial_overflow",
+    "source_hashes": {
+      "history100_fp64.sv": "bb8a0931f442e77a8cb17759dedeec85a6aac60719c42cfe9adb80cf817896cc",
+      "history100_mul53.sv": "dd87fbb770a31b0ffe7ef40a4483ddaba82aa164fd0fc9ae7b950b75c53a9dd8",
+      "main_heart_mul53.sv": "03e85f7ee52dd97d09f21aa6e5eac56591b995cedf8849cb052a18b350dd74ee",
+      "tb_main_spatial_overflow.sv": "582b49cd661b7e7050471031589ad130ab93b082c01ea41fe59ccb8f65b4dc44"
+    },
+    "libraries": [],
+    "compile_returncode": 0,
+    "elaboration_returncode": 0,
+    "compile_log": "historical-source/xvlog-e8a66fe66ce1.tool.log",
+    "elaboration_log": "historical-source/xelab-c4388e846280.tool.log"
+  },
+  "tool_log": "historical-source/xsim-8eb9e60e5dae.tool.log",
+  "source_hashes": {
+    "main_spatial_overflow.py": "2bf0b9523ee68a1bdc836bf4febf5b69a58f4bda5869d4116a2697f35c9fc00d",
+    "history100_fp64.sv": "c05b9a452ce14b35d0be4a677ad46625d46f1212204793dbc0571602d29146d5"
+  },
+  "only_overflow_condition_changed": true,
+  "state_transitions_unchanged": true,
+  "cycle_counts_unchanged": true,
+  "all_signed16_exponents_and_round_carries": true,
+  "main_budget_unchanged": true,
+  "hardware_accessed": false
+}

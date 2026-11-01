@@ -1,0 +1,497 @@
+{
+  "schema": "pynq_ps_pl_trace_v1",
+  "measurement_kind": "phase_profile",
+  "provenance": "synthetic",
+  "task_hz": 500000,
+  "block_sizes": [
+    2,
+    3,
+    5
+  ],
+  "clocks": {
+    "wall": {
+      "kind": "monotonic_wall",
+      "unit": "ns",
+      "source": "synthetic integer timeline",
+      "scope": "synthetic host wall domain"
+    },
+    "cpu": {
+      "kind": "process_cpu",
+      "unit": "ns",
+      "source": "synthetic process CPU counter",
+      "scope": "synthetic one-process CPU domain"
+    },
+    "pl": {
+      "kind": "pl_cycles",
+      "unit": "cycles",
+      "source": "synthetic IP cycle counter",
+      "scope": "synthetic IP; 64-bit already-unwrapped counter",
+      "frequency_hz": 100000000,
+      "frequency_source": "synthetic fixture declaration, not a measured clock"
+    }
+  },
+  "runs": [
+    {
+      "name": "profile",
+      "implementation": "reference",
+      "workload": {
+        "name": "vector_energy",
+        "version": "1",
+        "input_set_sha256": "9a062175e6051ef3f546c19b493dc7c06a88b00ad32244658a3b2c4452b417db"
+      },
+      "config": {
+        "vector_size": 16,
+        "numeric_type": "python_int",
+        "workers": 1,
+        "task_model": "serial"
+      },
+      "instrumentation": "phase_spans",
+      "records": [
+        {
+          "sequence": 0,
+          "generation": "0",
+          "record_id": "vector-0",
+          "input_sha256": "1dde1b2629049aba608d920932a5717bd9a794c0f84e7a931df22a01fa7ec1ee",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 0,
+            "end": 1000
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 0,
+            "end": 300
+          },
+          "spans": [
+            {
+              "id": "prepare",
+              "phase": "ps_prepare",
+              "parent": null,
+              "clock": "wall",
+              "start": 0,
+              "end": 80
+            },
+            {
+              "id": "call",
+              "phase": "c_call",
+              "parent": null,
+              "clock": "wall",
+              "start": 100,
+              "end": 800
+            },
+            {
+              "id": "ipc",
+              "phase": "ipc",
+              "parent": "call",
+              "clock": "wall",
+              "start": 120,
+              "end": 200
+            },
+            {
+              "id": "wait",
+              "phase": "pl_wait",
+              "parent": "call",
+              "clock": "wall",
+              "start": 200,
+              "end": 700
+            },
+            {
+              "id": "return",
+              "phase": "c_return",
+              "parent": "call",
+              "clock": "wall",
+              "start": 700,
+              "end": 750
+            },
+            {
+              "id": "finish",
+              "phase": "ps_finish",
+              "parent": null,
+              "clock": "wall",
+              "start": 850,
+              "end": 950
+            }
+          ],
+          "pl_samples": [
+            {
+              "phase": "pl_kernel",
+              "clock": "pl",
+              "cycles": 25
+            }
+          ]
+        },
+        {
+          "sequence": 1,
+          "generation": "0",
+          "record_id": "vector-1",
+          "input_sha256": "a84668fba1b36a28f51c8339ab87a1f8bae0d2cf019bdef3f30d183345d31f43",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 1100,
+            "end": 2100
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 500,
+            "end": 800
+          },
+          "spans": [
+            {
+              "id": "prepare",
+              "phase": "ps_prepare",
+              "parent": null,
+              "clock": "wall",
+              "start": 1100,
+              "end": 1180
+            },
+            {
+              "id": "call",
+              "phase": "c_call",
+              "parent": null,
+              "clock": "wall",
+              "start": 1200,
+              "end": 1900
+            },
+            {
+              "id": "ipc",
+              "phase": "ipc",
+              "parent": "call",
+              "clock": "wall",
+              "start": 1220,
+              "end": 1300
+            },
+            {
+              "id": "wait",
+              "phase": "pl_wait",
+              "parent": "call",
+              "clock": "wall",
+              "start": 1300,
+              "end": 1800
+            },
+            {
+              "id": "return",
+              "phase": "c_return",
+              "parent": "call",
+              "clock": "wall",
+              "start": 1800,
+              "end": 1850
+            },
+            {
+              "id": "finish",
+              "phase": "ps_finish",
+              "parent": null,
+              "clock": "wall",
+              "start": 1950,
+              "end": 2050
+            }
+          ],
+          "pl_samples": [
+            {
+              "phase": "pl_kernel",
+              "clock": "pl",
+              "cycles": 25
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "generation": "0",
+          "record_id": "vector-2",
+          "input_sha256": "a1e79f8215cd24431dc457ad5edd5dedfb6d570f6a5396bb60805acb2e8923e1",
+          "valid": false,
+          "wall": {
+            "clock": "wall",
+            "start": 2200,
+            "end": 3200
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 1000,
+            "end": 1300
+          },
+          "spans": [
+            {
+              "id": "prepare",
+              "phase": "ps_prepare",
+              "parent": null,
+              "clock": "wall",
+              "start": 2200,
+              "end": 2280
+            },
+            {
+              "id": "call",
+              "phase": "c_call",
+              "parent": null,
+              "clock": "wall",
+              "start": 2300,
+              "end": 3000
+            },
+            {
+              "id": "ipc",
+              "phase": "ipc",
+              "parent": "call",
+              "clock": "wall",
+              "start": 2320,
+              "end": 2400
+            },
+            {
+              "id": "wait",
+              "phase": "pl_wait",
+              "parent": "call",
+              "clock": "wall",
+              "start": 2400,
+              "end": 2900
+            },
+            {
+              "id": "return",
+              "phase": "c_return",
+              "parent": "call",
+              "clock": "wall",
+              "start": 2900,
+              "end": 2950
+            },
+            {
+              "id": "finish",
+              "phase": "ps_finish",
+              "parent": null,
+              "clock": "wall",
+              "start": 3050,
+              "end": 3150
+            }
+          ],
+          "pl_samples": [
+            {
+              "phase": "pl_kernel",
+              "clock": "pl",
+              "cycles": 25
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "generation": "0",
+          "record_id": "vector-3",
+          "input_sha256": "8e57ae69810b3ebc57d4e84d05afa4585b9917dd78766b3465cf694bfe061b6c",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 7200,
+            "end": 8200
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 1500,
+            "end": 1800
+          },
+          "spans": [
+            {
+              "id": "prepare",
+              "phase": "ps_prepare",
+              "parent": null,
+              "clock": "wall",
+              "start": 7200,
+              "end": 7280
+            },
+            {
+              "id": "call",
+              "phase": "c_call",
+              "parent": null,
+              "clock": "wall",
+              "start": 7300,
+              "end": 8000
+            },
+            {
+              "id": "ipc",
+              "phase": "ipc",
+              "parent": "call",
+              "clock": "wall",
+              "start": 7320,
+              "end": 7400
+            },
+            {
+              "id": "wait",
+              "phase": "pl_wait",
+              "parent": "call",
+              "clock": "wall",
+              "start": 7400,
+              "end": 7900
+            },
+            {
+              "id": "return",
+              "phase": "c_return",
+              "parent": "call",
+              "clock": "wall",
+              "start": 7900,
+              "end": 7950
+            },
+            {
+              "id": "finish",
+              "phase": "ps_finish",
+              "parent": null,
+              "clock": "wall",
+              "start": 8050,
+              "end": 8150
+            }
+          ],
+          "pl_samples": [
+            {
+              "phase": "pl_kernel",
+              "clock": "pl",
+              "cycles": 25
+            }
+          ]
+        },
+        {
+          "sequence": 4,
+          "generation": "0",
+          "record_id": "vector-4",
+          "input_sha256": "ec7220681f2f19e41012a31b75fa479ce6652eadb6441871bafcd1f48395179c",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 8300,
+            "end": 9300
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 2000,
+            "end": 2300
+          },
+          "spans": [
+            {
+              "id": "prepare",
+              "phase": "ps_prepare",
+              "parent": null,
+              "clock": "wall",
+              "start": 8300,
+              "end": 8380
+            },
+            {
+              "id": "call",
+              "phase": "c_call",
+              "parent": null,
+              "clock": "wall",
+              "start": 8400,
+              "end": 9100
+            },
+            {
+              "id": "ipc",
+              "phase": "ipc",
+              "parent": "call",
+              "clock": "wall",
+              "start": 8420,
+              "end": 8500
+            },
+            {
+              "id": "wait",
+              "phase": "pl_wait",
+              "parent": "call",
+              "clock": "wall",
+              "start": 8500,
+              "end": 9000
+            },
+            {
+              "id": "return",
+              "phase": "c_return",
+              "parent": "call",
+              "clock": "wall",
+              "start": 9000,
+              "end": 9050
+            },
+            {
+              "id": "finish",
+              "phase": "ps_finish",
+              "parent": null,
+              "clock": "wall",
+              "start": 9150,
+              "end": 9250
+            }
+          ],
+          "pl_samples": [
+            {
+              "phase": "pl_kernel",
+              "clock": "pl",
+              "cycles": 25
+            }
+          ]
+        },
+        {
+          "sequence": 5,
+          "generation": "0",
+          "record_id": "vector-5",
+          "input_sha256": "ec896231c70c78129614b0601f3a8725ee85eb820b03566d809d0e33ef096f4d",
+          "valid": true,
+          "wall": {
+            "clock": "wall",
+            "start": 9400,
+            "end": 10400
+          },
+          "cpu": {
+            "clock": "cpu",
+            "start": 2500,
+            "end": 2800
+          },
+          "spans": [
+            {
+              "id": "prepare",
+              "phase": "ps_prepare",
+              "parent": null,
+              "clock": "wall",
+              "start": 9400,
+              "end": 9480
+            },
+            {
+              "id": "call",
+              "phase": "c_call",
+              "parent": null,
+              "clock": "wall",
+              "start": 9500,
+              "end": 10200
+            },
+            {
+              "id": "ipc",
+              "phase": "ipc",
+              "parent": "call",
+              "clock": "wall",
+              "start": 9520,
+              "end": 9600
+            },
+            {
+              "id": "wait",
+              "phase": "pl_wait",
+              "parent": "call",
+              "clock": "wall",
+              "start": 9600,
+              "end": 10100
+            },
+            {
+              "id": "return",
+              "phase": "c_return",
+              "parent": "call",
+              "clock": "wall",
+              "start": 10100,
+              "end": 10150
+            },
+            {
+              "id": "finish",
+              "phase": "ps_finish",
+              "parent": null,
+              "clock": "wall",
+              "start": 10250,
+              "end": 10350
+            }
+          ],
+          "pl_samples": [
+            {
+              "phase": "pl_kernel",
+              "clock": "pl",
+              "cycles": 25
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

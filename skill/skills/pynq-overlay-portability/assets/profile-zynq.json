@@ -1,0 +1,20 @@
+{
+  "schema": "pynq-overlay-profile-v1",
+  "target": {
+    "DEVICE": "7z020",
+    "PACKAGE": "clg400"
+  },
+  "required_ips": [
+    {
+      "role": "stream_transfer",
+      "vlnv": "xilinx.com:ip:axi_dma:7.1",
+      "parameters": {
+        "C_INCLUDE_SG": "0"
+      },
+      "address": {
+        "address_bits": 32,
+        "min_bytes": 4096
+      }
+    }
+  ]
+}

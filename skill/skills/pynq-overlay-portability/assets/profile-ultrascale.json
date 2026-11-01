@@ -1,0 +1,20 @@
+{
+  "schema": "pynq-overlay-profile-v1",
+  "target": {
+    "DEVICE": "zu3eg",
+    "PACKAGE": "sbva484"
+  },
+  "required_ips": [
+    {
+      "role": "stream_transfer",
+      "vlnv": "xilinx.com:ip:axi_dma:7.1",
+      "parameters": {
+        "C_INCLUDE_SG": "0"
+      },
+      "address": {
+        "address_bits": 64,
+        "min_bytes": 4096
+      }
+    }
+  ]
+}

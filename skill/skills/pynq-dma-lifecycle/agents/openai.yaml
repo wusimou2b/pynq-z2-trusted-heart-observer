@@ -1,0 +1,4 @@
+interface:
+  display_name: "PYNQ DMA与缓冲生命周期"
+  short_description: "诊断DMA传输、缓存同步与资源收尾，核对多进程缓冲区所有权"
+  default_prompt: "使用 $pynq-dma-lifecycle 检查这次DMA传输与停止记录，定位缓存、所有权和释放顺序问题。"

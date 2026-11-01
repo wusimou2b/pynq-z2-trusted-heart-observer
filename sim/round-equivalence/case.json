@@ -1,0 +1,39 @@
+{
+  "schema": "preserved_xsim_case_v1",
+  "source": "historical-source/v3b25-main-spatial-overflow-proof-20261027-01",
+  "scope": "all signed16 exponents and round carries; deployed versus original expression",
+  "top": "tb_main_spatial_overflow",
+  "compile_order": [
+    "history100_fp64.sv",
+    "history100_mul53.sv",
+    "main_heart_mul53.sv",
+    "tb_main_spatial_overflow.sv"
+  ],
+  "inputs": {
+    "history100_fp64.sv": {
+      "sha256": "bb8a0931f442e77a8cb17759dedeec85a6aac60719c42cfe9adb80cf817896cc",
+      "bytes": 9816,
+      "source": "historical-source/history100_fp64.sv"
+    },
+    "history100_mul53.sv": {
+      "sha256": "dd87fbb770a31b0ffe7ef40a4483ddaba82aa164fd0fc9ae7b950b75c53a9dd8",
+      "bytes": 2401,
+      "source": "historical-source/history100_mul53.sv"
+    },
+    "main_heart_mul53.sv": {
+      "sha256": "03e85f7ee52dd97d09f21aa6e5eac56591b995cedf8849cb052a18b350dd74ee",
+      "bytes": 1358,
+      "source": "historical-source/main_heart_mul53.sv"
+    },
+    "tb_main_spatial_overflow.sv": {
+      "sha256": "582b49cd661b7e7050471031589ad130ab93b082c01ea41fe59ccb8f65b4dc44",
+      "bytes": 1454,
+      "source": "historical-source/tb_main_spatial_overflow.sv"
+    }
+  },
+  "required_pass_marker": "MAIN_SPATIAL_OVERFLOW_PASS checked=131072",
+  "historical_passed": true,
+  "replayed_during_delivery": false,
+  "tool_version": "Vivado XSIM 2024.1",
+  "hardware_accessed": false
+}

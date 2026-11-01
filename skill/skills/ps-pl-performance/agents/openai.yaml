@@ -1,0 +1,4 @@
+interface:
+  display_name: "PS与PL性能定位"
+  short_description: "用保存数据拆分CPU、通信与调度成本，比较普通ABBA计时及连续块积压"
+  default_prompt: "使用 $ps-pl-performance 分析保存数据，区分核内计算、通信回读、IPC与调度，并比较连续块耗时。"

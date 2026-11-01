@@ -1,0 +1,4 @@
+interface:
+  display_name: "PYNQ Overlay适配与驱动绑定"
+  short_description: "检查Overlay元数据、目标能力和驱动绑定，辅助跨题目与板卡适配"
+  default_prompt: "使用 $pynq-overlay-portability 检查这份Overlay与目标环境的兼容性，并给出驱动绑定建议。"
