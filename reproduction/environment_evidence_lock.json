@@ -1,0 +1,278 @@
+{
+  "schema": "trusted_heart_environment_evidence_lock_v1",
+  "project_short_name": "可信心率观测系统",
+  "collection_mode": "static historical-file audit only",
+  "complete_environment_lock": false,
+  "new_project_execution": false,
+  "new_compilation": false,
+  "new_board_access": false,
+  "sources": [
+    {
+      "id": "S01",
+      "source_alias": "historical_runtime_archive",
+      "sha256": "4eb23826ed23d16fec772eab490cdf35a43ad3e9b2ae642337c05cecb842efca",
+      "test_scope": "Historical board-native saved-input replay and read-only comparison; no new PL execution or real-time/accuracy acceptance.",
+      "member": "frozen/provenance/entry25_board_check.json",
+      "container_sha256": "f1133060b52cb163ccab5f34ccadd32a08073d9e69b51349d85bddc72b26e4fe"
+    },
+    {
+      "id": "S02",
+      "source_alias": "historical_native_preparation",
+      "sha256": "e174377658d39245e3b40b7ceed36e51ce30ed0892b26f0332ff9abea05e100d",
+      "test_scope": "Historical native statistics-extension preparation; report identity does not by itself distribute the compiled product."
+    },
+    {
+      "id": "S03",
+      "source_alias": "historical_native_prepare_archive",
+      "sha256": "21b008e62cf01bab5e926a7f6c47a2903b3acb1ed443d62e6fde272f4b8226e7",
+      "test_scope": "Historical compiler --version log for native extension preparation.",
+      "member": "build/command-0.log",
+      "container_sha256": "d82a073f6491449a4092ebfc06317cc961d7bf22942cda0ae3d37e6169f1cb3a"
+    },
+    {
+      "id": "S04",
+      "source_alias": "historical_physical_implementation_summary",
+      "sha256": "26698e9a5dd4092e95ec06cbd901a09026424dd47709349185079233b74b088a",
+      "test_scope": "Historical whole-design physical implementation summary; not a newly executed clean build."
+    },
+    {
+      "id": "S05",
+      "source_alias": "joint_owner_source",
+      "sha256": "5ec45d6e8a37037591734fa8a92e6bd5129e648c54cca1e5485a6e5fda563562",
+      "test_scope": "Authored runtime requirement only; checking this source does not observe the installed package."
+    },
+    {
+      "id": "S06",
+      "source_alias": "engineering_checkpoint_notes",
+      "sha256": "1126a4f1fd0258ef57f4d7bcad82c9c2c02ddaf6bb0dd7624c8ba6552927f530",
+      "test_scope": "Historical engineering narrative; board observations and host-only experiments are distinct."
+    },
+    {
+      "id": "S08",
+      "source_alias": "native_statistics_builder_source",
+      "sha256": "ed3ef5c9d6be5badff911fe500e377f092c469834b76856090d7aca597eb2af9",
+      "test_scope": "Authored platform/byteorder requirement, interpreted together with the recorded completed native preparation."
+    },
+    {
+      "id": "S07",
+      "source_alias": "historical_entry_notebook_source",
+      "sha256": "cb907191995cb3704a1720b32c1edc8738055134655d6f8c30fb209079b9a49a",
+      "test_scope": "Static dependency identification only; Notebook cells were not executed."
+    }
+  ],
+  "components": [
+    {
+      "component": "CPython",
+      "exact_version": "3.10.4",
+      "status": "directly_recorded_historical_metadata",
+      "evidence": [
+        {
+          "source_id": "S01",
+          "json_pointer": "/environment/python"
+        }
+      ]
+    },
+    {
+      "component": "NumPy",
+      "exact_version": "1.21.5",
+      "status": "directly_recorded_historical_metadata",
+      "evidence": [
+        {
+          "source_id": "S01",
+          "json_pointer": "/environment/numpy"
+        }
+      ]
+    },
+    {
+      "component": "SciPy",
+      "exact_version": "1.8.0",
+      "status": "directly_recorded_historical_metadata",
+      "evidence": [
+        {
+          "source_id": "S01",
+          "json_pointer": "/environment/scipy"
+        }
+      ]
+    },
+    {
+      "component": "CPU architecture",
+      "exact_version": "armv7l",
+      "status": "directly_recorded_historical_metadata",
+      "evidence": [
+        {
+          "source_id": "S01",
+          "json_pointer": "/environment/machine"
+        }
+      ]
+    },
+    {
+      "component": "operating-system family",
+      "exact_version": "Linux",
+      "status": "directly_recorded_historical_metadata",
+      "evidence": [
+        {
+          "source_id": "S01",
+          "json_pointer": "/environment/system"
+        }
+      ]
+    },
+    {
+      "component": "Python SOABI",
+      "exact_version": "cpython-310-arm-linux-gnueabihf",
+      "status": "directly_recorded_historical_metadata",
+      "evidence": [
+        {
+          "source_id": "S02",
+          "json_pointer": "/build/soabi"
+        }
+      ]
+    },
+    {
+      "component": "native C compiler",
+      "exact_version": "11.2.0",
+      "distribution_build": "Ubuntu 11.2.0-19ubuntu1",
+      "status": "directly_recorded_historical_command_output",
+      "evidence": [
+        {
+          "source_id": "S03",
+          "line": 1
+        },
+        {
+          "source_id": "S02",
+          "json_pointer": "/build/tools/0/sha256"
+        }
+      ],
+      "compiler_executable_sha256": "cd46fd90d695d44919374848e89e89630807e1171d491a91dcdc6156a051d9d0",
+      "notes": "The Ubuntu compiler branding does not establish the installed operating-system distribution release."
+    },
+    {
+      "component": "ARM byte order",
+      "exact_version": "little",
+      "status": "required_guard_with_historical_preparation_complete",
+      "evidence": [
+        {
+          "source_id": "S02",
+          "json_pointer": "/complete"
+        },
+        {
+          "source_id": "S08",
+          "line": 46
+        }
+      ],
+      "notes": "Preparation is complete; the preserved builder requires sys.byteorder==little. No direct byteorder field was recorded in the preparation JSON."
+    },
+    {
+      "component": "Vivado",
+      "exact_version": "2024.1",
+      "status": "directly_recorded_historical_metadata",
+      "evidence": [
+        {
+          "source_id": "S04",
+          "json_pointer": "/tool_version"
+        }
+      ],
+      "scope": "Historical physical implementation; not a statement that clean rebuilding or a different tool release passed."
+    },
+    {
+      "component": "PYNQ",
+      "exact_version": null,
+      "required_version": "3.1.1",
+      "historically_reported_version": "3.1.1",
+      "status": "source_guard_and_historical_narrative_only",
+      "evidence": [
+        {
+          "source_id": "S05",
+          "line": 127
+        },
+        {
+          "source_id": "S06",
+          "line": 2374
+        }
+      ],
+      "notes": "No direct installed-distribution metadata snapshot was found in the inspected records. The upstream source tag is a separate source dependency and must not be used as the installed package version."
+    },
+    {
+      "component": "OpenCV",
+      "exact_version": null,
+      "historically_reported_version": "4.5.4",
+      "status": "historical_board_test_narrative_only",
+      "evidence": [
+        {
+          "source_id": "S06",
+          "line": 2277
+        }
+      ],
+      "scope": "Historical video buffer-packing precheck and video-only board trial; not a direct package snapshot for the joint-run result.",
+      "notes": "Host OpenCV versions and synthetic test fixtures are not board-version evidence."
+    },
+    {
+      "component": "SD image original filename/build/hash",
+      "exact_version": null,
+      "status": "unknown_from_inspected_records",
+      "notes": "No original image identity or image checksum was found."
+    },
+    {
+      "component": "Linux kernel release/build",
+      "exact_version": null,
+      "status": "unknown_from_inspected_records",
+      "notes": "Linux family is recorded, but kernel release/build is not."
+    },
+    {
+      "component": "OS distribution release",
+      "exact_version": null,
+      "status": "unknown_from_inspected_records",
+      "notes": "Compiler branding is not sufficient to identify the installed distribution."
+    },
+    {
+      "component": "Jupyter / Notebook / Jupyter Server",
+      "exact_version": null,
+      "status": "unknown_from_inspected_records",
+      "notes": "No installed version metadata found."
+    },
+    {
+      "component": "IPython / ipykernel / jupyter-client / jupyter-core",
+      "exact_version": null,
+      "status": "unknown_from_inspected_records",
+      "notes": "The entry Notebook imports IPython.display; exact versions are not recorded."
+    },
+    {
+      "component": "Tornado / pyzmq / traitlets / nbformat",
+      "exact_version": null,
+      "status": "unknown_from_inspected_records",
+      "notes": "No installed version metadata found."
+    },
+    {
+      "component": "client browser product/version",
+      "exact_version": null,
+      "status": "unknown_from_inspected_records",
+      "notes": "Server-side browser-budget metadata does not identify the client browser."
+    },
+    {
+      "component": "optional Bokeh / ipywidgets / Matplotlib branches",
+      "exact_version": null,
+      "status": "unknown_from_inspected_records",
+      "notes": "Historical UI source refers to them; exact versions and current-entry necessity are not established."
+    }
+  ],
+  "recorded_replay_scope": {
+    "mode": "board-native",
+    "hardware_loaded": false,
+    "pl_reexecuted": false,
+    "replay_completed": true,
+    "readonly_comparison_passed": true,
+    "board_readonly_passed": true,
+    "realtime_validated": false,
+    "accuracy_validated": false,
+    "board_ddr_verified": false,
+    "bundle_unchanged": true,
+    "error": null,
+    "timing_scope": "Offline wall time includes imports, checks and report preparation; not a realtime budget"
+  },
+  "native_product_scope": "Native-product recovery and distribution are separate from this version lock. This audit does not assert that the recovered artifact is missing; the code-only RAR does not distribute compiled products.",
+  "excluded_environment_candidates": [
+    "Host-only Python/package versions from software experiments",
+    "Synthetic Skill fixtures and workstation environment snapshots",
+    "Upstream documentation/source tag versions used as if installed on the board"
+  ],
+  "next_step": "Operator collects read-only metadata with the same interpreter/environment as the successful Notebook. No collector was executed by this audit."
+}

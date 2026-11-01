@@ -1,0 +1,63 @@
+{
+  "tool_version": "Vivado 2024.1",
+  "device": "xc7z020clg400-1",
+  "clock_hz": 100000000,
+  "metrics": {
+    "wns_ns": 0.016,
+    "whs_ns": 0.028,
+    "axi_period_ns": 10.0,
+    "drc_errors": 0,
+    "drc_critical": 0,
+    "route_status": "postroute_logic_equivalent_optimization",
+    "all_pins_verified": true,
+    "external_interface_timing_reviewed": false,
+    "cdc_critical": 0,
+    "tns_ns": 0.0,
+    "ths_ns": 0.0,
+    "constraint_checks": {
+      "no_clock": 0,
+      "unconstrained_internal_endpoints": 0,
+      "no_input_delay": 2,
+      "no_output_delay": 7,
+      "generated_clocks": 0,
+      "multiple_clock": 0,
+      "loops": 0,
+      "latch_loops": 0
+    },
+    "setup_hold_passed": true,
+    "internal_constraints_passed": true,
+    "integrated_implementation_passed": false,
+    "resources": {
+      "LUT": {
+        "used": 36527.0,
+        "available": 53200.0
+      },
+      "FF": {
+        "used": 38333.0,
+        "available": 106400.0
+      },
+      "BRAM": {
+        "used": 87.5,
+        "available": 140.0
+      },
+      "DSP": {
+        "used": 41.0,
+        "available": 220.0
+      }
+    }
+  },
+  "pair": {
+    "heart_v3b25_main.bit": "0a91f3f16740edb5fb7f947945fa5c965b83efd298df9e00250c9934087a8f7c",
+    "heart_v3b25_main.hwh": "b652e060e8954e480ca03be4f90c239a83b0b131e6503fccf504d64d000a626a"
+  },
+  "core": {
+    "single_fp64": true,
+    "single_nlms": true,
+    "main_clock_hz": 100000000,
+    "same_video_reset": true,
+    "old_compute_endpoints_removed": true,
+    "blackboxes": 0
+  },
+  "source_report_sha256": "634f405b3a2eb453c7645533740e674008f22692e9b3365ac15c065fa2c4b0d0",
+  "report_path_redaction_only": true
+}

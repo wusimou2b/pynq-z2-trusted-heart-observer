@@ -1,0 +1,44 @@
+{
+  "schema": "public_asset_collection_runtime_closure_v1",
+  "compatibility_identifier_state": "accepted_preserved",
+  "asset_collection_only": true,
+  "standalone_runtime_bundle": false,
+  "asset_only_LIVE_entry_exists": false,
+  "project_executed": false,
+  "library_loaded": false,
+  "board_accessed": false,
+  "original_entry": "ContinuousDemo25.ipynb",
+  "original_archive_sha256": "f1133060b52cb163ccab5f34ccadd32a08073d9e69b51349d85bddc72b26e4fe",
+  "original_entry_manifest_sha256": "c67736f0769f4c04410c239410b3505b4bd448d1ac576132f5872510fcc4b91f",
+  "retained_guard": {
+    "source": "src/ps/fifo_time_guard.py",
+    "source_sha256": "2dbe12f586b216f8e00693e310bd3fb80e2e37dc9ffccb58c4dcd834faa51199",
+    "required_exact_members": 457,
+    "pinned_source_members": 451,
+    "verify_lines": [
+      33,
+      47
+    ],
+    "private_native_input_required": true,
+    "private_native_input_member": "native-input.zip",
+    "private_native_input_records": 1504,
+    "other_private_members": [
+      "frozen/base/deps/static/checked/inputs/original_raw.csv",
+      "lean_evidence/saved1071-results.zip"
+    ],
+    "private_members_copied": false,
+    "guards_changed": false
+  },
+  "consequence": "Removing original private retained inputs while keeping these guards unchanged fails initial identity checking; adding selected matching binaries is insufficient.",
+  "environment_complete": false,
+  "new_clean_build_verified": false,
+  "new_runtime_verified": false,
+  "historical_manual_session_passed": false,
+  "materials_handover": {
+    "technical_report_9A_9B_real_interface_excerpts": "stable_copied_sha256_verified",
+    "independent_collaboration_anonymous_and_public": "stable_copied_sha256_verified",
+    "posters_and_usage_guides": "stable_copied_sha256_verified",
+    "demonstration_video": "not_in_this_handover_unconfirmed",
+    "materials_change_runtime_closure": false
+  }
+}

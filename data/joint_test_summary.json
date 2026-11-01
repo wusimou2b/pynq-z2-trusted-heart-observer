@@ -1,0 +1,14 @@
+{
+  "schema": "public_joint_test_summary_v1",
+  "formal_seconds": 80.652206176,
+  "records": 2021,
+  "paired_records": 2020,
+  "withdrawn_invalid_records": 1,
+  "video_frames": 403,
+  "manual_session_passed": false,
+  "scope": "Historical joint run test summary; no physiological samples or participant identifiers.",
+  "strict_realtime_verified": false,
+  "accuracy_verified": false,
+  "clean_sd_reproduction_verified": false,
+  "performed_during_public_export": false
+}

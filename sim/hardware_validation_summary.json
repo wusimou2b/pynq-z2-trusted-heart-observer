@@ -1,0 +1,34 @@
+{
+  "scope": "historical pinned evidence, not re-executed by publication",
+  "timeout": {
+    "local_candidate_verified": true,
+    "software_tests": 126,
+    "full_rtl_rows": 1504,
+    "full_rtl_state_words": 1237841,
+    "protocol_checks": 21,
+    "full_simulation_uses_original_round_expression": true,
+    "deployed_round_factoring_verified_by_exhaustive_equivalence": true,
+    "exact_deployed_variant_boundary_simulated": true,
+    "matching_new_bit_hwh_built": false,
+    "board_runtime_version_integration_complete": false,
+    "arm_new_c_library_built": false,
+    "hardware_accessed": false,
+    "ready_for_board_test": false,
+    "full_60s_passed": false,
+    "physical_sigbus_unique_cause_proven": false
+  },
+  "rtl": {
+    "passed": true,
+    "saved_rows": 1504,
+    "state_words_checked": 1237841,
+    "protocol_checks": 21,
+    "max_transaction_cycles": 1082540,
+    "full_saved_rows_verified": true,
+    "hardware_accessed": false,
+    "bitstream_built": false
+  },
+  "original_evidence_sha256": {
+    "compact_evidence/timeout-verification.json": "d8e1ef57e5f0845f37443b5abee62275ca630f52263a211b5e08e449a0aa5c18",
+    "compact_evidence/rtl1504.json": "648529830e3bade2cf08a586b669ebd8ca0d9cdff67caa90c50359b87c8517da"
+  }
+}
