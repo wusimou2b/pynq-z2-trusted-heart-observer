@@ -1,0 +1,40 @@
+{
+  "schema": "v3b25_joint_artifacts_v1",
+  "purpose": "controlled_board_trials_only",
+  "files": {
+    "heart_v3b25.bit": "aacedae31a82010d24f086aa8815250282c97ecfd1d5b1b551b0a7bf20fb1cd5",
+    "heart_v3b25.hwh": "2f17d4f4eb255ced45f9f27bfbd2600767d77faab5144365fb33ec3510487866"
+  },
+  "origin": {
+    "stage8_result_sha256": "4b4f94959507d50ec3eace253de90b95f03453e79f31b5ebb636f9e726921b3d",
+    "stage9_result_sha256": "aefa60aa5c637f3e076b5800c63f1690d641f016acde46122ba361f54231ac9b",
+    "routed_checkpoint_sha256": "0c3b6fb8f5fa0b12118bc7ec2e72a0020700a5215bb5690a3257d24687140419",
+    "hwh_source_sha256": "2f17d4f4eb255ced45f9f27bfbd2600767d77faab5144365fb33ec3510487866"
+  },
+  "constraints": {
+    "effective_raw_hz": 25,
+    "processing_hz": 25,
+    "max30102_adc_hz": 50,
+    "sensor_average": 2,
+    "camera_size": [
+      640,
+      480
+    ],
+    "application_target_fps": 15,
+    "hdmi_size": [
+      640,
+      480
+    ],
+    "hdmi_bpp": 24,
+    "fixed_pixel_clock_mhz": 25.0,
+    "initial_pixel_clock_mhz": 100.0,
+    "exactly_one_overlay_owner_required": true
+  },
+  "bitstream_generated": true,
+  "driver_ready": false,
+  "board_tested": false,
+  "board_ddr_verified": false,
+  "boot_image_compatibility_verified": false,
+  "deployment_approved": false,
+  "full_v3b_acceptance_passed": false
+}
