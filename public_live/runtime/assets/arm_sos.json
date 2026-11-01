@@ -1,0 +1,27 @@
+{
+  "schema": "trusted_heart_arm_sos_coefficients_v1",
+  "native_sos_hex": [
+    [
+      "0x1.e0060c7dff44fp-5",
+      "0x1.e0060c7dff44fp-4",
+      "0x1.e0060c7dff44fp-5",
+      "0x1.0000000000000p+0",
+      "-0x1.3407103020db6p+0",
+      "0x1.12cacc37d7696p-1"
+    ],
+    [
+      "0x1.0000000000000p+0",
+      "-0x1.0000000000000p+1",
+      "0x1.0000000000000p+0",
+      "0x1.0000000000000p+0",
+      "-0x1.c9dc591794fc2p+0",
+      "0x1.a64118e5fe278p-1"
+    ]
+  ],
+  "coefficient_values_changed": false,
+  "source_archive_sha256": "f1133060b52cb163ccab5f34ccadd32a08073d9e69b51349d85bddc72b26e4fe",
+  "source_member": "frozen/provenance/entry25_board_check.json",
+  "source_member_sha256": "4eb23826ed23d16fec772eab490cdf35a43ad3e9b2ae642337c05cecb842efca",
+  "historical_runs_or_recorded_results_included": false,
+  "new_numerical_or_board_qualification_claimed": false
+}
