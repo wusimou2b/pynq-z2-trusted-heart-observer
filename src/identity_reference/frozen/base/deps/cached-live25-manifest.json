@@ -1,0 +1,19 @@
+{
+  "schema": "v3a25_cached_live_addon_v1",
+  "live_25hz_passed": false,
+  "live_50hz_passed": false,
+  "auto_beta_effect_passed": false,
+  "board_ddr_verified": false,
+  "limits_frozen": false,
+  "run_acceptance_passed": false,
+  "v3a_complete": false,
+  "display25_manifest_sha256": "20578e2920adfe6f72d5c1c74af58c7fafa09aab89dab2e16b979362d8f0124a",
+  "candidate_sha256": "85e9a0d793c20c4a8f42c6460acaf17cc64da3b56013ef7ee847ea7345c901de",
+  "raw_hz": 50,
+  "processing_hz": 25,
+  "duration_seconds": 60,
+  "files": {
+    "run_v3a25_cached_live.py": "78e3f292dc4815aaa578494ca97920e1516a3550df12b21ff51e164ee8ff00ee",
+    "v3a25_cached_display.py": "85e9a0d793c20c4a8f42c6460acaf17cc64da3b56013ef7ee847ea7345c901de"
+  }
+}

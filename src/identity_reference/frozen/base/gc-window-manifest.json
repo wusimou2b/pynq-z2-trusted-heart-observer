@@ -1,0 +1,11 @@
+{
+  "schema": "effective25_gc_window_addon_v1",
+  "base_manifest_sha256": "400883a9049ad8684fbc15102032cfe8dc0a1daaabda8110423f31959ec054b1",
+  "probe_manifest_sha256": "2c6b9098cf713937d84b1ee3c383746ebfd2eb031dc44b9c63ad08345c99e228",
+  "files": {
+    "run_effective25_gc_window.py": "3432a742c207a62f5b99ccbf585e517185eb550572507034332230d9956424ce",
+    "effective25_gc_window.py": "9f5edcfd3803d489fa4e32c2979416a5632f8c963098a9e94a5e32f7d5e1c5b2",
+    "effective25_gc_window_report.py": "2b889bec34a8c3592826786b9c05f3647c5d433f8cfee8c82cb79c3bc55d49bc",
+    "README_GC_WINDOW.md": "d4f21ae5b15ca4ca009822450abee9e537dbc1399d78a0521be1d0db8a0fc968"
+  }
+}

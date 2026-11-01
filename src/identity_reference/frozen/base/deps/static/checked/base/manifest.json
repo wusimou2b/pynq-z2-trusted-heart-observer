@@ -1,0 +1,320 @@
+{
+  "schema": "v3a_board_bundle_v1",
+  "build_manifest_sha256": "a779effe6125d693c4a434472aa4cd08834781eee7368aae8c69992c4065a518",
+  "file_hashes": {
+    "controls.csv": "efa886874fbeb46328fb6c807f9fe909de72455e3dccf43af2989bd1e017adef",
+    "heart_axi_capture_50hz.py": "8613eef56ea555ca36ad0857a250ef3d9a8d7797476f31e078f5dbaa969da928",
+    "heart_axi_live.py": "224794f6ca4776e047d29274e8006d19330fc49433d2ae03ba261514dc770a70",
+    "heart_v3a.bit": "dd1a4f7704b8bc236c6d232f3bdec812dbb941dd2a328aa1e5be9ad9bccead20",
+    "heart_v3a.hwh": "d8a50cb8dc5ff69e51e20b91d0dbc38ca22c7e46d7df0c6f5b630e2d28627548",
+    "run_main_chain.py": "7003bcc480c25e74a2bd0e0183928a2d33840b26a7ae0284148753a1f61b1162",
+    "run_v3a_board_replay.py": "90667911497365c37c0a28197a5077bc82d4f2bc409098dc952800e2236b9790",
+    "run_v3a_main_chain.py": "4e22a308e0cebdc394f7a4cb490606eeabbb5498f3bc72abccdc74be534fa6e2",
+    "使用说明.md": "d36ac27bff7392acd04655d527c26e1744e809e497aa4a584063d13c2f5bcd1f",
+    "config/arena_v2_primed.yaml": "612dcc1d3a28389c8b727a3a913b25f562916fabbcaf9a91acde017a29ce0654",
+    "heart_v2/aligned_metrics.py": "18528117cd7e4f65fc821066be4f53ff08752f81e9c9bef5451d63a54b64086b",
+    "heart_v2/contact.py": "d9681d404cf04170c7f240e1b964f7833399023bdee5eb1381a3afa1799d7d4c",
+    "heart_v2/dataset.py": "f8a2ca2e41b264095f6760f15985b55e374425a2b0a52c7b50f7f7a5cd02ecf2",
+    "heart_v2/heartrate.py": "017262a4f7eedbd8c784ca37d6c28042aace868a8e7073f725a443f02a7003f4",
+    "heart_v2/joint_benefit.py": "85b37cfc8c5d519ac45a8f0de9b11717123e4734916ad50c315bec720e4a80be",
+    "heart_v2/metrics.py": "33c0df5066dddcc23f61efaa3167d87ffd63f15e635b6493a9970c20c28ca62f",
+    "heart_v2/nlms.py": "be91e66b0e4186f4deb7cc5eae072814155828583dd3b93fb00eb7d8af2d28c4",
+    "heart_v2/preprocess.py": "8db01b427bd2fa335acedc3f97b4aa60d98ca22f6022838568b40e0982877be1",
+    "heart_v2/runtime_main_chain.py": "bba4d659c05d84a4ca177d18b7c44bd5a1c52b68ae08e771d86fde190e9c06dc",
+    "heart_v2/runtime_state.py": "a2bd25c05d62e2dc6e71258dd38c1b763779ab19a161f09cf386fa35e656811a",
+    "heart_v2/__init__.py": "c0bf13ddf7f7f9efae9c800dea0ae8c1c8e04967d8215be3b7b68380941d8b87",
+    "heart_v3a/axi_contract.py": "95feb8d1361dcbffb3aebd2c6c36c09e0a76f9cf90fd492f24d41f0697dfedfe",
+    "heart_v3a/axi_driver.py": "813e44031150fc6a57bc3a31b55eaf3ed4dee62020f64214fe7327c9d58268d6",
+    "heart_v3a/delivery.py": "590ade4b6898ae985bb0781423ba0ae2b8b0d0afccd6b6972f6e2c4c828f82ce",
+    "heart_v3a/fixed_math.py": "1839f4ddb12aec7ecb56f2b740aafdc1ac7afd943ed5f4d8ffb752d0b8f8a86f",
+    "heart_v3a/fixed_nlms.py": "57c3ed9dc01008821d2d663d20847444c8f0881aebee215d924bfe05355c58d4",
+    "heart_v3a/rtl_sim.py": "9144390db19571a6e68056f4099bb960c0784eb76f233f8ea0eb29ce6afc7868",
+    "heart_v3a/runtime_backend.py": "c3d8fbb0bbe387addfbf3b2f8cd395fe9c51c41958c3fbae0349fd6cafcabefc",
+    "heart_v3a/runtime_fixed_nlms.py": "4580fdf3c552d15faddc048e2c2720ea49f49c6cd44cd0587677d0a445c3d9ba",
+    "heart_v3a/runtime_pl_chain.py": "902cd4ef772c1243c7ec82bfcbdd30672267daa192096ecac307e83038470af5",
+    "heart_v3a/__init__.py": "630b214ff45a06f4c62dfbceffd63637a3f0d89b0b8d1ad8a5b73c5e206eac05",
+    "provenance/build-manifest.json": "a779effe6125d693c4a434472aa4cd08834781eee7368aae8c69992c4065a518",
+    "golden/case-00/records.csv": "b95907d5723e28eb9ab0868d224dd60d4f564046a66a996b09851c9880c7c5b7",
+    "golden/case-01/records.csv": "4bac7735524e1515bc11874f51462f61aeba75c792f3dead1bd4df72169b089e",
+    "golden/case-02/records.csv": "b90aacfb4ad4cdb4c7b27bcc70f311b790df104624961a4b8c3f03480093c571",
+    "golden/case-03/records.csv": "d98c3cf3b209e2c8d91a10255b683430d53a7f68c9d3fa25c30256b56f02fe9b",
+    "golden/case-04/records.csv": "86acb4a55d86e0552489ccc5484aa956d3faa5adc78c0d48f99e4e6ef064fbf7",
+    "golden/case-05/records.csv": "ce020778113ceaffa00eccf5449e1e65dcc34dd70e76d26442b9eab191d90611",
+    "golden/case-06/records.csv": "26e01aa3d3344662c580eb5aacfb82509b2e760cdb6276a8ecf05aa77b96ba7d",
+    "golden/case-07/records.csv": "496674e4b15ad97acebb99d32c24146d72f56bbd4120789343fa94e64bb0f824",
+    "golden/case-08/records.csv": "7e3c81b2265a54810cf40a4990fb9f7b502935eb9cf26cc9d455be52a4b1bf18",
+    "provenance/original_sources/00-heart_axi.xpr": "e18efeb949983c1b881a020835b5dbe3a964c6fcf7d17d3e5050127514d9ee40",
+    "provenance/original_sources/01-design_1.bd": "60c7b27533c69e41b5c9bb60cfbfd77b0c29fe0367e14d321cea918175a9516e",
+    "provenance/original_sources/02-board.xml": "a565dcb39737d551cbbbb73c0053b973c40bb3dce2274943370d3032c0fea9ae",
+    "provenance/original_sources/03-part0_pins.xml": "3c809473938e135a925b563b5371c8687ee05c4089376e7318c0c56524cc8a0f",
+    "provenance/original_sources/04-preset.xml": "18528f84aea4da503cdb3104f7706fabfb3b6ad09b78b25199cc316afa4c8cfe",
+    "provenance/original_sources/05-pynq_z2.jpg": "b6cf32febf4b1995f33c3372ef72f390abf4a5596c73a6fd36810a45ccd0e1f7",
+    "provenance/reports/build.log": "0ac0f901eefd68e00e33ac24d1f3f8098f2bed7505bc931189866cc1cf928896",
+    "provenance/reports/check_timing.rpt": "8f7ac7369aac574f3709c86c91e97dbe3e1bc5905b5a3c83b9f1fdedba885fdb",
+    "provenance/reports/clock.rpt": "d34aa74af14b029f98582b84412fc736b2cb16064e9ce41c534bd4155bb2e35f",
+    "provenance/reports/drc.rpt": "7e6050a11977f1419a7da2e95d85f7972dd2522ceb15dac321b6680dbcabbcb0",
+    "provenance/reports/fifo_utilization.rpt": "1b617036b090d077c7e6440340b95e7c335e3fa5f310223b65312cd08a2adde3",
+    "provenance/reports/hierarchical_utilization.rpt": "a118a2c36b9e6fb053ba4a2f17fd7afa9b775d890a4b2f893dad6472d61a13d6",
+    "provenance/reports/iic_utilization.rpt": "a39dc72b93a1ab2b2fc265008cb84e602d16f08beb76fe5f514f2f7786527b5e",
+    "provenance/reports/io_pins.json": "eeae3af40098d0ed696bafcb5615324debfb7978069372a8218c921fd5f12bd0",
+    "provenance/reports/nlms_utilization.rpt": "72f89fe4e70ef129c398aee4ca6e9b6bc7aeeed7fba9799aa1d44db8cc3a0ffc",
+    "provenance/reports/run_status.json": "addae6bc87a98afc2401b082b102fe84b7e3ab2db3f6f3396f0b4bb7a4ec3b91",
+    "provenance/reports/synth_utilization.rpt": "a6391236d157b29ea4d659ecdcaabd96038190524483dbcaa66ef72a586e3843",
+    "provenance/reports/timing_metrics.json": "e114c2e35e1c8f2e895cf8d7c96a5cdbc845eb04541f7cedfb92b4229d6f27d0",
+    "provenance/reports/timing_summary.rpt": "6eb0c84dcc1bdcac38b285d993f42c4d104b04eed848ffa439b683e9f959e2f6",
+    "provenance/reports/utilization.rpt": "d3f32ee3ebfe6c445cb2c1cec824124305f9a560e519894346b70b7601207401",
+    "provenance/build_sources/scripts/build_overlay.tcl": "e8fb3efa45bce6d0b5633e13b898d0eb3687d56beee725a57c7fb53178a8c30a",
+    "provenance/build_sources/scripts/create_overlay_copy.tcl": "943d7acc3d2f71237933fc54d76a96113828ddca05f84f7d1bd2b21732e25008",
+    "provenance/build_sources/scripts/package_nlms_ip.tcl": "f07c5f661a6a4f8c09c4f50f4aef70141e77e47602329e9d6b78be89fa049f96",
+    "provenance/build_sources/snapshot/design_1.bd": "4a0c0ddfaa51566ba2b815ff103f4698d853ea33bfb9aa0f77f2406991ce0d57",
+    "provenance/build_sources/snapshot/nlms_axi_lite.sv": "a5ccd10a69a1db32313a0f3d5875f5e213dbe5d8ea4aebe45e087af59d88d1ea",
+    "provenance/build_sources/snapshot/nlms_core_runtime_3x4.sv": "35b04c731d975dcb600f378e29c86b4bc5c3c072c53638e0e190470b2d86348b",
+    "provenance/build_sources/snapshot/nlms_round_div96_runtime.sv": "5556cf5e12a4a96dba823df50308c7d2c8265758403dac39e3903b73d8489792",
+    "provenance/build_sources/board_repo/pynq-z2/A.0/board.xml": "a565dcb39737d551cbbbb73c0053b973c40bb3dce2274943370d3032c0fea9ae",
+    "provenance/build_sources/board_repo/pynq-z2/A.0/part0_pins.xml": "3c809473938e135a925b563b5371c8687ee05c4089376e7318c0c56524cc8a0f",
+    "provenance/build_sources/board_repo/pynq-z2/A.0/preset.xml": "18528f84aea4da503cdb3104f7706fabfb3b6ad09b78b25199cc316afa4c8cfe",
+    "provenance/build_sources/board_repo/pynq-z2/A.0/pynq_z2.jpg": "b6cf32febf4b1995f33c3372ef72f390abf4a5596c73a6fd36810a45ccd0e1f7",
+    "provenance/build_sources/heart_v3a/heart_v3a.srcs/sources_1/bd/design_1/design_1.bd": "375e11aebe8a8e67f102fe79da56d67fe198254d06509fe0fa1711ce1383204a",
+    "provenance/build_sources/ip_repo/nlms_axi_lite/component.xml": "f399a30dd72cc168863a41eddc2b73deddd1c01d0152e823f7af2a9c0c07f339",
+    "provenance/build_sources/ip_repo/nlms_axi_lite/src/nlms_axi_lite.sv": "a5ccd10a69a1db32313a0f3d5875f5e213dbe5d8ea4aebe45e087af59d88d1ea",
+    "provenance/build_sources/ip_repo/nlms_axi_lite/src/nlms_core_runtime_3x4.sv": "35b04c731d975dcb600f378e29c86b4bc5c3c072c53638e0e190470b2d86348b",
+    "provenance/build_sources/ip_repo/nlms_axi_lite/src/nlms_round_div96_runtime.sv": "5556cf5e12a4a96dba823df50308c7d2c8265758403dac39e3903b73d8489792",
+    "provenance/build_sources/ip_repo/nlms_axi_lite/xgui/nlms_axi_lite_v1_0.tcl": "e0725b60cdc4cd625ee059e557ee3f5569fcd085edf601849e69e4d438080d96"
+  },
+  "build_source_map": {
+    "design_1.bd": "provenance/build_sources/heart_v3a/heart_v3a.srcs/sources_1/bd/design_1/design_1.bd",
+    "nlms_axi_lite.sv": "provenance/build_sources/ip_repo/nlms_axi_lite/src/nlms_axi_lite.sv",
+    "nlms_core_runtime_3x4.sv": "provenance/build_sources/ip_repo/nlms_axi_lite/src/nlms_core_runtime_3x4.sv",
+    "nlms_round_div96_runtime.sv": "provenance/build_sources/ip_repo/nlms_axi_lite/src/nlms_round_div96_runtime.sv",
+    "build_overlay.tcl": "provenance/build_sources/scripts/build_overlay.tcl",
+    "create_overlay_copy.tcl": "provenance/build_sources/scripts/create_overlay_copy.tcl",
+    "package_nlms_ip.tcl": "provenance/build_sources/scripts/package_nlms_ip.tcl",
+    "board.xml": "provenance/build_sources/board_repo/pynq-z2/A.0/board.xml",
+    "part0_pins.xml": "provenance/build_sources/board_repo/pynq-z2/A.0/part0_pins.xml",
+    "preset.xml": "provenance/build_sources/board_repo/pynq-z2/A.0/preset.xml",
+    "pynq_z2.jpg": "provenance/build_sources/board_repo/pynq-z2/A.0/pynq_z2.jpg",
+    "component.xml": "provenance/build_sources/ip_repo/nlms_axi_lite/component.xml",
+    "nlms_axi_lite_v1_0.tcl": "provenance/build_sources/ip_repo/nlms_axi_lite/xgui/nlms_axi_lite_v1_0.tcl"
+  },
+  "original_source_map": {
+    "heart_axi.xpr": "provenance/original_sources/00-heart_axi.xpr",
+    "design_1.bd": "provenance/original_sources/01-design_1.bd",
+    "board.xml": "provenance/original_sources/02-board.xml",
+    "part0_pins.xml": "provenance/original_sources/03-part0_pins.xml",
+    "preset.xml": "provenance/original_sources/04-preset.xml",
+    "pynq_z2.jpg": "provenance/original_sources/05-pynq_z2.jpg"
+  },
+  "cases": [
+    {
+      "path": "golden/case-00/records.csv",
+      "name": "v3a-nlms-raqhnn2u/boundary",
+      "samples": 9,
+      "expected_clipped": 2,
+      "expected_saturated": 0,
+      "golden_source_hashes": {
+        "stimulus.mem": "e1bfdd1b65f15a609f18afffc563d411c0ec4bb88d7bfb69de1b851846105b94",
+        "expected.mem": "1ae6bf5fc169eb20f2b2a91bf2c107819f22bdeb9e3e4bfec5cf0a190d3fadac"
+      }
+    },
+    {
+      "path": "golden/case-01/records.csv",
+      "name": "v3a-nlms-raqhnn2u/contact_block",
+      "samples": 300,
+      "expected_clipped": 0,
+      "expected_saturated": 0,
+      "golden_source_hashes": {
+        "stimulus.mem": "29e976bbb5e5e7835ed24b1b73a8f230e6637dcfc76c65a2a307ba1dcb5d69f2",
+        "expected.mem": "5be0a551cb9a5944c05d279ebe4d13d32af05786b69b53ab6dcd0793acea9f0d"
+      }
+    },
+    {
+      "path": "golden/case-02/records.csv",
+      "name": "v3a-nlms-raqhnn2u/low_energy",
+      "samples": 300,
+      "expected_clipped": 0,
+      "expected_saturated": 0,
+      "golden_source_hashes": {
+        "stimulus.mem": "df60a117855ab991146fc76b1103468424803e97cd80ae6a3877a9546663557d",
+        "expected.mem": "1264cd6a0e69d16ad65495104597365fc4619f1fb1c039d2f71b5b6eb36a814c"
+      }
+    },
+    {
+      "path": "golden/case-03/records.csv",
+      "name": "v3a-nlms-raqhnn2u/motion",
+      "samples": 3000,
+      "expected_clipped": 0,
+      "expected_saturated": 0,
+      "golden_source_hashes": {
+        "stimulus.mem": "e5b9f725a0913c988fc8306896b85491e78e8d3283ba86151cd82d37a93ef4ac",
+        "expected.mem": "8e12aa83be9ae2059a84487274b68761c51daaf9c48b892181880e2cde639c18"
+      }
+    },
+    {
+      "path": "golden/case-04/records.csv",
+      "name": "v3a-nlms-raqhnn2u/reset",
+      "samples": 300,
+      "expected_clipped": 0,
+      "expected_saturated": 0,
+      "golden_source_hashes": {
+        "stimulus.mem": "83b1a719b91d34c16a2ac12190f6452440527cfd4152aa58e0b667a3a7168ab5",
+        "expected.mem": "0f3c382fd43dd052dfb12127139a2c92e74a080fb7a3473af49feda9477ed799"
+      }
+    },
+    {
+      "path": "golden/case-05/records.csv",
+      "name": "v3a-nlms-raqhnn2u/static",
+      "samples": 3000,
+      "expected_clipped": 0,
+      "expected_saturated": 0,
+      "golden_source_hashes": {
+        "stimulus.mem": "be770dd0523aba52e4812a4d6c6f765dbefae95b2a80f5d20cd92f0260a39ef3",
+        "expected.mem": "219d2467198ef2cc95e8071078510b5a7e4c64030d6ca76d62427fd4f5a99237"
+      }
+    },
+    {
+      "path": "golden/case-06/records.csv",
+      "name": "v3a-nlms-sjm02_9e/capture",
+      "samples": 3011,
+      "expected_clipped": 0,
+      "expected_saturated": 0,
+      "golden_source_hashes": {
+        "stimulus.mem": "dc5227c9434b8e66062de9a519c5316d20517f71ad02123e40c6df98290f7872",
+        "expected.mem": "493ae9694dbdeb7637304aa2078b0cf304dd89a4e5ef2d65e5b688f99a14b656"
+      }
+    },
+    {
+      "path": "golden/case-07/records.csv",
+      "name": "v3a-nlms-ooexbi5p/capture",
+      "samples": 3011,
+      "expected_clipped": 0,
+      "expected_saturated": 0,
+      "golden_source_hashes": {
+        "stimulus.mem": "9f4dc859d814c56681b896c2229d6f9668354e1649106581fbf97f640dd9fad8",
+        "expected.mem": "74cc28629e6be9ca8f68aad15ad10bc3167e7d1b373df4bee919cabaf5b0880d"
+      }
+    },
+    {
+      "path": "golden/case-08/records.csv",
+      "name": "v3a-nlms-ds0ul9vf/capture",
+      "samples": 3011,
+      "expected_clipped": 99,
+      "expected_saturated": 0,
+      "golden_source_hashes": {
+        "stimulus.mem": "dc62cc4d3cea21e51c3f0fb90c5220691b5815ce8c1b29dfb5326153256aea5b",
+        "expected.mem": "d9957c64a666706cf6a7d1d51d5392b6dc38ba60619beafe366f233514e57eff"
+      }
+    }
+  ],
+  "golden_samples": 15942,
+  "control_samples": 20,
+  "addresses": {
+    "axi_fifo_mm_s_0": {
+      "base": 1136656384,
+      "range": 65536
+    },
+    "axi_iic_0": {
+      "base": 1096810496,
+      "range": 65536
+    },
+    "nlms_axi_0": {
+      "base": 1136721920,
+      "range": 65536
+    }
+  },
+  "tool_version": "2024.1",
+  "timing": {
+    "wns_ns": 0.322,
+    "whs_ns": 0.019,
+    "tns_ns": 0.0,
+    "ths_ns": 0.0,
+    "clock_period_ns": 10.0,
+    "drc_errors": 0,
+    "unconstrained_internal_endpoints": 0
+  },
+  "resources": {
+    "total": {
+      "LUT": {
+        "used": 4709.0,
+        "available": 53200.0
+      },
+      "FF": {
+        "used": 5139.0,
+        "available": 106400.0
+      },
+      "BRAM": {
+        "used": 2.0,
+        "available": 140.0
+      },
+      "DSP": {
+        "used": 12.0,
+        "available": 220.0
+      }
+    },
+    "nlms": {
+      "LUT": {
+        "used": 3102.0,
+        "available": 53200.0
+      },
+      "FF": {
+        "used": 3448.0,
+        "available": 106400.0
+      },
+      "BRAM": {
+        "used": 0.0,
+        "available": 140.0
+      },
+      "DSP": {
+        "used": 12.0,
+        "available": 220.0
+      }
+    },
+    "fifo": {
+      "LUT": {
+        "used": 666.0,
+        "available": 53200.0
+      },
+      "FF": {
+        "used": 606.0,
+        "available": 106400.0
+      },
+      "BRAM": {
+        "used": 2.0,
+        "available": 140.0
+      },
+      "DSP": {
+        "used": 0.0,
+        "available": 220.0
+      }
+    },
+    "iic": {
+      "LUT": {
+        "used": 381.0,
+        "available": 53200.0
+      },
+      "FF": {
+        "used": 374.0,
+        "available": 106400.0
+      },
+      "BRAM": {
+        "used": 0.0,
+        "available": 140.0
+      },
+      "DSP": {
+        "used": 0.0,
+        "available": 220.0
+      }
+    }
+  },
+  "integrated_timing_passed": true,
+  "bitstream_generated": true,
+  "board_tested": false,
+  "board_ddr_verified": false,
+  "board_replay_passed": false,
+  "live_50hz_passed": false,
+  "auto_beta_effect_passed": false,
+  "limitations_cn": [
+    "PC验证不代表上板或实采通过。",
+    "继承DDR负skew告警未解决，板端稳定性尚待检查。",
+    "黄金仅公开candidate／output／status，不声称板上读取全部内部权重。"
+  ]
+}

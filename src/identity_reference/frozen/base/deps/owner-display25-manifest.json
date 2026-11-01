@@ -1,0 +1,20 @@
+{
+  "schema": "v3a25_owner_display_addon_v1",
+  "live_25hz_passed": false,
+  "live_50hz_passed": false,
+  "auto_beta_effect_passed": false,
+  "board_ddr_verified": false,
+  "limits_frozen": false,
+  "run_acceptance_passed": false,
+  "v3a_complete": false,
+  "raw_hz": 50,
+  "processing_hz": 25,
+  "duration_seconds": 60,
+  "cached_manifest_sha256": "e99fd0df085b4cf072a8f6a17db32c7fdb163f90c395851d10655ccabc8b21e0",
+  "files": {
+    "owner25/__init__.py": "89323e7b0d5289968a5fb5109dacdf3a69114e5911c9a3d03b3ec3237d44a612",
+    "owner25/transport.py": "a6e9d8247f7367eb3fa521efaf39a2c34b349fc0026317c2a7a572af8ccc1f62",
+    "owner25/worker.py": "eea967e065bcf12bf218b3e80452201631af64574a1066bbeb9bdaa7f3359688",
+    "run_v3a25_owner_display.py": "76db84f06ccb7bd943797fe02c54bd9b2879745fd532d2cada55a20b3b504629"
+  }
+}

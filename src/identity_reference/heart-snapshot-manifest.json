@@ -1,0 +1,27 @@
+{
+  "schema": "v3b25_heart_snapshot_package_v1",
+  "base_manifest_sha256": "3f2170941f20de3104f71bbdfed5c0eaa258d9a6dffaf203576877dc71929d97",
+  "files": {
+    "README_HEART_SNAPSHOT.md": "164cf80c955820a50aa80ba4e56d6e97559c71b9eb5bb3ab3b91e2dcbde476d5",
+    "heart_snapshot_guard.py": "224c18fc3517cc98dac38e28305e3751a9c0197040aebe8f47d57634535b336a",
+    "heart_snapshot_worker.py": "fdb543f5fb53d72744bf74cffb69aa7e95ff2340783e1a28a88caf004e260935",
+    "joint_boundary.py": "71c36ffdeb435c5f73f0fc3c8e4ebb4ba15aacda13bb9513b4be0e995ffff588",
+    "joint_snapshot.py": "6aabd59be4269796915abe5f3535253abd635fe442d3b3bcd80b4a07e432a4e0",
+    "run_heart_snapshot.py": "394159bdb6a4fde329b5ee721d46f161080b61dee4d5feae25290ec041dd1a03"
+  },
+  "notebook_code_sha256": "54900bed575b381965ac523cc2384b8c593abbf79cd014c18e7a92af475ec430",
+  "raw_hz": 25,
+  "processing_hz": 25,
+  "duration_seconds": 60,
+  "heart_realtime_recovered": false,
+  "video_enabled": false,
+  "snapshot_probe_enabled": false,
+  "live_25hz_passed": false,
+  "live_50hz_passed": false,
+  "auto_beta_effect_passed": false,
+  "board_ddr_verified": false,
+  "limits_frozen": false,
+  "run_acceptance_passed": false,
+  "v3a_complete": false,
+  "full_v3b_acceptance_passed": false
+}

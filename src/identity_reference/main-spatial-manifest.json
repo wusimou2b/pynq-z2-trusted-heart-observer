@@ -1,0 +1,55 @@
+{
+  "schema": "v3b25_main_spatial_hybrid_package_v1",
+  "baseline_manifest_sha256": "526895a28bdf2255a80dc9a7f6c9ec49323121480952990bfee42199819f5876",
+  "files": {
+    "main-native-build.json": "01ef45df3ac0f8308d545014e53ad65bc6e2f46882ef90082acbd3eb8021970a",
+    "main_heart_chain.py": "ef116efaa8ab263b755013b0f41ffd47f32b6658ba19fe952e7c3a4680915088",
+    "main_heart_guard.py": "32175d773bdafaf595d433b978b6ffde9b0a12c9ae9e4373775b85a7f0cac7c7",
+    "main_heart_mmio.py": "257f6f19c99b3a783ffa15b07149debbe1d3a833e484f692a42d063caeb4be32",
+    "main_heart_native_build.py": "5deb54c79e4010f3c2063e9ab4dc90fe995471ce551e1bd8f04c9039bd985a8f",
+    "main_heart_owner.py": "0353aaed1a2a725b35f1877bc94412fb84bc2e229fbaf5d04166952997bd1ddb",
+    "main_heart_preflight.py": "c3267e840ac022be1fa9e685f9dbccd61fc52b9009e3d8563fa708728809492e",
+    "main_heart_process.py": "a870013b6492838affa029309f8901eab397e51dd897d99772a082dfa0fa28b5",
+    "main_heart_readback.c": "a3b4aa2a2acfb8959b7c8f0c3d59fee4ea92f23fdeda4d8cd37aecb3725bd11e",
+    "main_heart_readback.py": "3d55332e800b6103c7ac34476a8f67ef340369acf74271b6b0ce63928bbd74ba",
+    "main_spatial_assessment.py": "2e6e85ac63a351867301ebe03fbe0b441534c8e4e44e6a3e02aeb2b9846abf22",
+    "main_spatial_guard.py": "89b990671ec83cafecbc42b6aef1d9bfd912bd2bb132d77d4bc5af6f236063d7",
+    "main_spatial_owner.py": "043e76be666a5420939b3e8b0888073ddea3675a848d1a10556fefbc10ffc56a",
+    "main_spatial_ps.py": "ea377ef5b7a14ed0975eaa9a983b94c9a875f15c4dd9b1f71d8bd7802a7d573f",
+    "main_spatial_runtime.py": "94f6a27dc7a9d2d10ddcc803feed06036db9cb84726e68ec6ec70bf1be8c1ebc",
+    "main_spatial_worker.py": "3f135b6132d1f787b31c6d4532bb08c7d69e252739b31673409c66cf599de48b",
+    "README_MAIN_SPATIAL.md": "1aef5fda4182f239590067ddca2958ab7fb6ac62ea7fd5e9120e040f9febde77",
+    "run_main_spatial.py": "d21e84d2a74277cbd05437b1714fb982b6335ac01b6d40ec86e3be5ae0bc45c3",
+    "small_heart_chain.py": "756bf4869398a8c492922a5f8d8c0db80f0a506b0ac38d49212bb87157f9205f",
+    "small_heart_model.py": "29af126102a0b6151581295b9e7292e8287426ed3392e90c96467292a3500a22",
+    "small_heart_worker.py": "d4e67b69ca7108cb5e814b3978edc74676ea0e209b8443900f3696526cce962d",
+    "hardware/heart_v3b25_main.bit": "6dc798a77f8577629f5d824bf9081e994352b4cd104dde31b8b265c621bdd966",
+    "hardware/heart_v3b25_main.hwh": "3c44a48758fce3f1a581f8ae3d74d543a712b539d922fad8c739b4bd7a5b9393",
+    "hardware/main-heart-artifacts.json": "210ab15d3686bb7370d41d942989fb6c0c70d41b3f1443adbcc369b27cd433fd",
+    "hardware/main-heart-release.json": "72c616d60195ce083e5242710603d0fec361631752d6cc9d4c3d15bc72cf7265",
+    "hardware/main-spatial-integration.json": "40d4014664b1bdfbc504b83d6b2a89c6a24b24a9d2cdeaf8c388787f1574c987",
+    "main_native_build/libmain_heart_readback.so": "faa44cdaee9ad8ee505a93049be033df530f80b68fba6af3de13ffab988c7696",
+    "main_native_build/main_heart_readback.s": "677049c52d68cf7a964e84e9fde18e99b27d1fe339c3504634f4ed6a511dfbc7"
+  },
+  "notebook_identity_sha256": "294b917b83ec76ff20e0043e1dba9deda3acc26766058327d92a0d5cd9e6d100",
+  "rates": [
+    25,
+    25,
+    5
+  ],
+  "grid": [
+    4,
+    3
+  ],
+  "display_layout": "camera_bpm_strip_v1",
+  "protections": {
+    "warmup": 700,
+    "ready_seconds": 60,
+    "startup_seconds": 180,
+    "step_seconds": 1,
+    "exit_seconds": 1,
+    "freshness_ns": 1000000000,
+    "main_command_seconds": 0.02
+  },
+  "automatic_retry": false
+}

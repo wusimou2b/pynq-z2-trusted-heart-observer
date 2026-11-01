@@ -1,0 +1,48 @@
+{
+  "schema": "state_wire_live60_v1",
+  "baseline_sha256": "4c1ea19fbe72e2f9a8334d4d8615cf86b1d651aee6053c778275294e804ce594",
+  "qualified_replay_manifest_sha256": "0cf546c6dddae317c621cec379a34914375e4e4fae21ae77af9b6a1f1c3c3836",
+  "preserved_scalar_sha256": "7eff16617b6b9084b42ba8650ca99dcfe2306bc7f908b494c8be35de9c0f85f1",
+  "policy": {
+    "raw_hz": 25,
+    "processing_hz": 25,
+    "video_fps": 5,
+    "formal_seconds": 60,
+    "warmup_slots": 700,
+    "ready_seconds": 60,
+    "startup_seconds": 300,
+    "ps_exit_seconds": 1,
+    "software_step_seconds": 1,
+    "rtl_seconds": 0.02,
+    "native_sample_seconds": 0.04,
+    "source_age_ns": 1000000000,
+    "ce_limit_ns": 80000000,
+    "queues": [
+      8,
+      250,
+      250
+    ],
+    "gc_original_window": true,
+    "curve_display": "browser4",
+    "hdmi_display": "video_bpm_route",
+    "sample_ipc": "one_roundtrip_exact_refs_v1",
+    "sample_dropping": false,
+    "automatic_retry": false
+  },
+  "live60_passed": false,
+  "added_files": {
+    "README_STATE_WIRE.md": "e3c0ba6e9d7849e95e512d0c4dee40690d6c3c37a1018920fdeb8e8cf4808344",
+    "StateWireLive60.ipynb": "7c76b19e029afcd967b59b041d82eb34ad04b18accab2c042e562b29e259e127",
+    "qualified-state-replay.json": "782bbc4bede74ab92d4dd68e11b78a09d43a6a952fd50ef27cebf99819ed468f",
+    "state_wire_live_check.py": "b0f2bc3eee06666f08a67e3ad51355ae951bf00f4df1606592349b6674d10688",
+    "state_wire_live_entry.py": "a3dfdb8b16698f817feb7a7b4fc27f2806db9930363cef4df659d565224db750",
+    "state_wire_live_guard.py": "375f55cf718ece65f3ed8493be7f3ca98e3d0321c3065d7538221297ba36434a",
+    "state_wire_live_runtime.py": "e1d0a31fcf48ccd0f642c4e78585679159b4e2bc9428893cee8f5ec32d7f6d68",
+    "video_state_binary.py": "1fe11aa0061a4d4702775be6d392cb90ea9fcf18e4c5585785fe7f278846c62d"
+  },
+  "preserved_owner_flat_sha256": "18d8c48def3a89dd708e376b375273576430fc9126329371179a6212d44009cf",
+  "qualified_ipc_arm_sha256": "b372550266c907a9122dae1f67218e170a19df044480f65060c9bbc81da795cd",
+  "preserved_ps_wire_sha256": "1fd26d41206991184c047c21a863f9fecf5b62feec3c09d678fd2d8b15a17778",
+  "state_replay_manifest_sha256": "a00251944420bde7548b2a749f368b8ecae2fb761767a7c56033dec793a8c857",
+  "state_replay_result_sha256": "690831bd50d1372928470c1404b81ccc3da7acce8a440797b522d827c2d31aad"
+}

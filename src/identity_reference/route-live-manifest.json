@@ -1,0 +1,53 @@
+{
+  "schema": "route_live60_v1",
+  "baseline_sha256": "4c1ea19fbe72e2f9a8334d4d8615cf86b1d651aee6053c778275294e804ce594",
+  "qualified_replay_manifest_sha256": "0cf546c6dddae317c621cec379a34914375e4e4fae21ae77af9b6a1f1c3c3836",
+  "preserved_scalar_sha256": "7eff16617b6b9084b42ba8650ca99dcfe2306bc7f908b494c8be35de9c0f85f1",
+  "policy": {
+    "raw_hz": 25,
+    "processing_hz": 25,
+    "video_fps": 5,
+    "formal_seconds": 60,
+    "warmup_slots": 700,
+    "ready_seconds": 60,
+    "startup_seconds": 300,
+    "ps_exit_seconds": 1,
+    "software_step_seconds": 1,
+    "rtl_seconds": 0.02,
+    "native_sample_seconds": 0.04,
+    "source_age_ns": 1000000000,
+    "ce_limit_ns": 80000000,
+    "queues": [
+      8,
+      250,
+      250
+    ],
+    "gc_original_window": true,
+    "curve_display": "browser4",
+    "hdmi_display": "video_bpm_route",
+    "sample_ipc": "one_roundtrip_exact_refs_v1",
+    "sample_dropping": false,
+    "automatic_retry": false
+  },
+  "live60_passed": false,
+  "added_files": {
+    "RouteRecovery60.ipynb": "4857058da2a3b073eb12e4508849722e0f3ae7f107a6c3eef7d22994132c012b",
+    "compact_arm_probe.py": "b69420430061c3a85429c60ace148a4b7324098b89724f6b3b986eec0d08c636",
+    "qualified-route-replay.json": "ecaf796b7f2312982f29b63fd364f736d8685dcc1fc25ab3dc17c3affa13ea88",
+    "route-probe-rows.zip": "2997c69ac3a9f64412c854c30796feb99f7484ed96a182a78f9e873b542194aa",
+    "route_live_check.py": "03dfd22cd61da01bbb1618f9dddfa94f36c6ea9b578df5444bfdd2664995edad",
+    "route_live_entry.py": "e24830efcc02af581d54b937f631dc354f25f5578993b0e49f5b106650ef37b9",
+    "route_live_guard.py": "7b990eaa216989717c3b35299a75e83c5434092da7d69aa91a48c0f5381176fc",
+    "route_live_probe.py": "7a442c2c551bdd99fb7c006bcc979cd9d769b3514131dff52f42d17339afbc64",
+    "route_live_runtime.py": "53c422e9476dbf2263a358307310b01ee58d15eb102a0eae464c62180d2a6cb7",
+    "route_recovery.py": "7ddd70149f7071ad23901d0a52dcb99fdc94130067e91ae47d2657834f566cb5",
+    "route_recovery_scope.py": "8f083f9b0a5950db0ca23065f318eb0c81b4de90d037bf015c1d76b07b916bb0"
+  },
+  "preserved_owner_flat_sha256": "18d8c48def3a89dd708e376b375273576430fc9126329371179a6212d44009cf",
+  "qualified_ipc_arm_sha256": "b372550266c907a9122dae1f67218e170a19df044480f65060c9bbc81da795cd",
+  "preserved_ps_wire_sha256": "1fd26d41206991184c047c21a863f9fecf5b62feec3c09d678fd2d8b15a17778",
+  "state_replay_manifest_sha256": "a00251944420bde7548b2a749f368b8ecae2fb761767a7c56033dec793a8c857",
+  "state_replay_result_sha256": "690831bd50d1372928470c1404b81ccc3da7acce8a440797b522d827c2d31aad",
+  "preserved_state_wire_sha256": "b0b16709a497dba4cb05d381814b76ccfc3fb9d15c1039a970e1cef7525d35c8",
+  "qualified_route_replay_sha256": "b9bde74ffbbf37a3108e2405488e41c4fec343148104b095df4b8c64e183feb7"
+}

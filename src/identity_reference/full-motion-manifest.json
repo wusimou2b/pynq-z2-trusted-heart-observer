@@ -1,0 +1,32 @@
+{
+  "schema": "v3b25_baseline_full_motion_package_v1",
+  "component_manifest_sha256": "32403f19d2a9eab4cbaed6f52a2bd04d10a9900e4ffe527b4029bb67816165c0",
+  "files": {
+    "README_FULL_MOTION.md": "5c8581f8ac93431d945411dcfeade22f23fff793b17c0b5a400ebbbf9ac528b0",
+    "run_video_motion.py": "4d8752f8f28dd5556252364e49c98ec7a6a8edefa139d4ab3f5c6fc84bd11d7c",
+    "video_motion_guard.py": "fcb808a00a9a37b74f5bb453102418de217208790806fc033aa540e81f5ffbce",
+    "video_motion_joint.py": "99b27d51ab4664b5c0a2b2d408dcbc4b3dce9d7169b2dc1fe451cb58e5f36174",
+    "video_motion_worker.py": "5e1df53354e06855853f822190190549e70f69171d83f6a9f72f730dd0b1c628"
+  },
+  "notebook_identity_sha256": "1ccf5aa911a1819ccb0d9f52b89c21c1bb5df1ab683c1bb5d99d2e8c60f74919",
+  "raw_hz": 25,
+  "processing_hz": 25,
+  "video_fps": 5,
+  "warmup_slots": 700,
+  "startup_seconds": 180,
+  "ready_seconds": 60,
+  "join_seconds": 1,
+  "preparation_hdmi_submissions": 4,
+  "duration_mode": "manual_until_stop_v1",
+  "video_and_mpu_fusion_enabled": true,
+  "original_start_order_retained": true,
+  "heart_control_enabled": false,
+  "heart_algorithm_changed": false,
+  "gc_changed": false,
+  "protections_changed": false,
+  "per_register_timing_enabled": false,
+  "ps_first_enabled": false,
+  "board_tested": false,
+  "accuracy_verified": false,
+  "full_v3b_acceptance_passed": false
+}

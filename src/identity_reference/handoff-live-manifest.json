@@ -1,0 +1,28 @@
+{
+  "schema": "handoff_live60_v1",
+  "retained_manifest_sha256": "c5210a87203f34a833bdf0a4b2080b92bf012908c3520d36a60dcd878acaae33",
+  "retained_archive_sha256": "599e26e711610526119bf649c5c1f5fc244ebc10aa653f5d79ef5dab031dff76",
+  "qualified_replay_sha256": "98a7d314ac3da53cce878f653bfd728cd517c46812b23bbc9e5feac72e197381",
+  "policy": {
+    "raw_hz": 25,
+    "processing_hz": 25,
+    "video_fps": 5,
+    "formal_seconds": 60,
+    "display_age_ns": 100000000,
+    "initial_lock_seconds": 0.05,
+    "maximum_reads": 2,
+    "recheck_wait_seconds": 0,
+    "source_age_seconds": 1,
+    "protections_changed": false,
+    "automatic_retry": false,
+    "route_recovery_preserved": true
+  },
+  "live60_passed": false,
+  "added_files": {
+    "display_status_handoff.py": "568c68ac7fc158443f412321083cd38625f7f134e74f04794b7146c920f2a75e",
+    "handoff_live_guard.py": "9c17c574dab8af7d613006a9406a20b5f8ed89abf49c34fc1e05f79635dc90de",
+    "handoff_live_entry.py": "ef6e2bac1b9fdf47f61e2777b8a60981ea5082ee56a5433a16c6334a6021776b",
+    "qualified-handoff-replay.json": "9ac4624f34ea5f2ffa78adfd1b45b02fe9a87362e3ec449f3fa8aea2e4ea5696",
+    "HandoffLive60.ipynb": "76bdf0da68e425fcaa5e2117ad8bc046aa0b527fa70233f2286bd5bafe49692f"
+  }
+}

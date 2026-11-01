@@ -1,0 +1,10 @@
+{
+  "schema": "effective25_gc_addon_v1",
+  "base_manifest_sha256": "400883a9049ad8684fbc15102032cfe8dc0a1daaabda8110423f31959ec054b1",
+  "files": {
+    "run_effective25_gc_probe.py": "163fd7295ad69c3a048521b8871e618184487aee820bfa87ba1395553e3ba30f",
+    "effective25_gc_log.py": "852270daf4e2fe925a32972aea1f433704ad53774249bbfa827e70ae4d17c401",
+    "effective25_gc_report.py": "de025147bd582d34300fec4ff52b48143e63a25a71c40183ddd66600c816cd69",
+    "README_GC_PROBE.md": "6de337bd69dc1c1160a0a90962f9f079440ac3b0dc152ac09764c1101f6beb39"
+  }
+}

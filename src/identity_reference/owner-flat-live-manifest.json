@@ -1,0 +1,43 @@
+{
+  "schema": "owner_flat_live60_v1",
+  "baseline_sha256": "4c1ea19fbe72e2f9a8334d4d8615cf86b1d651aee6053c778275294e804ce594",
+  "qualified_replay_manifest_sha256": "0cf546c6dddae317c621cec379a34914375e4e4fae21ae77af9b6a1f1c3c3836",
+  "preserved_scalar_sha256": "7eff16617b6b9084b42ba8650ca99dcfe2306bc7f908b494c8be35de9c0f85f1",
+  "policy": {
+    "raw_hz": 25,
+    "processing_hz": 25,
+    "video_fps": 5,
+    "formal_seconds": 60,
+    "warmup_slots": 700,
+    "ready_seconds": 60,
+    "startup_seconds": 300,
+    "ps_exit_seconds": 1,
+    "software_step_seconds": 1,
+    "rtl_seconds": 0.02,
+    "native_sample_seconds": 0.04,
+    "source_age_ns": 1000000000,
+    "ce_limit_ns": 80000000,
+    "queues": [
+      8,
+      250,
+      250
+    ],
+    "gc_original_window": true,
+    "curve_display": "browser4",
+    "hdmi_display": "video_bpm_route",
+    "sample_ipc": "one_roundtrip_exact_refs_v1",
+    "sample_dropping": false,
+    "automatic_retry": false
+  },
+  "live60_passed": false,
+  "added_files": {
+    "OwnerFlatLive60.ipynb": "7e6482a125cc18243b8ea85bba4fd0e8d807668455f3ba713b512851ea5f1155",
+    "README_OWNER_FLAT.md": "5f3a034b361621bdc860bdfe987b9f3071e282ca1b480cba6c3810f56bb0efcc",
+    "owner_flat_live_check.py": "4a680b06eab33585d88489d1bba8fe1e5a0aa2575b85c190d436b84b428a393e",
+    "owner_flat_live_entry.py": "db2f6b4f7ff601e48b99244b2b081061b5ac7fe3cfb29ab62bb1e5849954a8a6",
+    "owner_flat_live_guard.py": "ef99ee312596608fe7733850a4607d8253dca50f8783e290b79aa674d22382ab",
+    "owner_flat_live_runtime.py": "694414709a6d3904dd75677dec86cf8d960914f5faf1f9768e20dd1063a2324b",
+    "owner_publication_flat.py": "ec9fc951a334f7c149b105eebc642651a49350d964c9a711df73903d283e93f4",
+    "qualified-owner-replay.json": "ed984162d7233ad07e18ce81623fff9d3c0c3be7248f42996581e3b98f32fd8b"
+  }
+}

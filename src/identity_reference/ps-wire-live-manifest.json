@@ -1,0 +1,47 @@
+{
+  "schema": "ps_wire_live60_v1",
+  "baseline_sha256": "4c1ea19fbe72e2f9a8334d4d8615cf86b1d651aee6053c778275294e804ce594",
+  "qualified_replay_manifest_sha256": "0cf546c6dddae317c621cec379a34914375e4e4fae21ae77af9b6a1f1c3c3836",
+  "preserved_scalar_sha256": "7eff16617b6b9084b42ba8650ca99dcfe2306bc7f908b494c8be35de9c0f85f1",
+  "policy": {
+    "raw_hz": 25,
+    "processing_hz": 25,
+    "video_fps": 5,
+    "formal_seconds": 60,
+    "warmup_slots": 700,
+    "ready_seconds": 60,
+    "startup_seconds": 300,
+    "ps_exit_seconds": 1,
+    "software_step_seconds": 1,
+    "rtl_seconds": 0.02,
+    "native_sample_seconds": 0.04,
+    "source_age_ns": 1000000000,
+    "ce_limit_ns": 80000000,
+    "queues": [
+      8,
+      250,
+      250
+    ],
+    "gc_original_window": true,
+    "curve_display": "browser4",
+    "hdmi_display": "video_bpm_route",
+    "sample_ipc": "one_roundtrip_exact_refs_v1",
+    "sample_dropping": false,
+    "automatic_retry": false
+  },
+  "live60_passed": false,
+  "added_files": {
+    "PsWireLive60.ipynb": "3edb4064e6e3bc5f38519302ca548316d511ccf71e7555f7cd11fa0abaa6fe2c",
+    "README_PS_WIRE.md": "73cc64afc2486555f3a2ff0e15a12477e7d73f8b0a3101393ac4707a4e092c50",
+    "ps_flat_candidate.py": "3c2ac6a45d24b0ed5851b62a109b405990459092abded1311bcb3b18fd3f804c",
+    "ps_flat_wire.py": "9b36fe5f6851e9f90ec5667e1cf027ff81abe067f16d3b437fe8919b6cfd36df",
+    "ps_live_wire_scope.py": "dda3c51ea66445d20afb1ceeee0de4fc9e39078378c9ea2bf764e89a9bc130b6",
+    "ps_wire_live_check.py": "74e8b8228942885fb706cc61d2613f814c474a2e36b6b0edff569334fd22e6d9",
+    "ps_wire_live_entry.py": "b6d3a30432ac26831327c0d48cd069fb789cc99c56f8be233d066a14b0588053",
+    "ps_wire_live_guard.py": "32e4a3cb22deddbb11fd94653db6e132087fd5d18ef0c48e3d6c5b9b7c1f4ab2",
+    "ps_wire_live_runtime.py": "58eeeed28f11b6f99a1559d44a813c2d1c65db0a96ca008a1c26daa31d014116",
+    "qualified-live-wire-arm.json": "b372550266c907a9122dae1f67218e170a19df044480f65060c9bbc81da795cd"
+  },
+  "preserved_owner_flat_sha256": "18d8c48def3a89dd708e376b375273576430fc9126329371179a6212d44009cf",
+  "qualified_ipc_arm_sha256": "b372550266c907a9122dae1f67218e170a19df044480f65060c9bbc81da795cd"
+}
