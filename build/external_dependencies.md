@@ -16,9 +16,7 @@ The BD also needs external `axi_dynclk`, `rgb2dvi`, `color_swap`, TMDS interface
 
 Historical native evidence records ARMv7 little-endian Linux, CPython 3.10.4, SOABI `cpython-310-arm-linux-gnueabihf`, NumPy 1.21.5, GCC 11.2.0. PYNQ, SciPy, OpenCV, Jupyter/IPython and optional plotting/UI packages are required by relevant paths, but a complete image and exact package lock are not provided. The builder pins the compiler executable SHA256; a matching version label alone is insufficient.
 
-Previously omitted qualified product (now recovered byte-identically in private support, not bundled in this public source): `native-build/_v3b25_statistics_dot.cpython-310-arm-linux-gnueabihf.so`, expected SHA256 `4dc17698315564f4d2ac50b5e3d1607fecfe12f2520dafa9f4aaa40ff4e50c78`. Its C source and builder are included. The matching 13,156-byte original ARM library and historical preparation receipt have been recovered privately; a JSON report alone is still not a binary. No library was loaded, compiled or deployed during recovery. The original preparation and runtime guards bind paths and hashes. A new build requires explicit numerical and identity qualification; do not replace historical hashes or disable guards.
-
-The original runtime uses a separately qualified sibling source directory and archived recorded inputs. Those health records and frozen run archive are not public. Consequently this public snapshot cannot reproduce the original cold-check identity on a blank SD card. Source-only reconstruction, numerical requalification and board operation remain separate unverified steps.
+The public LIVE distribution now includes the original qualified statistics extension and four actual native helpers, with corresponding C/assembly and component notices under ../public_live/. Their fixed SHA256 identities are verified by the new manifest before loading. No binary was recompiled or modified. The original preparation/source guards remain historical paths; the new public entry uses explicit contained paths and does not require private recorded qualification input. This separation does not turn historical failed flags into a new numerical or board qualification.
 
 Legacy helper imports `ps_core_placement`, `roi_motion_guard`, `roi_motion_runtime` and `run_nlms_rtl` are not closed within this tree. They are historical support paths and must not be assumed to be complete current entry points.
 
@@ -29,4 +27,5 @@ Legacy helper imports `ps_core_placement`, `roi_motion_guard`, `roi_motion_runti
 The runtime dependency and environment findings are documented in `../reproduction/native_dependency.md` and `../reproduction/environment_evidence_lock.md`. Product display/repository naming does not change the original C extension ABI, fixed hash guards or hardware VLNV. Any change to those compatibility identifiers is a separate decision and qualification step.
 
 
-Candidate note: reviewed original binaries are now collected under `../runtime_assets/`. This does not supply the original private 457-member runtime closure; see `../runtime_closure.md`. Compatibility identifiers are accepted_preserved.
+
+Current runtime entry: ../public_live/PublicLive.ipynb; deployment requirements and software-only verification scope are in its README and the repository root. Necessary compatibility identifiers are accepted_preserved.

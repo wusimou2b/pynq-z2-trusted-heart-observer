@@ -1,7 +1,5 @@
-# Original board flow and candidate boundary
+# 板端部署入口
 
-Matching historical bit/HWH and the original statistics extension are collected under ../runtime_assets/. This does not make this source snapshot an independently runnable installation: original retained guards require private recordings and complete qualified topology. ../runtime_closure.md records the exact conflict. No active asset-only LIVE manifest/entry was created.
+使用 `../public_live/PublicLive.ipynb` 与同目录部署说明。新公开入口包含匹配硬件及五个ARM库，全部按新发布清单核验；不依赖私人实录ZIP或旧机器目录。
 
-The unchanged historical flow is: short/no-hardware gate, separately confirmed 20-second video qualification, browser/normal-stop preparation, then explicitly confirmed continuous startup. Preserve the original rates, limits, ownership and failure policy. After normal stop, wait for PS natural exit and video/DMA/single-owner release receipts; preserve any cancellation/in-flight frame and failed-check evidence. Do not use kernel interruption as proof of cleanup.
-
-These are source review instructions, not permission or a claim that the candidate has passed startup. Internal compatibility identifiers are accepted_preserved. No loader, guard, protection, binary or runtime policy was edited.
+`../src/ps/` 中的旧Notebook是历史源码参考，不直接用于这份裁剪后的公开树。新入口必须在匹配的PYNQ-Z2/ARM32/CPython3.10环境依次完成短测、视频检查、显示准备和显式运行，并正常停止释放资源。原始数值/质量/新鲜度保护没有放宽。此次只完成软件验证，未进行真实板端运行。

@@ -1,0 +1,18 @@
+# Local generated data is not part of the public source.
+**/__pycache__/
+**/.ipynb_checkpoints/
+public_live/runtime/public-short-attempt.json
+public_live/runtime/public-short.json
+public_live/runtime/public-preview20-attempt.json
+public_live/runtime/public-preview20.json
+public_live/runtime/public-prepare-attempt.json
+public_live/runtime/public-prepare.json
+public_live/runtime/public-live-attempt.json
+public_live/runtime/public-live.json
+public_live/runtime/video-process20-results.zip
+public_live/runtime/continuous-attempt.json
+public_live/runtime/continuous-result.json
+public_live/runtime/continuous-results.zip
+public_live/runtime/continuous-control/
+public_live/runtime/continuous-results/
+public_live/runtime/video-process20/
