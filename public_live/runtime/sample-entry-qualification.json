@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "hardware_accessed": false,
+  "error": null,
+  "source_sha256": "94b5a0205c45dda962da856d0ba0e7d8dbd6a7792de712346d423d46d58e7aeb",
+  "binary_sha256": "d3d51ac5a9a6f9f83703f8e32fb693cbfa1bbf4e8f2f64f0bdd59b7c1f963dac",
+  "assembly_sha256": "2799137943386f3308a976d3457966945dfe13091a867b32d2b6129e78638ae1",
+  "ram": [
+    {
+      "code": 5,
+      "mask": 4351,
+      "phase": 3,
+      "clock_error": 0
+    },
+    {
+      "code": 7,
+      "mask": 4127,
+      "phase": 0,
+      "clock_error": 0
+    },
+    {
+      "code": 1,
+      "mask": 4103,
+      "phase": 0,
+      "clock_error": 0
+    }
+  ]
+}
