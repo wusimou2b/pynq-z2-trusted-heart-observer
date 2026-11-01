@@ -1,44 +1,25 @@
 {
-  "schema": "public_asset_collection_runtime_closure_v1",
-  "compatibility_identifier_state": "accepted_preserved",
-  "asset_collection_only": true,
-  "standalone_runtime_bundle": false,
-  "asset_only_LIVE_entry_exists": false,
-  "project_executed": false,
-  "library_loaded": false,
-  "board_accessed": false,
-  "original_entry": "ContinuousDemo25.ipynb",
-  "original_archive_sha256": "f1133060b52cb163ccab5f34ccadd32a08073d9e69b51349d85bddc72b26e4fe",
-  "original_entry_manifest_sha256": "c67736f0769f4c04410c239410b3505b4bd448d1ac576132f5872510fcc4b91f",
-  "retained_guard": {
-    "source": "src/ps/fifo_time_guard.py",
-    "source_sha256": "2dbe12f586b216f8e00693e310bd3fb80e2e37dc9ffccb58c4dcd834faa51199",
-    "required_exact_members": 457,
-    "pinned_source_members": 451,
-    "verify_lines": [
-      33,
-      47
-    ],
-    "private_native_input_required": true,
-    "private_native_input_member": "native-input.zip",
-    "private_native_input_records": 1504,
-    "other_private_members": [
-      "frozen/base/deps/static/checked/inputs/original_raw.csv",
-      "lean_evidence/saved1071-results.zip"
-    ],
-    "private_members_copied": false,
-    "guards_changed": false
-  },
-  "consequence": "Removing original private retained inputs while keeping these guards unchanged fails initial identity checking; adding selected matching binaries is insufficient.",
-  "environment_complete": false,
-  "new_clean_build_verified": false,
-  "new_runtime_verified": false,
+  "schema": "trusted_heart_public_live_closure_v2",
+  "entry": "public_live/PublicLive.ipynb",
+  "manifest_sha256": "67c4785d718c16618e85ea7278aea1848200dfd1dc035df70d76342d6b311b00",
+  "complete_declared_file_set_verified": true,
+  "private_recorded_inputs_required_for_new_public_entry": false,
+  "historical_private_guards_preserved": true,
+  "fixed_bit_hwh_and_five_native_libraries_preserved": true,
+  "source_modules_and_paths_explicitly_verified": true,
+  "unit_tests_passed": 81,
+  "javascript_stop_path_assertions_passed": 6,
+  "real_sealed_bundle_relocation_checks_passed": 13,
+  "real_core_imports_in_original_live_scope": 4,
+  "target_board_environment_verified": false,
+  "arm_native_execution_verified": false,
+  "pl_download_performed": false,
+  "new_board_live_verified": false,
+  "historical_1504_record_replay_performed": false,
   "historical_manual_session_passed": false,
-  "materials_handover": {
-    "technical_report_9A_9B_real_interface_excerpts": "stable_copied_sha256_verified",
-    "independent_collaboration_anonymous_and_public": "stable_copied_sha256_verified",
-    "posters_and_usage_guides": "stable_copied_sha256_verified",
-    "demonstration_video": "not_in_this_handover_unconfirmed",
-    "materials_change_runtime_closure": false
-  }
+  "unknown_environment": [
+    "original SD image file/hash",
+    "pandas exact original version",
+    "complete Jupyter/kernel/browser version snapshot"
+  ]
 }

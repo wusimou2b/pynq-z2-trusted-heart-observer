@@ -18,3 +18,7 @@ Read the chosen Skill before use; it defines inputs, limitations and examples. S
 `historical_validation.json` records the same **31+37+37+29=134 unit cases** in original and isolated extraction checks; repeated runs are not additional unique cases. `historical_cli_validation.json` records **38 shared synthetic CLI assertions**, a separate category. The FPGA workflow skill has no independent RTL unit-test count. These historical results are not newly executed export tests and do not prove ARM, second-board or medical accuracy performance.
 
 Local source manifests, original ZIP copies, absolute machine paths, generated test logs and private provenance have been excluded. Individual Skill source/docs/examples/tests remain complete. No board operation is authorized by reading or publishing a Skill.
+
+## Project entry
+
+The project example is `../public_live/PublicLive.ipynb`; its full identity and Notebook source policy are documented in the adjacent deployment README. The eight Skills remain unchanged reusable sources. The new release's81 software cases are separate from the historical134 Skill cases and38 CLI assertions; no hardware validation is implied.

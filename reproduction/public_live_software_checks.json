@@ -1,0 +1,27 @@
+{
+  "schema": "trusted_heart_public_live_closure_v2",
+  "entry": "public_live/PublicLive.ipynb",
+  "manifest_sha256": "67c4785d718c16618e85ea7278aea1848200dfd1dc035df70d76342d6b311b00",
+  "complete_declared_file_set_verified": true,
+  "private_recorded_inputs_required_for_new_public_entry": false,
+  "historical_private_guards_preserved": true,
+  "fixed_bit_hwh_and_five_native_libraries_preserved": true,
+  "source_modules_and_paths_explicitly_verified": true,
+  "unit_tests_passed": 81,
+  "javascript_stop_path_assertions_passed": 6,
+  "real_sealed_bundle_relocation_checks_passed": 13,
+  "real_core_imports_in_original_live_scope": 4,
+  "target_board_environment_verified": false,
+  "arm_native_execution_verified": false,
+  "pl_download_performed": false,
+  "new_board_live_verified": false,
+  "historical_1504_record_replay_performed": false,
+  "historical_manual_session_passed": false,
+  "unknown_environment": [
+    "original SD image file/hash",
+    "pandas exact original version",
+    "complete Jupyter/kernel/browser version snapshot"
+  ],
+  "verification_scope": "identity, synthetic unit tests, source import boundaries and relocation; no hardware",
+  "private_personal_test_data_used": false
+}
