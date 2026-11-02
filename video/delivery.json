@@ -1,0 +1,34 @@
+{
+  "schema": "trusted_heart_demo_video_v1",
+  "filename": "trusted_hr_browser_colors_final_20261102.mp4",
+  "sha256": "204a94c7161e3a7c00e777edfecd7c6a53cbca8a5f4a29e41d1dde9e3814f8d2",
+  "bytes": 195502442,
+  "duration_seconds": 176.657415,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "voice_color_explanation_seconds": [
+    130.2,
+    141.8
+  ],
+  "legend_until_seconds": 171.633333,
+  "legend": {
+    "blue": "原始去直流",
+    "yellow": "两点均值",
+    "green": "NLMS候选",
+    "red": "联合保护输出"
+  },
+  "board_peripheral_connection_photo_corrected": true,
+  "female_voice": "Kokoro-82M-v1.1-zh / zf_001",
+  "background_music": "Original mathematically synthesized background score; no third-party song sample",
+  "technical_qa": {
+    "source": "Accepted video-task delivery; this publication task independently verified SHA256 and ffprobe metadata",
+    "full_decode_passed": true,
+    "frame_timestamps_continuous": true,
+    "narration_alignment_passed": true,
+    "audio_clipping_absent": true,
+    "subjective_listening_performed": false
+  },
+  "distribution": "Separate GitHub Release asset; not stored as a normal Git file",
+  "prior_candidates_superseded": true
+}

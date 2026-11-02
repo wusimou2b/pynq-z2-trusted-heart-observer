@@ -83,4 +83,4 @@ python3 -B board_runtime/verify_portable.py
 
 原生组件许可保留在 [licenses/native/](licenses/native/)，硬件组件许可保留在 [licenses/hardware/](licenses/hardware/)，数学源码声明在 [src/licenses/](src/licenses/)。原创部分、八项 Skills 和第三方组件分别遵循各自许可；根 MIT 许可不替代 BSD、LGPL 或其他原有条款。
 
-演示视频正在修订接线画面。本次文档不把旧视频或尚未验收的修订视频作为完成版。
+演示视频以独立 [Release 附件](https://github.com/wusimou2b/pynq-z2-trusted-heart-observer/releases) 提供，源码ZIP不包含MP4。最终文件为 `trusted_hr_browser_colors_final_20261102.mp4`，176.66秒、1080p/30fps，包含修正的接线照片、AI女声、配乐及浏览器四色说明。SHA256为 `204a94c7161e3a7c00e777edfecd7c6a53cbca8a5f4a29e41d1dde9e3814f8d2`；技术检查通过，未做主观试听。说明及许可见 [video/README.md](video/README.md)。

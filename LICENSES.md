@@ -6,6 +6,7 @@ The root MIT license applies to original project code within its stated scope. I
 - `licenses/hardware/`: preserved Digilent RGB2DVI BSD, Xilinx MMCM, PocketFFT and project notices, with the original AMD source links.
 - `src/licenses/`, `src/hls/LICENSE` and `src/third_party/`: corresponding arithmetic, PocketFFT and PYNQ/HLS sources and notices.
 - `skill/skills/`: each Skill retains its own license.
+- `licenses/video/`: the preserved Kokoro software Apache-2.0 license and narration/music source notes for the separate final demo video.
 
 The 958 files in `board_runtime/` retain their exact verified bytes, including the corresponding C/assembly/Python sources and original ARM binaries. The surrounding license files apply to the relevant components without changing the runtime identity chain. No native binary was rebuilt for publication.
 

@@ -17,7 +17,7 @@
   "clean_image_reproduction_verified": false,
   "full_acceptance_passed": false,
   "historical_manual_session_passed": false,
-  "video_revision_pending": true,
+  "video_revision_pending": false,
   "compatibility_identifier_state": "accepted_preserved",
   "notebook_identity": "Original portable notebook-source identity policy; unchanged guards.",
   "verification": {
@@ -5282,9 +5282,19 @@
       "sha256": "d7a783d978c1b2f300a8649e2dad356d3a663734c644f2c5bf2d5fa782656617"
     },
     {
+      "path": "licenses/video/kokoro_software_apache_2.0.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "licenses/video/README.md",
+      "bytes": 829,
+      "sha256": "cfb53d8169cbbdbe19e0daf7cfeb9efb1103cb99d70d5bf1442945a551577e6a"
+    },
+    {
       "path": "LICENSES.md",
-      "bytes": 1212,
-      "sha256": "c4ce6331cc87096951e27a7244b1a95c0d8ee5cac64d8e91c7114c587b21c476"
+      "bytes": 1350,
+      "sha256": "62fabef73e68c8a4fa4af2ab08ff7cd0c808ee9ccd8b4fb57fc6cc97d0e0a1bc"
     },
     {
       "path": "public_selection_notes.md",
@@ -5293,8 +5303,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8481,
-      "sha256": "faa4b3cf70b7501f65b546536f4eaaf06fdc1dec2ac2d14d915bb07ecd437e26"
+      "bytes": 8851,
+      "sha256": "1230bdf554bde4fee2409774b42d699104e2a0a58eebeb5c0761fc06fca32557"
     },
     {
       "path": "report/materials/amd_health_poster_en_submission.pdf",
@@ -8520,6 +8530,18 @@
       "path": "verify_public_source.py",
       "bytes": 1303,
       "sha256": "77129604aebd3db866d1775530a059ab8ed1ca0f8b6cc730403c4e4caf1f76be"
+    },
+    {
+      "path": "video/delivery.json",
+      "bytes": 1238,
+      "sha256": "036737a5e4f23432489457fb9b78df37714d56dbbd79d5159573c8d4ec75ac5d"
+    },
+    {
+      "path": "video/README.md",
+      "bytes": 991,
+      "sha256": "9ef02dafe88bc6145e5caa547523a172c74acdc73a37d81f959170d1ac22d687"
     }
-  ]
+  ],
+  "video_asset_filename": "trusted_hr_browser_colors_final_20261102.mp4",
+  "video_asset_sha256": "204a94c7161e3a7c00e777edfecd7c6a53cbca8a5f4a29e41d1dde9e3814f8d2"
 }
