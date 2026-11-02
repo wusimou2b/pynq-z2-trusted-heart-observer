@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "points": 1505,
+  "candidate_numeric": 1237,
+  "archive_sha256": "b9bde74ffbbf37a3108e2405488e41c4fec343148104b095df4b8c64e183feb7",
+  "replay_manifest_sha256": "09e2b6a8abfdd74abb93f67c68be19dcb022fa6871b6528f75882151f96f793f",
+  "algorithm": {
+    "rows": 1505,
+    "fields": 66220,
+    "differences": 0,
+    "first": []
+  },
+  "row_age": {
+    "count": 1505,
+    "mean_ms": 123.58890204318936,
+    "max_ms": 765.073642,
+    "p95_ms": 568.727962
+  },
+  "video_frames": 300,
+  "screen_observation": "user confirmed continuous picture and sequence",
+  "numerical_semantics": "Qualified branch IBIs may precede selection; route/IMU/PL/protections unchanged",
+  "scope": "Saved1505+realPL/video, no physical IIC/heart acquisition; not full V3B/accuracy/long-term acceptance"
+}

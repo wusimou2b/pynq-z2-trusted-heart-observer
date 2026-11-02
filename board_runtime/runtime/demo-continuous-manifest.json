@@ -1,0 +1,29 @@
+{
+  "schema": "continuous_demo25_v1",
+  "retained_manifest_sha256": "594f25c9f45a7c527a05a8f2d65b76d88e6f3c31e9b4923bafd81d75174b0ee0",
+  "retained_archive_sha256": "6abfe2c545f5eaff9bee1caed6efe3a4c939541ddd67e8b15fe6912897c36e1c",
+  "policy": {
+    "raw_hz": 25,
+    "processing_hz": 25,
+    "video_fps": 5,
+    "formal_seconds": null,
+    "duration_mode": "manual_until_stop_v1",
+    "automatic_retry": false,
+    "epoch_validation": true,
+    "trace_capacity": 65536,
+    "scheduling_record_capacity": 8192,
+    "scheduling_extra_preallocated_bytes": 393216,
+    "trace_overflow_stops": true,
+    "other_protections_changed": false,
+    "retained_files": 632,
+    "hardware_algorithm_changed": false
+  },
+  "added_files": {
+    "demo_continuous_guard.py": "270ae5c45c49393df81ff595d4766384ab6a8ccbe3ca752eb3b81e655f6c96d1",
+    "demo_continuous_runtime.py": "9c6d9469850d499ad9da845ca0dcf4bacb04404440a8e54c4cc675ec9e928a51",
+    "demo_continuous_entry.py": "7c0ccf2fcbd8f18f0f8cf9181a3651a8fd8a2547ccd4244ca0c081452f1c7feb",
+    "demo_schedule_capacity.py": "1fd06c36b5b67cc154df05215088db186caddc39e78de95f3b18d3c6c22e81ab",
+    "README_CONTINUOUS_DEMO.md": "0424f7ae1f6b91fd31720d0bc96a6c664c72e4f72c38fc8c2d4905edec613023",
+    "ContinuousDemo25.ipynb": "dfb78908bac26efc820868f668068516bc4b897413e2b3c328057376919bd2bb"
+  }
+}

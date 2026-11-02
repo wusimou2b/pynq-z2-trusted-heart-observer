@@ -1,0 +1,25 @@
+{
+  "schema": "v3b25_yuyv_video_package_v1",
+  "formal_seconds": 20,
+  "target_fps": 5,
+  "files": {
+    "README_YUYV_VIDEO.md": "68da0079ae49cde810807d6370340ab3126a48c161873bb95922decb50602fda",
+    "heart_v3b25_yuyv.bit": "99a19202c167738b934cfb3247eae836425a68f510c3ec35fffd83c4b1a8b0a2",
+    "heart_v3b25_yuyv.hwh": "6a57237e2ed1f21f07d8d09d7898aacd0424bc14cac16e8280274cc11478f313",
+    "joint_owner.py": "5ec45d6e8a37037591734fa8a92e6bd5129e648c54cca1e5485a6e5fda563562",
+    "joint_video_guard.py": "eb6f989f42670261efcd5a47997575239ed3bb9af3c6c6d929db65be879a7954",
+    "joint_video_runtime.py": "db8b866ed868e90758c099382adceaaeb9ac1f5c86f3204cfc06427934e5664c",
+    "joint_video_transport.py": "0a9c840f8358af9aa71cd85679a2b9b2db82e8e9fb17d3040cb7685c751fcfa6",
+    "run_yuyv_video.py": "c0b615cfca3b29b16049709ea566bbffb2b8da6fea3844133ca47c686c514fe8",
+    "vision_reference.py": "cc75be1d71f100a383118367d82a230ea4ea853e8c12d2d87a43b180b02a8df9",
+    "yuyv-artifacts.json": "c7b04df5496ca5720edd8aad687461594777f8f122a69f36a65ace88e627ba92",
+    "yuyv_owner.py": "46744a7fca3727257564dd6334b027bc6bc748a5457460d471f9d6e9e4c08ee8",
+    "yuyv_reference.py": "6588cc784133edc06a9366670b8924344db91ab8856c61d84357b566effeadda",
+    "yuyv_runtime.py": "d997276b4e188ee1b430b1b96a2ffdf7d46055564475b3deac9597910ffb379c",
+    "yuyv_transport.py": "b5280840f9371485e204c9179701867994e7460fc122454aeea453bbe384f4ed"
+  },
+  "notebook_code_sha256": "b5181fb07e6e40a1920a7e0c8e209ced331c8df76233db282c6680de61ed620f",
+  "hardware_run_by_agent": false,
+  "joint_acceptance_passed": false,
+  "board_ddr_verified": false
+}

@@ -1,0 +1,15 @@
+{
+  "replay_manifest_sha256": "0cf546c6dddae317c621cec379a34914375e4e4fae21ae77af9b6a1f1c3c3836",
+  "result_zip_sha256": "6ef8d0e1154ecc441544c3d48277aedf7c98a0ecd6ca844eec79eb727afd5ed7",
+  "formal_seconds": 60.067535864,
+  "algorithm": {
+    "rows": 1507,
+    "fields": 66308,
+    "differences": 0,
+    "first": []
+  },
+  "max_result_age_ms": 528.290106,
+  "over1s": 0,
+  "resources_released": true,
+  "scope": "saved1507 plus real PL/video; physical IIC excluded; not live acceptance"
+}

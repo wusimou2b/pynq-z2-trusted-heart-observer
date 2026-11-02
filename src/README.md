@@ -1,9 +1,18 @@
-# Design sources
+# 设计源码与运行文件
 
-`rtl/` 保留与当前物理实现对应的 RTL 和数学 ROM。`ps/` 为 387 份源码及从冻结归档导出的 39 份 Notebook，Notebook 仅清理输出与执行计数，原单元源码及保护未改。当前演示入口原名为 `ContinuousDemo25.ipynb`，其他入口为历史定位资料。
+当前板端入口是 [../board_runtime/runtime/ContinuousDemo25.ipynb](../board_runtime/runtime/ContinuousDemo25.ipynb)。`board_runtime/` 保留 958 个原运行文件、匹配 bit/HWH、原生库、数据依赖和 guard 链；其 `runtime/` 与 `v3b25 native100 heart video/` 必须同级，整体复制后运行。`src/` 供源码审查和重建参考，不作为另一套默认启动目录。
 
-`identity_reference/` 中的 48 份 JSON 是经路径脱敏的历史身份参考，**不是本目录可直接使用的运行 manifest**。这些历史身份关联的私人生理数据和资格ZIP不公开，也不用于新入口启动。匹配运行二进制已独立配入 ../public_live/ 并按新清单固定哈希；本 src/ 参考目录仍不是原历史资格包。转换前后哈希分别记入根目录公开清单。
+| 目录 | 内容与用途 |
+|---|---|
+| `rtl/` | 对应现有物理实现的 RTL 与数学 ROM，原数学 ROM 保持不变 |
+| `ps/` | PS 源码及历史 Notebook；这些历史入口不能替代当前完整运行集合 |
+| `reference/` | 数值算子、Welch、共享流程、小型心率程序和保护等参考／生成源；包含补回的 `small_heart_program.py` |
+| `hls/` | 固定 PYNQ 上游版本的 color_convert／pixel_unpack C++、头文件、测试和 Tcl |
+| `third_party/`、`licenses/` | PocketFFT、派生数学实现及对应许可声明 |
+| `identity_reference/` | 经路径脱敏的历史身份参考，不是本目录的活动运行清单 |
 
-`hls/` 为固定 PYNQ 上游版本的 color_convert/pixel_unpack C++、头文件、测试和 Tcl，共八份输入加 BSD 许可证；未将工具生成 HDL/驱动整体改作 MIT 发布。`third_party/`、`licenses/` 保留 PocketFFT 和派生数学实现的许可说明。
+`identity_reference/` 的历史文件与当前 `board_runtime/` 内原清单用途不同；当前运行以随包校验器和 guard 为准。公开运行集合依授权保留用户自行采集的数值实测、派生记录、历史资格输入和 8 点无硬件预检所需输入。
 
-部分源生成器仍引用历史 ARM libm/PocketFFT 输入位置，历史辅助入口也有未闭合的模块依赖。保留 ROM 可用于现有硬件综合输入；从算法参考重新生成全部 ROM 的可移植闭包尚未验证。详见 `../build/external_dependencies.md`。
+部分历史源生成器仍引用固定 ARM libm、PocketFFT 和历史目录。`small_heart_program.py` 是补齐的原参考源，不改变数学 ROM，也不构成全部生成器已在新目录从零运行的证明。完整源码重建的依赖及基础／部署 BD 区别见 [../build/README.md](../build/README.md) 和[外部依赖](../build/external_dependencies.md)。
+
+五个匹配 ARM 原生产物及其原 C／汇编来源保留在完整运行集合中；组件许可另存 [../licenses/native/](../licenses/native/) 和 [../licenses/hardware/](../licenses/hardware/)。原 ABI、VLNV、schema、兼容目录名及文件 pin 保留，产品简称为“可信心率观测系统”。

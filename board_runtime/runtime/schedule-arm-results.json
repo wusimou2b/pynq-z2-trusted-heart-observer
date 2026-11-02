@@ -1,0 +1,2122 @@
+{
+  "hardware_accessed": false,
+  "complete": true,
+  "preflight": {
+    "pl_free_confirmed": true,
+    "occupied_pids": [],
+    "unknown_pids": [],
+    "processes_examined": 82,
+    "tasks_stopped": 0,
+    "inspected_monotonic_ns": 3068210896007,
+    "scope": "Current PL/devcfg mappings; original advisory lease still required"
+  },
+  "groups": [
+    {
+      "index": 0,
+      "elevated": 0,
+      "rows": [
+        {
+          "wall_ns": 5282941,
+          "cpu_ns": 5300498,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5271169,
+          "cpu_ns": 5289342,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 6320646,
+          "cpu_ns": 5310616,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 19581533,
+          "cpu_ns": 5340382,
+          "rc": 0,
+          "involuntary": 5,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5870301,
+          "cpu_ns": 5325532,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 11441680,
+          "cpu_ns": 5309661,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 8938616,
+          "cpu_ns": 5298246,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5263298,
+          "cpu_ns": 5280431,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10354770,
+          "cpu_ns": 5287293,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 9250763,
+          "cpu_ns": 5307109,
+          "rc": 0,
+          "involuntary": 2,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 6377889,
+          "cpu_ns": 5328714,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5267022,
+          "cpu_ns": 5282997,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10349699,
+          "cpu_ns": 5284892,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 6724031,
+          "cpu_ns": 5282959,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5259311,
+          "cpu_ns": 5274751,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10362295,
+          "cpu_ns": 5278406,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 11855440,
+          "cpu_ns": 5289982,
+          "rc": 0,
+          "involuntary": 2,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10336744,
+          "cpu_ns": 5277570,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 7127065,
+          "cpu_ns": 5284627,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5576941,
+          "cpu_ns": 5285741,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5266831,
+          "cpu_ns": 5283778,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10329661,
+          "cpu_ns": 5273920,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10355342,
+          "cpu_ns": 5281291,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 11851329,
+          "cpu_ns": 5287981,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 9969970,
+          "cpu_ns": 5287865,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 11837889,
+          "cpu_ns": 5274874,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10362258,
+          "cpu_ns": 5299071,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 11851249,
+          "cpu_ns": 5293268,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10349157,
+          "cpu_ns": 5288942,
+          "rc": 0,
+          "involuntary": 2,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10337483,
+          "cpu_ns": 5274178,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10346806,
+          "cpu_ns": 5285600,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 11845717,
+          "cpu_ns": 5285176,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10348517,
+          "cpu_ns": 5286671,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10343551,
+          "cpu_ns": 5283323,
+          "rc": 0,
+          "involuntary": 2,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 11847182,
+          "cpu_ns": 5286567,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10348640,
+          "cpu_ns": 5285421,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10355932,
+          "cpu_ns": 5289158,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10351440,
+          "cpu_ns": 5295539,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 11842062,
+          "cpu_ns": 5281509,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10355027,
+          "cpu_ns": 5286167,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10338055,
+          "cpu_ns": 5281607,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10345046,
+          "cpu_ns": 5285330,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 11847034,
+          "cpu_ns": 5285219,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10350744,
+          "cpu_ns": 5291330,
+          "rc": 0,
+          "involuntary": 2,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10350413,
+          "cpu_ns": 5284757,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10332480,
+          "cpu_ns": 5277563,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 11845139,
+          "cpu_ns": 5281158,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10356259,
+          "cpu_ns": 5288321,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10482566,
+          "cpu_ns": 5288634,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10344954,
+          "cpu_ns": 5281950,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 11848080,
+          "cpu_ns": 5282068,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10348333,
+          "cpu_ns": 5285255,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10434677,
+          "cpu_ns": 5337336,
+          "rc": 0,
+          "involuntary": 3,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 12019341,
+          "cpu_ns": 5302155,
+          "rc": 0,
+          "involuntary": 2,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10361156,
+          "cpu_ns": 5293082,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10337957,
+          "cpu_ns": 5283508,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 11847311,
+          "cpu_ns": 5283914,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10334677,
+          "cpu_ns": 5280685,
+          "rc": 0,
+          "involuntary": 2,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10345138,
+          "cpu_ns": 5280726,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10355815,
+          "cpu_ns": 5288610,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 11844425,
+          "cpu_ns": 5286412,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10346437,
+          "cpu_ns": 5285803,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10338892,
+          "cpu_ns": 5282830,
+          "rc": 0,
+          "involuntary": 2,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10341730,
+          "cpu_ns": 5282696,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "elevated": 1,
+      "rows": [
+        {
+          "wall_ns": 5361667,
+          "cpu_ns": 5380745,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5326874,
+          "cpu_ns": 5346658,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5323680,
+          "cpu_ns": 5340935,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5316018,
+          "cpu_ns": 5334714,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5317594,
+          "cpu_ns": 5335335,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5315908,
+          "cpu_ns": 5333778,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5317003,
+          "cpu_ns": 5336185,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5307274,
+          "cpu_ns": 5324081,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5329452,
+          "cpu_ns": 5348474,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5369452,
+          "cpu_ns": 5387175,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 1
+        },
+        {
+          "wall_ns": 5319631,
+          "cpu_ns": 5336837,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5304930,
+          "cpu_ns": 5321101,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5322554,
+          "cpu_ns": 5340707,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5315342,
+          "cpu_ns": 5333207,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5314979,
+          "cpu_ns": 5332474,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5317705,
+          "cpu_ns": 5336209,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5301421,
+          "cpu_ns": 5318049,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5322590,
+          "cpu_ns": 5340148,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5306757,
+          "cpu_ns": 5322338,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5317821,
+          "cpu_ns": 5333828,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5317427,
+          "cpu_ns": 5335163,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5316388,
+          "cpu_ns": 5333028,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5311545,
+          "cpu_ns": 5329458,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5321673,
+          "cpu_ns": 5339662,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5335994,
+          "cpu_ns": 5357335,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5338461,
+          "cpu_ns": 5357464,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5325354,
+          "cpu_ns": 5342899,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5322911,
+          "cpu_ns": 5341428,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5316233,
+          "cpu_ns": 5333625,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5313176,
+          "cpu_ns": 5331292,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5302696,
+          "cpu_ns": 5318326,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5320812,
+          "cpu_ns": 5338578,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5310400,
+          "cpu_ns": 5327471,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5319607,
+          "cpu_ns": 5338314,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5325249,
+          "cpu_ns": 5343994,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5322683,
+          "cpu_ns": 5340444,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5312418,
+          "cpu_ns": 5328972,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5317010,
+          "cpu_ns": 5334548,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5312942,
+          "cpu_ns": 5330413,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5317963,
+          "cpu_ns": 5335865,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5316166,
+          "cpu_ns": 5335274,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5315625,
+          "cpu_ns": 5333409,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5316185,
+          "cpu_ns": 5333342,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5312487,
+          "cpu_ns": 5329391,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5317489,
+          "cpu_ns": 5335797,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5315753,
+          "cpu_ns": 5332849,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5315434,
+          "cpu_ns": 5334018,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5320696,
+          "cpu_ns": 5338142,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5374874,
+          "cpu_ns": 5396062,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5324905,
+          "cpu_ns": 5344277,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5327385,
+          "cpu_ns": 5345600,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5312006,
+          "cpu_ns": 5328844,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5296209,
+          "cpu_ns": 5311151,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5319330,
+          "cpu_ns": 5336855,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5320720,
+          "cpu_ns": 5338209,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5308462,
+          "cpu_ns": 5325243,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5317791,
+          "cpu_ns": 5334984,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5334880,
+          "cpu_ns": 5351920,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5316406,
+          "cpu_ns": 5334621,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5323366,
+          "cpu_ns": 5341145,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5309741,
+          "cpu_ns": 5326296,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5319101,
+          "cpu_ns": 5336425,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5315292,
+          "cpu_ns": 5332984,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5317711,
+          "cpu_ns": 5334641,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "elevated": 1,
+      "rows": [
+        {
+          "wall_ns": 5329883,
+          "cpu_ns": 5348560,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5332276,
+          "cpu_ns": 5352412,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5322092,
+          "cpu_ns": 5341612,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5319471,
+          "cpu_ns": 5337582,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5313809,
+          "cpu_ns": 5331335,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5324677,
+          "cpu_ns": 5342664,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5316960,
+          "cpu_ns": 5335895,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5313852,
+          "cpu_ns": 5330505,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5313403,
+          "cpu_ns": 5330412,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5325914,
+          "cpu_ns": 5344093,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5318812,
+          "cpu_ns": 5336633,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5316911,
+          "cpu_ns": 5333963,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5314394,
+          "cpu_ns": 5331852,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5322542,
+          "cpu_ns": 5340364,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5315803,
+          "cpu_ns": 5333176,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5464733,
+          "cpu_ns": 5379047,
+          "rc": 0,
+          "involuntary": 4,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5318172,
+          "cpu_ns": 5335335,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5322098,
+          "cpu_ns": 5339742,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5313767,
+          "cpu_ns": 5330647,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5317674,
+          "cpu_ns": 5335600,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5327231,
+          "cpu_ns": 5346670,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5320849,
+          "cpu_ns": 5338585,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5310197,
+          "cpu_ns": 5326978,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 12834579,
+          "cpu_ns": 5351932,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5320172,
+          "cpu_ns": 5336536,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5328104,
+          "cpu_ns": 5347852,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5315458,
+          "cpu_ns": 5332289,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5328953,
+          "cpu_ns": 5348376,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5327231,
+          "cpu_ns": 5345046,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5310043,
+          "cpu_ns": 5327028,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5320640,
+          "cpu_ns": 5338572,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5314997,
+          "cpu_ns": 5332370,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5321459,
+          "cpu_ns": 5339409,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5314566,
+          "cpu_ns": 5332190,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5318548,
+          "cpu_ns": 5335299,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5319243,
+          "cpu_ns": 5337452,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5315052,
+          "cpu_ns": 5331434,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5323360,
+          "cpu_ns": 5341477,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5321976,
+          "cpu_ns": 5340086,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5320443,
+          "cpu_ns": 5337779,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5319206,
+          "cpu_ns": 5336683,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5319016,
+          "cpu_ns": 5336185,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5322517,
+          "cpu_ns": 5340455,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5320332,
+          "cpu_ns": 5337729,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5324763,
+          "cpu_ns": 5342203,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5360622,
+          "cpu_ns": 5378203,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 1
+        },
+        {
+          "wall_ns": 5316806,
+          "cpu_ns": 5334413,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5319052,
+          "cpu_ns": 5336892,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5315410,
+          "cpu_ns": 5332388,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5388572,
+          "cpu_ns": 5416683,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5346603,
+          "cpu_ns": 5368535,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5337538,
+          "cpu_ns": 5356935,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5348954,
+          "cpu_ns": 5371268,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5355477,
+          "cpu_ns": 5380634,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5387317,
+          "cpu_ns": 5412504,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5351145,
+          "cpu_ns": 5373059,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5342807,
+          "cpu_ns": 5364972,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5344935,
+          "cpu_ns": 5367280,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5358351,
+          "cpu_ns": 5381914,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5360837,
+          "cpu_ns": 5384338,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5334050,
+          "cpu_ns": 5354388,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5325120,
+          "cpu_ns": 5342911,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5323729,
+          "cpu_ns": 5340775,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 5321108,
+          "cpu_ns": 5339021,
+          "rc": 0,
+          "involuntary": 0,
+          "voluntary": 0,
+          "minflt": 0
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "elevated": 0,
+      "rows": [
+        {
+          "wall_ns": 11280677,
+          "cpu_ns": 5290235,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10796813,
+          "cpu_ns": 5287152,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10809588,
+          "cpu_ns": 5283668,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10793717,
+          "cpu_ns": 5286461,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10796302,
+          "cpu_ns": 5284116,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10792714,
+          "cpu_ns": 5276801,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10882825,
+          "cpu_ns": 5285108,
+          "rc": 0,
+          "involuntary": 2,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10798424,
+          "cpu_ns": 5284375,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10834369,
+          "cpu_ns": 5307526,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 9296713,
+          "cpu_ns": 5289575,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10795200,
+          "cpu_ns": 5289250,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10803858,
+          "cpu_ns": 5282474,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10787187,
+          "cpu_ns": 5281439,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10807489,
+          "cpu_ns": 5284093,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10806019,
+          "cpu_ns": 5282917,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10792560,
+          "cpu_ns": 5281852,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10794603,
+          "cpu_ns": 5280984,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10802110,
+          "cpu_ns": 5281520,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10796584,
+          "cpu_ns": 5281207,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10794264,
+          "cpu_ns": 5286800,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10825908,
+          "cpu_ns": 5291914,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10811619,
+          "cpu_ns": 5293304,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10788751,
+          "cpu_ns": 5286253,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10805212,
+          "cpu_ns": 5282142,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10815231,
+          "cpu_ns": 5293840,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10808339,
+          "cpu_ns": 5292407,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10798954,
+          "cpu_ns": 5280591,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 9283865,
+          "cpu_ns": 5281102,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10795194,
+          "cpu_ns": 5285250,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10809680,
+          "cpu_ns": 5285920,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10802117,
+          "cpu_ns": 5285440,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10806203,
+          "cpu_ns": 5290387,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10839883,
+          "cpu_ns": 5293316,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10810892,
+          "cpu_ns": 5285785,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10791643,
+          "cpu_ns": 5283464,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10826996,
+          "cpu_ns": 5288068,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10789311,
+          "cpu_ns": 5278184,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10787859,
+          "cpu_ns": 5278721,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10818504,
+          "cpu_ns": 5284762,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10792720,
+          "cpu_ns": 5283311,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10802683,
+          "cpu_ns": 5288468,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10798363,
+          "cpu_ns": 5279249,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10787169,
+          "cpu_ns": 5277021,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 9291816,
+          "cpu_ns": 5279976,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10806658,
+          "cpu_ns": 5284572,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10797447,
+          "cpu_ns": 5285914,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10799858,
+          "cpu_ns": 5288000,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10804006,
+          "cpu_ns": 5277145,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10790197,
+          "cpu_ns": 5279938,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10788646,
+          "cpu_ns": 5280252,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10799680,
+          "cpu_ns": 5279995,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10790092,
+          "cpu_ns": 5278493,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10797335,
+          "cpu_ns": 5283434,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10802504,
+          "cpu_ns": 5281951,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10795545,
+          "cpu_ns": 5282449,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10793680,
+          "cpu_ns": 5284135,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10805465,
+          "cpu_ns": 5284678,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10798252,
+          "cpu_ns": 5283901,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10792936,
+          "cpu_ns": 5280985,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10794695,
+          "cpu_ns": 5276350,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 9294067,
+          "cpu_ns": 5285908,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10794844,
+          "cpu_ns": 5284105,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10811532,
+          "cpu_ns": 5285648,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        },
+        {
+          "wall_ns": 10798800,
+          "cpu_ns": 5282801,
+          "rc": 0,
+          "involuntary": 1,
+          "voluntary": 0,
+          "minflt": 0
+        }
+      ]
+    }
+  ],
+  "permission_probe": {
+    "abi": 1213417217,
+    "stage": 4,
+    "get_error": 0,
+    "enter_error": 0,
+    "restore_error": 0,
+    "verify_error": 0,
+    "policy_before": 0,
+    "priority_before": 0,
+    "policy_after": 0,
+    "priority_after": 0,
+    "delegated": 0,
+    "primary_code": 0,
+    "return_code": 0,
+    "priority_requested": 1,
+    "reserved0": 0,
+    "reserved1": 0
+  },
+  "source_sha256": "9b9a2287b33cba93c0649a1589b64195f96db3553536015a9d1a1d4efbbce184",
+  "binary_sha256": "f0bacc84eddeaeb7c520d90c3ec74d693a918ecaa064899420267f92bd4a5d88",
+  "original_policy": 0,
+  "original_priority": 0,
+  "peer_exitcodes": [
+    0,
+    0
+  ],
+  "postflight": {
+    "pl_free_confirmed": true,
+    "occupied_pids": [],
+    "unknown_pids": [],
+    "processes_examined": 83,
+    "tasks_stopped": 0,
+    "inspected_monotonic_ns": 3086639909223,
+    "scope": "Current PL/devcfg mappings; original advisory lease still required"
+  }
+}

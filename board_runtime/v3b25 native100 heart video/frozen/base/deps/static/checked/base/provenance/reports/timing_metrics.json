@@ -1,0 +1,9 @@
+{
+  "wns_ns": 0.322,
+  "whs_ns": 0.019,
+  "clock_period_ns": 10.0,
+  "drc_errors": 0,
+  "unconstrained_internal_endpoints": 0,
+  "tns_ns": 0.0,
+  "ths_ns": 0.0
+}

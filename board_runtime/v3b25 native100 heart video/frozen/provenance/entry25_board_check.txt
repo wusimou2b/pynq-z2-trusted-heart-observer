@@ -1,0 +1,16 @@
+25Hz进入确认：板端只读对照（不采集、不加载Overlay）
+原版2次／候选6次；退出、质量、两个新间隔和误差界不变。
+运行模式：board-native
+只读对照完成：True
+只读比较通过：True
+真实板端只读通过：True
+包内文件未变：True
+这不是新PL执行、50/25Hz实时、准确率、DDR或完整V3a验收。
+A_stronger_motion：原版核对 {'rows': 1506, 'fields_compared_per_row': 65, 'discrete_mismatches': 0, 'nonzero_float_differences': 0, 'outside_tolerance': 0}；候选核对 {'rows': 1506, 'fields_compared_per_row': 65, 'discrete_mismatches': 0, 'nonzero_float_differences': 0, 'outside_tolerance': 0}
+  baseline 运动N/A：6.76秒；NLMS心率样本：0
+  candidate 运动N/A：3.36秒；NLMS心率样本：0
+B_mixed_motion：原版核对 {'rows': 1505, 'fields_compared_per_row': 65, 'discrete_mismatches': 0, 'nonzero_float_differences': 0, 'outside_tolerance': 0}；候选核对 {'rows': 1505, 'fields_compared_per_row': 65, 'discrete_mismatches': 0, 'nonzero_float_differences': 0, 'outside_tolerance': 0}
+  baseline 运动N/A：9.60秒；NLMS心率样本：20
+  candidate 运动N/A：7.48秒；NLMS心率样本：3
+只读回放不改变现场配置；不自动重采或重试。
+请回传本目录 entry25_board_check.json 和 entry25_board_check.txt；失败时也保留。

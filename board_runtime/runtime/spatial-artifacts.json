@@ -1,0 +1,38 @@
+{
+  "schema": "v3b25_spatial_artifacts_v1",
+  "purpose": "controlled_static_board_trial_only",
+  "files": {
+    "heart_v3b25_spatial.bit": "688828371d72c9e1a8ad611d4b980c2583e482e2906f834eb943bdfd408e6e10",
+    "heart_v3b25_spatial.hwh": "aef5e1f21d7b18d952cf8d73a58180e4d46c20e074307f7ccf56e7275dfb304b"
+  },
+  "magic": 1446199858,
+  "version": 131072,
+  "vision_base": 1137180672,
+  "grid": [
+    4,
+    3
+  ],
+  "pixel_count": 19200,
+  "roi": [
+    80,
+    60,
+    240,
+    180
+  ],
+  "source_hashes": {
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\spatial_build.py": "51fd61eb475c427d668b6d564e0f4369e14760a247e380015da0dd8f666ff9f6",
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\rtl\\vision_spatial_axis.sv": "fc6318ca07655ffe6d8cc23ac38ae079f0ed73187280cef120df2e992456fce5",
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\rtl\\vision_spatial_axi_lite.sv": "451976f27edc9ec1e207cf87d2de9b8f072870f3a39d844860b18c07dabf84cc",
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\tcl\\package_spatial_ip.tcl": "fa6ee5142834f53d5c303a89ad0f7a79c74b9594303ec9e996d6542018acd4da",
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\tcl\\prepare_spatial_whole.tcl": "d5779935bd5535f020fab5acbbe47bb0d19646a87900be0271f3383a962dec0f",
+    "E:\\Codex-builds\\v3b25-yuyv-whole-20261022-01\\green2-tmp\\test_real_yuyv_bd_keeps_heart_0\\candidate\\release-result.json": "cac410649a4ae66be1f7424b68eb6c27f9c84bb623dc0fba8d8107a7388b3e41",
+    "E:\\Codex-builds\\v3b25-yuyv-whole-20261022-01\\green2-tmp\\test_real_yuyv_bd_keeps_heart_0\\candidate\\project\\heart_v3b25.srcs\\sources_1\\bd\\design_1\\design_1.bd": "0e0146d5e160e8134cfe812cd96824a2f9d19da5b4a82373a0042a1d7c58f1fe",
+    "E:\\Codex-builds\\v3b25-yuyv-whole-20261022-01\\green2-tmp\\test_real_yuyv_bd_keeps_heart_0\\candidate\\pins.xdc": "594a20b7160811148e5cb1d219b06e9481272f98ae642c7de716973b2c55ae73"
+  },
+  "routed_dcp_sha256": "310a6fcfac152ffb957ca466505f1ff6bf7439662146e7ba155899e96c23af04",
+  "bitstream_generated": true,
+  "board_tested": false,
+  "board_ddr_verified": false,
+  "heart_algorithm_changed": false,
+  "three_class_acceptance_passed": false
+}

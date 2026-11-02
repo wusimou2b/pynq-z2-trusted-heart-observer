@@ -1,53 +1,86 @@
 # 可信心率观测系统
 
-**基于 FPGA 的个体健康趋势预警——面向多模态感知的可信心率观测系统**
+系统在 PYNQ-Z2 上联合处理 PPG、惯性和视频观测：PL 承担心率计算主链、视频颜色转换及 4×3 分块运动统计，PS 负责采集配对、质量判断、选路、进程通信与显示。PPG/IMU 采集及处理目标为 25 Hz，视频目标为 5 fps；视频和惯性提供运动背景，设备本地运行不依赖大模型推理。
 
-项目入口：[https://github.com/wusimou2b/pynq-z2-trusted-heart-observer](https://github.com/wusimou2b/pynq-z2-trusted-heart-observer)。
+当前运行入口是 [board_runtime/runtime/ContinuousDemo25.ipynb](board_runtime/runtime/ContinuousDemo25.ipynb)。本次以用户确认正常运行的相对路径包为来源，完整保留其中 958 个运行文件及原身份链。旧 `public_live` 封装有启动、退出问题，已由本入口取代；旧提交和旧 Release 文件属于历史版本。
 
-系统以 PYNQ-Z2 联合处理 PPG、惯性和视频观测。PL 承担心率计算主链、视频颜色转换及4×3分块运动统计；PS 负责采集配对、质量判断、选路、进程通信和显示。PPG/IMU采集与处理目标25Hz，视频目标5fps。视频提供运动背景，不宣称用视频估计心率或完成临床风险预测。
-
-| 入口 | 用途 |
+| 目录或文件 | 用途 |
 |---|---|
-| [public_live/PublicLive.ipynb](public_live/PublicLive.ipynb) | 新公开 LIVE 四单元入口，含匹配 bit/HWH 与五个原生库 |
-| [public_live/README_PUBLIC_LIVE.md](public_live/README_PUBLIC_LIVE.md) | 板端前提、依赖检查、启动与正常停止 |
-| [src/](src/README.md)、[build/](build/external_dependencies.md) | RTL/ROM、PS、HLS、BD/XDC/Tcl 与源码构建依赖 |
-| [skill/](skill/README.md) | 八项完整 Skills，含 SKILL.md、工具、样例、测试与许可 |
-| [report/](report/README.md) | 23页设计报告、8页独立大模型协作记录及正式中英文海报 |
-| [reproduction/](reproduction/public_live_software_checks.json) | 环境证据、软件验证范围及待验证事项 |
+| [board_runtime/](board_runtime/) | 完整板端运行文件、匹配 bit/HWH、ARM 原生库、资格记录及校验器 |
+| [board/README.md](board/README.md) | 接线、四单元操作、正常停止和结果位置 |
+| [src/README.md](src/README.md) | RTL/ROM、PS、HLS 及算法参考源码 |
+| [build/README.md](build/README.md) | BD、XDC、Tcl 及源码重建边界 |
+| [skill/README.md](skill/README.md) | 八项完整工程 Skills、工具、样例、测试及许可 |
+| [report/README.md](report/README.md) | 29 页设计报告、独立协作记录和中英文一页海报 |
+| [runtime_closure.md](runtime_closure.md) | 当前运行集合的身份、实测及未验证项 |
+| [reproduction/source_run_20261102.json](reproduction/source_run_20261102.json) | 本次保存运行的可发布摘要 |
+| [data/README.md](data/README.md) | 用户实测数据及历史摘要的来源 |
 
-## 下载部署
+## 硬件与系统条件
 
-使用PYNQ-Z2及原匹配的32位ARM系统和接线。运行栈要求CPython3.10、PYNQ3.1.1、NumPy1.21.5，并需要SciPy、pandas、OpenCV、IPython与ipykernel。保存记录中SciPy为1.8.0、OpenCV为4.5.4；完整SD镜像身份及pandas/Jupyter精确版本尚未全部归档。不要在普通PC上安装PYNQ后尝试加载ARM库，也不要整体升级原板端NumPy/PYNQ来消除提示。
+复现使用相同 PYNQ-Z2、兼容原生库的 32 位 ARM hard-float Linux 系统、相同传感器和接线。目标器件为 `xc7z020clg400-1`。现成原生库要求 CPython 3.10、SOABI `cpython-310-arm-linux-gnueabihf` 和 NumPy 1.21.5；源码要求 PYNQ 3.1.1。历史记录直接记有 CPython 3.10.4、SciPy 1.8.0，视频记录记有 OpenCV 4.5.4。pandas、IPython、ipykernel 和经典 Jupyter Notebook 也用于运行，但精确版本及原始 SD 镜像、Linux 内核和浏览器版本尚未全部归档；这些信息不能组成完整环境 lock。证据见 [环境版本说明](reproduction/environment_evidence_lock.md)。
 
-1. 下载项目后，把完整 `public_live/` 放入板端Notebook目录。保持其中 `runtime/`、`native_source/` 与Notebook的相对布局；可整体改放目录，不依赖原私有路径。
-2. 对照独立发布值核验清单 SHA256：`67c4785d718c16618e85ea7278aea1848200dfd1dc035df70d76342d6b311b00`。`public_live/public-live-manifest.sha256`提供同一校验值；校验和本身不证明发布者身份。
-3. 在板端新内核打开 `public_live/PublicLive.ipynb`，先读部署说明。第一单元核验完整文件与依赖，再进行PS短测；依赖不齐或ABI不符时在写attempt前停止。按检查报告在同一板端Python环境补齐依赖，保留固定NumPy/PYNQ版本。
-4. 分别执行20秒视频检查、显示准备和实际运行单元。硬件阶段需要输入各自确认字符串；不要使用Run All。
-5. 点击第三单元输出的“正常停止并导出”，等待第四单元返回并确认资源释放。失败时保留结果目录，不自动重试、不以强杀进程或中断内核代替收尾。
+两个传感器共用下列 I²C 总线，模块供电 **3.3 V 并共地**，按板上接口编号与模块丝印逐项核对。
 
-新入口使用完整运行清单及显式路径校验，在线启动不要求私人实录ZIP或旧prepared绝对路径。bit/HWH、五个原生库和C来源保持原始哈希，SQI、新鲜度、无效输出撤回、队列容量、时序及资源所有权保护保留。底层ABI、VLNV、schema等必要兼容标识按用户同意保留，产品名称采用本页标题。
+| 信号或设备 | 连接／地址 |
+|---|---|
+| SDA | Arduino 接口 **J3-10**，FPGA 管脚 **P16** |
+| SCL | Arduino 接口 **J3-9**，FPGA 管脚 **P15** |
+| MAX30102 | SDA、SCL 接上述总线，7 位地址 **0x57** |
+| MPU6050 | SDA、SCL 接上述总线，使用 **0x68** 地址配置 |
+| USB 摄像头 | 板端 USB，支持原运行配置的 YUYV 视频输入 |
+| 显示器 | PYNQ-Z2 的 HDMI 输出；浏览器用于四路波形和停止按钮 |
 
-Notebook采用明确的 `notebook-source-v1` 身份：正常保存输出和执行计数不改变源码身份；源码、顺序、tags、内核与附件变化会失败。仅允许与已封存源码相同的指定checkpoint；结果目录不能藏入新代码或替换硬件/原生资产。运行产生的个人记录仅留板端，不作为开源文件提交。
+## 部署与依赖检查
 
-## 软件验证与测试结果
+下载本仓库或当前 Release 的源码／运行包，把**整个 `board_runtime/`** 复制到板端 Jupyter 根目录下的新目录。外层目录可以整体改名或移动；必须保留内部 `runtime/` 与 `v3b25 native100 heart video/` 两个同级目录及其中原文件名。后者是既有原生依赖的兼容名称，不是产品名称。只复制 Notebook 或 `runtime/` 会缺少原生依赖。
 
-在独立发布副本执行的81项无硬件单元验证全部通过；另有6项停止路径JS断言、13项真实封存包迁移/保存/篡改检查通过。四个真实冻结核心模块在陌生目录下使用原LIVE延迟依赖作用域成功导入。测试未加载ARM库、未下载PL、未采集数据，不能替代真实PYNQ-Z2冷启动和板端验收；当前PC的依赖检查按事实报告不满足目标环境。
-
-根目录 `verify_public_source.py` 用于解压后、首次运行前的分发快照校验。实际运行使用 `public_live` 的独立运行清单与Notebook源身份策略；保留生成结果，不为恢复分发快照而删除结果。
-
-可在开发机从项目根执行软件测试：
+先在成功 Notebook 对应的 Python 环境中检查版本；下面的元数据检查不加载 Overlay：
 
 ```sh
-python -B -m unittest discover -s public_live/tests -v
-node public_live/tests/test_public_stop_path.cjs
+python3 - <<'PY'
+import sys, platform, sysconfig
+from importlib import metadata
+print(sys.version, platform.machine(), sysconfig.get_config_var('SOABI'))
+for name in ('pynq', 'numpy', 'scipy', 'pandas', 'opencv-python', 'ipython', 'ipykernel', 'notebook'):
+    try:
+        print(name, metadata.version(name))
+    except metadata.PackageNotFoundError:
+        print(name, 'no distribution metadata; check system package installation')
+PY
+python3 -m pip check
+python3 -B board_runtime/verify_portable.py
 ```
 
-历史联合运行测试约80.7秒，采集/处理/保存2021条，其中2020条配对、1条无效且撤回数值发布，视频403帧；历史 `manual_session_passed=false` 保留。这是原基线证据，不是新公开入口的板测结果，也不证明心率准确率、严格实时或长期运行能力。
+若改了外层目录名，将最后一行换成实际目录。校验器会核对 957 个清单成员和原身份链，不启动硬件。OpenCV 等系统安装的包可能没有同名 pip 元数据，应同时核对原系统包记录。
 
-## 源码重建与许可
+缺包时，在**同一个板端 Python 环境**中按成功环境的镜像、系统仓库或已保存 wheel 补齐 PYNQ、NumPy、SciPy、pandas、OpenCV、IPython、ipykernel 和经典 Notebook；保留上述已知版本，记录未锁定组件的实际版本。安装核对过的本地兼容 wheel 可用 `python3 -m pip install --no-deps /path/to/matching_package.whl`，再执行 `python3 -m pip check`。仓库没有凭空补全的完整 lock，也没有在新 SD 系统上完成安装验收。普通 PC 不具备这些 ARM 库的运行 ABI。
 
-运行使用随包匹配资产，不要求安装Vivado。PL从源码构建使用Vivado2024.1及相应工具/板定义/IP；见构建目录的真实依赖边界。公开集合保留自研源及可分发组件，部分完整历史物理输入/私有数值回放资料不公开，不宣称一键clean build已经验证。重建原生库或硬件后需建立新身份和相应验证，不能只改哈希冒充原资格。
+在经典 Notebook 中打开 `board_runtime/runtime/ContinuousDemo25.ipynb`，使工作目录为其所在的 `runtime/`。先核对包，再按以下顺序分别执行四个代码单元，勿使用 Run All。
 
-原创部分与第三方材料分别遵循所在许可；MIT不替代BSD、LGPL、CPython、NumPy、GCC或AMD相关条款。必要权利人署名保留。签名授权、报名身份材料、私人聊天全文及原始生理记录不在仓库中。账号URL和no-reply仍关联公开GitHub账号，不能保证互联网层面不可关联。
+| 单元 | 操作与继续条件 |
+|---|---|
+| 1：PS 短检查 | 执行 `check(expected)`、`short(expected)`，等待身份检查和无硬件短检查正常返回 |
+| 2：20 秒视频检查 | 其他硬件入口正常收尾后，输入 **`RUN-DEMO-VIDEO20`**；确认画面和序号持续更新，等待检查及清理结束 |
+| 3：浏览器准备 | 执行 `prepare(expected)`，看到绿色绘图就绪提示，并保留本单元的“正常停止并导出”按钮可见 |
+| 4：连续采集 | 放稳手指和传感器，输入 **`RUN-DEMO-CONTINUOUS25`**；预热另计，随后进入采集 |
 
-演示视频为176.66秒横版修订片，1080p/30 fps。视频与637文件完整运行包通过[本仓库 Release](https://github.com/wusimou2b/pynq-z2-trusted-heart-observer/releases)提供；191 MB 视频不作为普通Git文件提交。视频SHA256：`01a4c2c6ccc534ff42951967a261804b353fc62e05665fbf321ab9580ba0787b`。运行包SHA256：`18cc226cdddc1db8d577d7ec9e4d29d24bed5ef1d56d86fdaee77f3297ae1ab9`。运行包解压后的 `public_live/` 是同一封存版本，启动步骤见上文及包内README。
+连续采集由第三单元的**“正常停止并导出”**按钮结束；点击后等待第四单元返回、导出完成和资源清理结果。它不会在 60 秒自动结束，原固定审计容量及故障停止保护仍有效。运行期间保持一个硬件所有者；停止未完成时保留现场与输出，先核对状态再启动其他入口。
+
+结果写在入口所在的 `runtime/`：短检查为 `demo-short-results.zip`，视频检查为 `demo-preview20-results.zip`，正式结果为 `demo-continuous-results.zip`、`continuous-results.zip`、对应 JSON 及 `continuous-results/` 下的 CSV／日志。保留失败和正常停止结果，不用删除结果来恢复分发快照。普通文件按原清单校验，Notebook 源码身份按随包校验器策略处理；保留原下载包和工作副本便于回查。
+
+## 本次实测与数据说明
+
+本次已保存运行在 **33.193811316 秒**后手动停止，832 条原始记录全部处理并保存，830 条配对、2 条未配对，视频完成 166 帧，402 条结果允许发布心率。三类队列满计数均为 0，PS 自然退出，队列排空，相机、HDMI、缓冲区和租约收尾完成。这些是保存记录的核查结果，本次发布整理没有重新启动板端测试。
+
+公开运行集合依用户授权保留其自行采集的数值实测及派生记录、历史资格验证记录和 8 点无硬件预检输入，以维持原检查与可复现性。8 点预检在无硬件进程中使用已保存的派生输入。本次原始和结果 CSV 在 [data/measured_20261102/](data/measured_20261102/)。旧报告中的 **80.652 秒、2021 条、403 帧**是另一轮历史联合运行，不能与本次记录合并。
+
+原始 `manual_session_passed=false` 仍保留：旧 `video_original`、`original_binding` 检查不适配现有空间视频组合。分项运行、停止和资源清理事实分别列出，没有改成全部验收通过；这些记录也不证明医学准确率、严格实时、长期连续运行或干净系统完整复现。详见[运行闭包](runtime_closure.md)。
+
+## 源码、许可与视频
+
+运行使用随包匹配资产，无需安装 Vivado。PL 源码构建使用 Vivado 2024.1；基础 BD、已部署 BD 参考、历史 Tcl 和算法生成源的用途及外部依赖见 [build/](build/README.md)。现有 Linux/PYNQ 应用不以裸机 ELF 或 XSA 为运行入口，未加入不匹配的同名产物。
+
+原生组件许可保留在 [licenses/native/](licenses/native/)，硬件组件许可保留在 [licenses/hardware/](licenses/hardware/)，数学源码声明在 [src/licenses/](src/licenses/)。原创部分、八项 Skills 和第三方组件分别遵循各自许可；根 MIT 许可不替代 BSD、LGPL 或其他原有条款。
+
+演示视频正在修订接线画面。本次文档不把旧视频或尚未验收的修订视频作为完成版。

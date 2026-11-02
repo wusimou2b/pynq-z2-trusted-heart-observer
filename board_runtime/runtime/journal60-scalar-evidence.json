@@ -1,0 +1,74 @@
+{
+  "schema": "saved925_scalar_journal_abba_v1",
+  "hardware_accessed": false,
+  "camera_started": false,
+  "source_manifest_sha256": "cacaa57d65e6713ece0426afad549b91647609fe8d316a0a2b692dc014ee8cc6",
+  "input_sha256": "e0fe69ebffe25d62b5409aeadce88ff1294c6ec9bd86cd89e570f5216c2483fd",
+  "blocks": [
+    {
+      "optimized": false,
+      "count": 925,
+      "cpu_ms_per_row": 2.25912692972973,
+      "wall_ms_per_row": 2.266029135135135,
+      "csv_sha256": "2ccefd651b25f1ae391ff0cebcaebb2991f9f70e056c7fcc784a7992f5888e61",
+      "counts": {
+        "raw_attempted": 0,
+        "raw_saved": 0,
+        "results_attempted": 925,
+        "results_saved": 925,
+        "events_saved": 0
+      }
+    },
+    {
+      "optimized": true,
+      "count": 925,
+      "cpu_ms_per_row": 0.9291085210810811,
+      "wall_ms_per_row": 0.929254371891892,
+      "csv_sha256": "2ccefd651b25f1ae391ff0cebcaebb2991f9f70e056c7fcc784a7992f5888e61",
+      "counts": {
+        "raw_attempted": 0,
+        "raw_saved": 0,
+        "results_attempted": 925,
+        "results_saved": 925,
+        "events_saved": 0
+      }
+    },
+    {
+      "optimized": true,
+      "count": 925,
+      "cpu_ms_per_row": 0.9292255178378378,
+      "wall_ms_per_row": 0.9296637989189189,
+      "csv_sha256": "2ccefd651b25f1ae391ff0cebcaebb2991f9f70e056c7fcc784a7992f5888e61",
+      "counts": {
+        "raw_attempted": 0,
+        "raw_saved": 0,
+        "results_attempted": 925,
+        "results_saved": 925,
+        "events_saved": 0
+      }
+    },
+    {
+      "optimized": false,
+      "count": 925,
+      "cpu_ms_per_row": 2.191628107027027,
+      "wall_ms_per_row": 2.1926315535135132,
+      "csv_sha256": "2ccefd651b25f1ae391ff0cebcaebb2991f9f70e056c7fcc784a7992f5888e61",
+      "counts": {
+        "raw_attempted": 0,
+        "raw_saved": 0,
+        "results_attempted": 925,
+        "results_saved": 925,
+        "events_saved": 0
+      }
+    }
+  ],
+  "scalar_fields_equal": true,
+  "csv_bytes_equal": true,
+  "gc_unchanged": true,
+  "source_sha256": {
+    "saved620_tail": "460d3ea2b23d8962dd17637fde4c19c6e48fcdf9e9994361794a9cb58dfcbdf8",
+    "saved925_case": "38e2fe6c4ca4f39ef6cdbe47316f6e0b9e6facd52320b3f815a3a73968adfc06",
+    "heart_video_journal": "c15625d79aa97788a6a331f447f33ec9025fa0614cb57c964163c4c0b7f61387"
+  },
+  "scope": "Actual frozen journal bytecode with memory CSV, not SD latency or full live pipeline"
+}

@@ -1,0 +1,98 @@
+{
+  "schema": "v3a_integrated_build_v1",
+  "session_dir": "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh",
+  "tool_version": "2024.1",
+  "source_hashes": {
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\snapshot\\design_1.bd": "4a0c0ddfaa51566ba2b815ff103f4698d853ea33bfb9aa0f77f2406991ce0d57",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\snapshot\\nlms_axi_lite.sv": "a5ccd10a69a1db32313a0f3d5875f5e213dbe5d8ea4aebe45e087af59d88d1ea",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\snapshot\\nlms_core_runtime_3x4.sv": "35b04c731d975dcb600f378e29c86b4bc5c3c072c53638e0e190470b2d86348b",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\snapshot\\nlms_round_div96_runtime.sv": "5556cf5e12a4a96dba823df50308c7d2c8265758403dac39e3903b73d8489792",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\scripts\\build_overlay.tcl": "e8fb3efa45bce6d0b5633e13b898d0eb3687d56beee725a57c7fb53178a8c30a",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\scripts\\create_overlay_copy.tcl": "943d7acc3d2f71237933fc54d76a96113828ddca05f84f7d1bd2b21732e25008",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\scripts\\package_nlms_ip.tcl": "f07c5f661a6a4f8c09c4f50f4aef70141e77e47602329e9d6b78be89fa049f96",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\board_repo\\pynq-z2\\A.0\\board.xml": "a565dcb39737d551cbbbb73c0053b973c40bb3dce2274943370d3032c0fea9ae",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\board_repo\\pynq-z2\\A.0\\part0_pins.xml": "3c809473938e135a925b563b5371c8687ee05c4089376e7318c0c56524cc8a0f",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\board_repo\\pynq-z2\\A.0\\preset.xml": "18528f84aea4da503cdb3104f7706fabfb3b6ad09b78b25199cc316afa4c8cfe",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\board_repo\\pynq-z2\\A.0\\pynq_z2.jpg": "b6cf32febf4b1995f33c3372ef72f390abf4a5596c73a6fd36810a45ccd0e1f7",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\heart_v3a\\heart_v3a.srcs\\sources_1\\bd\\design_1\\design_1.bd": "375e11aebe8a8e67f102fe79da56d67fe198254d06509fe0fa1711ce1383204a",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\ip_repo\\nlms_axi_lite\\component.xml": "f399a30dd72cc168863a41eddc2b73deddd1c01d0152e823f7af2a9c0c07f339",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\ip_repo\\nlms_axi_lite\\src\\nlms_axi_lite.sv": "a5ccd10a69a1db32313a0f3d5875f5e213dbe5d8ea4aebe45e087af59d88d1ea",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\ip_repo\\nlms_axi_lite\\src\\nlms_core_runtime_3x4.sv": "35b04c731d975dcb600f378e29c86b4bc5c3c072c53638e0e190470b2d86348b",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\ip_repo\\nlms_axi_lite\\src\\nlms_round_div96_runtime.sv": "5556cf5e12a4a96dba823df50308c7d2c8265758403dac39e3903b73d8489792",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\ip_repo\\nlms_axi_lite\\xgui\\nlms_axi_lite_v1_0.tcl": "e0725b60cdc4cd625ee059e557ee3f5569fcd085edf601849e69e4d438080d96"
+  },
+  "original_hashes": {
+    "D:\\pynq_projects\\heart_axi\\heart_axi.xpr": "e18efeb949983c1b881a020835b5dbe3a964c6fcf7d17d3e5050127514d9ee40",
+    "D:\\pynq_projects\\heart_axi\\heart_axi.srcs\\sources_1\\bd\\design_1\\design_1.bd": "60c7b27533c69e41b5c9bb60cfbfd77b0c29fe0367e14d321cea918175a9516e",
+    "D:\\vivado_board_files\\pynq-supported-board-file-master\\pynq-z2\\A.0\\board.xml": "a565dcb39737d551cbbbb73c0053b973c40bb3dce2274943370d3032c0fea9ae",
+    "D:\\vivado_board_files\\pynq-supported-board-file-master\\pynq-z2\\A.0\\part0_pins.xml": "3c809473938e135a925b563b5371c8687ee05c4089376e7318c0c56524cc8a0f",
+    "D:\\vivado_board_files\\pynq-supported-board-file-master\\pynq-z2\\A.0\\preset.xml": "18528f84aea4da503cdb3104f7706fabfb3b6ad09b78b25199cc316afa4c8cfe",
+    "D:\\vivado_board_files\\pynq-supported-board-file-master\\pynq-z2\\A.0\\pynq_z2.jpg": "b6cf32febf4b1995f33c3372ef72f390abf4a5596c73a6fd36810a45ccd0e1f7"
+  },
+  "report_hashes": {
+    "build.log": "0ac0f901eefd68e00e33ac24d1f3f8098f2bed7505bc931189866cc1cf928896",
+    "check_timing.rpt": "8f7ac7369aac574f3709c86c91e97dbe3e1bc5905b5a3c83b9f1fdedba885fdb",
+    "clock.rpt": "d34aa74af14b029f98582b84412fc736b2cb16064e9ce41c534bd4155bb2e35f",
+    "drc.rpt": "7e6050a11977f1419a7da2e95d85f7972dd2522ceb15dac321b6680dbcabbcb0",
+    "fifo_utilization.rpt": "1b617036b090d077c7e6440340b95e7c335e3fa5f310223b65312cd08a2adde3",
+    "hierarchical_utilization.rpt": "a118a2c36b9e6fb053ba4a2f17fd7afa9b775d890a4b2f893dad6472d61a13d6",
+    "iic_utilization.rpt": "a39dc72b93a1ab2b2fc265008cb84e602d16f08beb76fe5f514f2f7786527b5e",
+    "io_pins.json": "eeae3af40098d0ed696bafcb5615324debfb7978069372a8218c921fd5f12bd0",
+    "nlms_utilization.rpt": "72f89fe4e70ef129c398aee4ca6e9b6bc7aeeed7fba9799aa1d44db8cc3a0ffc",
+    "routed.dcp": "5da82839341088ce4eb9962d17cc916e29a53251a9946dd3d05bf857f3bc5eec",
+    "run_status.json": "addae6bc87a98afc2401b082b102fe84b7e3ab2db3f6f3396f0b4bb7a4ec3b91",
+    "synth_utilization.rpt": "a6391236d157b29ea4d659ecdcaabd96038190524483dbcaa66ef72a586e3843",
+    "timing_metrics.json": "e114c2e35e1c8f2e895cf8d7c96a5cdbc845eb04541f7cedfb92b4229d6f27d0",
+    "timing_summary.rpt": "6eb0c84dcc1bdcac38b285d993f42c4d104b04eed848ffa439b683e9f959e2f6",
+    "utilization.rpt": "d3f32ee3ebfe6c445cb2c1cec824124305f9a560e519894346b70b7601207401"
+  },
+  "checkpoint_hashes": {
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\reports\\routed.dcp": "5da82839341088ce4eb9962d17cc916e29a53251a9946dd3d05bf857f3bc5eec"
+  },
+  "artifact_hashes": {
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\heart_v3a.bit": "dd1a4f7704b8bc236c6d232f3bdec812dbb941dd2a328aa1e5be9ad9bccead20",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\heart_v3a.hwh": "d8a50cb8dc5ff69e51e20b91d0dbc38ca22c7e46d7df0c6f5b630e2d28627548",
+    "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\heart_v3a\\heart_v3a.gen\\sources_1\\bd\\design_1\\hw_handoff\\design_1.hwh": "d8a50cb8dc5ff69e51e20b91d0dbc38ca22c7e46d7df0c6f5b630e2d28627548"
+  },
+  "addresses": {
+    "axi_fifo_mm_s_0": {
+      "base": 1136656384,
+      "range": 65536
+    },
+    "axi_iic_0": {
+      "base": 1096810496,
+      "range": 65536
+    },
+    "nlms_axi_0": {
+      "base": 1136721920,
+      "range": 65536
+    }
+  },
+  "ddr_review": {
+    "original_bd": "D:\\pynq_projects\\heart_axi\\heart_axi.srcs\\sources_1\\bd\\design_1\\design_1.bd",
+    "copied_bd": "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\heart_v3a\\heart_v3a.srcs\\sources_1\\bd\\design_1\\design_1.bd",
+    "values": [
+      "-0.051",
+      "-0.006",
+      "-0.009",
+      "-0.033"
+    ],
+    "ps_parameters_changed": [],
+    "board_ddr_verified": false,
+    "disposition": "approved_inherited_warning_pc_only",
+    "source_hashes": {
+      "D:\\pynq_projects\\heart_axi\\heart_axi.srcs\\sources_1\\bd\\design_1\\design_1.bd": "60c7b27533c69e41b5c9bb60cfbfd77b0c29fe0367e14d321cea918175a9516e",
+      "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\heart_v3a\\heart_v3a.srcs\\sources_1\\bd\\design_1\\design_1.bd": "375e11aebe8a8e67f102fe79da56d67fe198254d06509fe0fa1711ce1383204a",
+      "D:\\vivado_board_files\\pynq-supported-board-file-master\\pynq-z2\\A.0\\preset.xml": "18528f84aea4da503cdb3104f7706fabfb3b6ad09b78b25199cc316afa4c8cfe"
+    }
+  },
+  "reviewed_critical_warnings": [],
+  "route_log": "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\vivado-ff705eab1542.tool.log",
+  "bit_log": "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\vivado-ca61d8af9324.tool.log",
+  "hwh_source": "D:\\pynq_projects\\heart_v3a_builds\\overlay-n7fccjqh\\heart_v3a\\heart_v3a.gen\\sources_1\\bd\\design_1\\hw_handoff\\design_1.hwh",
+  "integrated_timing_passed": true,
+  "bitstream_generated": true,
+  "board_tested": false,
+  "board_ddr_verified": false,
+  "auto_beta_effect_passed": false
+}

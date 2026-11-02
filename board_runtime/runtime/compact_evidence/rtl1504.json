@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "saved_rows": 1504,
+  "state_words_checked": 1237841,
+  "protocol_checks": 21,
+  "max_transaction_cycles": 1082540,
+  "full_saved_rows_verified": true,
+  "compile": {
+    "directory": "E:\\Codex-builds\\v3b25-timeout-full-20261030-01",
+    "top": "tb_main_heart_axi",
+    "source_hashes": {
+      "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\history100_fp64.sv": "c05b9a452ce14b35d0be4a677ad46625d46f1212204793dbc0571602d29146d5",
+      "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_ram_log10.sv": "16b7a40b10e7501ef4e65b43508c4d54fba97f2e4f2b062ace69d3ed64c99867",
+      "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_shared_welch.sv": "fcb2146ecb1c8f7da08dd3da990536d486755eb454f5b1132a03a7774f232225",
+      "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_shared_pow2.sv": "088f69098cef1cc9648ca56a0bee503c479ee2a6beed3bab525fabbf071c6070",
+      "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_shared_gain_argument.sv": "042404b02cf7f765b7bf98c2edd706cfa8e2edaa1979877fad070a266b5ae950",
+      "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_shared_fusion.sv": "213dd3253c7523ce36603d849f57291828e8834a675573974f99c6bca696b470",
+      "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_shared_sqrt.sv": "be3579c816250bb4db4ac0f6543024a304c342e4f1b628a953036b7e094d91c8",
+      "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\rtl\\history100_mul53.sv": "dd87fbb770a31b0ffe7ef40a4483ddaba82aa164fd0fc9ae7b950b75c53a9dd8",
+      "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\rtl\\main_heart_mul53.sv": "03e85f7ee52dd97d09f21aa6e5eac56591b995cedf8849cb052a18b350dd74ee",
+      "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\rtl\\main_heart_fp64_arbiter.sv": "b6e4d40efabe6b14a8d4a414c8072fd7b6e0320c20f869d5faf5258e3c95c3d7",
+      "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_heart_math.sv": "b488ee0be092f3f9e5e69bdcb1f1a3ebc2f455e7a34766ab2a219cd8fed28d27",
+      "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_shared_history.sv": "195dcc2cc2a4b59c5e12e7be6a6599fbb65383d84d990415821a1e2571ff31cd",
+      "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_shared_bank.sv": "61c1c6b123fa8612aec22df6b4f4c22ab94252dde11aa072b94df0c28961b571",
+      "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\rtl\\main_heart_assessment.sv": "7978d9892abfa1614e44d2df33ca824050a7b6cb36e08a6c86380ca800c0e2ca",
+      "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_timed_history_window.sv": "abfe5439c650838a1f831d8cb577c073e6ddc06cb3042a76210a3c5b7c1863c2",
+      "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\rtl\\main_heart_quantize.sv": "3717d6a164b98e0e3f078e5124d8938d3a9fe61b45775d12f7110277289bd7b6",
+      "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_timed_pipeline.sv": "54e9d839bd546e56c330e3e3fdd49a4a7a0d3acf1954e78fad2a1a10efb9ca62",
+      "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_timeout_safe_axi.sv": "841acaac77d9ba2eeac99ebc3c88601a1804292eefe1ada18dec972f15ca3c0a",
+      "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_heart_nlms_axi.sv": "9eb4a70dce565080df023ca8c39e17abc76cac3ead0e3d3db9f24e84010f7af3",
+      "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\rtl\\main_heart_nlms_buffer.sv": "792d8d3a4f508d69be3240cc13c2db37e716f9db3efc0d3041f8febf07028369",
+      "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_registered_nlms_core.sv": "a2cad380d546a49cbe7e7f17f8bdb7163c6c7b269adc75ad72d71802f0fc31b7",
+      "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v2_offline_arena\\effective25_entry_live\\delivery\\entry25_live\\base\\deps\\static\\checked\\base\\provenance\\build_sources\\snapshot\\nlms_round_div96_runtime.sv": "5556cf5e12a4a96dba823df50308c7d2c8265758403dac39e3903b73d8489792",
+      "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\tb_main_heart_axi_safe.sv": "3fe46d7e86b9d61b8d3cf236eded9657c28e8ce3832d2aec28d75401ece1b353"
+    },
+    "libraries": [],
+    "compile_returncode": 0,
+    "elaboration_returncode": 0,
+    "compile_log": "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\xvlog-4f59c727dc50.tool.log",
+    "elaboration_log": "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\xelab-7cf0ea8b7ccc.tool.log"
+  },
+  "memory_images": {
+    "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_assessment_initial.mem": "7f46f9cd51c756aed444f510c90d8bed3424aac6431752a75b6c107138bdfdb7",
+    "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_assessment_program.mem": "cd78bc5ffcc61d13bc88c3562eefb3f23bcf4562b70d45065cca4a785a6cca3d",
+    "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_log_math.mem": "48e3a76ad2e78259ef8fa9afa5f5f2af4c53e04d97b14c331d2a53eddb69fee7",
+    "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_log_program.mem": "cabc59034f2f14d13e9cb275af4d15f0d7e43c3cd286e6d96564a08f981b7a04",
+    "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_pow_math.mem": "ed3d39385987ff3289baa89ab8d108e8624e187018e5a14a445e566d64b1d569",
+    "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_pow_program.mem": "3249a4c468748a01ca6a7fb28111b34b44b218341e87806c9496e361f2d0c4f2",
+    "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_welch_constants.mem": "53929938c8860c2c7eb1adba43e733b148044047f843b1c0ccabe699273d0c82",
+    "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_welch_program.mem": "85cd54b2af235ff3f0c4db39a1e8ee8f3fc4a4df9abf41fca8a7e247594eee4b",
+    "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\small_heart_constants.mem": "b42959b89dd060c571dd300dcb1fea2067c4982bf0ad8462e88e3185618d4ca6",
+    "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\small_heart_program.mem": "fdfcea6886191dd561cf08456cb21ae03bbccd2824aa2b272aa444fa121eba87"
+  },
+  "vectors": {
+    "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\main_pipeline_vectors.txt": "a340e64d704c64bac017bed1224084b1ebf499144a0c90829c858e04eb6200ba"
+  },
+  "log": "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\xsim-443ca47655a5.tool.log",
+  "hardware_accessed": false,
+  "bitstream_built": false,
+  "original_sources": {
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\rtl\\main_heart_log10.sv": "90d76de7c05f44130050da25457f390c0dbffba933555ceea423a73498052506",
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\rtl\\main_heart_welch.sv": "bf527e36388c6b29021890d528e778d3615421deac0a20126e823d72906da4ad",
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\rtl\\main_heart_pow2.sv": "2f305c75617048543898ad1f655c969a5f5940aacedc17ddaed196b9e7f47f98",
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\rtl\\main_heart_gain_argument.sv": "49b90604c4d7a387feaf812d31a2d41974b4998ed062ce024d26b7121ea8b326",
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\rtl\\main_heart_fusion.sv": "0b766407c43380bd53494c2b0a4fb30657c60f693fc89468dbc2a1e3ec1e846c",
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\rtl\\main_heart_sqrt.sv": "31789e5cb27042cf44eb66ede18b2a140224bca322650927662e4eaff1e176e6"
+  }
+}

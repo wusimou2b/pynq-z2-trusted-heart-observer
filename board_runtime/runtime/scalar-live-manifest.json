@@ -1,0 +1,43 @@
+{
+  "schema": "scalar_live60_v1",
+  "baseline_sha256": "62932cb0cea6b819d8a0083a2efc0bafded26fb5409b21832da30654cc2a1de5",
+  "qualified_replay_manifest_sha256": "65c1f1ceef1720297584558249f85444d2a543afec1dee3bfd01e92de2ab98fe",
+  "policy": {
+    "raw_hz": 25,
+    "processing_hz": 25,
+    "video_fps": 5,
+    "formal_seconds": 60,
+    "warmup_slots": 700,
+    "ready_seconds": 60,
+    "startup_seconds": 300,
+    "ps_exit_seconds": 1,
+    "software_step_seconds": 1,
+    "rtl_seconds": 0.02,
+    "native_sample_seconds": 0.04,
+    "source_age_ns": 1000000000,
+    "ce_limit_ns": 80000000,
+    "queues": [
+      8,
+      250,
+      250
+    ],
+    "gc_original_window": true,
+    "curve_display": "browser4",
+    "hdmi_display": "video_bpm_route",
+    "sample_ipc": "one_roundtrip_exact_refs_v1",
+    "sample_dropping": false,
+    "automatic_retry": false
+  },
+  "live60_passed": false,
+  "preserved_scheduled_sha256": "354bd72cf29b8d1cf5fec42c79ac1f8c24790238c94ac96889634d529e7db150",
+  "added_files": {
+    "scalar_live_guard.py": "6891c6df307a1af0634ce58a89963b637e9938c2d52eddcf074de622db259f9c",
+    "scalar_live_runtime.py": "c15978b7bd729e2a375e18fe31e59f9d520aee6066dbd373fb41f17c6a136149",
+    "scalar_live_entry.py": "1692d98697199bb4073c744fcc25c2d8ae6b810ec2d60c20e3522a22799886a3",
+    "scalar_live_check.py": "9a5cc90d7165ac2db0e16accfbd14fcfaaabf8c79159e711b25efe7f6378c977",
+    "heart_result_copy.py": "6e5ab01bb90c79eb81f049326c7effd8ef16974f3b3e8599659dffa7f3d40c99",
+    "scalar_result_scope.py": "d01145547981977b7255cda956efe03b80039cbb8444b7b396d453f065f8bb6e",
+    "lean_stop_handoff.py": "69002a4e3994b1d4b2ffbfc6b8b06ca06b864e12d90c025d6b9773be8cb61cc9",
+    "ScalarLive60.ipynb": "0df264d315a6daac7dc1bd803bed6f900de465e12217e5fbc0494fe880a5f74f"
+  }
+}

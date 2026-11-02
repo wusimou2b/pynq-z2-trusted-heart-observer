@@ -1,5 +1,9 @@
-# Aggregate test results
+# 实测记录与历史摘要
 
-`joint_test_summary.json` contains only authorized joint-run aggregate counts: 约80.7 seconds, 2021 records, 2020 paired records, one invalid withdrawn record and 403 video frames. The original `manual_session_passed=false` is preserved. No physiological samples, per-record heart rates, participant identifiers, sensor recordings or original result containers are public here.
+`measured_20261102/raw.csv` 与 `measured_20261102/results.csv` 是用户自行运行后保存、依授权公开的本次原始与处理数值记录，文件字节保持来源不变。正式窗口为 **33.193811316 秒**，原始和结果均为 832 行，830 条配对、2 条未配对，402 条结果允许发布心率，视频完成 166 帧。摘要见 [../reproduction/source_run_20261102.json](../reproduction/source_run_20261102.json)。它们不是经医学对照建立的临床数据集。
 
-These summary values do not establish accuracy, strict real-time behavior, indefinite operation or clean-SD reproduction. Invalid/withdrawn records were not deleted from original local evidence.
+完整 [../board_runtime/](../board_runtime/) 还保留原运行所需的用户实测及派生输入、历史资格记录和 8 点无硬件预检输入。历史资格不等于本次新硬件验收，8 点预检不代表受试者人数。原输入及其身份链不因公开整理而被替换或删除。
+
+`joint_test_summary.json` 是独立历史联合运行摘要：**80.652 秒、2021 条记录、2020 条配对、1 条未配对且撤回数值发布、403 帧**。这组历史计数不与本次 33.19 秒记录合并；原始 `manual_session_passed=false` 保留。
+
+数值允许发布、画面提交、正常停止、自然退出和资源释放分别核查。已保存计数不证明医学准确率、严格实时、无限连续运行或干净 SD 系统复现。

@@ -1,0 +1,45 @@
+{
+  "schema": "display_handoff_replay_qualified_v1",
+  "archive_sha256": "98a7d314ac3da53cce878f653bfd728cd517c46812b23bbc9e5feac72e197381",
+  "manifest_sha256": "3b5c33b5db7213ab487eb8d1137bf02b5d18748a33bf97784e16543ac3adf414",
+  "software_checks_passed": true,
+  "screen_observation": {
+    "scope": "only this display handoff saved1505 physical replay",
+    "user_confirmed_dynamic_picture_and_sequence": true,
+    "source": "current user reply to call_41bf7b9724a34f09ad1747f600c30ba2"
+  },
+  "points": 1505,
+  "formal_seconds": 60.048856242,
+  "algorithm": {
+    "rows": 1505,
+    "fields": 66220,
+    "differences": 0,
+    "first": []
+  },
+  "numeric_points": 1237,
+  "browser_running_attempts_after_ready": 96,
+  "browser_numeric_attempts_after_ready": 96,
+  "row_age": {
+    "count": 1505,
+    "mean_ms": 67.20703354883722,
+    "max_ms": 266.600929,
+    "p95_ms": 156.025747
+  },
+  "handoff": {
+    "readers": [
+      {
+        "rechecks": 0,
+        "recovered": 0,
+        "writer_busy": 0,
+        "last_timestamps": null,
+        "maximum_reads_per_poll": 2,
+        "recheck_wait_seconds": 0,
+        "original_age_limit_ns": 100000000
+      }
+    ],
+    "restored": true
+  },
+  "live_capture_verified": false,
+  "scheduling_recheck_exercised": false,
+  "strict_realtime_verified": false
+}

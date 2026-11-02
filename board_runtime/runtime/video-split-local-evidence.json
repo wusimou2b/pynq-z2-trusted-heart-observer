@@ -1,0 +1,31 @@
+{
+  "schema": "real_video_process_local_evidence_v1",
+  "local_tests_passed": true,
+  "tests_passed": 201,
+  "hardware_accessed": false,
+  "saved1505": {
+    "schema": "video_split_saved1505_v1",
+    "count": 1505,
+    "invalid": 5,
+    "algorithm_differences": 0,
+    "panel_and_imu_comparisons": 302,
+    "projection_decision_differences": 0,
+    "stale_status_remains_ineligible": true,
+    "input_sha256": "077a209c8612d8ac7d9e697c6300e5265232bfc5f2ecf0c479093a868b62df52",
+    "source_manifest_sha256": "15f24cfab56833756a504257a706d9d44156b3763984a9fb6739dde055927d79",
+    "consumer_exitcode": 0,
+    "hardware_accessed": false,
+    "camera_started": false,
+    "scope": "PC real original heart logic + scalar projection/IMU/display model spawn; not ARM/live timing"
+  },
+  "code_sha256": {
+    "video_split_guard.py": "e6c9377ad22e099503c28dd55e6067bff43bdcc28ae636f196ad999e09a594a3",
+    "video_split_state.py": "9f088b3d62ba96bc26bd29c302a4a482e5bee56bf584232161baf7726e6bf542",
+    "video_split_process.py": "5707728f73d8614ea41c86af81cdf7fc17b9bd3368c94962f5ae8fa01e189625",
+    "video_split_resources.py": "5938e447548dd1800e378d8960bf3f50f3e60c69ce2b588a67fec96f40e54eb3",
+    "video_split_runtime.py": "408b2260d94d5eea98d1a7a1c3ef21377645676d2cec734b6a20ea299d5a2444",
+    "video_split_preview.py": "663b2bc0ef1426adda0aee7bfc08131a4501462d7c45489e06960b47862adc9f",
+    "run_video_split.py": "0a2a2b52525e50359ae636509e5e2ebcb24e1c44688d2a2a892a3fe1ff69941d"
+  },
+  "live_qualified": false
+}

@@ -1,0 +1,8 @@
+{
+  "schema": "v3b25_main_heart_artifacts_v1",
+  "files": {
+    "heart_v3b25_main.bit": "6dc798a77f8577629f5d824bf9081e994352b4cd104dde31b8b265c621bdd966",
+    "heart_v3b25_main.hwh": "3c44a48758fce3f1a581f8ae3d74d543a712b539d922fad8c739b4bd7a5b9393"
+  },
+  "release_sha256": "72c616d60195ce083e5242710603d0fec361631752d6cc9d4c3d15bc72cf7265"
+}

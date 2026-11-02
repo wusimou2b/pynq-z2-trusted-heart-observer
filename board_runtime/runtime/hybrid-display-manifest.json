@@ -1,0 +1,31 @@
+{
+  "schema": "v3b25_hybrid_display_package_v1",
+  "base_manifest_sha256": "ea3a83f90a21bcb6d33564096bbce2c7d64ac7bfb075381c4997421725de3f83",
+  "files": {
+    "README_HYBRID.md": "0af72f4f288766e75cc0ad5f5818421df3e210aafd431773754506086f801c38",
+    "hdmi_dashboard_model.py": "6f5185b455f5265b605eea1d76bc47efc2cf15df0a11fa4581fe9198738e7109",
+    "hybrid_assessment.py": "49629074b5f46735d4dd9e38e71c8dab5da0b7ea160399da65ebe44a1b9c530a",
+    "hybrid_display.py": "20955cf51edac89939ed7140538592911c3bb3ea107af4b2e8abec2fa3bc9886",
+    "hybrid_guard.py": "4c4f7cb52f3f82548927fc510c37ce92c890a12089ea7cf1e9aee55dcee9440d",
+    "hybrid_worker.py": "1e5f77608fa990d80ac828d3dfddfe6137d3697501404cdfdec550fbc50735b5",
+    "run_hybrid_display.py": "aedfab0673dcd4283dc1c45870b0ea398ed43816ab7f6a2ed39f3c12d4ae8614"
+  },
+  "notebook_identity_sha256": "62bc9892766206edc937e74a025d67c85cdaff0b764d5708c713a10c999805fe",
+  "layout": "camera_bpm_strip_v1",
+  "hdmi_curve_count": 0,
+  "browser_graphics_enabled": true,
+  "raw_hz": 25,
+  "processing_hz": 25,
+  "video_fps": 5,
+  "warmup_slots": 700,
+  "startup_seconds": 180,
+  "ready_seconds": 60,
+  "join_seconds": 1,
+  "duration_mode": "manual_until_stop_v1",
+  "algorithm_changed": false,
+  "gc_changed": false,
+  "protections_changed": false,
+  "board_tested": false,
+  "accuracy_verified": false,
+  "full_v3b_acceptance_passed": false
+}

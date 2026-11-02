@@ -1,0 +1,50 @@
+{
+  "schema": "compact_arm_saved_v1",
+  "hardware_accessed": false,
+  "count": 1504,
+  "all_frame_fields_equal": true,
+  "all_owner_reference_bits_equal": true,
+  "metadata": {
+    "entry_variant": "effective25_entry6_static_v1",
+    "entry_confirmation_checks": 6,
+    "entry_candidate_sha256": "8781385123c7a97c9273ee7aa69c27eaf2bb0f75655eb23a7f18a1ba323e8c47",
+    "entry_manifest_sha256": "00879aa1d75813cdbc1cb644706b369e465615cb340c6a739b67e5fd9fa3adf8",
+    "host_check": false,
+    "arm_native": true,
+    "native_statistics": {
+      "loaded": true,
+      "implementation": "numpy_dtype_dotfunc_100_v2",
+      "binary_sha256": "4dc17698315564f4d2ac50b5e3d1607fecfe12f2520dafa9f4aaa40ff4e50c78",
+      "c_sha256": "a3758e091fbb66ab5fd9817c847dee44a294c34a07bd56ac04e2a42621ee0b59",
+      "native_manifest_sha256": "327a1090631a905f8bf13bda0391a5b92a76d85f5530df6dc34af4a1e51d9da2",
+      "preparation_sha256": "63a993da6dae6773ad6e6f0af76cea6a89379ee25d22c6029ecf5a95d2638b7c",
+      "ps_pid": 5472
+    }
+  },
+  "groups": [
+    {
+      "group": "A",
+      "count": 1504,
+      "wall_ns": 7590835410,
+      "cpu_ns": 7586522806
+    },
+    {
+      "group": "B",
+      "count": 1504,
+      "wall_ns": 6402355984,
+      "cpu_ns": 6385856649
+    },
+    {
+      "group": "B",
+      "count": 1504,
+      "wall_ns": 6325978797,
+      "cpu_ns": 6324022061
+    },
+    {
+      "group": "A",
+      "count": 1504,
+      "wall_ns": 7572252062,
+      "cpu_ns": 7568841340
+    }
+  ]
+}

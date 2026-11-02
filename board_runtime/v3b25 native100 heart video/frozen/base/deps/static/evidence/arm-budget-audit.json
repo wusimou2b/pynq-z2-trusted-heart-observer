@@ -1,0 +1,108 @@
+{
+  "schema": "v3a25_arm_budget_audit_v1",
+  "report_sha256": "4f72d4c93f96be457e6332aeb6cf67c3137b94ac6a10530900b4cf05d797165a",
+  "report_bytes": 880677,
+  "archive_sha256": "06a5cc5e33e1828255a18f728ec8e75ce689f31287de5f06f7c117230e2a6b4b",
+  "manifest25_sha256": "3fd7b1a589a7b369b3866a965362d9e9465cdd95e48d07e120d4f3fb1970c5e5",
+  "timing_rows_verified": 3402,
+  "raw_timings_verified": 6806,
+  "packaged_vector_count": 1701,
+  "report_vectors_match": true,
+  "report_runtime_differences": 0,
+  "result_fields_scope": "Returned report records the on-board full-field assertions; actual result frames are not embedded.",
+  "stats_recomputed": true,
+  "module_paths_match": true,
+  "summaries": [
+    {
+      "case": "recorded_static",
+      "mode": "direct",
+      "mature_pair": {
+        "count": 501,
+        "mean_ms": 21.061057087824352,
+        "median_ms": 10.082965,
+        "p99_ms": 43.655963,
+        "max_ms": 52.750413
+      },
+      "mature_ps": {
+        "count": 501,
+        "mean_ms": 17.279292754491017,
+        "median_ms": 6.229446,
+        "p99_ms": 39.955243,
+        "max_ms": 47.741797
+      },
+      "mature_over_40ms": 97
+    },
+    {
+      "case": "recorded_static",
+      "mode": "isolated",
+      "mature_pair": {
+        "count": 501,
+        "mean_ms": 25.279891846307386,
+        "median_ms": 14.208782,
+        "p99_ms": 48.334591,
+        "max_ms": 59.681107
+      },
+      "mature_ps": {
+        "count": 501,
+        "mean_ms": 21.308552734530938,
+        "median_ms": 10.195286,
+        "p99_ms": 44.186511,
+        "max_ms": 54.912603
+      },
+      "mature_over_40ms": 110
+    },
+    {
+      "case": "synthetic_motion",
+      "mode": "direct",
+      "mature_pair": {
+        "count": 800,
+        "mean_ms": 21.82677235625,
+        "median_ms": 10.0694365,
+        "p99_ms": 47.22877071,
+        "max_ms": 52.561815
+      },
+      "mature_ps": {
+        "count": 800,
+        "mean_ms": 18.02824004875,
+        "median_ms": 6.2696925,
+        "p99_ms": 42.723494849999994,
+        "max_ms": 47.667704
+      },
+      "mature_over_40ms": 237
+    },
+    {
+      "case": "synthetic_motion",
+      "mode": "isolated",
+      "mature_pair": {
+        "count": 800,
+        "mean_ms": 26.035550313749997,
+        "median_ms": 14.278181,
+        "p99_ms": 52.01425484,
+        "max_ms": 56.092542
+      },
+      "mature_ps": {
+        "count": 800,
+        "mean_ms": 22.03009544,
+        "median_ms": 10.2560555,
+        "p99_ms": 48.08210867,
+        "max_ms": 51.398166
+      },
+      "mature_over_40ms": 245
+    }
+  ],
+  "old_live_files_unchanged": 24,
+  "old_tests_unchanged": 111,
+  "old_archives_unchanged": 10,
+  "base_files_verified": 78,
+  "earlier25_evidence_unchanged": true,
+  "next_step": "Explicit PL replay only; no live acquisition.",
+  "hardware_loaded": false,
+  "board_tested": false,
+  "live_25hz_passed": false,
+  "live_50hz_passed": false,
+  "auto_beta_effect_passed": false,
+  "board_ddr_verified": false,
+  "limits_frozen": false,
+  "run_acceptance_passed": false,
+  "v3a_complete": false
+}

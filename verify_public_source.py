@@ -6,7 +6,8 @@ from pathlib import Path, PurePosixPath
 root=Path(__file__).resolve().parent
 manifest=json.loads((root/"public_export_manifest.json").read_text(encoding="utf-8"))
 records={r["path"]:r for r in manifest["files"]}
-actual={p.relative_to(root).as_posix() for p in root.rglob("*") if p.is_file()}
+actual={p.relative_to(root).as_posix() for p in root.rglob("*")
+        if p.is_file() and p.relative_to(root).parts[0] != ".git"}
 errors=[]
 if actual!=set(records)|{"public_export_manifest.json"}:
     errors.append({"missing":sorted(set(records)-actual),"extra":sorted(actual-set(records)-{"public_export_manifest.json"})})

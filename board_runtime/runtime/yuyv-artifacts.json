@@ -1,0 +1,28 @@
+{
+  "schema": "v3b25_yuyv_artifacts_v1",
+  "purpose": "controlled_board_trials_only",
+  "files": {
+    "heart_v3b25_yuyv.bit": "99a19202c167738b934cfb3247eae836425a68f510c3ec35fffd83c4b1a8b0a2",
+    "heart_v3b25_yuyv.hwh": "6a57237e2ed1f21f07d8d09d7898aacd0424bc14cac16e8280274cc11478f313"
+  },
+  "origin": {
+    "prepare_sha256": "849844cfa10e3cb4b5198d88bc884a49557cb7a1f4b5aefdcc541b2d043a0282",
+    "routed_dcp_sha256": "e8bd56cdda7ab9bafd77ab801ddfa12b69521a05daabc2400debdecb9523927a",
+    "source_artifact_manifest_sha256": "549181e48aca4d5b19a6eae0feb3119a420ebebb3da113b8fdf5ad0eb7d6df7e"
+  },
+  "video_format": {
+    "input": "YUYV",
+    "input_bytes": 614400,
+    "output": "BGRX32",
+    "output_bytes": 1228800,
+    "hdmi_bpp": 32,
+    "hdmi_stride": 2560,
+    "explicit_bgr_colorspace_required": true,
+    "noncacheable_display_frames_requested": true,
+    "explicit_cache_sync_for_noncoherent": true
+  },
+  "driver_ready": true,
+  "board_tested": false,
+  "board_ddr_verified": false,
+  "joint_acceptance_passed": false
+}

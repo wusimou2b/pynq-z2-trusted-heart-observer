@@ -1,0 +1,21 @@
+{
+  "schema": "main_spatial_reference_reader_port_v1",
+  "reader_revision": "bounded_copy_then_decode_v1",
+  "integration_manifest_sha256": "b9a8de3b3de580d54bfe02bd0111ec9bb4fd20193892fa920a6b904ecdcb45b0",
+  "files": {
+    "run_main_spatial_copy.py": "6b2c173b6025f37c79caa1e70845a56b98b11408fb76198e20bf8906227ccaf0",
+    "display_copy_transport.py": "6b5fc374972d896fde9a9427503d960f92715697c09018924fd7a9d00fa14796",
+    "README_MAIN_SPATIAL_COPY.md": "94952852ef37a5497dd6a4fe44ef95812ab0ee7d91fc2cdedc74bc891761644b"
+  },
+  "notebook_identity_sha256": "73c1fff5e8d9aab689e4cfcc9a9f2664216f93663dbdf31e029e17fb2989f924",
+  "rates": [
+    25,
+    25,
+    5
+  ],
+  "grid": [
+    4,
+    3
+  ],
+  "automatic_retry": false
+}

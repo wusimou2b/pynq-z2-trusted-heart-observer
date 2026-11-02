@@ -1,0 +1,68 @@
+{
+  "schema": "v3a25_arm_pl_audit_v1",
+  "archive_sha256": "06a5cc5e33e1828255a18f728ec8e75ce689f31287de5f06f7c117230e2a6b4b",
+  "manifest25_sha256": "3fd7b1a589a7b369b3866a965362d9e9465cdd95e48d07e120d4f3fb1970c5e5",
+  "input_sha256": {
+    "pl25.json": "9b497c7e994b75ef9d19d8a349179009eefe57f7dee696d0b8bf5189a1efabd0",
+    "actual25.csv": "b2002d81623db82e9b45040788131849fabb1f4b471bdd8e4750d6409a840812"
+  },
+  "rows_verified": 1701,
+  "public_field_differences": 0,
+  "cases": [
+    {
+      "name": "recorded_static",
+      "rows": 701,
+      "epoch": 1,
+      "candidate_output_status_differences": 0,
+      "clipped": 0,
+      "saturated": 0,
+      "status_counts": {
+        "0": 10,
+        "3": 691
+      },
+      "latency_cycles_counts": {
+        "2": 10,
+        "1280": 691
+      }
+    },
+    {
+      "name": "synthetic_motion",
+      "rows": 1000,
+      "epoch": 2,
+      "candidate_output_status_differences": 0,
+      "clipped": 0,
+      "saturated": 0,
+      "status_counts": {
+        "0": 10,
+        "3": 990
+      },
+      "latency_cycles_counts": {
+        "2": 10,
+        "1280": 990
+      }
+    }
+  ],
+  "negative_controls_rejected": [
+    "wrong_candidate",
+    "missing_tail",
+    "wrong_hardware_count"
+  ],
+  "board_pl25_replay_verified": true,
+  "lock_released": true,
+  "error": null,
+  "assistant_hardware_access": false,
+  "old_live_files_unchanged": 24,
+  "old_tests_unchanged": 111,
+  "old_archives_unchanged": 10,
+  "base_files_verified": 78,
+  "earlier25_evidence_unchanged": true,
+  "board_check_source_unchanged": true,
+  "scope_cn": "固定25Hz输入的物理PL整数结果回放通过；不是定时25Hz实采、显示、准确率或DDR验收。",
+  "live_25hz_passed": false,
+  "live_50hz_passed": false,
+  "auto_beta_effect_passed": false,
+  "board_ddr_verified": false,
+  "limits_frozen": false,
+  "run_acceptance_passed": false,
+  "v3a_complete": false
+}

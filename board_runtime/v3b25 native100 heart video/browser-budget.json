@@ -1,0 +1,230 @@
+{
+  "schema": "v3b25_browser_budget_v1",
+  "package_manifest_sha256": "ce541ef001f327234c3a30b4275d14458c2b3ed670edb77a27f23d7e6be8893d",
+  "curve_values_identical": true,
+  "ordinary_rounds": 16,
+  "rounds": [
+    {
+      "group": 0,
+      "mode": "A",
+      "cycles": 12,
+      "status_polls_per_cycle": 51,
+      "wall_ns": 916878800,
+      "cpu_ns": 916256189,
+      "json_payload_bytes": 424501
+    },
+    {
+      "group": 0,
+      "mode": "B",
+      "cycles": 12,
+      "status_polls_per_cycle": 51,
+      "wall_ns": 303480683,
+      "cpu_ns": 303176326,
+      "json_payload_bytes": 64386
+    },
+    {
+      "group": 0,
+      "mode": "B",
+      "cycles": 12,
+      "status_polls_per_cycle": 51,
+      "wall_ns": 300216485,
+      "cpu_ns": 299855919,
+      "json_payload_bytes": 64386
+    },
+    {
+      "group": 0,
+      "mode": "A",
+      "cycles": 12,
+      "status_polls_per_cycle": 51,
+      "wall_ns": 872338453,
+      "cpu_ns": 871708195,
+      "json_payload_bytes": 424501
+    },
+    {
+      "group": 1,
+      "mode": "A",
+      "cycles": 12,
+      "status_polls_per_cycle": 51,
+      "wall_ns": 872228878,
+      "cpu_ns": 871623276,
+      "json_payload_bytes": 424501
+    },
+    {
+      "group": 1,
+      "mode": "B",
+      "cycles": 12,
+      "status_polls_per_cycle": 51,
+      "wall_ns": 298130260,
+      "cpu_ns": 297706233,
+      "json_payload_bytes": 64386
+    },
+    {
+      "group": 1,
+      "mode": "B",
+      "cycles": 12,
+      "status_polls_per_cycle": 51,
+      "wall_ns": 298872530,
+      "cpu_ns": 298558253,
+      "json_payload_bytes": 64386
+    },
+    {
+      "group": 1,
+      "mode": "A",
+      "cycles": 12,
+      "status_polls_per_cycle": 51,
+      "wall_ns": 927344355,
+      "cpu_ns": 926738970,
+      "json_payload_bytes": 424501
+    },
+    {
+      "group": 2,
+      "mode": "A",
+      "cycles": 12,
+      "status_polls_per_cycle": 51,
+      "wall_ns": 868655702,
+      "cpu_ns": 868226839,
+      "json_payload_bytes": 424501
+    },
+    {
+      "group": 2,
+      "mode": "B",
+      "cycles": 12,
+      "status_polls_per_cycle": 51,
+      "wall_ns": 296937367,
+      "cpu_ns": 296640645,
+      "json_payload_bytes": 64386
+    },
+    {
+      "group": 2,
+      "mode": "B",
+      "cycles": 12,
+      "status_polls_per_cycle": 51,
+      "wall_ns": 312067786,
+      "cpu_ns": 310468275,
+      "json_payload_bytes": 64386
+    },
+    {
+      "group": 2,
+      "mode": "A",
+      "cycles": 12,
+      "status_polls_per_cycle": 51,
+      "wall_ns": 893294731,
+      "cpu_ns": 892639550,
+      "json_payload_bytes": 424501
+    },
+    {
+      "group": 3,
+      "mode": "A",
+      "cycles": 12,
+      "status_polls_per_cycle": 51,
+      "wall_ns": 838843421,
+      "cpu_ns": 838201321,
+      "json_payload_bytes": 424501
+    },
+    {
+      "group": 3,
+      "mode": "B",
+      "cycles": 12,
+      "status_polls_per_cycle": 51,
+      "wall_ns": 287316841,
+      "cpu_ns": 287034357,
+      "json_payload_bytes": 64386
+    },
+    {
+      "group": 3,
+      "mode": "B",
+      "cycles": 12,
+      "status_polls_per_cycle": 51,
+      "wall_ns": 288708899,
+      "cpu_ns": 288352252,
+      "json_payload_bytes": 64386
+    },
+    {
+      "group": 3,
+      "mode": "A",
+      "cycles": 12,
+      "status_polls_per_cycle": 51,
+      "wall_ns": 841711941,
+      "cpu_ns": 841171658,
+      "json_payload_bytes": 424501
+    }
+  ],
+  "initial_sync": [
+    {
+      "mode": "A",
+      "wall_ns": 93430535
+    },
+    {
+      "mode": "B",
+      "wall_ns": 88993452
+    },
+    {
+      "mode": "B",
+      "wall_ns": 89193471
+    },
+    {
+      "mode": "A",
+      "wall_ns": 89998301
+    },
+    {
+      "mode": "A",
+      "wall_ns": 90760868
+    },
+    {
+      "mode": "B",
+      "wall_ns": 89674080
+    },
+    {
+      "mode": "B",
+      "wall_ns": 89049015
+    },
+    {
+      "mode": "A",
+      "wall_ns": 89908542
+    },
+    {
+      "mode": "A",
+      "wall_ns": 91722442
+    },
+    {
+      "mode": "B",
+      "wall_ns": 89503785
+    },
+    {
+      "mode": "B",
+      "wall_ns": 95111286
+    },
+    {
+      "mode": "A",
+      "wall_ns": 87123975
+    },
+    {
+      "mode": "A",
+      "wall_ns": 87476499
+    },
+    {
+      "mode": "B",
+      "wall_ns": 87341034
+    },
+    {
+      "mode": "B",
+      "wall_ns": 87537452
+    },
+    {
+      "mode": "A",
+      "wall_ns": 88090086
+    }
+  ],
+  "median_original_wall_ns": 872283665.5,
+  "median_browser_wall_ns": 298501395.0,
+  "wall_reduction_fraction": 0.6577932078678825,
+  "each_group_lower": true,
+  "passed": true,
+  "hardware_accessed": false,
+  "platform": "linux",
+  "python": "3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]",
+  "scope": "synthetic500-point display: metadata polls/presentation + real SVG or delta + JSON-send preparation; no actual ZMQ/USB/browser/hardware",
+  "arm_result": true,
+  "real_comm_measured": false,
+  "live_25hz_passed": false
+}

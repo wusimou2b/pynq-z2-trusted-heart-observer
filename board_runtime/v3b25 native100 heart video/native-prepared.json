@@ -1,0 +1,284 @@
+{
+  "schema": "v3b25_native_heart_prepared_v1",
+  "complete": true,
+  "error": null,
+  "build": {
+    "complete": true,
+    "error": null,
+    "output": "native-build",
+    "commands": [
+      {
+        "argv": [
+          "/usr/bin/arm-linux-gnueabihf-gcc-11",
+          "--version"
+        ],
+        "returncode": 0,
+        "error": null
+      },
+      {
+        "argv": [
+          "/usr/bin/arm-linux-gnueabihf-gcc-11",
+          "-std=c11",
+          "-shared",
+          "-fPIC",
+          "-O2",
+          "-fno-fast-math",
+          "-ffp-contract=off",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-isystem",
+          "/usr/include/python3.10",
+          "-isystem",
+          "/usr/lib/python3/dist-packages/numpy/core/include",
+          "/home/xilinx/jupyter_notebooks/v3b25 native100 heart video/statistics25_native.c",
+          "-o",
+          "/home/xilinx/jupyter_notebooks/v3b25 native100 heart video/native-build/_v3b25_statistics_dot.cpython-310-arm-linux-gnueabihf.so"
+        ],
+        "returncode": 0,
+        "error": null
+      }
+    ],
+    "source": {
+      "path": "statistics25_native.c",
+      "sha256": "a3758e091fbb66ab5fd9817c847dee44a294c34a07bd56ac04e2a42621ee0b59"
+    },
+    "soabi": "cpython-310-arm-linux-gnueabihf",
+    "python": "3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]",
+    "machine": "armv7l",
+    "numpy": {
+      "version": "1.21.5",
+      "include": "/usr/lib/python3/dist-packages/numpy/core/include"
+    },
+    "headers": [
+      {
+        "path": "/usr/include/python3.10/Python.h",
+        "sha256": "70b04c40833bdfcdd72b0d3771afe67c74340ff2683b7d26b0dc8e95289263a7"
+      },
+      {
+        "path": "/usr/include/python3.10/pyconfig.h",
+        "sha256": "57dbb3cf21b668da6c0e534ddaea6bf48861e8cbd3b18a3e8a531c78dd8ea729"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/__multiarray_api.h",
+        "sha256": "3cc84f8fe2c73f82fce3814179a38bdccd1ed566975f42070592dda1dca5dad3"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/__ufunc_api.h",
+        "sha256": "90e4f4237db4c4b1879ee13c5d26a89848829856aea7c7d339389e779d785e23"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h",
+        "sha256": "84d894277826251c5d8c1ca4e51e6398b7812a935f68fff6f4a2c716e4eb4880"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/_numpyconfig.h",
+        "sha256": "18df11a5fb095d3edf8b89bf53aadf9fcb74f93ad81747d8151c4c4a99db5161"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/arrayobject.h",
+        "sha256": "4978fed9abd31d5f26356befeec3981cb2a444a71a7c31bbfc736940da2dd461"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/arrayscalars.h",
+        "sha256": "3c5c8c9d6805a11fa9b41b8de10f12d6a487d4ef4d2ad0181c7dc40fa2f28bd9"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/halffloat.h",
+        "sha256": "a21bf29772b3de6075856dcc473c703c31fed0bf5658cfde2a1bd82e3b53ff6c"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/libdivide/libdivide.h",
+        "sha256": "80baebffec32a113a9541617f60e906483121971414ae801f0fdcf27865247de"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/ndarrayobject.h",
+        "sha256": "5eb18764283ae1d7d7f1904b628bc642cd9b33bf4f0e030ec9c3bc7215c58eda"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/ndarraytypes.h",
+        "sha256": "4e83d7cd4579b95aa9b67d016f97a33bc1df5566017e843e00e157271360aa8a"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/noprefix.h",
+        "sha256": "604fa559e800759288e657f8e005b98e259b9e63ba862adc5b38ff58c16b2d3e"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h",
+        "sha256": "4304060cd9036985de5c939be12203a2c958365502e4934376d940d10ff25acd"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_3kcompat.h",
+        "sha256": "2c93119ce0a44fc53bbd45da64d15e0e91a7619a55486571df14ff28e2a5855f"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_common.h",
+        "sha256": "b1c3cc9493a9828b1f8f21dd311047b38209917451bcbb955a65563a365ec6d1"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_cpu.h",
+        "sha256": "abd021d2a9a24bc17c1fca0df8819f8be3212a52d33b179190ab5d74ebc8e8c5"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_endian.h",
+        "sha256": "05720fc3adbcf0e5bff128f3ca205c1515e57c1a1c92b4b69534c30442df8b14"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_interrupt.h",
+        "sha256": "0cf96ad1682107305c5fd0147c6d56fcb9596e7d54b88b9728d2367fa4392376"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_math.h",
+        "sha256": "5708f8adfbf23fcf314cdb5119b339d34635d3f429922feb34bc32feb14e6603"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_no_deprecated_api.h",
+        "sha256": "5fec1161da6ec08b9ead39c16e52a347b0eab2ff2bab19f4d5114b556507be2f"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/npy_os.h",
+        "sha256": "704bc4be90fdd847858ec8d17a5c3575725a1d82fed323c90eecf755e489b381"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/numpyconfig.h",
+        "sha256": "f0fb6db7505ae10630d3942128d0071082ad0706ee14d959dad880a2f1cd2df6"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/old_defines.h",
+        "sha256": "ede899a22ec9add553f4b5ca0a87ad6b90282277066bdf06715956a83acb8f09"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/oldnumeric.h",
+        "sha256": "628f8b892cd57c32b66328651f8d5f7f8812d26fa5bfc5e323825c033a5dcbde"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/random/bitgen.h",
+        "sha256": "19faf0774334a1d9294495f0ed05c9815c5be570b0de20d769c584fe1f85fee3"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/random/distributions.h",
+        "sha256": "326ce843ebcf95dcc61ce6d129e9ee6348a7ee4f5198f72b41988f91071df4ec"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/ufuncobject.h",
+        "sha256": "a2439dec29080f3c90852b6aeac1e9adf08a24143810f2c1ff3e590fe9c688f2"
+      },
+      {
+        "path": "/usr/lib/python3/dist-packages/numpy/core/include/numpy/utils.h",
+        "sha256": "0b7c4cd82a8140bbdf4e52c0298fd3d72f321313fa4ac0d886587d02fdd8e30c"
+      }
+    ],
+    "tools": [
+      {
+        "path": "/usr/bin/arm-linux-gnueabihf-gcc-11",
+        "sha256": "cd46fd90d695d44919374848e89e89630807e1171d491a91dcdc6156a051d9d0"
+      }
+    ],
+    "binary": {
+      "path": "native-build/_v3b25_statistics_dot.cpython-310-arm-linux-gnueabihf.so",
+      "sha256": "4dc17698315564f4d2ac50b5e3d1607fecfe12f2520dafa9f4aaa40ff4e50c78"
+    }
+  },
+  "primitive": {
+    "passed": true,
+    "cases": 8,
+    "invalid_cases": 4,
+    "sha256": "f04bd08da2bf513edeb3a0fde763d5db6a8b063bd9aca62b23edf594759e814e"
+  },
+  "proof": {
+    "reference": {
+      "count": 1504,
+      "difference_count": 0,
+      "first_differences": [],
+      "samples": [],
+      "runtime_sha256": "ba37a52a369b0dd8c5bbfaff5f8e1c6842fdc97f47c418386c257a18299204ef",
+      "frontend": {
+        "raw_received": 1504,
+        "slots_emitted": 1504,
+        "consumed_raw": 1504,
+        "valid_slots": 1500,
+        "invalid_slots": 4,
+        "pending_raw": 0,
+        "pending_sequence": null,
+        "count_identity": true
+      }
+    },
+    "candidate": {
+      "count": 1504,
+      "difference_count": 0,
+      "first_differences": [],
+      "samples": [],
+      "runtime_sha256": "ba37a52a369b0dd8c5bbfaff5f8e1c6842fdc97f47c418386c257a18299204ef",
+      "frontend": {
+        "raw_received": 1504,
+        "slots_emitted": 1504,
+        "consumed_raw": 1504,
+        "valid_slots": 1500,
+        "invalid_slots": 4,
+        "pending_raw": 0,
+        "pending_sequence": null,
+        "count_identity": true
+      }
+    },
+    "statistics_exact": true,
+    "quality_calls": 632,
+    "history_calls": 216,
+    "statistics_sha256": "c293a3c03ef89decf72efce314c1f50ffa609abebb16819ed600e4ee2e5b7466",
+    "candidate_statistics_sha256": "c293a3c03ef89decf72efce314c1f50ffa609abebb16819ed600e4ee2e5b7466",
+    "arm_native": true,
+    "host_arm_coefficients_bound": false,
+    "passed": true,
+    "native_validation_calls": {
+      "quality_squares": 512,
+      "quality_numerators": 512,
+      "norm_squares": 0,
+      "pair_numerators": 1856,
+      "center_parts": 1328
+    }
+  },
+  "configuration_unchanged": true,
+  "inputs_unchanged": true,
+  "performance_remeasured": false,
+  "hardware_accessed": false,
+  "host_check": false,
+  "arm_native": true,
+  "machine": "armv7l",
+  "native_manifest_sha256": "327a1090631a905f8bf13bda0391a5b92a76d85f5530df6dc34af4a1e51d9da2",
+  "arm_evidence_sha256": "82b49d16e05b17cc45a921b9850430def6c5ab4f473c81d25b1ddf3f09146041",
+  "gc_before": [
+    true,
+    [
+      700,
+      10,
+      10
+    ]
+  ],
+  "numpy_before": {
+    "divide": "warn",
+    "over": "warn",
+    "under": "ignore",
+    "invalid": "warn"
+  },
+  "implementation": "numpy_dtype_dotfunc_100_v2",
+  "gc_after": [
+    true,
+    [
+      700,
+      10,
+      10
+    ]
+  ],
+  "numpy_after": {
+    "divide": "warn",
+    "over": "warn",
+    "under": "ignore",
+    "invalid": "warn"
+  },
+  "relocation": {
+    "original_prepared_sha256": "e174377658d39245e3b40b7ceed36e51ce30ed0892b26f0332ff9abea05e100d",
+    "path_base": "directory containing native-prepared.json",
+    "native_library_rebuilt": false,
+    "algorithm_changed": false,
+    "new_measurement_claimed": false
+  }
+}

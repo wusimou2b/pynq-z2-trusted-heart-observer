@@ -1,18 +1,17 @@
-# Local generated data is not part of the public source.
+# Preserve shipped qualification inputs; keep newly generated runs local.
 **/__pycache__/
 **/.ipynb_checkpoints/
-public_live/runtime/public-short-attempt.json
-public_live/runtime/public-short.json
-public_live/runtime/public-preview20-attempt.json
-public_live/runtime/public-preview20.json
-public_live/runtime/public-prepare-attempt.json
-public_live/runtime/public-prepare.json
-public_live/runtime/public-live-attempt.json
-public_live/runtime/public-live.json
-public_live/runtime/video-process20-results.zip
-public_live/runtime/continuous-attempt.json
-public_live/runtime/continuous-result.json
-public_live/runtime/continuous-results.zip
-public_live/runtime/continuous-control/
-public_live/runtime/continuous-results/
-public_live/runtime/video-process20/
+board_runtime/runtime/*-attempt.json
+board_runtime/runtime/demo-short.json
+board_runtime/runtime/demo-short-results.zip
+board_runtime/runtime/demo-preview20.json
+board_runtime/runtime/demo-preview20-results.zip
+board_runtime/runtime/demo-prepare.json
+board_runtime/runtime/demo-continuous-final.json
+board_runtime/runtime/demo-continuous-results.zip
+board_runtime/runtime/continuous-result.json
+board_runtime/runtime/continuous-results.zip
+board_runtime/runtime/continuous-control/
+board_runtime/runtime/continuous-results/
+board_runtime/runtime/video-process20-results.zip
+board_runtime/runtime/video-process20/

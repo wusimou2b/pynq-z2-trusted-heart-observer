@@ -1,0 +1,21 @@
+{
+  "schema": "v3b25_browser_heart_package_v1",
+  "base_manifest_sha256": "064cdd483305fb0941538f79489bfb033f05f8998ad2e7bd86a7829cd5901f2c",
+  "files": {
+    "README_BROWSER_HEART.md": "4bbca010c3eda0c3136115d873a370fb6289def73dbbcf4011ee0a1bd5923c8e",
+    "browser_heart_budget.py": "8dcc190f8e2968b33dd77bac1fb1b5a913c0dabbe50ffa7bc718f0a6c2aaf914",
+    "browser_heart_client.js": "dbe7dffd48f47658ce28a2768efb0a6c8aee22a53c4f1651a368920c840dd0df",
+    "browser_heart_display.py": "8d206d257ae1cb3f227bb9d8c1c11e3e49af88edfc441a92d4f649dab025854b",
+    "browser_heart_guard.py": "4b843072355c7bd26960be730579c02f26e639b65b49beb5e70aa7e970e4c2a7",
+    "browser_heart_transport.py": "87b850b37c7bb32b36f14e1642596f4b21e97a962a96aef78586ca4063da5109",
+    "browser_heart_worker.py": "0a2a3aad9a6e0b7141235881577c606422fee11ebd8298f38e354a2a4a5dcc2f",
+    "run_browser_heart.py": "eaa06138f5c59c0bf6414b7ae7725d8321be108bde2be7487cf14c51cb9b00be"
+  },
+  "notebook_code_sha256": "80deafd6595af7562f79f5f9cd176c929a575b602a8edbbabb078559a04fd8b8",
+  "renderer": "browser_canvas_v1",
+  "history_capacity": 500,
+  "refresh_period_ms": 500,
+  "algorithm_changed": false,
+  "runtime_limits_changed": false,
+  "board_tested": false
+}

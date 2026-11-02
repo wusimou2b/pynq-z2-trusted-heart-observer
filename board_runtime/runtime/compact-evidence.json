@@ -1,0 +1,143 @@
+{
+  "local_tests_passed": true,
+  "local_tests": 143,
+  "hardware_accessed": false,
+  "arm_tail": {
+    "schema": "compact_arm_saved_v1",
+    "hardware_accessed": false,
+    "count": 1504,
+    "all_frame_fields_equal": true,
+    "all_owner_reference_bits_equal": true,
+    "metadata": {
+      "entry_variant": "effective25_entry6_static_v1",
+      "entry_confirmation_checks": 6,
+      "entry_candidate_sha256": "8781385123c7a97c9273ee7aa69c27eaf2bb0f75655eb23a7f18a1ba323e8c47",
+      "entry_manifest_sha256": "00879aa1d75813cdbc1cb644706b369e465615cb340c6a739b67e5fd9fa3adf8",
+      "host_check": false,
+      "arm_native": true,
+      "native_statistics": {
+        "loaded": true,
+        "implementation": "numpy_dtype_dotfunc_100_v2",
+        "binary_sha256": "4dc17698315564f4d2ac50b5e3d1607fecfe12f2520dafa9f4aaa40ff4e50c78",
+        "c_sha256": "a3758e091fbb66ab5fd9817c847dee44a294c34a07bd56ac04e2a42621ee0b59",
+        "native_manifest_sha256": "327a1090631a905f8bf13bda0391a5b92a76d85f5530df6dc34af4a1e51d9da2",
+        "preparation_sha256": "63a993da6dae6773ad6e6f0af76cea6a89379ee25d22c6029ecf5a95d2638b7c",
+        "ps_pid": 5472
+      }
+    },
+    "groups": [
+      {
+        "group": "A",
+        "count": 1504,
+        "wall_ns": 7590835410,
+        "cpu_ns": 7586522806
+      },
+      {
+        "group": "B",
+        "count": 1504,
+        "wall_ns": 6402355984,
+        "cpu_ns": 6385856649
+      },
+      {
+        "group": "B",
+        "count": 1504,
+        "wall_ns": 6325978797,
+        "cpu_ns": 6324022061
+      },
+      {
+        "group": "A",
+        "count": 1504,
+        "wall_ns": 7572252062,
+        "cpu_ns": 7568841340
+      }
+    ]
+  },
+  "arm_ipc": {
+    "schema": "compact_arm_ipc_saved_v1",
+    "hardware_accessed": false,
+    "count": 1504,
+    "scope": "real ARM PS tail plus Pipe and candidate owner reference preparation; PL cost excluded",
+    "groups": [
+      {
+        "group": "A",
+        "count": 1504,
+        "wall_ns": 13883659388,
+        "parent_cpu_ns": 3844239800,
+        "frames_sha256": "885469b41c2d039baac9ed764f72fa3b72a9f21c05b455ca98494a1e525b8a84",
+        "messages": 6016,
+        "natural_exit_1s": true
+      },
+      {
+        "group": "B",
+        "count": 1504,
+        "wall_ns": 12081141422,
+        "parent_cpu_ns": 3577411631,
+        "frames_sha256": "885469b41c2d039baac9ed764f72fa3b72a9f21c05b455ca98494a1e525b8a84",
+        "messages": 3008,
+        "natural_exit_1s": true
+      },
+      {
+        "group": "B",
+        "count": 1504,
+        "wall_ns": 12121440966,
+        "parent_cpu_ns": 3581383101,
+        "frames_sha256": "885469b41c2d039baac9ed764f72fa3b72a9f21c05b455ca98494a1e525b8a84",
+        "messages": 3008,
+        "natural_exit_1s": true
+      },
+      {
+        "group": "A",
+        "count": 1504,
+        "wall_ns": 13917930903,
+        "parent_cpu_ns": 3858352704,
+        "frames_sha256": "885469b41c2d039baac9ed764f72fa3b72a9f21c05b455ca98494a1e525b8a84",
+        "messages": 6016,
+        "natural_exit_1s": true
+      }
+    ]
+  },
+  "source_proofs": {
+    "local-tests.xml": {
+      "path": "E:\\Codex-builds\\compact-full-local-20261030-02.xml",
+      "sha256": "84fd5a8df5102ff6eacc7fda2b5a6c53905d297aa26e2ac8711d87f547312c64"
+    },
+    "static-review.json": {
+      "path": "E:\\Codex-builds\\v3b25-compact-bit-review-20261030-01\\static-review.json",
+      "sha256": "634f405b3a2eb453c7645533740e674008f22692e9b3365ac15c065fa2c4b0d0"
+    },
+    "arm-tail.json": {
+      "path": "E:\\Codex-builds\\compact-arm-probe-20261030-01\\arm-results.json",
+      "sha256": "fc830af16335e3a00bf71c4b114cf351d169b36fa73f8cddee474668caa9deba"
+    },
+    "arm-ipc.json": {
+      "path": "E:\\Codex-builds\\compact-arm-ipc-20261030-01\\arm-ipc-results.json",
+      "sha256": "f34b23d12f0f5ba3469097fdcb39216e2084c14591f0e4c33256ae6de935a09a"
+    },
+    "timeout-verification.json": {
+      "path": "E:\\Codex-builds\\v3b25-owner-containment-verification-20261030-01\\verification.json",
+      "sha256": "d8e1ef57e5f0845f37443b5abee62275ca630f52263a211b5e08e449a0aa5c18"
+    },
+    "rtl1504.json": {
+      "path": "E:\\Codex-builds\\v3b25-timeout-full-20261030-01\\result.json",
+      "sha256": "648529830e3bade2cf08a586b669ebd8ca0d9cdff67caa90c50359b87c8517da"
+    }
+  },
+  "candidate_source": {
+    "compact_delivery_guard.py": "8b5895ab22db6aa6073f6a995b4ede46031e6349ef8178ebe8bace6d0d5f9c38",
+    "compact_delivery_runtime.py": "0d4127e013c7488bd6ca7edb3eb620c6e964b7d595821a985c4d62d78f724b57",
+    "compact_timeout_driver.py": "1c5a7034f2356dc4c9d4a8bbc5ed4dee256d3329e845608f15861ba88114ec72",
+    "compact_entry.py": "db410be46726ae55a96b5b1ee1fbb12d0811d3670acff9a95ca4bcc35655ec49",
+    "main_rpc_compact.py": "392df8598b7a0ae9328d1b52ce4e94e969f135f04748ed92316ad41b620f43f7",
+    "main_tail_compact.py": "4aa0c327f9e4e759354c530939b2c1887d10bb17df02d507f619a0589333482d",
+    "compact_context_binding.py": "e247311be3a712e22a02e98fc56c6ada0dd9863c5526fb82313c2ca60fb8e97c",
+    "compact_board_owner.py": "fccc33535395f08a27f0e36ecf052394bfa0d6172086627f9c8e8fb45926caa9",
+    "compact_spatial_assessment.py": "316d3aa8351d187041e6f767f127b68602350a987bbdee03d931d229fac9bbb8",
+    "compact_video_process.py": "82e89703ae794180c4836e0d4fefbd867c86822f44b97cdae2ebe15727388718",
+    "compact_video_runtime.py": "529b788bcb5e8c58c7a784d7867ad052aaf51327ffdeaf80548b2e5fda207c15",
+    "compact_run_video_split.py": "5ef6a517a19260b23496ea22031a10dae09d76e42e3149e3d2a0ee608f4c17c6"
+  },
+  "limitations": [
+    "ARM timing uses saved receipts, excludes physical PL and live video/IIC contention",
+    "new bit requires manual physical qualification; no60s/DDR/accuracy acceptance claimed"
+  ]
+}

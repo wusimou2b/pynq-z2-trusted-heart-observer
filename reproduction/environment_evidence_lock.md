@@ -22,7 +22,7 @@
 
 S01记录的是板端保存输入回放和只读比对：`hardware_loaded=false`、`pl_reexecuted=false`、`realtime_validated=false`、`accuracy_validated=false`、`board_ddr_verified=false`。不能将这个环境快照本身当作联合运行测试或全新SD复现通过。工作站软件试验、Skills合成夹具、上游参考资料的版本都未混入板端锁。
 
-匹配原生库已由并行审计单独找回；代码RAR不分发该编译产物。本版本锁不再将其表述为本地无文件，产物身份与部署资格继续由对应交付清单管理。
+当前完整运行文件与匹配原生库保存在 `../board_runtime/`，入口为 `runtime/ContinuousDemo25.ipynb`；原准备／资格输入、运行 guard 和身份 pin 一并保留。上表仍是历史环境证据，不是新 SD 安装或本次发布完整环境锁定证明。当前运行及数据来源见根 README 与 `source_run_20261102.json`。
 
 ## 用户在已有成功板环境补取
 

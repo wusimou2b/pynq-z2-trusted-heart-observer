@@ -1,0 +1,23 @@
+{
+  "schema": "single_sample_gil_joint_delivery_v1",
+  "files": {
+    "spatial_gil_worker.py": "a8d04d3f97b25cbd9733cd322a672eac1a06326dfe9eeed7b3bd27a918033fac",
+    "run_gil_joint.py": "02ae6076f22ad628253e1ef3917a455c3a0ab27179197ecaba3df42a9f5af99f",
+    "README_GIL_JOINT.md": "88e421bfe1184904a7dc54600b02203b6b3c7561b43f50bc7194f6dce3b0853b",
+    "spatial_gil_candidate.py": "9b88e5c4bba6b94b33b3040abf0df9478254abc6c4cfb9e10b647da2e8ed865a"
+  },
+  "base_copy_manifest_sha256": "02dea9470e2b84e6581375d4275954963110ce1d4fed97311f63437e0c4e3fc6",
+  "physical_replay_result_sha256": "7336b937723bb43ef95fd528b691b05b456c2ca4221987fc36303fad1975d389",
+  "notebook_identity_sha256": "4dcc8a057677e3c34e1f4e00bf63d2f9ae722f3d37d28d2292e189e869d55e1d",
+  "rates": [
+    25,
+    25,
+    5
+  ],
+  "grid": [
+    4,
+    3
+  ],
+  "automatic_retry": false,
+  "original_ps_target_retained": true
+}

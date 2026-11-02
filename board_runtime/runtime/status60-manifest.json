@@ -1,0 +1,20 @@
+{
+  "schema": "actual_joint_status60_delivery_v1",
+  "files": {
+    "README_STATUS60.md": "75a676a9e9fec02746c2e450162cbd9e72aef9c4aac56a08dbec61eefcdf6005",
+    "status60_runtime.py": "4b9f6ad1106eb868b3db6f219fe4b4d33a6bf7004b3d47ac35223fb917f75ee8",
+    "run_status60.py": "8ce50fbe6a09867636f4f12a63ca89a5d8412468b48861b850e19c016ca2e5c9"
+  },
+  "base_status5_manifest_sha256": "2afa31760788691a6b23c1c6cb3c26b6733dc43ac1f40d3ae86acc3bff7b2cc8",
+  "notebook_identity_sha256": "d2b07035b1eb1d7afcc8c9c452deff7510a616254fd4640fc6b11db7b48f1636",
+  "formal_observation_seconds": 60,
+  "trace_capacity": 65536,
+  "rates": [
+    25,
+    25,
+    5
+  ],
+  "pl_transaction_seconds": 0.02,
+  "other_protections_unchanged": true,
+  "automatic_retry": false
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "scheduled_live60_v1",
+  "baseline_sha256": "62932cb0cea6b819d8a0083a2efc0bafded26fb5409b21832da30654cc2a1de5",
+  "qualified_replay_manifest_sha256": "639c1811b8dc0b518577a9fe29d4a26bad8ab8e864be307a77eea75d76f78e5e",
+  "policy": {
+    "raw_hz": 25,
+    "processing_hz": 25,
+    "video_fps": 5,
+    "formal_seconds": 60,
+    "warmup_slots": 700,
+    "ready_seconds": 60,
+    "startup_seconds": 300,
+    "ps_exit_seconds": 1,
+    "software_step_seconds": 1,
+    "rtl_seconds": 0.02,
+    "native_sample_seconds": 0.04,
+    "source_age_ns": 1000000000,
+    "ce_limit_ns": 80000000,
+    "queues": [
+      8,
+      250,
+      250
+    ],
+    "gc_original_window": true,
+    "curve_display": "browser4",
+    "hdmi_display": "video_bpm_route",
+    "sample_ipc": "one_roundtrip_exact_refs_v1",
+    "sample_dropping": false,
+    "automatic_retry": false
+  },
+  "live60_passed": false,
+  "static_original_members": 564,
+  "added_files": {
+    "README_SCHEDULED.md": "4089d392aad6070760d33d33e0a725ce9abd7399563e602f1bea076ae9ad6a7d",
+    "ScheduledLive60.ipynb": "2d0b690cf2f284eace0cb77874356df9803b8de67c5969044adc9b1a83c353c9",
+    "lean_display_bootstrap.py": "7657237c6608f5d677d353862cabd4705628533e55d8102a3a5a888a04669b86",
+    "libtransaction_schedule.so": "f0bacc84eddeaeb7c520d90c3ec74d693a918ecaa064899420267f92bd4a5d88",
+    "schedule-arm-results.json": "b150e294f6130267e9160b8d28f0e99f68e4e8ef4a66dc54b89d3c1372da9aa0",
+    "scheduled_live_check.py": "3ee8eeb9cca9253584fd75c96258b2c69c8e76e8d6edf7ed05aced644915761d",
+    "scheduled_live_entry.py": "7da85576baa7843000db7a4fb6d8d233ac49fe2a0fc5ec978ac8a2c50a7a4066",
+    "scheduled_live_guard.py": "acfb6801276bcc624f40d1e085813a3b518ef9d03246733637df87012375e9aa",
+    "scheduled_live_runtime.py": "560f873d984635a388ed8e18836ab80fe604449bfb033f586bc8eb018a3d357e",
+    "transaction_schedule.c": "9b9a2287b33cba93c0649a1589b64195f96db3553536015a9d1a1d4efbbce184",
+    "transaction_schedule.py": "b31b60f9d3aca6fed0fcf78b1d9f8b51adb69f62924e47fb2811e375f606d8e4"
+  },
+  "motion_protocol": [
+    {
+      "start_s": 0,
+      "stop_s": 30,
+      "action": "static"
+    },
+    {
+      "start_s": 30,
+      "stop_s": 45,
+      "action": "light"
+    },
+    {
+      "start_s": 45,
+      "stop_s": 60,
+      "action": "static"
+    }
+  ],
+  "protocol_is_observer_instruction_only": true,
+  "original_browser_period_ms": 500
+}

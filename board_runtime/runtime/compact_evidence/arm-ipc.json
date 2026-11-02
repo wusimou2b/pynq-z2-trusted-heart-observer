@@ -1,0 +1,44 @@
+{
+  "schema": "compact_arm_ipc_saved_v1",
+  "hardware_accessed": false,
+  "count": 1504,
+  "scope": "real ARM PS tail plus Pipe and candidate owner reference preparation; PL cost excluded",
+  "groups": [
+    {
+      "group": "A",
+      "count": 1504,
+      "wall_ns": 13883659388,
+      "parent_cpu_ns": 3844239800,
+      "frames_sha256": "885469b41c2d039baac9ed764f72fa3b72a9f21c05b455ca98494a1e525b8a84",
+      "messages": 6016,
+      "natural_exit_1s": true
+    },
+    {
+      "group": "B",
+      "count": 1504,
+      "wall_ns": 12081141422,
+      "parent_cpu_ns": 3577411631,
+      "frames_sha256": "885469b41c2d039baac9ed764f72fa3b72a9f21c05b455ca98494a1e525b8a84",
+      "messages": 3008,
+      "natural_exit_1s": true
+    },
+    {
+      "group": "B",
+      "count": 1504,
+      "wall_ns": 12121440966,
+      "parent_cpu_ns": 3581383101,
+      "frames_sha256": "885469b41c2d039baac9ed764f72fa3b72a9f21c05b455ca98494a1e525b8a84",
+      "messages": 3008,
+      "natural_exit_1s": true
+    },
+    {
+      "group": "A",
+      "count": 1504,
+      "wall_ns": 13917930903,
+      "parent_cpu_ns": 3858352704,
+      "frames_sha256": "885469b41c2d039baac9ed764f72fa3b72a9f21c05b455ca98494a1e525b8a84",
+      "messages": 6016,
+      "natural_exit_1s": true
+    }
+  ]
+}

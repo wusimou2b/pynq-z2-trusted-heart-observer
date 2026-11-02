@@ -1,0 +1,217 @@
+{
+  "schema": "v3a25_static_capture_audit_v1",
+  "archive_sha256": "802426cec5a5ee6a4204e50170c1ba372d88fd38e813022e4526e465019d5ba3",
+  "input_sha256": {
+    "raw.csv": "106a9fb32fe3207e722adb38f3e4799e199046f031ce2121ee3cd7bc62c32976",
+    "results.csv": "60f7490a394d64e5a248f58f1c4c38dc0092db41ba79c0f43bfea752ed3d8645",
+    "events.jsonl": "4b9ea6d98e5c88cd1d18e596b1eb142d544d7610d49fa7d34ce0b3f1ed8fed41",
+    "summary.json": "5e24f883f3f7872c128f1ef1ae712436a447a9d0436117579a7717a393e1fa83",
+    "run25.json": "589a3adb33fef24cbe62ec7144957b7c09d60653d91edcfb4097a692bd0f80a0",
+    "console.txt": "1428b5d5de0eb426154ac0f0ad2c1f4687d0ed5f4a34461ec9844ad1697c9155"
+  },
+  "summary_recomputed_exactly": true,
+  "console_and_control_match": true,
+  "raw_rows": 3008,
+  "result_rows": 1504,
+  "event_rows": 3008,
+  "timing_identities_checked": 1504,
+  "raw_pairing_ratio": 1.0,
+  "gates": {
+    "full_duration": true,
+    "cleanup": true,
+    "no_fault": true,
+    "exact_counts": true,
+    "sequence_alignment": true,
+    "raw_safety": true,
+    "flush_order": true,
+    "paired": true,
+    "no_queue_full": true,
+    "formal_errors_zero": true,
+    "known_consumption": true,
+    "forbidden_bpm_zero": true,
+    "real_backend": true,
+    "event_counts": true,
+    "pl_counts": true,
+    "pl_public": true,
+    "isolation": true,
+    "timing_nonnegative": true
+  },
+  "replay": {
+    "slots": 1504,
+    "field_comparisons": 87232,
+    "exact_equality": false,
+    "differing_fields": {
+      "output_filtered_counts": {
+        "count": 1267,
+        "max_abs": 5.030642569181509e-12,
+        "max_relative": 1.6032557726574292e-13,
+        "max_at_slot": 505,
+        "saved": 129.4977717215534,
+        "replay": 129.49777172154836
+      },
+      "mean_bpm": {
+        "count": 142,
+        "max_abs": 5.684341886080801e-13,
+        "max_relative": 6.578130493380089e-15,
+        "max_at_slot": 342,
+        "saved": 86.4127261051025,
+        "replay": 86.41272610510306
+      },
+      "raw_bpm": {
+        "count": 317,
+        "max_abs": 1.1084466677857563e-12,
+        "max_relative": 1.2987280024054629e-14,
+        "max_at_slot": 581,
+        "saved": 85.34863849341251,
+        "replay": 85.3486384934114
+      },
+      "joint_bpm": {
+        "count": 317,
+        "max_abs": 1.1084466677857563e-12,
+        "max_relative": 1.2987280024054629e-14,
+        "max_at_slot": 581,
+        "saved": 85.34863849341251,
+        "replay": 85.3486384934114
+      },
+      "bpm": {
+        "count": 292,
+        "max_abs": 5.968558980384842e-13,
+        "max_relative": 6.695586748943116e-15,
+        "max_at_slot": 1056,
+        "saved": 89.14168696756809,
+        "replay": 89.1416869675675
+      },
+      "nlms_bpm": {
+        "count": 170,
+        "max_abs": 9.094947017729282e-13,
+        "max_relative": 1.1706042392295832e-14,
+        "max_at_slot": 547,
+        "saved": 77.69446507143178,
+        "replay": 77.69446507143087
+      }
+    },
+    "differing_float_values": 2505,
+    "nonfloat_differences": 0,
+    "first_difference": {
+      "slot": 173,
+      "field": "output_filtered_counts",
+      "saved": 535.3033291807614,
+      "replay": 535.3033291807621,
+      "abs_difference": 7.958078640513122e-13
+    },
+    "comparison_policy": "Exact comparison; all floating differences retained without tolerance-based pass.",
+    "excluded_fields": [
+      "backend_source",
+      "pl_latency_cycles"
+    ]
+  },
+  "negative_controls_rejected": [
+    "wrong_source",
+    "wrong_timing",
+    "wrong_flush"
+  ],
+  "candidate_allowed_rows": 1287,
+  "publication_allowed_rows": 1286,
+  "publication_bpm_min": 67.48958741400905,
+  "publication_bpm_max": 99.95430494756418,
+  "first_publication_time_s": 8.668955,
+  "route_counts": {
+    "none": 173,
+    "mean": 1331
+  },
+  "quality_counts": {
+    "bad": 173,
+    "good": 664,
+    "medium": 667
+  },
+  "pl_status_counts": {
+    "0": 10,
+    "3": 1494
+  },
+  "pl_latency_cycles_counts": {
+    "2": 10,
+    "1280": 1494
+  },
+  "measurements": {
+    "record_rate_hz": 50.12815680911792,
+    "processing_slot_rate_hz": 25.06407840455896,
+    "read_gap_p99_ms": 26.68962522000001,
+    "read_gap_max_ms": 33.981717,
+    "read_to_result_p99_ms": 105.0561693000001,
+    "read_to_result_max_ms": 135.407495,
+    "capture_loop_overrun_fraction": 0.13597074468085107,
+    "read_to_display_p99_ms": null,
+    "read_to_display_max_ms": null
+  },
+  "timing25": {
+    "read_to_result": {
+      "count": 1504,
+      "mean_ms": 35.408567284574474,
+      "median_ms": 29.9344585,
+      "p99_ms": 105.0561693000001,
+      "max_ms": 135.407495
+    },
+    "processing_queue_wait": {
+      "count": 1504,
+      "mean_ms": 3.947389005319149,
+      "median_ms": 0.463465,
+      "p99_ms": 58.55691002000002,
+      "max_ms": 84.69259
+    },
+    "ps_processing": {
+      "count": 1504,
+      "mean_ms": 24.258097348404256,
+      "median_ms": 15.3927355,
+      "p99_ms": 51.12849063000001,
+      "max_ms": 116.578393
+    },
+    "pl_call": {
+      "count": 1504,
+      "mean_ms": 0.8621083357712767,
+      "median_ms": 0.856892,
+      "p99_ms": 0.9867504300000001,
+      "max_ms": 1.429237
+    },
+    "processing": {
+      "count": 1504,
+      "mean_ms": 25.12020568417553,
+      "median_ms": 16.2157045,
+      "p99_ms": 52.049297290000005,
+      "max_ms": 117.415113
+    },
+    "read_gap": {
+      "count": 3007,
+      "mean_ms": 19.95174375989358,
+      "median_ms": 19.923452,
+      "p99_ms": 26.68962522000001,
+      "max_ms": 33.981717
+    }
+  },
+  "queue_high_water": {
+    "raw": 2,
+    "processing": 6,
+    "results": 2
+  },
+  "startup": {
+    "startup_discarded_samples": 32,
+    "startup_overflow_count": 31,
+    "started_ns": 423658753412
+  },
+  "processing_rows_over_40ms": 394,
+  "old_live_files_unchanged": 24,
+  "old_tests_unchanged": 111,
+  "old_archives_unchanged": 10,
+  "base_files_verified": 78,
+  "prior25_evidence_unchanged": true,
+  "board_and_pilot_source_unchanged": true,
+  "assistant_hardware_access": false,
+  "static_capture_verified": true,
+  "live_25hz_passed": false,
+  "live_50hz_passed": false,
+  "auto_beta_effect_passed": false,
+  "board_ddr_verified": false,
+  "limits_frozen": false,
+  "run_acceptance_passed": false,
+  "v3a_complete": false,
+  "scope_cn": "用户板端单次60秒静止无显示采集核验；非完整实时/显示/人体准确率/运动效果/DDR验收。"
+}

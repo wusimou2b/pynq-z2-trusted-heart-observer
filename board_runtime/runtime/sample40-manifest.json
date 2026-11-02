@@ -1,0 +1,20 @@
+{
+  "schema": "sample40_warning20_delivery_v1",
+  "files": {
+    "sample40_runtime.py": "4036e472b3c3934c026b33567a00ec543d3e591cb1bc8db7774b4aab47058008",
+    "run_sample40.py": "9eece2f1ab7e20148ba28fdb5ce430b3402861652aefcccc45a8c1d6f6435d1b",
+    "README_SAMPLE40.md": "403e73faddf264b5dafdefd4fcd7e94f3646fff9d78ef676065a725711410587"
+  },
+  "base_gil_manifest_sha256": "64866b15f9f1bcf384333ca60898f031b95813922bcd878204a02f38d11373de",
+  "notebook_identity_sha256": "55958bd4dc44d666a9eec9e1d21001c5e419953205efbe9ab3e1da3f917de498",
+  "rates": [
+    25,
+    25,
+    5
+  ],
+  "sample_hard_seconds": 0.04,
+  "warning_seconds": 0.02,
+  "main_init_stop_seconds": 0.02,
+  "other_protections_unchanged": true,
+  "automatic_retry": false
+}

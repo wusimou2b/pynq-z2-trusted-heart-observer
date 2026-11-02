@@ -1,5 +1,7 @@
 # Historical identity references
 
-These JSON files document the original package policies and file identities. They are not active manifests for this public source tree. The original private recordings, binary products and full qualification packages are intentionally absent. Absolute historical paths were reduced to basenames; the local source_hashes map in joint-heart-manifest.json was removed. The original provenance/build-manifest.json is excluded.
+These JSON files are historical source-policy and identity references, with machine paths reduced or omitted in the public reference export. They are not active manifests for `src/ps/` and must not be substituted into the current runtime.
 
-Original and exported hashes are recorded separately in ../../public_export_manifest.json. No original runtime guard was changed. Do not restore these references under src/ps and bypass identity failures.
+Current deployment is the complete `../../board_runtime/` collection. It preserves its original 958 runtime member bytes, recorded numerical dependencies and qualification inputs, native assets and guard chain; verify it with its own `verify_portable.py`. The user-authorized retained measurements and derived/preflight inputs are described in the repository root and `../../data/README.md`.
+
+The root public source manifest records the publication selection. Historical references and the current runtime retain their separate roles; no original runtime guard was changed to make this reference subset executable.

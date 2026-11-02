@@ -1,25 +1,95 @@
 {
-  "schema": "trusted_heart_public_live_closure_v2",
-  "entry": "public_live/PublicLive.ipynb",
-  "manifest_sha256": "67c4785d718c16618e85ea7278aea1848200dfd1dc035df70d76342d6b311b00",
-  "complete_declared_file_set_verified": true,
-  "private_recorded_inputs_required_for_new_public_entry": false,
-  "historical_private_guards_preserved": true,
-  "fixed_bit_hwh_and_five_native_libraries_preserved": true,
-  "source_modules_and_paths_explicitly_verified": true,
-  "unit_tests_passed": 81,
-  "javascript_stop_path_assertions_passed": 6,
-  "real_sealed_bundle_relocation_checks_passed": 13,
-  "real_core_imports_in_original_live_scope": 4,
-  "target_board_environment_verified": false,
-  "arm_native_execution_verified": false,
-  "pl_download_performed": false,
-  "new_board_live_verified": false,
-  "historical_1504_record_replay_performed": false,
-  "historical_manual_session_passed": false,
+  "schema": "trusted_heart_runtime_closure_v3",
+  "product_name": "可信心率观测系统",
+  "entry": "board_runtime/runtime/ContinuousDemo25.ipynb",
+  "runtime_root": "board_runtime/runtime",
+  "sibling_native_root": "board_runtime/v3b25 native100 heart video",
+  "deployment_rule": "Copy the complete board_runtime directory; keep both sibling directories and original compatibility names.",
+  "runtime_files_byte_preserved": 958,
+  "portable_verifier_members": 957,
+  "portable_verifier_complete": true,
+  "runtime_manifest_sha256": "4c92d15dae3410510c4f5e995d92d1e2a00d1c2b242623fd72ba837330311f02",
+  "source_archive_sha256": "455d1d62080b29bebb857233fde954a85800ae1446dc9e80470c010f6974d829",
+  "source_manifest_sha256": "05eb947cc4aca61082c8d9a2f0d95d7e510ec20b543bd1df05475cf889c52119",
+  "original_guard_chain_preserved": true,
+  "matched_hardware_and_native_assets_preserved": true,
+  "user_measured_and_derived_inputs_retained_with_authorization": true,
+  "historical_qualification_inputs_retained": true,
+  "preflight_points": 8,
+  "preflight_accessed_hardware": false,
+  "saved_board_run": {
+    "formal_elapsed_seconds": 33.193811316,
+    "raw_rows_saved": 832,
+    "processed_rows": 832,
+    "result_rows_saved": 832,
+    "paired_rows": 830,
+    "unpaired_rows": 2,
+    "publication_allowed_rows": 402,
+    "video_completed_frames": 166,
+    "queue_full": {
+      "raw": 0,
+      "processing": 0,
+      "results": 0
+    },
+    "capture_fault": null,
+    "video_fault": null,
+    "stop_reason": "manual_stop",
+    "owner_natural_exit": true,
+    "ps_natural_exit": true,
+    "ps_forced_termination": false,
+    "owner_exitcode": 0,
+    "ps_exitcode": 0,
+    "video_exitcode": 0,
+    "queues_drained": true,
+    "camera_released": true,
+    "hdmi_closed": true,
+    "buffers_released": true,
+    "actual_lease_released": true,
+    "resources_released": true,
+    "export_complete": true,
+    "manual_session_passed": false,
+    "aggregate_state": "stopped_with_errors",
+    "false_top_level_checks": [
+      "video_original",
+      "original_binding"
+    ],
+    "scope": "Saved user-operated run; original legacy aggregate false flags remain unchanged."
+  },
+  "historical_joint_run": {
+    "seconds": 80.652,
+    "records": 2021,
+    "video_frames": 403,
+    "is_current_run": false
+  },
+  "current_publication_review": {
+    "hardware_accessed": false,
+    "arm_native_execution_performed": false,
+    "pl_download_performed": false,
+    "new_acquisition_performed": false
+  },
+  "unverified": [
+    "clean SD/system reproduction",
+    "complete target environment package lock",
+    "medical accuracy or clinical effect",
+    "strict real-time behavior",
+    "board DDR acceptance",
+    "long-duration or unlimited operation",
+    "all-video-frame reference equivalence",
+    "full-system acceptance",
+    "complete clean source implementation rebuild"
+  ],
   "unknown_environment": [
-    "original SD image file/hash",
-    "pandas exact original version",
+    "original SD image file/hash and Linux kernel build",
+    "pandas exact successful environment version",
     "complete Jupyter/kernel/browser version snapshot"
-  ]
+  ],
+  "superseded_public_live": {
+    "current_deployment_entry": false,
+    "reason": "Startup and exit problems in the previous wrapper; current publication restores the original portable runtime.",
+    "historical_software_tests_only": {
+      "python_cases": 81,
+      "javascript_assertions": 6,
+      "sealed_bundle_checks": 13
+    }
+  }
 }

@@ -6,13 +6,13 @@
 
 | 材料 | 文件 |
 |---|---|
-| 23页设计报告 | technical_report_anonymous.docx / technical_report_anonymous.pdf |
+| 29页设计报告 | technical_report_anonymous.docx / technical_report_anonymous.pdf |
 | 一页中文展示海报 | amd_health_poster_zh_submission.pptx / amd_health_poster_zh_submission.pdf |
 | 一页英文海报 | amd_health_poster_en_submission.pptx / amd_health_poster_en_submission.pdf |
 | 8页大模型协作记录 | llm_collaboration_record_anonymous.docx / llm_collaboration_record_anonymous.pdf |
 | 板端使用和核验说明 | usage_guide.md |
 
-运行入口为ContinuousDemo25.ipynb，按使用说明依次完成四单元操作，结束时正常停止、保存与释放资源。联合运行测试在PPG/IMU 25Hz及视频目标5fps下记录约80.7秒，处理保存2021条、配对2020条、1条未配对记录禁止数值发布、视频403帧。软件对照、RTL核验、真实采集与PL资源时序分别列明测量范围。
+当前公开部署入口为 `board_runtime/runtime/ContinuousDemo25.ipynb`，完整目录与环境说明见[根README](../../README.md)和[板端说明](../../board/README.md)。以下80.652秒／2021条／403帧属于报告的历史联合运行；最新33.193811316秒／832条／166帧另行记录。运行时按使用说明依次完成四单元操作，结束时正常停止、保存与释放资源。联合运行测试在PPG/IMU 25Hz及视频目标5fps下记录约80.7秒，处理保存2021条、配对2020条、1条未配对记录禁止数值发布、视频403帧。软件对照、RTL核验、真实采集与PL资源时序分别列明测量范围。
 
 本索引指向正式匿名技术材料。源码构建、环境依赖及工程目录对照应与工程附带README和构建脚本一并核验；本索引不替代工程从零复现步骤。
 

@@ -1,0 +1,73 @@
+{
+  "schema": "main_heart_native_snapshot_build_v1",
+  "complete": true,
+  "hardware_accessed": false,
+  "source_sha256": "a3b4aa2a2acfb8959b7c8f0c3d59fee4ea92f23fdeda4d8cd37aecb3725bd11e",
+  "adapter_sha256": "3d55332e800b6103c7ac34476a8f67ef340369acf74271b6b0ce63928bbd74ba",
+  "builder_sha256": "5deb54c79e4010f3c2063e9ab4dc90fe995471ce551e1bd8f04c9039bd985a8f",
+  "commands": [
+    [
+      "/usr/bin/arm-linux-gnueabihf-gcc-11",
+      "--version"
+    ],
+    [
+      "/usr/bin/arm-linux-gnueabihf-gcc-11",
+      "-std=c11",
+      "-O2",
+      "-fPIC",
+      "-march=armv7-a",
+      "-marm",
+      "-mfpu=vfpv3-d16",
+      "-mfloat-abi=hard",
+      "-DHMAIN_ARM_MMIO=1",
+      "-fno-tree-vectorize",
+      "-fno-tree-slp-vectorize",
+      "-fno-builtin",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "/home/xilinx/jupyter_notebooks/v3b25 main native transaction budget 20261026/main_heart_readback.c",
+      "-S",
+      "-o",
+      "/home/xilinx/jupyter_notebooks/v3b25 main native transaction budget 20261026/main_native_build/main_heart_readback.s"
+    ],
+    [
+      "/usr/bin/arm-linux-gnueabihf-gcc-11",
+      "-std=c11",
+      "-O2",
+      "-fPIC",
+      "-march=armv7-a",
+      "-marm",
+      "-mfpu=vfpv3-d16",
+      "-mfloat-abi=hard",
+      "-DHMAIN_ARM_MMIO=1",
+      "-fno-tree-vectorize",
+      "-fno-tree-slp-vectorize",
+      "-fno-builtin",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "/home/xilinx/jupyter_notebooks/v3b25 main native transaction budget 20261026/main_heart_readback.c",
+      "-shared",
+      "-o",
+      "/home/xilinx/jupyter_notebooks/v3b25 main native transaction budget 20261026/main_native_build/libmain_heart_readback.so"
+    ]
+  ],
+  "error": null,
+  "physical_communication_budget_passed": false,
+  "compiler_sha256": "cd46fd90d695d44919374848e89e89630807e1171d491a91dcdc6156a051d9d0",
+  "scalar_barriers_verified": true,
+  "vector_copy_used": false,
+  "memory_test": {
+    "passed": true,
+    "words_verified": 174,
+    "expired_refused": true,
+    "alias_refused": true,
+    "native_decode_verified": true,
+    "native_transaction_guard_verified": true,
+    "hardware_accessed": false,
+    "physical_communication_budget_passed": false
+  },
+  "binary_sha256": "faa44cdaee9ad8ee505a93049be033df530f80b68fba6af3de13ffab988c7696",
+  "assembly_sha256": "677049c52d68cf7a964e84e9fde18e99b27d1fe339c3504634f4ed6a511dfbc7"
+}

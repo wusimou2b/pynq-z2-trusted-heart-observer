@@ -1,0 +1,54 @@
+{
+  "schema": "v3b25_main_spatial_local_integration_v1",
+  "local_verified": true,
+  "spatial_vlnv": "v3b25.local:vision:vision_spatial_axi_lite:2.0",
+  "pair": {
+    "heart_v3b25_main.bit": "6dc798a77f8577629f5d824bf9081e994352b4cd104dde31b8b265c621bdd966",
+    "heart_v3b25_main.hwh": "3c44a48758fce3f1a581f8ae3d74d543a712b539d922fad8c739b4bd7a5b9393"
+  },
+  "tests": 71,
+  "tests_xml_sha256": "73d8ee24b370415b2761ae8aa7ae3966179e34a8b36dc5af3e6bc9f24e2e846c",
+  "runtime_source_hashes": {
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\board\\main_spatial_owner.py": "043e76be666a5420939b3e8b0888073ddea3675a848d1a10556fefbc10ffc56a",
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\board\\main_spatial_runtime.py": "94f6a27dc7a9d2d10ddcc803feed06036db9cb84726e68ec6ec70bf1be8c1ebc",
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\board\\main_spatial_ps.py": "ea377ef5b7a14ed0975eaa9a983b94c9a875f15c4dd9b1f71d8bd7802a7d573f",
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\board\\main_spatial_assessment.py": "2e6e85ac63a351867301ebe03fbe0b441534c8e4e44e6a3e02aeb2b9846abf22",
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\board\\main_spatial_worker.py": "3f135b6132d1f787b31c6d4532bb08c7d69e252739b31673409c66cf599de48b",
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\board\\main_spatial_guard.py": "89b990671ec83cafecbc42b6aef1d9bfd912bd2bb132d77d4bc5af6f236063d7",
+    "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\board\\run_main_spatial.py": "d21e84d2a74277cbd05437b1714fb982b6335ac01b6d40ec86e3be5ae0bc45c3"
+  },
+  "unchanged_kernel_math": true,
+  "arithmetic_equivalence": {
+    "kernel_bytes_unchanged": false,
+    "math_unchanged": true,
+    "cycles_unchanged": true,
+    "exhaustive_cases": 131072,
+    "proof": "E:\\Codex-builds\\v3b25-main-spatial-overflow-proof-20261027-01\\equivalence.json",
+    "proof_sha256": "854d0dae5cbbd4ebabf0b23813ccd3d75e7e9cb2d3d0d13381656d1c83b374cd",
+    "receipt": "E:\\Codex-builds\\v3b25-main-spatial-overflow-joint-20261027-01\\overflow-equivalence.json",
+    "receipt_sha256": "e7ad10a77666d506397d59fc697aa095bbfea355636e12dddfd6c3b5ef206c84",
+    "source_hashes": {
+      "E:\\Codex-builds\\v3b25-main-spatial-overflow-proof-20261027-01\\history100_fp64.sv": "bb8a0931f442e77a8cb17759dedeec85a6aac60719c42cfe9adb80cf817896cc",
+      "E:\\Codex-builds\\v3b25-main-heart-joint-20261027-01\\core_src\\history100_mul53.sv": "dd87fbb770a31b0ffe7ef40a4483ddaba82aa164fd0fc9ae7b950b75c53a9dd8",
+      "E:\\Codex-builds\\v3b25-main-heart-joint-20261027-01\\core_src\\main_heart_mul53.sv": "03e85f7ee52dd97d09f21aa6e5eac56591b995cedf8849cb052a18b350dd74ee",
+      "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\sim\\tb_main_spatial_overflow.sv": "582b49cd661b7e7050471031589ad130ab93b082c01ea41fe59ccb8f65b4dc44",
+      "C:\\Users\\ROG\\Documents\\Codex\\2026-09-20\\referenced-chatgpt-conversation-this-is-an\\v3b25_integration\\main_spatial_overflow.py": "2bf0b9523ee68a1bdc836bf4febf5b69a58f4bda5869d4116a2697f35c9fc00d",
+      "E:\\Codex-builds\\v3b25-main-heart-joint-20261027-01\\core_src\\history100_fp64.sv": "c05b9a452ce14b35d0be4a677ad46625d46f1212204793dbc0571602d29146d5",
+      "E:\\Codex-builds\\v3b25-main-spatial-overflow-joint-20261027-01\\core_src\\history100_fp64.sv": "bb8a0931f442e77a8cb17759dedeec85a6aac60719c42cfe9adb80cf817896cc",
+      "E:\\Codex-builds\\v3b25-main-spatial-overflow-joint-20261027-01\\ip_repo\\main_heart_joint_axi\\src\\history100_fp64.sv": "bb8a0931f442e77a8cb17759dedeec85a6aac60719c42cfe9adb80cf817896cc",
+      "E:\\Codex-builds\\v3b25-main-spatial-overflow-joint-20261027-01\\project\\heart_v3b25.gen\\sources_1\\bd\\design_1\\ipshared\\febf\\src\\history100_fp64.sv": "bb8a0931f442e77a8cb17759dedeec85a6aac60719c42cfe9adb80cf817896cc",
+      "E:\\Codex-builds\\v3b25-main-spatial-overflow-joint-20261027-01\\overflow-equivalence.json": "e7ad10a77666d506397d59fc697aa095bbfea355636e12dddfd6c3b5ef206c84",
+      "E:\\Codex-builds\\v3b25-main-spatial-overflow-proof-20261027-01\\equivalence.json": "854d0dae5cbbd4ebabf0b23813ccd3d75e7e9cb2d3d0d13381656d1c83b374cd"
+    }
+  },
+  "hybrid_layout": "camera_bpm_strip_v1",
+  "grid": [
+    4,
+    3
+  ],
+  "video_mpu_fusion_retained": true,
+  "protections_changed": false,
+  "hardware_accessed": false,
+  "physical_video_concurrency_tested": false,
+  "live_25hz_passed": false
+}

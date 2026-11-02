@@ -1,6 +1,6 @@
 # Eight PYNQ engineering Skills
 
-All eight directories under `skills/` include their original `SKILL.md`, references, tools and MIT license. Four framework skills also include independent unit tests and synthetic examples. Files are copied byte-for-byte; this export did not run the tests.
+All eight directories under `skills/` include their original `SKILL.md`, references, tools and MIT license. Four framework skills also include independent unit tests and synthetic examples. Source contents are preserved; Git checkouts may normalize line endings. This export did not run the tests.
 
 | Skill | Review/use scope |
 |---|---|
@@ -21,4 +21,4 @@ Local source manifests, original ZIP copies, absolute machine paths, generated t
 
 ## Project entry
 
-The project example is `../public_live/PublicLive.ipynb`; its full identity and Notebook source policy are documented in the adjacent deployment README. The eight Skills remain unchanged reusable sources. The new release's81 software cases are separate from the historical134 Skill cases and38 CLI assertions; no hardware validation is implied.
+The project example is `../board_runtime/runtime/ContinuousDemo25.ipynb`. Copy the entire `board_runtime/` directory and preserve its sibling `runtime/` and `v3b25 native100 heart video/` names. See the root README and `../board/README.md` for versions, four-cell operation and normal stop. The eight Skill source directories remain unchanged. Historical Skill tests and the superseded `public_live` wrapper tests are separate from the saved 33.19-second board run and do not establish a new hardware acceptance.

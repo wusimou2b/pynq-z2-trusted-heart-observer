@@ -1,0 +1,10 @@
+{
+  "pid": 4538,
+  "worker_exited": true,
+  "exitcode": 0,
+  "startup_timed_out": false,
+  "stop_reason": null,
+  "cleanup_unconfirmed": false,
+  "child_force_terminated": false,
+  "archive_exists": true
+}

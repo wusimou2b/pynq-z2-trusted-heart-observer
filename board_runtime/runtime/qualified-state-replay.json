@@ -1,0 +1,19 @@
+{
+  "replay_manifest_sha256": "a00251944420bde7548b2a749f368b8ecae2fb761767a7c56033dec793a8c857",
+  "result_zip_sha256": "690831bd50d1372928470c1404b81ccc3da7acce8a440797b522d827c2d31aad",
+  "algorithm": {
+    "rows": 1506,
+    "fields": 66264,
+    "differences": 0,
+    "first": []
+  },
+  "row_age": {
+    "count": 1506,
+    "mean_ms": 70.0910713067729,
+    "max_ms": 294.9019,
+    "p95_ms": 182.123401
+  },
+  "natural_ps_exit": true,
+  "live_acceptance_passed": false,
+  "scope": "One saved1506 + physical PL/video replay; no physical sensor acquisition."
+}
