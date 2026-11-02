@@ -15,4 +15,4 @@
 
 部分历史源生成器仍引用固定 ARM libm、PocketFFT 和历史目录。`small_heart_program.py` 是补齐的原参考源，不改变数学 ROM，也不构成全部生成器已在新目录从零运行的证明。完整源码重建的依赖及基础／部署 BD 区别见 [../build/README.md](../build/README.md) 和[外部依赖](../build/external_dependencies.md)。
 
-五个匹配 ARM 原生产物及其原 C／汇编来源保留在完整运行集合中；组件许可另存 [../licenses/native/](../licenses/native/) 和 [../licenses/hardware/](../licenses/hardware/)。原 ABI、VLNV、schema、兼容目录名及文件 pin 保留，产品简称为“可信心率观测系统”。
+匹配 ARM 原生产物及其原 C／汇编来源保留在完整运行集合中；组件许可另存 [../licenses/native/](../licenses/native/) 和 [../licenses/hardware/](../licenses/hardware/)。原 ABI、VLNV、schema、兼容目录名及文件 pin 保留，产品简称为“可信心率观测系统”。

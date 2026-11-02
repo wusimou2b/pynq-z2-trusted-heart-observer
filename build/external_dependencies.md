@@ -2,7 +2,7 @@
 
 ## 板端 Python 与原生库
 
-当前入口为 [../board_runtime/runtime/ContinuousDemo25.ipynb](../board_runtime/runtime/ContinuousDemo25.ipynb)。复制整个 `board_runtime/`，保留 `runtime/` 与 `v3b25 native100 heart video/` 同级。958 个原运行文件和 guard 链保持不变，五个匹配原生库、C／汇编来源及原准备／资格输入一同保留，未重新编译。
+当前入口为 [../board_runtime/runtime/ContinuousDemo25.ipynb](../board_runtime/runtime/ContinuousDemo25.ipynb)。复制整个 `board_runtime/`，保留 `runtime/` 与 `v3b25 native100 heart video/` 同级。958 个原运行文件和 guard 链保持不变，匹配原生库、C／汇编来源及原准备／资格输入一同保留，未重新编译。
 
 现成原生库面向 ARMv7 little-endian Linux、32 位 hard-float ABI、CPython 3.10／`cpython-310-arm-linux-gnueabihf` 和 NumPy 1.21.5。历史直接记录为 CPython 3.10.4、SciPy 1.8.0；源码要求 PYNQ 3.1.1，历史视频叙述记有 OpenCV 4.5.4。pandas、IPython、ipykernel 和经典 Notebook 也需安装，精确版本与原 SD 镜像、内核及浏览器快照尚未全部锁定。
 

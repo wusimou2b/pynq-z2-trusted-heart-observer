@@ -4833,8 +4833,8 @@
     },
     {
       "path": "build/external_dependencies.md",
-      "bytes": 3936,
-      "sha256": "4b3d85f8d79671f15ba8235f6e452d686eec34014a5d200e59df9b0c36cb0057"
+      "bytes": 3930,
+      "sha256": "addacb4df7515e4628fff2584f152e47f1d964708485bc9bb99c6ac8fa3532f1"
     },
     {
       "path": "build/inputs/final/design_1.bd",
@@ -5298,13 +5298,23 @@
     },
     {
       "path": "public_selection_notes.md",
-      "bytes": 2264,
-      "sha256": "da1469b1cf568015cc1596837b04a21d208660d4b8e9d0a38994e2db3e6ee206"
+      "bytes": 2668,
+      "sha256": "ffbb20a0e0254a5ff94c5bec4c286b7e7c6316eb2fc6aff09e2b8e6e211b32b1"
     },
     {
       "path": "README.md",
-      "bytes": 8851,
-      "sha256": "1230bdf554bde4fee2409774b42d699104e2a0a58eebeb5c0761fc06fca32557"
+      "bytes": 8878,
+      "sha256": "7c1f539887284093d4a4f2caf161bc5c5c783d473b19e77af12eae216d37d36f"
+    },
+    {
+      "path": "report/materials/amd_health_poster_bilingual_anonymous.pdf",
+      "bytes": 568616,
+      "sha256": "d39e3623405573b549556aa8fd923f73fd91675bd8838693a2882da6688a26b1"
+    },
+    {
+      "path": "report/materials/amd_health_poster_bilingual_anonymous.pptx",
+      "bytes": 1526215,
+      "sha256": "88e9d5381cabf0cbd052dc26340219222fb8d6688f11f372fa8c5b9abf49c97c"
     },
     {
       "path": "report/materials/amd_health_poster_en_submission.pdf",
@@ -5313,8 +5323,8 @@
     },
     {
       "path": "report/materials/amd_health_poster_en_submission.pptx",
-      "bytes": 1514969,
-      "sha256": "f6d2c633ac135ced24d5b0284a5d746d45b3f288576a60b8275bf824b2d3b559"
+      "bytes": 1512163,
+      "sha256": "6f9b83b769c389ab91cae9ac6854ef221482e65ef8a86046543e0ffca2051cdd"
     },
     {
       "path": "report/materials/amd_health_poster_zh_submission.pdf",
@@ -5323,8 +5333,8 @@
     },
     {
       "path": "report/materials/amd_health_poster_zh_submission.pptx",
-      "bytes": 1516685,
-      "sha256": "108483bd4db1aeb858a3bbe47be2fcb2c3b5ad436d8e36a86c9c28d4c898d0cc"
+      "bytes": 1513879,
+      "sha256": "1dc8f220465d9f50fea9ae126582acd27f9f331fd994465e7e15e58772f65e8d"
     },
     {
       "path": "report/materials/llm_collaboration_record_anonymous.docx",
@@ -5347,19 +5357,24 @@
       "sha256": "698d65b7b5cbbdc060d5265a4f52c5c75d58bb3bd0abfb2f24675e202171db14"
     },
     {
+      "path": "report/materials/POSTER_METADATA.md",
+      "bytes": 1274,
+      "sha256": "aad2620c7fe792bb8d0f7ff2301ae6f2e2979a5f0d13883a866401af81cbcee8"
+    },
+    {
       "path": "report/materials/README.md",
-      "bytes": 4091,
-      "sha256": "8b583cb61725fa4ae6435951bf7fa11d21d20df2087311c06f0ea89428276ea0"
+      "bytes": 4513,
+      "sha256": "5a3f12503db520e816dcb07f192bedbcde888056f82218cdae68d1d1ff9c68a2"
     },
     {
       "path": "report/materials/README_submission.md",
-      "bytes": 2017,
-      "sha256": "70feb8be88bce19fd0382d32a8ac68c7ed2314a1b7aad5ab3fd123bbb5805b15"
+      "bytes": 2401,
+      "sha256": "385b9775a1e31524597391fddfec976d23de29a83b6287a82c8a972e17aeeaaa"
     },
     {
       "path": "report/materials/SHA256SUMS.txt",
-      "bytes": 1558,
-      "sha256": "f68bb300b3279fc4a1d7106e62ef674a33fbb30b562a13576018fcc8970aa833"
+      "bytes": 1863,
+      "sha256": "db9d3ebf14600a52af81b11128d4e0567035e2da9675710832f8aa9abaad3161"
     },
     {
       "path": "report/materials/technical_report_anonymous.docx",
@@ -5393,8 +5408,8 @@
     },
     {
       "path": "report/README.md",
-      "bytes": 2013,
-      "sha256": "47422f17f863e2d7ffc8f669d7e77bd198ba99a64bfd112691d4d9b1b22d72e5"
+      "bytes": 3551,
+      "sha256": "d9897bfd0626099cfeea62d4d655262ddb01cc998a5b9afe49ce905012209634"
     },
     {
       "path": "reproduction/collect_environment_metadata.py",
@@ -5418,8 +5433,8 @@
     },
     {
       "path": "reproduction/native_dependency.md",
-      "bytes": 1463,
-      "sha256": "0008c2d7071d5ba0df8117d7766104be2f31a6309db2c14627a2f0e52c25a513"
+      "bytes": 1456,
+      "sha256": "64b819271f4744b48e3bd73f41fd646b423ca39863effe62d788e403c887370b"
     },
     {
       "path": "reproduction/source_run_20261102.json",
@@ -8303,8 +8318,8 @@
     },
     {
       "path": "src/README.md",
-      "bytes": 2072,
-      "sha256": "27c1905c5225381050c4bbb40dad9893c2c6158a96f088cd038ef0de81b5f1e8"
+      "bytes": 2066,
+      "sha256": "46f93c9ea172e9ee0f6b00341e83abf97c4b0dac11d78db84da70542fcd39701"
     },
     {
       "path": "src/reference/main_heart_assessment.py",
@@ -8543,5 +8558,8 @@
     }
   ],
   "video_asset_filename": "trusted_hr_browser_colors_final_20261102.mp4",
-  "video_asset_sha256": "204a94c7161e3a7c00e777edfecd7c6a53cbca8a5f4a29e41d1dde9e3814f8d2"
+  "video_asset_sha256": "204a94c7161e3a7c00e777edfecd7c6a53cbca8a5f4a29e41d1dde9e3814f8d2",
+  "anonymous_bilingual_posters_included": true,
+  "poster_template_identity_metadata_removed": true,
+  "publication_update_scope": "Anonymous poster inclusion and metadata cleanup, documentation and distribution checksums only; all board_runtime bytes preserved."
 }
