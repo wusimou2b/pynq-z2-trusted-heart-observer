@@ -1,3 +1,5 @@
+> **2026-11-03 部署说明：** 当前仓库使用合规存储名称。本文件中的原 Notebook 名称及运行步骤仅适用于执行 `python3 -B prepare_delivery.py runtime --output ../trusted_heart_demo` 后生成的目录；请先按根目录 `readme.md` 完成准备与校验，勿直接运行仓库内的规范化副本。
+
 # Publication scope
 
 The current deployment entry is `board_runtime/runtime/ContinuousDemo25.ipynb`. The complete portable runtime preserves all 958 source member bytes and the original guard chain, matched bit/HWH, native libraries, qualification inputs and compatibility names. Keep `runtime/` and `v3b25 native100 heart video/` as siblings. The previous `public_live` wrapper had startup/exit problems and is superseded; its software checks and old Release assets are historical records.

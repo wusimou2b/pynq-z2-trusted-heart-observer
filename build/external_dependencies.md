@@ -2,28 +2,27 @@
 
 ## 板端 Python 与原生库
 
-当前入口为 [../board_runtime/runtime/ContinuousDemo25.ipynb](../board_runtime/runtime/ContinuousDemo25.ipynb)。复制整个 `board_runtime/`，保留 `runtime/` 与 `v3b25 native100 heart video/` 同级。958 个原运行文件和 guard 链保持不变，匹配原生库、C／汇编来源及原准备／资格输入一同保留，未重新编译。
+使用[根说明](../readme.md)中的一次性部署映射，在新目录还原原运行链和约定文件名。原 958 个运行文件及保护策略保持原字节；新发布命名不等于改变 C 扩展 ABI、硬件 VLNV、寄存器映射或原身份 pin。
 
-现成原生库面向 ARMv7 little-endian Linux、32 位 hard-float ABI、CPython 3.10／`cpython-310-arm-linux-gnueabihf` 和 NumPy 1.21.5。历史直接记录为 CPython 3.10.4、SciPy 1.8.0；源码要求 PYNQ 3.1.1，历史视频叙述记有 OpenCV 4.5.4。pandas、IPython、ipykernel 和经典 Notebook 也需安装，精确版本与原 SD 镜像、内核及浏览器快照尚未全部锁定。
+具体入口为 `python -B prepare_delivery.py runtime --output /fresh/path/runtime_bundle`；仓库内是规范化存储副本，执行该还原命令后才使用外部新目录中的原 Notebook。
 
-在成功 Notebook 的同一解释器中按[根 README](../README.md)先查元数据和 `pip check`。缺包按成功环境的镜像、系统仓库或兼容 wheel 补齐，保留已知版本；使用 `python3 -m pip install --no-deps /path/to/matching_package.whl` 安装核对过的本地 wheel，再检查依赖。系统 OpenCV 可能没有 `opencv-python` 的 pip 元数据。没有未经验证的完整版本 lock，也没有将普通 PC 安装 PYNQ 视为兼容 ARM 运行环境。
+现成原生库面向 ARMv7 little-endian Linux、32 位 hard-float ABI、CPython 3.10 和 NumPy 1.21.5。历史直接记录为 CPython 3.10.4、SciPy 1.8.0；源码要求 PYNQ 3.1.1，视频记录为 OpenCV 4.5.4。pandas、IPython、ipykernel、Notebook、SD 镜像和 Linux 内核的精确版本仍未全部锁定，不把普通 PC 环境视为板端兼容环境。见[原生依赖](../reproduction/native_dependency.md)和[环境证据](../reproduction/environment_evidence_lock.md)。
 
-原生构建历史记录为 GCC 11.2.0，并固定编译器可执行文件 SHA256；版本文字相同不足以替代原编译身份。详情见[原生依赖](../reproduction/native_dependency.md)和[环境证据](../reproduction/environment_evidence_lock.md)。
+## 可执行的硬件构建依赖
 
-## 硬件工具与 IP
+构建入口和完整命令见 [readme.md](readme.md)。实际历史使用 Vivado **2024.1**、Vitis HLS **2024.1**、Zynq-7000 支持、`xc7z020clg400-1` 和 PYNQ-Z2。工具安装和 AMD catalog IP 由使用者按各自许可获取，不随项目源码整树打包。
 
-实际历史实现使用 Vivado **2024.1**、Zynq-7000 支持、`xc7z020clg400-1` 和 PYNQ-Z2。工具安装与 AMD catalog IP 是遵循各自许可的外部依赖。运行随包资产不需要安装 Vivado；从源码重建是独立步骤。
+`inputs/physical-inputs.json` 是新源码构建契约：109 个可公开随包输入，27 个固定 URL/commit/SHA256 的外部文件，两个从 BSD C++ 源本地生成的 HLS IP。公开 ZIP 与旧 206 项完整物理归档不同，旧归档 SHA 用于核对出处，不伪称两者相等。
 
-PYNQ 上游输入固定到 **Xilinx/PYNQ commit `19ed17d4fd4ea71f95a97d30f8ccd0d62b8dbaaa`**。`src/hls/` 保留 color_convert 和 pixel_unpack 的 C++／头文件／测试／Tcl 及 BSD-3-Clause 许可。使用匹配 HLS 工具生成兼容 `xilinx.com:hls:color_convert:1.0` 和 `xilinx.com:hls:pixel_unpack:1.0`；本轮未重新验证 HLS 再生成等价性。
+- PYNQ 源固定到 `Xilinx/PYNQ@19ed17d4fd4ea71f95a97d30f8ccd0d62b8dbaaa`。构建入口获取 `axi_dynclk`、RGB2DVI、`color_swap`、TMDS 接口和 PYNQ 原许可；保留 MMCM 源原有的 Xilinx 器件使用限制。
+- 板定义固定到 `xupsh/pynq-supported-board-file@e02d6a3866b5465218f777168cdc51344ac94e07`。仅下载经 SHA 校验的四个必需文件到外部构建目录，不把缺少明确再分发许可的板定义整树纳入公开源包。
+- `color_convert`、`pixel_unpack` 保留公开 BSD C++ 源，Vitis HLS 在构建者本地生成 RTL/驱动/IP catalog。生成器检查 VLNV，再进入 Vivado；不把生成源代码改授 MIT。
+- RGB2DVI 两份已审查覆盖文件保留 BSD 原许可，固定来源/修改前后哈希，避免恢复错误的历史上游时钟约束。详情在清单 `preserved_overrides`。
 
-BD 还使用 `axi_dynclk`、`rgb2dvi`、`color_swap`、TMDS 接口和 PYNQ-Z2 板定义。按固定上游来源取得对应文件并保留限制，包括 `mmcme2_drp.v` 的器件限制；并非所有上游目录都在这里整树重分发。硬件声明见 [../licenses/hardware/](../licenses/hardware/)。
+`inputs/input/design_1.bd` 是基础 BD；`inputs/final/design_1.bd` 是已部署 BD 参考，不互换。构建输出为全新文件，不能直接覆盖已配套 bit/HWH。所有硬件/原生许可分别见 [../licenses/hardware/](../licenses/hardware/) 和 [../licenses/native/](../licenses/native/)。
 
-`inputs/input/design_1.bd` 是基础 BD，`inputs/final/design_1.bd` 是已部署 BD 参考，两者不得混作相同构建输入。`scripts/physical-postroute.tcl` 是历史检查原件，需要对应 checkpoint 和原配套输入。`rebuild.py` 仍要求原完整 physical-input ZIP 及索引；公开输入子集不等于该归档，因此不声明该脚本可在此一键完成全部重建。当前 Linux/PYNQ 运行流程不要求另造裸机 ELF 或 XSA。
+## 数学参考与旧辅助入口
 
-## 数学源与历史工具
+`src/reference/main_heart_operators.py`、`main_heart_welch.py` 的 GNU C Library ARM libm/PocketFFT 数学参考仍保留其版本和许可边界。本次硬件构建使用已核对的 RTL/数学 ROM 源输入，不声称已在干净环境重新执行全部历史数学源生成器或重编译 ARM 库。
 
-`src/reference/main_heart_operators.py` 保留固定 GNU C Library ARM libm 运算语义，历史固定 ARM 库仍有外部来源要求。`main_heart_welch.py` 固定 PocketFFT，部分路径为历史位置；对应参考 Python、RTL、数学 ROM 和 LGPL／BSD 声明均保留。补齐 `small_heart_program.py` 原件后，原数学 ROM 不变；本轮没有完整重跑全部源生成器。
-
-历史辅助入口涉及 `ps_core_placement`、`roi_motion_guard`、`roi_motion_runtime`、`run_nlms_rtl` 等依赖，不能当作当前完整运行 API。当前运行只按完整 `board_runtime/` 的原入口及校验链使用。新编译或新硬件生成物需重新验证，不改变原通过标志。
-
-原生及数学组件分别见 [../licenses/native/](../licenses/native/) 和 [../src/licenses/](../src/licenses/)。产品命名不改变 C 扩展 ABI、硬件 VLNV、schema、原目录名称或固定身份 pin。
+历史 `ps_core_placement`、`roi_motion_guard`、`roi_motion_runtime`、`run_nlms_rtl` 等辅助入口不是当前完整运行 API；部署应使用根说明的还原入口。许可、源码身份检查、C 仿真/综合、物理实现、板端行为分别报告，不能用任一阶段替代其他阶段。

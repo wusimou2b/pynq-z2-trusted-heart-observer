@@ -1,0 +1,11 @@
+i2c_scl_io	P15	LVCMOS33
+i2c_sda_io	P16	LVCMOS33
+hdmi_out_clk_n	L17	TMDS_33
+hdmi_out_clk_p	L16	TMDS_33
+hdmi_out_data_n[0]	K18	TMDS_33
+hdmi_out_data_p[0]	K17	TMDS_33
+hdmi_out_data_n[1]	J19	TMDS_33
+hdmi_out_data_p[1]	K19	TMDS_33
+hdmi_out_data_n[2]	H18	TMDS_33
+hdmi_out_data_p[2]	J18	TMDS_33
+hdmi_out_hpd[0]	R19	LVCMOS33

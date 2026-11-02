@@ -1,8 +1,10 @@
+> **2026-11-03 部署说明：** 当前仓库使用合规存储名称。本文件中的原 Notebook 名称及运行步骤仅适用于执行 `python3 -B prepare_delivery.py runtime --output ../trusted_heart_demo` 后生成的目录；请先按根目录 `readme.md` 完成准备与校验，勿直接运行仓库内的规范化副本。
+
 # 当前运行文件与证据范围
 
-入口为 [board_runtime/runtime/ContinuousDemo25.ipynb](board_runtime/runtime/ContinuousDemo25.ipynb)。当前发布恢复用户确认正常的相对路径运行集合，958 个运行文件保持来源字节，`verify_portable.py` 核验 957 个成员及原身份链。运行时保留 `runtime/` 和 `v3b25 native100 heart video/` 两个同级目录；外层可以整体移动，内部兼容名称、guard、bit/HWH、原生库、数据依赖及其 pin 不变。
+入口为 [board_runtime/runtime/ContinuousDemo25.ipynb](board_runtime/runtime/continuousdemo25.ipynb)。当前发布恢复用户确认正常的相对路径运行集合，958 个运行文件保持来源字节，`verify_portable.py` 核验 957 个成员及原身份链。运行时保留 `runtime/` 和 `v3b25 native100 heart video/` 两个同级目录；外层可以整体移动，内部兼容名称、guard、bit/HWH、原生库、数据依赖及其 pin 不变。
 
-旧 `public_live` 封装有启动和退出问题，本版采用上述原运行集合。针对旧封装的 81 项软件测试、6 项 JS 断言和 13 项迁移检查属于历史软件证据，不能作为本入口的新板测或全部验收证明。历史提交保留，当前部署按[根 README](README.md)与[板端说明](board/README.md)。
+旧 `public_live` 封装有启动和退出问题，本版采用上述原运行集合。针对旧封装的 81 项软件测试、6 项 JS 断言和 13 项迁移检查属于历史软件证据，不能作为本入口的新板测或全部验收证明。历史提交保留，当前部署按[根 README](readme.md)与[板端说明](board/readme.md)。
 
 ## 保存的本次实测
 
@@ -10,7 +12,7 @@
 
 原始 `manual_session_passed=false` 与 `stopped_with_errors` 保留，顶层旧检查 `video_original`、`original_binding` 仍为 false。它们不适配现有空间视频组合，不能因为其余运行和收尾分项成立就改成全部通过。前两帧在清理后做过参考核对，未核对所有视频帧；医学准确率、严格实时、DDR、长期连续运行和干净系统完整复现未验证。旧 **80.652 秒／2021 条／403 帧**记录是独立历史运行。
 
-公开集合依用户授权保留其自行采集的数值实测及派生记录、历史资格记录和 8 点无硬件预检输入，以维持原检查链。历史资格不等于本轮新验收，8 点预检不等于受试者数或新硬件采集。本轮发布整理只做文件及保存记录核查，没有重新加载 ARM 库、下载 PL 或启动采集。
+公开集合依用户授权保留其自行采集的数值实测及派生记录、历史资格记录和 8 点无硬件预检输入，以维持原检查链。历史资格不等于本轮新验收，8 点预检不等于受试者数或新硬件采集。本轮对原运行链只做文件及保存记录核查，没有重新加载 ARM 库、下载 PL 或启动采集。
 
 本次原始／处理 CSV 位于 [data/measured_20261102/](data/measured_20261102/)，摘要见 [reproduction/source_run_20261102.json](reproduction/source_run_20261102.json)。
 

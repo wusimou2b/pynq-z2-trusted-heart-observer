@@ -1,0 +1,109 @@
+{
+  "review_date": "2026-11-03",
+  "scope": "Packaging and clean hardware build; no board access or replacement of runtime assets",
+  "bundled_members": 109,
+  "pinned_external_files": 27,
+  "original_archive_members_verified": 206,
+  "original_script_hashes_verified": 3,
+  "public_archive_paths_lowercase_ascii": true,
+  "unit_tests_passed": 15,
+  "pinned_http_fetch_sha256_verified": true,
+  "hls_csim_passed": [
+    "color_convert",
+    "pixel_unpack"
+  ],
+  "hls_exports_generated": [
+    "xilinx.com:hls:color_convert:1.0",
+    "xilinx.com:hls:pixel_unpack:1.0"
+  ],
+  "vivado_project_prepared": true,
+  "full_build_status": "completed_with_recorded_postroute_continuation",
+  "clean_build_completed": true,
+  "board_accessed": false,
+  "runtime_assets_replaced": false,
+  "hardware_equivalence_verified": false,
+  "historical_generated_hdl_comparison": {
+    "files": 37,
+    "byte_identical": 36,
+    "different": [
+      "pixel_unpack_hls_deadlock_idx0_monitor.v"
+    ],
+    "difference_summary": "Tool-generated deadlock monitor declaration, sub-group and instance order changed; not represented as byte equality."
+  },
+  "completed_stages": [
+    {
+      "stage": "hls_color_convert",
+      "returncode": 0
+    },
+    {
+      "stage": "hls_pixel_unpack",
+      "returncode": 0
+    },
+    {
+      "stage": "prepare",
+      "returncode": 0
+    },
+    {
+      "stage": "route",
+      "returncode": 0
+    },
+    {
+      "stage": "bitstream",
+      "returncode": 1
+    },
+    {
+      "stage": "postroute",
+      "returncode": 0,
+      "script_sha256": "4999cd8333db3f42b0eeab2f12dc02c02ae5df44359e1ef8b63c83465a9de41c"
+    },
+    {
+      "stage": "bitstream",
+      "returncode": 0,
+      "script_sha256": "759c0bc7f66cc4937dc6f78f43d994309c6ae714d73c9dc77f2acea422f9e8e0"
+    }
+  ],
+  "validation_method": "fresh-source HLS/synthesis/base-route followed by the omitted historical postroute optimization stage; base failed bit gate preserved",
+  "base_route_metrics": {
+    "wns_ns": -0.465,
+    "whs_ns": 0.051,
+    "axi_period_ns": 10.0,
+    "drc_errors": 0,
+    "drc_critical": 0,
+    "route_status": "route_design Complete, Failed Timing!",
+    "all_pins_verified": true,
+    "external_interface_timing_reviewed": false
+  },
+  "physical_metrics": {
+    "wns_ns": 0.012,
+    "whs_ns": 0.051,
+    "axi_period_ns": 10.0,
+    "drc_errors": 0,
+    "drc_critical": 0,
+    "route_status": "postroute_logic_equivalent_optimization",
+    "all_pins_verified": true,
+    "external_interface_timing_reviewed": false,
+    "tns_ns": 0.0,
+    "ths_ns": 0.0
+  },
+  "artifacts": {
+    "heart_v3b25.bit": "75d754c6939448660008a288e7f69bffbd0054bcb2508a0b3eedab2e9a306890",
+    "heart_v3b25.hwh": "df1775d928299049854a59631746f489091df26bb8f91fd5777b69b21f716ab4"
+  },
+  "hwh_contract_comparison": {
+    "new_sha256": "df1775d928299049854a59631746f489091df26bb8f91fd5777b69b21f716ab4",
+    "frozen_sha256": "b652e060e8954e480ca03be4f90c239a83b0b131e6503fccf504d64d000a626a",
+    "byte_equal": false,
+    "memranges_equal": true,
+    "module_parameters_equal": true,
+    "module_count": 34,
+    "memory_range_count": 19
+  },
+  "published_evidence_files": 50,
+  "pinned_http_fetch_files": 27,
+  "base_checkpoint_sha256": "b8bff9ea859f42f4ceedf74261eab3a0cd563421d17dd5dc78a5dac746b12bba",
+  "base_build_report_sha256": "83ec19bab35595c79af89c9a4e6f6a4985945891526e4dcbc5e884560c7f5bd4",
+  "final_build_report_sha256": "9d18f5bfe909871f38dbfad3b41b3d9ff94175bc1119fca4134b6eb9b7999377",
+  "script_pins_verified": 5,
+  "complete_system_acceptance": false,
+  "external_interface_timing_reviewed": false
+}

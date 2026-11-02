@@ -987,5 +987,6 @@
     "v3b25 native100 heart video/yuyv_transport.py": "b5280840f9371485e204c9179701867994e7460fc122454aeea453bbe384f4ed",
     "v3b25 native100 heart video/YuyvVideo.ipynb": "c499aff8056d43af0edb13b3ec32e6779e39157577cecbc51aab78efedc54a66",
     "verify_portable.py": "306990f81b2dc7de21fb0a2019544051eae9168dfe1751a832e8ae4ef8352d3c"
-  }
+  },
+  "path_scope": "Historical identities in restored deployment layout; repository storage names are mapped by deployment_map.json."
 }

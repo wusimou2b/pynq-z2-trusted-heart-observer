@@ -4,7 +4,7 @@
   "entry": "board_runtime/runtime/ContinuousDemo25.ipynb",
   "runtime_root": "board_runtime/runtime",
   "sibling_native_root": "board_runtime/v3b25 native100 heart video",
-  "deployment_rule": "Copy the complete board_runtime directory; keep both sibling directories and original compatibility names.",
+  "deployment_rule": "Run python3 -B prepare_delivery.py runtime --output NEW_EXTERNAL_DIRECTORY; verify the generated board_runtime/verify_portable.py before deployment.",
   "runtime_files_byte_preserved": 958,
   "portable_verifier_members": 957,
   "portable_verifier_complete": true,
@@ -75,8 +75,7 @@
     "board DDR acceptance",
     "long-duration or unlimited operation",
     "all-video-frame reference equivalence",
-    "full-system acceptance",
-    "complete clean source implementation rebuild"
+    "full-system acceptance"
   ],
   "unknown_environment": [
     "original SD image file/hash and Linux kernel build",
@@ -91,5 +90,12 @@
       "javascript_assertions": 6,
       "sealed_bundle_checks": 13
     }
+  },
+  "entry_path_scope": "Generated deployment directory, not normalized repository storage",
+  "deployment_map": "deployment_map.json",
+  "separate_hardware_source_build": {
+    "evidence": "build/validation.json",
+    "new_artifacts_replace_frozen_runtime": false,
+    "new_artifacts_board_qualified": false
   }
 }

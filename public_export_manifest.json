@@ -1,5 +1,5 @@
 {
-  "schema": "public_source_export_manifest_v3",
+  "schema": "public_source_export_manifest_v4",
   "product": "可信心率观测系统",
   "repository": "https://github.com/wusimou2b/pynq-z2-trusted-heart-observer",
   "scope": "Verified-source byte-preserved board runtime, reviewed authored source, eight Skills, current reports, authorized measured data and component notices.",
@@ -18,12 +18,15 @@
   "full_acceptance_passed": false,
   "historical_manual_session_passed": false,
   "video_revision_pending": false,
-  "compatibility_identifier_state": "accepted_preserved",
+  "compatibility_identifier_state": "restored_at_deployment_without_runtime_byte_changes",
   "notebook_identity": "Original portable notebook-source identity policy; unchanged guards.",
   "verification": {
-    "runtime_file_verifier": "python3 -B board_runtime/verify_portable.py",
     "distribution_file_verifier": "python3 -B verify_public_source.py",
-    "source_and_runtime_identity_checks_only": true
+    "runtime_prepare": "python3 -B prepare_delivery.py runtime --output ../trusted_heart_demo",
+    "runtime_file_verifier": "python3 -B ../trusted_heart_demo/board_runtime/verify_portable.py",
+    "hardware_source_inputs": "python3 -B build/rebuild.py --check-only",
+    "hardware_build_evidence": "build/validation.json",
+    "new_board_test_performed": false
   },
   "files": [
     {
@@ -37,9 +40,9 @@
       "sha256": "49e81b1dc9cff4405d376bcc28fc29d994c815438951215c6590551cd4d55b26"
     },
     {
-      "path": "board/README.md",
-      "bytes": 3431,
-      "sha256": "57f3b0cf34182e7bd0bfa3b9b078ab49fe7d35465334262025a2e210fa13916d"
+      "path": "board/readme.md",
+      "bytes": 3946,
+      "sha256": "d297495e4e6f58be13dd5e3cd4c1a0d4574f4794220d567f45162b36fde666c9"
     },
     {
       "path": "board_runtime/portable-manifest.json",
@@ -57,7 +60,7 @@
       "sha256": "f4f8dc385b323a2cf865be12b771445a982067f7b7427226d38c5767cc0dcd56"
     },
     {
-      "path": "board_runtime/README_PORTABLE.md",
+      "path": "board_runtime/readme_portable.md",
       "bytes": 1421,
       "sha256": "59b42a5cc41a474e138a6a48d961f6104ba269aa3044f843b6c36569816638fd"
     },
@@ -102,7 +105,7 @@
       "sha256": "0a2a3aad9a6e0b7141235881577c606422fee11ebd8298f38e354a2a4a5dcc2f"
     },
     {
-      "path": "board_runtime/runtime/BrowserHeartVideo60.ipynb",
+      "path": "board_runtime/runtime/browserheartvideo60.ipynb",
       "bytes": 2149,
       "sha256": "4d309ebc7bd283d3d58cbfae8d7afc5f49bd107c933dda290c6400803604b9f0"
     },
@@ -272,7 +275,7 @@
       "sha256": "529b788bcb5e8c58c7a784d7867ad052aaf51327ffdeaf80548b2e5fda207c15"
     },
     {
-      "path": "board_runtime/runtime/CompactJoint25.ipynb",
+      "path": "board_runtime/runtime/compactjoint25.ipynb",
       "bytes": 3089,
       "sha256": "14ebca7289c288bfeaff021da10ad509a0c265eae2076d8cfe01e7c7ff8ca04e"
     },
@@ -282,7 +285,7 @@
       "sha256": "6ce9bdb49690840e1ba2b541746806bd2a583b75ffcd642efb95c3a3f2387cc9"
     },
     {
-      "path": "board_runtime/runtime/Continuous25.ipynb",
+      "path": "board_runtime/runtime/continuous25.ipynb",
       "bytes": 2804,
       "sha256": "0ae5ed5d83656d6d24a6ff9724239ba84fdcd6809445a01e1dc1e17af226071d"
     },
@@ -312,7 +315,7 @@
       "sha256": "77f2fcf8b93a15fe5d1218e4f81a669438d45ce89697e6939ddcaf93248eb1bd"
     },
     {
-      "path": "board_runtime/runtime/ContinuousDemo25.ipynb",
+      "path": "board_runtime/runtime/continuousdemo25.ipynb",
       "bytes": 3144,
       "sha256": "ef9e426fa67516397d7d03b00f71ca7883aad4afee9864f9902b1704f8783702"
     },
@@ -377,7 +380,7 @@
       "sha256": "54bdcb9baaeb2464c4679ad1ffc3db0e1003af5872fcdf57662976ab1cfe7d68"
     },
     {
-      "path": "board_runtime/runtime/EvidenceReuse60.ipynb",
+      "path": "board_runtime/runtime/evidencereuse60.ipynb",
       "bytes": 3862,
       "sha256": "7e3203938d7840ffdd4f303f4867f21081fb78e17097db0874063702e62ea88c"
     },
@@ -412,7 +415,7 @@
       "sha256": "5e9c15ea68fd517827d18201bcebd7f693ad10ebf3dad6c9292d6623f667f7f2"
     },
     {
-      "path": "board_runtime/runtime/FifoTiming5.ipynb",
+      "path": "board_runtime/runtime/fifotiming5.ipynb",
       "bytes": 2951,
       "sha256": "cc10c51bc71f3d2fbd92ac75aed8eefa8dbb0f16454add91e797df0c33c77be5"
     },
@@ -477,12 +480,12 @@
       "sha256": "eea967e065bcf12bf218b3e80452201631af64574a1066bbeb9bdaa7f3359688"
     },
     {
-      "path": "board_runtime/runtime/frozen/base/deps/README_DISPLAY25.md",
+      "path": "board_runtime/runtime/frozen/base/deps/readme_display25.md",
       "bytes": 3549,
       "sha256": "d2ed036ca1baa4ac6ffdd2c5992bb35b01dcf971ae8f74575aa3c46b2523c591"
     },
     {
-      "path": "board_runtime/runtime/frozen/base/deps/README_OWNER25.md",
+      "path": "board_runtime/runtime/frozen/base/deps/readme_owner25.md",
       "bytes": 2711,
       "sha256": "352b02d0cf5adfa1c27cdeb79f56309386333dffdd4f9b7d091e81ade3fff573"
     },
@@ -782,22 +785,22 @@
       "sha256": "a779effe6125d693c4a434472aa4cd08834781eee7368aae8c69992c4065a518"
     },
     {
-      "path": "board_runtime/runtime/frozen/base/deps/static/checked/base/provenance/build_sources/board_repo/pynq-z2/A.0/board.xml",
+      "path": "board_runtime/runtime/frozen/base/deps/static/checked/base/provenance/build_sources/board_repo/pynq-z2/a.0/board.xml",
       "bytes": 54479,
       "sha256": "a565dcb39737d551cbbbb73c0053b973c40bb3dce2274943370d3032c0fea9ae"
     },
     {
-      "path": "board_runtime/runtime/frozen/base/deps/static/checked/base/provenance/build_sources/board_repo/pynq-z2/A.0/part0_pins.xml",
+      "path": "board_runtime/runtime/frozen/base/deps/static/checked/base/provenance/build_sources/board_repo/pynq-z2/a.0/part0_pins.xml",
       "bytes": 9007,
       "sha256": "3c809473938e135a925b563b5371c8687ee05c4089376e7318c0c56524cc8a0f"
     },
     {
-      "path": "board_runtime/runtime/frozen/base/deps/static/checked/base/provenance/build_sources/board_repo/pynq-z2/A.0/preset.xml",
+      "path": "board_runtime/runtime/frozen/base/deps/static/checked/base/provenance/build_sources/board_repo/pynq-z2/a.0/preset.xml",
       "bytes": 74492,
       "sha256": "18528f84aea4da503cdb3104f7706fabfb3b6ad09b78b25199cc316afa4c8cfe"
     },
     {
-      "path": "board_runtime/runtime/frozen/base/deps/static/checked/base/provenance/build_sources/board_repo/pynq-z2/A.0/pynq_z2.jpg",
+      "path": "board_runtime/runtime/frozen/base/deps/static/checked/base/provenance/build_sources/board_repo/pynq-z2/a.0/pynq_z2.jpg",
       "bytes": 175776,
       "sha256": "b6cf32febf4b1995f33c3372ef72f390abf4a5596c73a6fd36810a45ccd0e1f7"
     },
@@ -967,17 +970,17 @@
       "sha256": "d3f32ee3ebfe6c445cb2c1cec824124305f9a560e519894346b70b7601207401"
     },
     {
-      "path": "board_runtime/runtime/frozen/base/deps/static/checked/base/README_isolated_pilot_zh.md",
+      "path": "board_runtime/runtime/frozen/base/deps/static/checked/base/readme_isolated_pilot_zh.md",
       "bytes": 2567,
       "sha256": "f2cfb754b30bce18f77cb12ecdba502b4e571a23fb6c1a8399c068581cf38b76"
     },
     {
-      "path": "board_runtime/runtime/frozen/base/deps/static/checked/base/README_live_zh.md",
+      "path": "board_runtime/runtime/frozen/base/deps/static/checked/base/readme_live_zh.md",
       "bytes": 9707,
       "sha256": "dcc27670eb5f37cbd57e422c2054ff7f2be9f694728aad3326b23bede4de71d9"
     },
     {
-      "path": "board_runtime/runtime/frozen/base/deps/static/checked/base/README_statistics_zh.md",
+      "path": "board_runtime/runtime/frozen/base/deps/static/checked/base/readme_statistics_zh.md",
       "bytes": 1581,
       "sha256": "175107b89a90d753cc6a33e79e99d51c72f63cea1b249d96475c0b8de8f9b3b5"
     },
@@ -1022,7 +1025,7 @@
       "sha256": "7064428523184561a11f8a1960c905f460cdcfc6fc022cab797005fc31674637"
     },
     {
-      "path": "board_runtime/runtime/frozen/base/deps/static/checked/base/使用说明.md",
+      "path": "board_runtime/runtime/frozen/base/deps/static/checked/base/usage_guide.md",
       "bytes": 5009,
       "sha256": "d36ac27bff7392acd04655d527c26e1744e809e497aa4a584063d13c2f5bcd1f"
     },
@@ -1097,7 +1100,7 @@
       "sha256": "65225683f3e66ce37a3c738a31802d9b0ad6c969b63fe5e8f2b99c83b945c73b"
     },
     {
-      "path": "board_runtime/runtime/frozen/base/deps/static/checked/README_25HZ.md",
+      "path": "board_runtime/runtime/frozen/base/deps/static/checked/readme_25hz.md",
       "bytes": 3737,
       "sha256": "f6c17966cbbfcd71336f7a5e8262b9e938ca86025084f71ca5c090ebd89afc7c"
     },
@@ -1212,7 +1215,7 @@
       "sha256": "0130ee3c7ff1f36951bf69ce88c1374659d71f3256348f84d8bf7ea917b9183f"
     },
     {
-      "path": "board_runtime/runtime/frozen/base/deps/static/README_STATIC25.md",
+      "path": "board_runtime/runtime/frozen/base/deps/static/readme_static25.md",
       "bytes": 2728,
       "sha256": "45e8fc3ac803c92920b50fc6fc368d220cf0e0f67e689ee11ec6a62d83c58c67"
     },
@@ -1332,17 +1335,17 @@
       "sha256": "07c77d2c07b760d1ed626bac0e9742ac24cc066db90b29005949c85f83f6d783"
     },
     {
-      "path": "board_runtime/runtime/frozen/base/README_EFFECTIVE25.md",
+      "path": "board_runtime/runtime/frozen/base/readme_effective25.md",
       "bytes": 3327,
       "sha256": "d717e393adaf9569d95a7231a58c18462e8109ea9654c8841b67e2338470f361"
     },
     {
-      "path": "board_runtime/runtime/frozen/base/README_GC_PROBE.md",
+      "path": "board_runtime/runtime/frozen/base/readme_gc_probe.md",
       "bytes": 3121,
       "sha256": "6de337bd69dc1c1160a0a90962f9f079440ac3b0dc152ac09764c1101f6beb39"
     },
     {
-      "path": "board_runtime/runtime/frozen/base/README_GC_WINDOW.md",
+      "path": "board_runtime/runtime/frozen/base/readme_gc_window.md",
       "bytes": 4319,
       "sha256": "d4f21ae5b15ca4ca009822450abee9e537dbc1399d78a0521be1d0db8a0fc968"
     },
@@ -1397,7 +1400,7 @@
       "sha256": "ad7082a598cce2f0e45597ef63397615c538934fe52c4d2bc00bf1fa208defbc"
     },
     {
-      "path": "board_runtime/runtime/frozen/README_ENTRY25_LIVE.md",
+      "path": "board_runtime/runtime/frozen/readme_entry25_live.md",
       "bytes": 3637,
       "sha256": "f7223c48da9a174d3510974b17cecf28f3d01462675d74a2655626111ef4db9f"
     },
@@ -1412,7 +1415,7 @@
       "sha256": "ea3a83f90a21bcb6d33564096bbce2c7d64ac7bfb075381c4997421725de3f83"
     },
     {
-      "path": "board_runtime/runtime/FullMotion25.ipynb",
+      "path": "board_runtime/runtime/fullmotion25.ipynb",
       "bytes": 2677,
       "sha256": "d6b7ec4211eea807abea6df717a7355a72cb62b23c889566d34fb91a89faa787"
     },
@@ -1422,7 +1425,7 @@
       "sha256": "64866b15f9f1bcf384333ca60898f031b95813922bcd878204a02f38d11373de"
     },
     {
-      "path": "board_runtime/runtime/GilJoint25.ipynb",
+      "path": "board_runtime/runtime/giljoint25.ipynb",
       "bytes": 3021,
       "sha256": "82762d984bb2d87b08861b99ec32dfc4682e7b74c7921399fec4e887d51067c6"
     },
@@ -1442,7 +1445,7 @@
       "sha256": "fc0c262d95c1acacd25f57f3e9f29ff26e83e677ee25852c1330fd01a4f90671"
     },
     {
-      "path": "board_runtime/runtime/HandoffLive60.ipynb",
+      "path": "board_runtime/runtime/handofflive60.ipynb",
       "bytes": 2825,
       "sha256": "7a1ab3b32641b570d73ce369b160e6ce69f2396f944bde57202c99beaad76de7"
     },
@@ -1552,12 +1555,12 @@
       "sha256": "51006e068e40449d3876bfcc4e0952a6bc9b98a42164852f5b4fe6d70666699a"
     },
     {
-      "path": "board_runtime/runtime/HeartSnapshot25.ipynb",
+      "path": "board_runtime/runtime/heartsnapshot25.ipynb",
       "bytes": 2021,
       "sha256": "7085e4160e57360cf61e1374fb8e6f1e5ef03f172cf62efe8f71782cd620fa94"
     },
     {
-      "path": "board_runtime/runtime/HeartVideo60.ipynb",
+      "path": "board_runtime/runtime/heartvideo60.ipynb",
       "bytes": 2053,
       "sha256": "2dab22ad812a363f196f1389d1b2704311934c463690db3152668eb2ee3a5cf6"
     },
@@ -1587,7 +1590,7 @@
       "sha256": "1e5f77608fa990d80ac828d3dfddfe6137d3697501404cdfdec550fbc50735b5"
     },
     {
-      "path": "board_runtime/runtime/HybridDisplay25.ipynb",
+      "path": "board_runtime/runtime/hybriddisplay25.ipynb",
       "bytes": 2720,
       "sha256": "d289777f855b0f76dee8a350dc00e6c30d8ed3351126fa662c53c3a08c3011ef"
     },
@@ -1822,12 +1825,12 @@
       "sha256": "0a9c840f8358af9aa71cd85679a2b9b2db82e8e9fb17d3040cb7685c751fcfa6"
     },
     {
-      "path": "board_runtime/runtime/JointExit60.ipynb",
+      "path": "board_runtime/runtime/jointexit60.ipynb",
       "bytes": 2099,
       "sha256": "1e881769f8781cc867c8e9f8f3ad211b4d06bc2dbe950d480b436b393e45ba58"
     },
     {
-      "path": "board_runtime/runtime/JointHeart25.ipynb",
+      "path": "board_runtime/runtime/jointheart25.ipynb",
       "bytes": 1912,
       "sha256": "5c674965880e8c71754c496ceff6afd6c44d109cfc62414c7742dac7045d81e5"
     },
@@ -1847,7 +1850,7 @@
       "sha256": "eed4a618d9921094fce98a586e28c99a7d577766d58745cdcc7ac2841b3ab186"
     },
     {
-      "path": "board_runtime/runtime/Journal60.ipynb",
+      "path": "board_runtime/runtime/journal60.ipynb",
       "bytes": 3644,
       "sha256": "4b31c4849033495cfdc739351f6725913a2e2f23cd043dcaa489ba28fa933473"
     },
@@ -1932,12 +1935,12 @@
       "sha256": "69002a4e3994b1d4b2ffbfc6b8b06ca06b864e12d90c025d6b9773be8cb61cc9"
     },
     {
-      "path": "board_runtime/runtime/LeanJoint60.ipynb",
+      "path": "board_runtime/runtime/leanjoint60.ipynb",
       "bytes": 3141,
       "sha256": "b38ddf6563ccaf996c3d84b16eb8f47d57309636323a84fe50fbfb22ceb589dc"
     },
     {
-      "path": "board_runtime/runtime/LeanPS60.ipynb",
+      "path": "board_runtime/runtime/leanps60.ipynb",
       "bytes": 2888,
       "sha256": "506dad80b954e4035422356482db54f1fbf011828d6400665b50bfa42abe0246"
     },
@@ -2062,12 +2065,12 @@
       "sha256": "4aa0c327f9e4e759354c530939b2c1887d10bb17df02d507f619a0589333482d"
     },
     {
-      "path": "board_runtime/runtime/MainSpatial25.ipynb",
+      "path": "board_runtime/runtime/mainspatial25.ipynb",
       "bytes": 2414,
       "sha256": "3cab305f256f4679e13b8921e7a6e1806debe2bc46512f2077a2bb03e9afc4ef"
     },
     {
-      "path": "board_runtime/runtime/MainSpatialCopy25.ipynb",
+      "path": "board_runtime/runtime/mainspatialcopy25.ipynb",
       "bytes": 2687,
       "sha256": "4b9cb98c33b9fd2f145a0fb5e3c901f62ec2eb9fee597b111d28b70c07320eba"
     },
@@ -2147,7 +2150,7 @@
       "sha256": "430c09b3ae406a7a9eac3aad5eb5451a93e89935cf74019cd8d282afed16d927"
     },
     {
-      "path": "board_runtime/runtime/NativeHeartVideo60.ipynb",
+      "path": "board_runtime/runtime/nativeheartvideo60.ipynb",
       "bytes": 2448,
       "sha256": "10630051b19dcf55b6dcbfcdc52f12b3d43851cf03b6703db8b2e7ccefc8ea40"
     },
@@ -2212,17 +2215,17 @@
       "sha256": "a13e6842a7faf07b8d9a35a2e4bd9415f4c9ab06df978d9c5b5e7f8c0700a223"
     },
     {
-      "path": "board_runtime/runtime/OwnerFlatLive60.ipynb",
+      "path": "board_runtime/runtime/ownerflatlive60.ipynb",
       "bytes": 3424,
       "sha256": "93345132160202bceb3c9598f5fc94f71f6fa4ae0644f3c04882e0c8b8fbbb93"
     },
     {
-      "path": "board_runtime/runtime/OwnerSchedule60.ipynb",
+      "path": "board_runtime/runtime/ownerschedule60.ipynb",
       "bytes": 3545,
       "sha256": "657418c0557dce0c074498b24a8c0899b6313c4a1ecf1e6addac9b627fd83900"
     },
     {
-      "path": "board_runtime/runtime/PlainExit60.ipynb",
+      "path": "board_runtime/runtime/plainexit60.ipynb",
       "bytes": 3140,
       "sha256": "e41c94742a1d002f862b9b3a4067608e4c054084c8f68169ead2642b8cee869d"
     },
@@ -2312,7 +2315,7 @@
       "sha256": "f1394139cdb5f27773cebb4f5537c26a6210f46f79239f983b5817568a705abe"
     },
     {
-      "path": "board_runtime/runtime/PsWireLive60.ipynb",
+      "path": "board_runtime/runtime/pswirelive60.ipynb",
       "bytes": 3030,
       "sha256": "df23f18956b9dd771ccd4b82d04e9e8e67ba83f9bd419de98b5a32f734b5ccaf"
     },
@@ -2342,172 +2345,172 @@
       "sha256": "782bbc4bede74ab92d4dd68e11b78a09d43a6a952fd50ef27cebf99819ed468f"
     },
     {
-      "path": "board_runtime/runtime/README_BROWSER_HEART.md",
+      "path": "board_runtime/runtime/readme_browser_heart.md",
       "bytes": 2244,
       "sha256": "4bbca010c3eda0c3136115d873a370fb6289def73dbbcf4011ee0a1bd5923c8e"
     },
     {
-      "path": "board_runtime/runtime/README_COMPACT.md",
+      "path": "board_runtime/runtime/readme_compact.md",
       "bytes": 1347,
       "sha256": "4f7759767b4281799753455d5070971a5cf63fedf8c0f7f2f5b2c1cc832b2b35"
     },
     {
-      "path": "board_runtime/runtime/README_CONTINUOUS.md",
+      "path": "board_runtime/runtime/readme_continuous.md",
       "bytes": 2555,
       "sha256": "6dc4ce2902d9860bdeb27a70f44434115ae9718565b525cc10b1348c88d58acc"
     },
     {
-      "path": "board_runtime/runtime/README_CONTINUOUS_DEMO.md",
+      "path": "board_runtime/runtime/readme_continuous_demo.md",
       "bytes": 2157,
       "sha256": "0424f7ae1f6b91fd31720d0bc96a6c664c72e4f72c38fc8c2d4905edec613023"
     },
     {
-      "path": "board_runtime/runtime/README_EVIDENCE_REUSE60.md",
+      "path": "board_runtime/runtime/readme_evidence_reuse60.md",
       "bytes": 2878,
       "sha256": "88ed1dcd8ee1d1f492ffe5a3a2f9cdb382f001584aba72f3e3a4363902e5a950"
     },
     {
-      "path": "board_runtime/runtime/README_FIFO_TIMING5.md",
+      "path": "board_runtime/runtime/readme_fifo_timing5.md",
       "bytes": 1787,
       "sha256": "1882768cc741c2eb13a8d000260307dcb209ac31e76db70c51ed5edf4928d014"
     },
     {
-      "path": "board_runtime/runtime/README_FULL_MOTION.md",
+      "path": "board_runtime/runtime/readme_full_motion.md",
       "bytes": 2303,
       "sha256": "5c8581f8ac93431d945411dcfeade22f23fff793b17c0b5a400ebbbf9ac528b0"
     },
     {
-      "path": "board_runtime/runtime/README_GIL_JOINT.md",
+      "path": "board_runtime/runtime/readme_gil_joint.md",
       "bytes": 914,
       "sha256": "88e421bfe1184904a7dc54600b02203b6b3c7561b43f50bc7194f6dce3b0853b"
     },
     {
-      "path": "board_runtime/runtime/README_HEART.md",
+      "path": "board_runtime/runtime/readme_heart.md",
       "bytes": 2378,
       "sha256": "4a457317879d8a97fb1055c5207f288e2c769bb020d7e13eddd93726be064ee3"
     },
     {
-      "path": "board_runtime/runtime/README_HEART_SNAPSHOT.md",
+      "path": "board_runtime/runtime/readme_heart_snapshot.md",
       "bytes": 2352,
       "sha256": "164cf80c955820a50aa80ba4e56d6e97559c71b9eb5bb3ab3b91e2dcbde476d5"
     },
     {
-      "path": "board_runtime/runtime/README_HEART_VIDEO.md",
+      "path": "board_runtime/runtime/readme_heart_video.md",
       "bytes": 1930,
       "sha256": "eae50ea80c3958a0901270145690a4b29496f082373052c0c1d25b66f0837baf"
     },
     {
-      "path": "board_runtime/runtime/README_HYBRID.md",
+      "path": "board_runtime/runtime/readme_hybrid.md",
       "bytes": 1396,
       "sha256": "0af72f4f288766e75cc0ad5f5818421df3e210aafd431773754506086f801c38"
     },
     {
-      "path": "board_runtime/runtime/README_JOINT_EXIT60.md",
+      "path": "board_runtime/runtime/readme_joint_exit60.md",
       "bytes": 1942,
       "sha256": "14683fe4e640bc96ac13ddab07e0f25cbc259908aa3af550ba9123f7a06f8226"
     },
     {
-      "path": "board_runtime/runtime/README_JOURNAL60.md",
+      "path": "board_runtime/runtime/readme_journal60.md",
       "bytes": 1877,
       "sha256": "2ec169ace68686c01ce9aaf12756b9a8fb55cf103a3c83961861dd2c7c0ddab4"
     },
     {
-      "path": "board_runtime/runtime/README_LEAN.md",
+      "path": "board_runtime/runtime/readme_lean.md",
       "bytes": 397,
       "sha256": "1d4e7b4b4d38b0aaa96569c502ca21958d3735c3f116c70c2be7bb3d1a58fe16"
     },
     {
-      "path": "board_runtime/runtime/README_LEAN_PS.md",
+      "path": "board_runtime/runtime/readme_lean_ps.md",
       "bytes": 1767,
       "sha256": "8eedb1b334d5b759300ff3a3016485dcd1688ff5684fd2dc677edb23136989ee"
     },
     {
-      "path": "board_runtime/runtime/README_MAIN_SPATIAL.md",
+      "path": "board_runtime/runtime/readme_main_spatial.md",
       "bytes": 1969,
       "sha256": "1aef5fda4182f239590067ddca2958ab7fb6ac62ea7fd5e9120e040f9febde77"
     },
     {
-      "path": "board_runtime/runtime/README_MAIN_SPATIAL_COPY.md",
+      "path": "board_runtime/runtime/readme_main_spatial_copy.md",
       "bytes": 1044,
       "sha256": "94952852ef37a5497dd6a4fe44ef95812ab0ee7d91fc2cdedc74bc891761644b"
     },
     {
-      "path": "board_runtime/runtime/README_NATIVE_HEART.md",
+      "path": "board_runtime/runtime/readme_native_heart.md",
       "bytes": 1719,
       "sha256": "8c05b3a20d759a559bbef85fbba6db27e151e7d29e27260a93f154510d03f7a9"
     },
     {
-      "path": "board_runtime/runtime/README_OWNER_FLAT.md",
+      "path": "board_runtime/runtime/readme_owner_flat.md",
       "bytes": 940,
       "sha256": "5f3a034b361621bdc860bdfe987b9f3071e282ca1b480cba6c3810f56bb0efcc"
     },
     {
-      "path": "board_runtime/runtime/README_OWNER_SCHEDULE60.md",
+      "path": "board_runtime/runtime/readme_owner_schedule60.md",
       "bytes": 1547,
       "sha256": "514c0695be1cf7ddee92ecfb3754edd2a8a4448c8a4624508e12d012c06704f5"
     },
     {
-      "path": "board_runtime/runtime/README_PLAIN_EXIT.md",
+      "path": "board_runtime/runtime/readme_plain_exit.md",
       "bytes": 2365,
       "sha256": "9f5722a9e28e66f591049f403f942035aa5d05387bb576c83687deef38784c73"
     },
     {
-      "path": "board_runtime/runtime/README_PS_WIRE.md",
+      "path": "board_runtime/runtime/readme_ps_wire.md",
       "bytes": 526,
       "sha256": "73cc64afc2486555f3a2ff0e15a12477e7d73f8b0a3101393ac4707a4e092c50"
     },
     {
-      "path": "board_runtime/runtime/README_SAMPLE40.md",
+      "path": "board_runtime/runtime/readme_sample40.md",
       "bytes": 994,
       "sha256": "403e73faddf264b5dafdefd4fcd7e94f3646fff9d78ef676065a725711410587"
     },
     {
-      "path": "board_runtime/runtime/README_SCHEDULED.md",
+      "path": "board_runtime/runtime/readme_scheduled.md",
       "bytes": 938,
       "sha256": "4089d392aad6070760d33d33e0a725ce9abd7399563e602f1bea076ae9ad6a7d"
     },
     {
-      "path": "board_runtime/runtime/README_SHADOW_FUSION.md",
+      "path": "board_runtime/runtime/readme_shadow_fusion.md",
       "bytes": 3403,
       "sha256": "bf07bca7de7c377206254e863d61de8db6a023dea8e56c2d17b3f5ac9219e9a0"
     },
     {
-      "path": "board_runtime/runtime/README_SPATIAL_CAMERA.md",
+      "path": "board_runtime/runtime/readme_spatial_camera.md",
       "bytes": 2798,
       "sha256": "b76e8c99fe1aaf02d67f89520737c48f2198423015b44100f6c504bf2a6ef882"
     },
     {
-      "path": "board_runtime/runtime/README_STARTUP_DIGEST5.md",
+      "path": "board_runtime/runtime/readme_startup_digest5.md",
       "bytes": 1488,
       "sha256": "86a600122bf0e7c82b163621cbb1116db7296d2a02ebf6c3c23b15ae8be117cc"
     },
     {
-      "path": "board_runtime/runtime/README_STATE_WIRE.md",
+      "path": "board_runtime/runtime/readme_state_wire.md",
       "bytes": 638,
       "sha256": "e3c0ba6e9d7849e95e512d0c4dee40690d6c3c37a1018920fdeb8e8cf4808344"
     },
     {
-      "path": "board_runtime/runtime/README_STATUS5.md",
+      "path": "board_runtime/runtime/readme_status5.md",
       "bytes": 1203,
       "sha256": "fd512f659897f4b9a9547ee5a13dacdb4b594d3997535a565b36f27f94558fb4"
     },
     {
-      "path": "board_runtime/runtime/README_STATUS60.md",
+      "path": "board_runtime/runtime/readme_status60.md",
       "bytes": 802,
       "sha256": "75a676a9e9fec02746c2e450162cbd9e72aef9c4aac56a08dbec61eefcdf6005"
     },
     {
-      "path": "board_runtime/runtime/README_STATUS60_AB.md",
+      "path": "board_runtime/runtime/readme_status60_ab.md",
       "bytes": 3188,
       "sha256": "5cb0c83ae144afb18c7d222eab40dc99519d15bdbc1068ad58d92654b3c71a02"
     },
     {
-      "path": "board_runtime/runtime/README_VIDEO_PROCESS.md",
+      "path": "board_runtime/runtime/readme_video_process.md",
       "bytes": 2788,
       "sha256": "619ad786791d25615bd158a45e3c8016d81ac18836e874caa3fd8f2d6af61092"
     },
     {
-      "path": "board_runtime/runtime/README_YUYV_VIDEO.md",
+      "path": "board_runtime/runtime/readme_yuyv_video.md",
       "bytes": 1846,
       "sha256": "68da0079ae49cde810807d6370340ab3126a48c161873bb95922decb50602fda"
     },
@@ -2562,7 +2565,7 @@
       "sha256": "8f083f9b0a5950db0ca23065f318eb0c81b4de90d037bf015c1d76b07b916bb0"
     },
     {
-      "path": "board_runtime/runtime/RouteRecovery60.ipynb",
+      "path": "board_runtime/runtime/routerecovery60.ipynb",
       "bytes": 2873,
       "sha256": "30a6e0575f2958fc1b0c13cd124b156716bf700cabaffee0211540b4ce26ce8b"
     },
@@ -2767,7 +2770,7 @@
       "sha256": "4036e472b3c3934c026b33567a00ec543d3e591cb1bc8db7774b4aab47058008"
     },
     {
-      "path": "board_runtime/runtime/Sample40Joint25.ipynb",
+      "path": "board_runtime/runtime/sample40joint25.ipynb",
       "bytes": 2956,
       "sha256": "466fe41e01ddfb655da84cf94d58fb73e2ea00a57ac59f8300b6ae0b1689f08e"
     },
@@ -2807,7 +2810,7 @@
       "sha256": "d01145547981977b7255cda956efe03b80039cbb8444b7b396d453f065f8bb6e"
     },
     {
-      "path": "board_runtime/runtime/ScalarLive60.ipynb",
+      "path": "board_runtime/runtime/scalarlive60.ipynb",
       "bytes": 2995,
       "sha256": "e5dd229704091faa4520401de6567d52c5b3825fa9eeeaa6a8217130232fb05b"
     },
@@ -2842,7 +2845,7 @@
       "sha256": "560f873d984635a388ed8e18836ab80fe604449bfb033f586bc8eb018a3d357e"
     },
     {
-      "path": "board_runtime/runtime/ScheduledLive60.ipynb",
+      "path": "board_runtime/runtime/scheduledlive60.ipynb",
       "bytes": 3588,
       "sha256": "0d421b572937bdbfb3333e990b88b1d5b64dfda573f3b1295677d0f49f9a9c94"
     },
@@ -2892,7 +2895,7 @@
       "sha256": "f695774ad1565354449c6cade0b4af8cefbc5a76ca40b9bc66560b8e3593f50a"
     },
     {
-      "path": "board_runtime/runtime/ShadowFusion25.ipynb",
+      "path": "board_runtime/runtime/shadowfusion25.ipynb",
       "bytes": 2779,
       "sha256": "5816db2724d946b7367a34ae43aa689a841325f03c62fb7cb45aa57198cd621f"
     },
@@ -2967,7 +2970,7 @@
       "sha256": "26425f8cef1fb69cc1688321df3fe076f94b53a8c9710ab1cb0814168291b8df"
     },
     {
-      "path": "board_runtime/runtime/SpatialCamera60.ipynb",
+      "path": "board_runtime/runtime/spatialcamera60.ipynb",
       "bytes": 2148,
       "sha256": "e8551ff3241676e8eadc8b18653777f335f1ea40a686b234b446583f25ab7166"
     },
@@ -2992,7 +2995,7 @@
       "sha256": "d2c1c572e9e5350119a21c915a8a5dd8f27486b2722730b68f0437f6034de52c"
     },
     {
-      "path": "board_runtime/runtime/StartupDigest5.ipynb",
+      "path": "board_runtime/runtime/startupdigest5.ipynb",
       "bytes": 3256,
       "sha256": "fbcbc372b656e2138c81a4b5f6a2fdb7ea058f9f29512cdb2a918fd556a91400"
     },
@@ -3022,7 +3025,7 @@
       "sha256": "f2c96ba1fdb13909c0d0daf912d9f4165e990b2a649698d09095babd0270b4fb"
     },
     {
-      "path": "board_runtime/runtime/StateWireLive60.ipynb",
+      "path": "board_runtime/runtime/statewirelive60.ipynb",
       "bytes": 3345,
       "sha256": "950629b6668a0ac65d3ca7f94331683ae8ab2aa8785eeda31b745a41a53dff30"
     },
@@ -3112,17 +3115,17 @@
       "sha256": "4b9f6ad1106eb868b3db6f219fe4b4d33a6bf7004b3d47ac35223fb917f75ee8"
     },
     {
-      "path": "board_runtime/runtime/StatusJoint5.ipynb",
+      "path": "board_runtime/runtime/statusjoint5.ipynb",
       "bytes": 3414,
       "sha256": "96f92aad305606a6322604e27b7b1b697d74ff2f949ae9a49c00f3f7f50a848d"
     },
     {
-      "path": "board_runtime/runtime/StatusJoint60.ipynb",
+      "path": "board_runtime/runtime/statusjoint60.ipynb",
       "bytes": 3486,
       "sha256": "0dd31757fe48e226a5507a2ad518e7f079c205bbce6a445c76bfd7bd18318fdd"
     },
     {
-      "path": "board_runtime/runtime/StatusJoint60AB.ipynb",
+      "path": "board_runtime/runtime/statusjoint60ab.ipynb",
       "bytes": 2745,
       "sha256": "6b14a31d0dc7515a83c0cdf482c084423d05ac81161ac2ba438f0fb840edf84c"
     },
@@ -3197,7 +3200,7 @@
       "sha256": "1fe11aa0061a4d4702775be6d392cb90ea9fcf18e4c5585785fe7f278846c62d"
     },
     {
-      "path": "board_runtime/runtime/VideoProcess25.ipynb",
+      "path": "board_runtime/runtime/videoprocess25.ipynb",
       "bytes": 4472,
       "sha256": "3097d2151cc2969a46bf829737dcfc6eca36320cb3d6b7c0c5d1acff8a06a0a8"
     },
@@ -3252,1577 +3255,1577 @@
       "sha256": "b5280840f9371485e204c9179701867994e7460fc122454aeea453bbe384f4ed"
     },
     {
-      "path": "board_runtime/runtime/YuyvVideo.ipynb",
+      "path": "board_runtime/runtime/yuyvvideo.ipynb",
       "bytes": 1966,
       "sha256": "c499aff8056d43af0edb13b3ec32e6779e39157577cecbc51aab78efedc54a66"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/browser-budget.json",
+      "path": "board_runtime/v3b25_native100_heart_video/browser-budget.json",
       "bytes": 5052,
       "sha256": "30790889d80d1f4e8232a3a62d423053b70fef6ec0f8cd8526f0b402c2c9f2f3"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/browser-heart-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/browser-heart-manifest.json",
       "bytes": 1245,
       "sha256": "ce541ef001f327234c3a30b4275d14458c2b3ed670edb77a27f23d7e6be8893d"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/browser_heart_budget.py",
+      "path": "board_runtime/v3b25_native100_heart_video/browser_heart_budget.py",
       "bytes": 7388,
       "sha256": "8dcc190f8e2968b33dd77bac1fb1b5a913c0dabbe50ffa7bc718f0a6c2aaf914"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/browser_heart_client.js",
+      "path": "board_runtime/v3b25_native100_heart_video/browser_heart_client.js",
       "bytes": 6515,
       "sha256": "dbe7dffd48f47658ce28a2768efb0a6c8aee22a53c4f1651a368920c840dd0df"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/browser_heart_display.py",
+      "path": "board_runtime/v3b25_native100_heart_video/browser_heart_display.py",
       "bytes": 8639,
       "sha256": "8d206d257ae1cb3f227bb9d8c1c11e3e49af88edfc441a92d4f649dab025854b"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/browser_heart_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/browser_heart_guard.py",
       "bytes": 2792,
       "sha256": "4b843072355c7bd26960be730579c02f26e639b65b49beb5e70aa7e970e4c2a7"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/browser_heart_transport.py",
+      "path": "board_runtime/v3b25_native100_heart_video/browser_heart_transport.py",
       "bytes": 3300,
       "sha256": "87b850b37c7bb32b36f14e1642596f4b21e97a962a96aef78586ca4063da5109"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/browser_heart_worker.py",
+      "path": "board_runtime/v3b25_native100_heart_video/browser_heart_worker.py",
       "bytes": 802,
       "sha256": "0a2a3aad9a6e0b7141235881577c606422fee11ebd8298f38e354a2a4a5dcc2f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/BrowserHeartVideo60.ipynb",
+      "path": "board_runtime/v3b25_native100_heart_video/browserheartvideo60.ipynb",
       "bytes": 2149,
       "sha256": "4d309ebc7bd283d3d58cbfae8d7afc5f49bd107c933dda290c6400803604b9f0"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/driver_preload.py",
+      "path": "board_runtime/v3b25_native100_heart_video/driver_preload.py",
       "bytes": 6814,
       "sha256": "13f87c5cc68027adf5d0281e337fef44aff8437b8e8832022c5324c0e108e894"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/cached-live25-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/cached-live25-manifest.json",
       "bytes": 742,
       "sha256": "e99fd0df085b4cf072a8f6a17db32c7fdb163f90c395851d10655ccabc8b21e0"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/display25/__init__.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/display25/__init__.py",
       "bytes": 60,
       "sha256": "a49ab2751c2d030f68e774f48ebb2a6df3140ae6d406266a952c38861f633559"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/display25/assessment.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/display25/assessment.py",
       "bytes": 4380,
       "sha256": "5b4275048b37f7e2b96c33b391a659ed62dde6c2f3178d4b0fcc7a377a5089bd"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/display25/delivery.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/display25/delivery.py",
       "bytes": 3091,
       "sha256": "871779d59122e56e27e93b86d2b2fbf241beefbb22f793d9500920897c991bd4"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/display25/render.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/display25/render.py",
       "bytes": 4788,
       "sha256": "9c7d911e30e6312a6ac48db92bc786ca518ebe21380661e0fea4cc3aa58f6ffc"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/display25/runner.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/display25/runner.py",
       "bytes": 6011,
       "sha256": "293d59c7a0859ed08ed730f34f0df01f3b0234568b31f28b128831d081802a4e"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/display25-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/display25-manifest.json",
       "bytes": 19168,
       "sha256": "20578e2920adfe6f72d5c1c74af58c7fafa09aab89dab2e16b979362d8f0124a"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/evidence/static-capture-audit.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/evidence/static-capture-audit.json",
       "bytes": 6558,
       "sha256": "5e9b63061fdb833be44a909bfe83a73145c0d1c2a2500b4dea9233a62d9b0107"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/owner-display25-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/owner-display25-manifest.json",
       "bytes": 839,
       "sha256": "3bf26816d5da42740f3facae46bf2fa7533383f4571e8ee204e5a62d6c43866a"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/owner25/__init__.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/owner25/__init__.py",
       "bytes": 75,
       "sha256": "89323e7b0d5289968a5fb5109dacdf3a69114e5911c9a3d03b3ec3237d44a612"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/owner25/transport.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/owner25/transport.py",
       "bytes": 6328,
       "sha256": "a6e9d8247f7367eb3fa521efaf39a2c34b349fc0026317c2a7a572af8ccc1f62"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/owner25/worker.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/owner25/worker.py",
       "bytes": 3253,
       "sha256": "eea967e065bcf12bf218b3e80452201631af64574a1066bbeb9bdaa7f3359688"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/README_DISPLAY25.md",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/readme_display25.md",
       "bytes": 3549,
       "sha256": "d2ed036ca1baa4ac6ffdd2c5992bb35b01dcf971ae8f74575aa3c46b2523c591"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/README_OWNER25.md",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/readme_owner25.md",
       "bytes": 2711,
       "sha256": "352b02d0cf5adfa1c27cdeb79f56309386333dffdd4f9b7d091e81ade3fff573"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/run_v3a25_cached_live.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/run_v3a25_cached_live.py",
       "bytes": 11627,
       "sha256": "78e3f292dc4815aaa578494ca97920e1516a3550df12b21ff51e164ee8ff00ee"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/run_v3a25_display.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/run_v3a25_display.py",
       "bytes": 859,
       "sha256": "4dc0e6894e840ba60028334f70dfd7d43cc6c2ae47ac42bc6dd1642ab46023d0"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/run_v3a25_owner_display.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/run_v3a25_owner_display.py",
       "bytes": 12502,
       "sha256": "76db84f06ccb7bd943797fe02c54bd9b2879745fd532d2cada55a20b3b504629"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/config/arena_v2_primed.yaml",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/config/arena_v2_primed.yaml",
       "bytes": 1261,
       "sha256": "612dcc1d3a28389c8b727a3a913b25f562916fabbcaf9a91acde017a29ce0654"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/controls.csv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/controls.csv",
       "bytes": 1201,
       "sha256": "efa886874fbeb46328fb6c807f9fe909de72455e3dccf43af2989bd1e017adef"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/golden/case-00/records.csv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/golden/case-00/records.csv",
       "bytes": 516,
       "sha256": "b95907d5723e28eb9ab0868d224dd60d4f564046a66a996b09851c9880c7c5b7"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/golden/case-01/records.csv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/golden/case-01/records.csv",
       "bytes": 15971,
       "sha256": "4bac7735524e1515bc11874f51462f61aeba75c792f3dead1bd4df72169b089e"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/golden/case-02/records.csv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/golden/case-02/records.csv",
       "bytes": 12288,
       "sha256": "b90aacfb4ad4cdb4c7b27bcc70f311b790df104624961a4b8c3f03480093c571"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/golden/case-03/records.csv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/golden/case-03/records.csv",
       "bytes": 141450,
       "sha256": "d98c3cf3b209e2c8d91a10255b683430d53a7f68c9d3fa25c30256b56f02fe9b"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/golden/case-04/records.csv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/golden/case-04/records.csv",
       "bytes": 16520,
       "sha256": "86acb4a55d86e0552489ccc5484aa956d3faa5adc78c0d48f99e4e6ef064fbf7"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/golden/case-05/records.csv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/golden/case-05/records.csv",
       "bytes": 128300,
       "sha256": "ce020778113ceaffa00eccf5449e1e65dcc34dd70e76d26442b9eab191d90611"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/golden/case-06/records.csv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/golden/case-06/records.csv",
       "bytes": 155520,
       "sha256": "26e01aa3d3344662c580eb5aacfb82509b2e760cdb6276a8ecf05aa77b96ba7d"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/golden/case-07/records.csv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/golden/case-07/records.csv",
       "bytes": 156411,
       "sha256": "496674e4b15ad97acebb99d32c24146d72f56bbd4120789343fa94e64bb0f824"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/golden/case-08/records.csv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/golden/case-08/records.csv",
       "bytes": 157880,
       "sha256": "7e3c81b2265a54810cf40a4990fb9f7b502935eb9cf26cc9d455be52a4b1bf18"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_axi_capture_50hz.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_axi_capture_50hz.py",
       "bytes": 26925,
       "sha256": "8613eef56ea555ca36ad0857a250ef3d9a8d7797476f31e078f5dbaa969da928"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_axi_live.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_axi_live.py",
       "bytes": 46979,
       "sha256": "224794f6ca4776e047d29274e8006d19330fc49433d2ae03ba261514dc770a70"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v2/__init__.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v2/__init__.py",
       "bytes": 132,
       "sha256": "c0bf13ddf7f7f9efae9c800dea0ae8c1c8e04967d8215be3b7b68380941d8b87"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v2/aligned_metrics.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v2/aligned_metrics.py",
       "bytes": 2939,
       "sha256": "18528117cd7e4f65fc821066be4f53ff08752f81e9c9bef5451d63a54b64086b"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v2/contact.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v2/contact.py",
       "bytes": 3293,
       "sha256": "d9681d404cf04170c7f240e1b964f7833399023bdee5eb1381a3afa1799d7d4c"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v2/dataset.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v2/dataset.py",
       "bytes": 5489,
       "sha256": "f8a2ca2e41b264095f6760f15985b55e374425a2b0a52c7b50f7f7a5cd02ecf2"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v2/heartrate.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v2/heartrate.py",
       "bytes": 3824,
       "sha256": "017262a4f7eedbd8c784ca37d6c28042aace868a8e7073f725a443f02a7003f4"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v2/joint_benefit.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v2/joint_benefit.py",
       "bytes": 9511,
       "sha256": "85b37cfc8c5d519ac45a8f0de9b11717123e4734916ad50c315bec720e4a80be"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v2/metrics.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v2/metrics.py",
       "bytes": 4448,
       "sha256": "33c0df5066dddcc23f61efaa3167d87ffd63f15e635b6493a9970c20c28ca62f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v2/nlms.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v2/nlms.py",
       "bytes": 6460,
       "sha256": "be91e66b0e4186f4deb7cc5eae072814155828583dd3b93fb00eb7d8af2d28c4"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v2/preprocess.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v2/preprocess.py",
       "bytes": 2658,
       "sha256": "8db01b427bd2fa335acedc3f97b4aa60d98ca22f6022838568b40e0982877be1"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v2/runtime_main_chain.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v2/runtime_main_chain.py",
       "bytes": 18575,
       "sha256": "bba4d659c05d84a4ca177d18b7c44bd5a1c52b68ae08e771d86fde190e9c06dc"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v2/runtime_state.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v2/runtime_state.py",
       "bytes": 4971,
       "sha256": "a2bd25c05d62e2dc6e71258dd38c1b763779ab19a161f09cf386fa35e656811a"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/__init__.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/__init__.py",
       "bytes": 83,
       "sha256": "630b214ff45a06f4c62dfbceffd63637a3f0d89b0b8d1ad8a5b73c5e206eac05"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/axi_contract.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/axi_contract.py",
       "bytes": 2563,
       "sha256": "95feb8d1361dcbffb3aebd2c6c36c09e0a76f9cf90fd492f24d41f0697dfedfe"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/axi_driver.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/axi_driver.py",
       "bytes": 5826,
       "sha256": "813e44031150fc6a57bc3a31b55eaf3ed4dee62020f64214fe7327c9d58268d6"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/delivery.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/delivery.py",
       "bytes": 13120,
       "sha256": "590ade4b6898ae985bb0781423ba0ae2b8b0d0afccd6b6972f6e2c4c828f82ce"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/fixed_math.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/fixed_math.py",
       "bytes": 1875,
       "sha256": "1839f4ddb12aec7ecb56f2b740aafdc1ac7afd943ed5f4d8ffb752d0b8f8a86f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/fixed_nlms.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/fixed_nlms.py",
       "bytes": 4625,
       "sha256": "57c3ed9dc01008821d2d663d20847444c8f0881aebee215d924bfe05355c58d4"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/live/__init__.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/live/__init__.py",
       "bytes": 76,
       "sha256": "112eb9a9dd99b0211762b3966f6f65af07d2f73914456f785b89873a892164a3"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/live/board.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/live/board.py",
       "bytes": 14661,
       "sha256": "4f667142b03884c4fae23826f08de586f4fa101e7bec108829be4f113b6e9707"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/live/capture.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/live/capture.py",
       "bytes": 8076,
       "sha256": "67c8da7cec20c14b684a41066443017dc1668f5156086510e5a5e99ef0cfe57d"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/live/contracts.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/live/contracts.py",
       "bytes": 5477,
       "sha256": "fe10aff6d3c5a968c49683d27792291c7d9d46a38bb4e9cba2c659ec0aabf3da"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/live/history_fast.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/live/history_fast.py",
       "bytes": 3217,
       "sha256": "9a262e0750e493a01ffd315f4bee0917184e31f8f61d82de0cc008ad79bda5ed"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/live/isolated.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/live/isolated.py",
       "bytes": 2306,
       "sha256": "845db3e8fb79e0ae06ab286e892be4c9a382621ce4784f34cf7618175084fa60"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/live/journal.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/live/journal.py",
       "bytes": 5243,
       "sha256": "ea9a595664dc84c21029e2df68fe4f0cbdc600271124e24731da6efc67204bd3"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/live/numpy_compat.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/live/numpy_compat.py",
       "bytes": 1808,
       "sha256": "047d4948e4a7e5df8ba0ecbba10c6ff7681cda26d2bae1f77ad8b62307b87c15"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/live/process_chain.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/live/process_chain.py",
       "bytes": 9347,
       "sha256": "f250925e89a1f35286a27c5e1d269037c3ce49b5e6ce2e767fe77fe485d83127"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/live/processing.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/live/processing.py",
       "bytes": 1922,
       "sha256": "d5d6387c5bdfdfeeb313a905bfdff5827eafb8bf0e71b43db1af7eedcbf64613"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/live/session.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/live/session.py",
       "bytes": 20022,
       "sha256": "4839aa944c6a93344a9b8798d0418a795cf74d6bc32bb669c61f64b36d67d872"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/live/single_sample.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/live/single_sample.py",
       "bytes": 3185,
       "sha256": "4b343cd27dd99fc226c61fc8d9a79387639f79d27a1e256dbe4897365cff4d3c"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/live/statistics_fast.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/live/statistics_fast.py",
       "bytes": 7857,
       "sha256": "3138a72b9d7d9407cd5f77bde45e66ffbb04e5a499a72c58b0aa462c01b75ff8"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/live/view.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/live/view.py",
       "bytes": 6808,
       "sha256": "7dfd748c45a6287a5a8453d64b41e9685d452e0103c53a78eca6f8c4cb073530"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/live_delivery.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/live_delivery.py",
       "bytes": 7686,
       "sha256": "da6444cb8e98424cc0fc92afb9bd83c2ca5239992387b49477dc3a0251d4f828"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/rtl_sim.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/rtl_sim.py",
       "bytes": 6744,
       "sha256": "9144390db19571a6e68056f4099bb960c0784eb76f233f8ea0eb29ce6afc7868"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/runtime_backend.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/runtime_backend.py",
       "bytes": 935,
       "sha256": "c3d8fbb0bbe387addfbf3b2f8cd395fe9c51c41958c3fbae0349fd6cafcabefc"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/runtime_fixed_nlms.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/runtime_fixed_nlms.py",
       "bytes": 3441,
       "sha256": "4580fdf3c552d15faddc048e2c2720ea49f49c6cd44cd0587677d0a445c3d9ba"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a/runtime_pl_chain.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a/runtime_pl_chain.py",
       "bytes": 14938,
       "sha256": "902cd4ef772c1243c7ec82bfcbdd30672267daa192096ecac307e83038470af5"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a.bit",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a.bit",
       "bytes": 4045676,
       "sha256": "dd1a4f7704b8bc236c6d232f3bdec812dbb941dd2a328aa1e5be9ad9bccead20"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a.hwh",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a.hwh",
       "bytes": 274428,
       "sha256": "d8a50cb8dc5ff69e51e20b91d0dbc38ca22c7e46d7df0c6f5b630e2d28627548"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a_live_notebook.ipynb",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a_live_notebook.ipynb",
       "bytes": 6533,
       "sha256": "7c5898d442d0aaa7fc0ee23af652ecfd63c570314b533a9be3b08d6df4e3e34f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/heart_v3a_live_work.ipynb",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/heart_v3a_live_work.ipynb",
       "bytes": 6533,
       "sha256": "7c5898d442d0aaa7fc0ee23af652ecfd63c570314b533a9be3b08d6df4e3e34f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/live-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/live-manifest.json",
       "bytes": 5780,
       "sha256": "8a0eba168f25ec95f55e3e6b2deb359f48a8b8d6ed09da79fd6efd02a0890fd8"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/manifest.json",
       "bytes": 21440,
       "sha256": "f9982dce7124067260bf6a9a1e8b8f73a518448e8e75665c5340ca111d1471a5"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build-manifest.json",
       "bytes": 8007,
       "sha256": "a779effe6125d693c4a434472aa4cd08834781eee7368aae8c69992c4065a518"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/board_repo/pynq-z2/A.0/board.xml",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/board_repo/pynq-z2/a.0/board.xml",
       "bytes": 54479,
       "sha256": "a565dcb39737d551cbbbb73c0053b973c40bb3dce2274943370d3032c0fea9ae"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/board_repo/pynq-z2/A.0/part0_pins.xml",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/board_repo/pynq-z2/a.0/part0_pins.xml",
       "bytes": 9007,
       "sha256": "3c809473938e135a925b563b5371c8687ee05c4089376e7318c0c56524cc8a0f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/board_repo/pynq-z2/A.0/preset.xml",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/board_repo/pynq-z2/a.0/preset.xml",
       "bytes": 74492,
       "sha256": "18528f84aea4da503cdb3104f7706fabfb3b6ad09b78b25199cc316afa4c8cfe"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/board_repo/pynq-z2/A.0/pynq_z2.jpg",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/board_repo/pynq-z2/a.0/pynq_z2.jpg",
       "bytes": 175776,
       "sha256": "b6cf32febf4b1995f33c3372ef72f390abf4a5596c73a6fd36810a45ccd0e1f7"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/heart_v3a/heart_v3a.srcs/sources_1/bd/design_1/design_1.bd",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/heart_v3a/heart_v3a.srcs/sources_1/bd/design_1/design_1.bd",
       "bytes": 75264,
       "sha256": "375e11aebe8a8e67f102fe79da56d67fe198254d06509fe0fa1711ce1383204a"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/ip_repo/nlms_axi_lite/component.xml",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/ip_repo/nlms_axi_lite/component.xml",
       "bytes": 32029,
       "sha256": "f399a30dd72cc168863a41eddc2b73deddd1c01d0152e823f7af2a9c0c07f339"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/ip_repo/nlms_axi_lite/src/nlms_axi_lite.sv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/ip_repo/nlms_axi_lite/src/nlms_axi_lite.sv",
       "bytes": 8801,
       "sha256": "a5ccd10a69a1db32313a0f3d5875f5e213dbe5d8ea4aebe45e087af59d88d1ea"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/ip_repo/nlms_axi_lite/src/nlms_core_runtime_3x4.sv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/ip_repo/nlms_axi_lite/src/nlms_core_runtime_3x4.sv",
       "bytes": 10949,
       "sha256": "35b04c731d975dcb600f378e29c86b4bc5c3c072c53638e0e190470b2d86348b"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/ip_repo/nlms_axi_lite/src/nlms_round_div96_runtime.sv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/ip_repo/nlms_axi_lite/src/nlms_round_div96_runtime.sv",
       "bytes": 3154,
       "sha256": "5556cf5e12a4a96dba823df50308c7d2c8265758403dac39e3903b73d8489792"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/ip_repo/nlms_axi_lite/xgui/nlms_axi_lite_v1_0.tcl",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/ip_repo/nlms_axi_lite/xgui/nlms_axi_lite_v1_0.tcl",
       "bytes": 205,
       "sha256": "e0725b60cdc4cd625ee059e557ee3f5569fcd085edf601849e69e4d438080d96"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/scripts/build_overlay.tcl",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/scripts/build_overlay.tcl",
       "bytes": 4684,
       "sha256": "e8fb3efa45bce6d0b5633e13b898d0eb3687d56beee725a57c7fb53178a8c30a"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/scripts/create_overlay_copy.tcl",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/scripts/create_overlay_copy.tcl",
       "bytes": 3523,
       "sha256": "943d7acc3d2f71237933fc54d76a96113828ddca05f84f7d1bd2b21732e25008"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/scripts/package_nlms_ip.tcl",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/scripts/package_nlms_ip.tcl",
       "bytes": 3134,
       "sha256": "f07c5f661a6a4f8c09c4f50f4aef70141e77e47602329e9d6b78be89fa049f96"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/snapshot/design_1.bd",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/snapshot/design_1.bd",
       "bytes": 71519,
       "sha256": "4a0c0ddfaa51566ba2b815ff103f4698d853ea33bfb9aa0f77f2406991ce0d57"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/snapshot/nlms_axi_lite.sv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/snapshot/nlms_axi_lite.sv",
       "bytes": 8801,
       "sha256": "a5ccd10a69a1db32313a0f3d5875f5e213dbe5d8ea4aebe45e087af59d88d1ea"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/snapshot/nlms_core_runtime_3x4.sv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/snapshot/nlms_core_runtime_3x4.sv",
       "bytes": 10949,
       "sha256": "35b04c731d975dcb600f378e29c86b4bc5c3c072c53638e0e190470b2d86348b"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/build_sources/snapshot/nlms_round_div96_runtime.sv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/build_sources/snapshot/nlms_round_div96_runtime.sv",
       "bytes": 3154,
       "sha256": "5556cf5e12a4a96dba823df50308c7d2c8265758403dac39e3903b73d8489792"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/original_sources/00-heart_axi.xpr",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/original_sources/00-heart_axi.xpr",
       "bytes": 26835,
       "sha256": "e18efeb949983c1b881a020835b5dbe3a964c6fcf7d17d3e5050127514d9ee40"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/original_sources/01-design_1.bd",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/original_sources/01-design_1.bd",
       "bytes": 71519,
       "sha256": "60c7b27533c69e41b5c9bb60cfbfd77b0c29fe0367e14d321cea918175a9516e"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/original_sources/02-board.xml",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/original_sources/02-board.xml",
       "bytes": 54479,
       "sha256": "a565dcb39737d551cbbbb73c0053b973c40bb3dce2274943370d3032c0fea9ae"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/original_sources/03-part0_pins.xml",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/original_sources/03-part0_pins.xml",
       "bytes": 9007,
       "sha256": "3c809473938e135a925b563b5371c8687ee05c4089376e7318c0c56524cc8a0f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/original_sources/04-preset.xml",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/original_sources/04-preset.xml",
       "bytes": 74492,
       "sha256": "18528f84aea4da503cdb3104f7706fabfb3b6ad09b78b25199cc316afa4c8cfe"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/original_sources/05-pynq_z2.jpg",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/original_sources/05-pynq_z2.jpg",
       "bytes": 175776,
       "sha256": "b6cf32febf4b1995f33c3372ef72f390abf4a5596c73a6fd36810a45ccd0e1f7"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/reports/build.log",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/reports/build.log",
       "bytes": 699505,
       "sha256": "0ac0f901eefd68e00e33ac24d1f3f8098f2bed7505bc931189866cc1cf928896"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/reports/check_timing.rpt",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/reports/check_timing.rpt",
       "bytes": 3336,
       "sha256": "8f7ac7369aac574f3709c86c91e97dbe3e1bc5905b5a3c83b9f1fdedba885fdb"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/reports/clock.rpt",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/reports/clock.rpt",
       "bytes": 1633,
       "sha256": "d34aa74af14b029f98582b84412fc736b2cb16064e9ce41c534bd4155bb2e35f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/reports/drc.rpt",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/reports/drc.rpt",
       "bytes": 22739,
       "sha256": "7e6050a11977f1419a7da2e95d85f7972dd2522ceb15dac321b6680dbcabbcb0"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/reports/fifo_utilization.rpt",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/reports/fifo_utilization.rpt",
       "bytes": 11351,
       "sha256": "1b617036b090d077c7e6440340b95e7c335e3fa5f310223b65312cd08a2adde3"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/reports/hierarchical_utilization.rpt",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/reports/hierarchical_utilization.rpt",
       "bytes": 43208,
       "sha256": "a118a2c36b9e6fb053ba4a2f17fd7afa9b775d890a4b2f893dad6472d61a13d6"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/reports/iic_utilization.rpt",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/reports/iic_utilization.rpt",
       "bytes": 11281,
       "sha256": "a39dc72b93a1ab2b2fc265008cb84e602d16f08beb76fe5f514f2f7786527b5e"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/reports/io_pins.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/reports/io_pins.json",
       "bytes": 41,
       "sha256": "eeae3af40098d0ed696bafcb5615324debfb7978069372a8218c921fd5f12bd0"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/reports/nlms_utilization.rpt",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/reports/nlms_utilization.rpt",
       "bytes": 11143,
       "sha256": "72f89fe4e70ef129c398aee4ca6e9b6bc7aeeed7fba9799aa1d44db8cc3a0ffc"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/reports/run_status.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/reports/run_status.json",
       "bytes": 132,
       "sha256": "addae6bc87a98afc2401b082b102fe84b7e3ab2db3f6f3396f0b4bb7a4ec3b91"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/reports/synth_utilization.rpt",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/reports/synth_utilization.rpt",
       "bytes": 45787,
       "sha256": "a6391236d157b29ea4d659ecdcaabd96038190524483dbcaa66ef72a586e3843"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/reports/timing_metrics.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/reports/timing_metrics.json",
       "bytes": 169,
       "sha256": "e114c2e35e1c8f2e895cf8d7c96a5cdbc845eb04541f7cedfb92b4229d6f27d0"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/reports/timing_summary.rpt",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/reports/timing_summary.rpt",
       "bytes": 52541,
       "sha256": "6eb0c84dcc1bdcac38b285d993f42c4d104b04eed848ffa439b683e9f959e2f6"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/provenance/reports/utilization.rpt",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/provenance/reports/utilization.rpt",
       "bytes": 11942,
       "sha256": "d3f32ee3ebfe6c445cb2c1cec824124305f9a560e519894346b70b7601207401"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/README_isolated_pilot_zh.md",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/readme_isolated_pilot_zh.md",
       "bytes": 2567,
       "sha256": "f2cfb754b30bce18f77cb12ecdba502b4e571a23fb6c1a8399c068581cf38b76"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/README_live_zh.md",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/readme_live_zh.md",
       "bytes": 9707,
       "sha256": "dcc27670eb5f37cbd57e422c2054ff7f2be9f694728aad3326b23bede4de71d9"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/README_statistics_zh.md",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/readme_statistics_zh.md",
       "bytes": 1581,
       "sha256": "175107b89a90d753cc6a33e79e99d51c72f63cea1b249d96475c0b8de8f9b3b5"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/run_main_chain.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/run_main_chain.py",
       "bytes": 12710,
       "sha256": "7003bcc480c25e74a2bd0e0183928a2d33840b26a7ae0284148753a1f61b1162"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/run_v3a_board_replay.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/run_v3a_board_replay.py",
       "bytes": 10024,
       "sha256": "90667911497365c37c0a28197a5077bc82d4f2bc409098dc952800e2236b9790"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/run_v3a_history_check.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/run_v3a_history_check.py",
       "bytes": 5499,
       "sha256": "eb5a3ed082046074144c94b1e4aed8539ffbbc8463a7171e1639edd9d2f11548"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/run_v3a_isolated_live.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/run_v3a_isolated_live.py",
       "bytes": 2929,
       "sha256": "702d15f5a646f6c7d0dcf3ea7729ba91c13203ee1f03a77975eee67b2b6951f8"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/run_v3a_live.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/run_v3a_live.py",
       "bytes": 2486,
       "sha256": "0b4346b4d285ce230afe9384e3257bdcb8235d04ab950bec93012e2ca9a6944d"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/run_v3a_main_chain.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/run_v3a_main_chain.py",
       "bytes": 2449,
       "sha256": "4e22a308e0cebdc394f7a4cb490606eeabbb5498f3bc72abccdc74be534fa6e2"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/run_v3a_sos_check.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/run_v3a_sos_check.py",
       "bytes": 5122,
       "sha256": "917fc70c7886c6f6ec1412f391be49cb9d8b720c68d95979a8f935bd011a0f27"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/run_v3a_statistics_check.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/run_v3a_statistics_check.py",
       "bytes": 9696,
       "sha256": "7064428523184561a11f8a1960c905f460cdcfc6fc022cab797005fc31674637"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/base/使用说明.md",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/base/usage_guide.md",
       "bytes": 5009,
       "sha256": "d36ac27bff7392acd04655d527c26e1744e809e497aa4a584063d13c2f5bcd1f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/inputs/cases.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/inputs/cases.json",
       "bytes": 740243,
       "sha256": "eba50658214f48c5a9d9b0419ca8381574e2ea34614c91621bf682ef40e6547a"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/inputs/original_raw.csv",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/inputs/original_raw.csv",
       "bytes": 322803,
       "sha256": "c21ec78980af140d38836bfe35f688236d48a80fdad745968fc6d99784089ff7"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/inputs/vectors.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/inputs/vectors.json",
       "bytes": 398394,
       "sha256": "010d8f4a846a93db8954f991a5931d2341d336457a8f0c12e347d98d2abc6bcd"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/manifest25.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/manifest25.json",
       "bytes": 15837,
       "sha256": "3fd7b1a589a7b369b3866a965362d9e9465cdd95e48d07e120d4f3fb1970c5e5"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/peak_chain.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/peak_chain.py",
       "bytes": 2696,
       "sha256": "d387d2d0c89f045269e50354892d85cbb3f08208299ae374828117dd79268ee0"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/peak_timing.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/peak_timing.py",
       "bytes": 4496,
       "sha256": "8230e95a95d981dbe383d1c8d065cfe0d52a6a0d26b2694767f5f5598691c7ce"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/provenance25/previous-verification.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/provenance25/previous-verification.json",
       "bytes": 2025,
       "sha256": "4f5727f08358541e49ba28a2c2b6a9e4949258f7d3a00ad7b82b2fddc6dce999"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/rate25_tools/__init__.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/rate25_tools/__init__.py",
       "bytes": 69,
       "sha256": "795ab6dc93930e14518848768897634eb609db1f1d4f0fb6acbe27a7d2a0a6ce"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/rate25_tools/budget.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/rate25_tools/budget.py",
       "bytes": 5855,
       "sha256": "30ca044ad3b5279c3654585430fd7ff74e66acadde800e06a968e17faa7d12f1"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/rate25_tools/data.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/rate25_tools/data.py",
       "bytes": 1912,
       "sha256": "4c226cb443bc6d2be64a1304fc3ab424dcbb4567aff9790252a598fd41ce5e63"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/rate25_tools/delivery.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/rate25_tools/delivery.py",
       "bytes": 2881,
       "sha256": "972b36f1fc00a91f414e09d3924d81c4530aff119997db59c2d38049a58e2def"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/rate25_tools/hardware.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/rate25_tools/hardware.py",
       "bytes": 2817,
       "sha256": "fd5f63eb43b04c572118c5e9c6c1012a968e525da650b3b2abb86f3b0e354059"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/rate25_tools/replay.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/rate25_tools/replay.py",
       "bytes": 4308,
       "sha256": "885e5ed10f1eec30b0ddf18d43670842091105f3442a612a26c190731c60dc78"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/rate25_tools/reporting.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/rate25_tools/reporting.py",
       "bytes": 1588,
       "sha256": "65225683f3e66ce37a3c738a31802d9b0ad6c969b63fe5e8f2b99c83b945c73b"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/README_25HZ.md",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/readme_25hz.md",
       "bytes": 3737,
       "sha256": "f6c17966cbbfcd71336f7a5e8262b9e938ca86025084f71ca5c090ebd89afc7c"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/run_v3a25.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/run_v3a25.py",
       "bytes": 1590,
       "sha256": "0ff10370bceca558cbfba993a94c6afd267ab24fe4a4c21c57917acb0b4a1c8c"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/v3a_25hz_live/__init__.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/v3a_25hz_live/__init__.py",
       "bytes": 80,
       "sha256": "28045ca27a73ef21605a793698d3ce3f58572522b2d8857dfaaf6aa05897cc1e"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/v3a_25hz_live/bridge.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/v3a_25hz_live/bridge.py",
       "bytes": 4113,
       "sha256": "36461729a5c3ce4a682dc656c3b3c2fefb6cd7651da53489bd6791711b4203af"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/v3a_25hz_live/contracts.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/v3a_25hz_live/contracts.py",
       "bytes": 678,
       "sha256": "5215b605eca8702153f1c1ae57b6eeb549226c4784fd5b5e5609554161406402"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/v3a_25hz_live/journal.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/v3a_25hz_live/journal.py",
       "bytes": 3788,
       "sha256": "963c5546ae882d383b12f82d44bf7a94c365590c7bc6f675ffc55df43faa283b"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/v3a_25hz_live/safety.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/v3a_25hz_live/safety.py",
       "bytes": 3610,
       "sha256": "d2002a8a783bed2ab6d8cf9efd0294ed1d79e03d23aa524f8d74d8d14ae8d9a1"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/v3a_25hz_live/session.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/v3a_25hz_live/session.py",
       "bytes": 7208,
       "sha256": "aa1b8e034a270f8ff36b661065cc12c2839553c2905b4a062682dfb0985c9542"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/v3a_25hz_live/view.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/v3a_25hz_live/view.py",
       "bytes": 3865,
       "sha256": "20d4d27e042162cc1d44f6279c8bae9b3417baf40616ee3488753287b80eb535"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/v3a_rate25/__init__.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/v3a_rate25/__init__.py",
       "bytes": 79,
       "sha256": "ad31f4bd1ec9bba162b097f481f6972605aacfd2cc03f0cba5ee4e706a10666f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/v3a_rate25/benefit.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/v3a_rate25/benefit.py",
       "bytes": 6206,
       "sha256": "edfbe9b7dc89e5c56a7b8ed7dccb430b99f07d89a4cb1a321e7133bf97f507f8"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/v3a_rate25/chain.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/v3a_rate25/chain.py",
       "bytes": 8175,
       "sha256": "2bbd1c600a58f4a0a81ea1c3328394feea67796ca7ec4f398803f4714e33607f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/v3a_rate25/frontend.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/v3a_rate25/frontend.py",
       "bytes": 6029,
       "sha256": "e7dbeef20be15797dcc6d64ea010f4edc2dc8eda390326a9472db2670f61f027"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/v3a_rate25/policy.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/v3a_rate25/policy.py",
       "bytes": 779,
       "sha256": "0801ef743e67b6f57261a3f17fbbde501fe98b396e67a79ab6a9129b71c89fe3"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/checked/v3a_rate25/state.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/checked/v3a_rate25/state.py",
       "bytes": 4151,
       "sha256": "88b3c9829cd9d77639c4dd8d1ef7cf54303204b89910f073541f4f1cfbd87c29"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/evidence/arm-budget-audit.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/evidence/arm-budget-audit.json",
       "bytes": 3158,
       "sha256": "f38d13661643c77c47e40e7e1eabb051072cb507cb35b54ce0924690cbe270a3"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/evidence/arm-pl-audit.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/evidence/arm-pl-audit.json",
       "bytes": 1969,
       "sha256": "919901ff3d845ca430057928e79945764bf24901cfbb12fda9a1a898fb16d15e"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/pilot25/__init__.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/pilot25/__init__.py",
       "bytes": 80,
       "sha256": "2916e095e473bc2e200cd314f0f7b55b8866838a17d054e9e408c1718437bb68"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/pilot25/assessment.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/pilot25/assessment.py",
       "bytes": 6640,
       "sha256": "4bc70ce4731272c6721d36254fd0378e684ffe08db041c3f8e06bb1628b0c7bd"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/pilot25/board.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/pilot25/board.py",
       "bytes": 1224,
       "sha256": "569ad894008d2bd1839c96efed1ed06f5e703f27319a0c7304bdcaef7d449db6"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/pilot25/delivery.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/pilot25/delivery.py",
       "bytes": 2992,
       "sha256": "a45b0f1b482748026c62e49769b009eea444c917ca38c28a4d244aff35bd20c9"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/pilot25/runner.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/pilot25/runner.py",
       "bytes": 2734,
       "sha256": "23400f827f38560c6fdbebfb63a3e497d0f7e65fbb9c5dec52339be263ab590c"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/pilot25-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/pilot25-manifest.json",
       "bytes": 17276,
       "sha256": "0130ee3c7ff1f36951bf69ce88c1374659d71f3256348f84d8bf7ea917b9183f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/README_STATIC25.md",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/readme_static25.md",
       "bytes": 2728,
       "sha256": "45e8fc3ac803c92920b50fc6fc368d220cf0e0f67e689ee11ec6a62d83c58c67"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/static/run_v3a25_static.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/static/run_v3a25_static.py",
       "bytes": 1240,
       "sha256": "2f424167d8b174eafa2e750a1f018188a143ffb7b17d73c052590798ce40fa59"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/deps/v3a25_cached_display.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/deps/v3a25_cached_display.py",
       "bytes": 4899,
       "sha256": "85e9a0d793c20c4a8f42c6460acaf17cc64da3b56013ef7ee847ea7345c901de"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25/__init__.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25/__init__.py",
       "bytes": 86,
       "sha256": "9241512b4d99503c36222224d36955fb40b997b66d3b882cb88fa1ff52df0e9f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25/assessment.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25/assessment.py",
       "bytes": 7413,
       "sha256": "8c5e0a928219f40d904211418a6a07dbdd64e7d28c538578bf2faeca84a97fca"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25/board.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25/board.py",
       "bytes": 1555,
       "sha256": "6adf8d36db1b5af53cb5b09d20d23149bde5a656d96d64845b370017319df00b"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25/bridge.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25/bridge.py",
       "bytes": 3272,
       "sha256": "fdf2b3d80933d28542d85407ffb59f19ea345febb61530baa1afaa0d2463faa4"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25/capture.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25/capture.py",
       "bytes": 5366,
       "sha256": "745a0f6d00b88c3306bde0e8bc5d5ccc4f45d11e083c81243a3a65b8a415d7c2"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25/checks.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25/checks.py",
       "bytes": 5540,
       "sha256": "3fa745fa0fb962f8ac84ac4941bd7e691d21b646a91a1e9f9872eeb73f6b5f7b"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25/display.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25/display.py",
       "bytes": 8467,
       "sha256": "e9f5d69706e93d3ce9db0dbf50cf6bc2ac02a9ce40af3612c7172dfeb17c93f4"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25/display_assessment.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25/display_assessment.py",
       "bytes": 1485,
       "sha256": "b42834a79bb91a20caebfb3b3eea4fc9c0597820ab96a26e7abdfde45d53b859"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25/frontend.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25/frontend.py",
       "bytes": 3835,
       "sha256": "922da1f9a2bfde8c2a74aa103a5b18d852d44294cdff220c8e951de39e100c46"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25/identity.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25/identity.py",
       "bytes": 3427,
       "sha256": "3620387195485aacfe252698976085e32ba0a71979f89f13156f866f752b6699"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25/owner.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25/owner.py",
       "bytes": 3326,
       "sha256": "82866fe1801454657ead60b114f8282f899ac5ab4532812e54cbaf6f0d0e7890"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25/policy.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25/policy.py",
       "bytes": 943,
       "sha256": "7bdb981c72b0133bee70c40fd7cb77e300299399e57c44d58246dede91853edb"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25/safety.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25/safety.py",
       "bytes": 1158,
       "sha256": "f5a1fb0f97fc65af4a7e5a40fb1e42ef44f04929105b9494a5066e868860b3db"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25/session.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25/session.py",
       "bytes": 5821,
       "sha256": "156cb080893d32286484059b6435d0c0cde289e0a178f7e2fa8f9c4ba815f2f3"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25-manifest.json",
       "bytes": 22838,
       "sha256": "400883a9049ad8684fbc15102032cfe8dc0a1daaabda8110423f31959ec054b1"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25_gc_log.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25_gc_log.py",
       "bytes": 3197,
       "sha256": "852270daf4e2fe925a32972aea1f433704ad53774249bbfa827e70ae4d17c401"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25_gc_report.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25_gc_report.py",
       "bytes": 7918,
       "sha256": "de025147bd582d34300fec4ff52b48143e63a25a71c40183ddd66600c816cd69"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25_gc_window.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25_gc_window.py",
       "bytes": 4935,
       "sha256": "9f5edcfd3803d489fa4e32c2979416a5632f8c963098a9e94a5e32f7d5e1c5b2"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/effective25_gc_window_report.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/effective25_gc_window_report.py",
       "bytes": 5232,
       "sha256": "2b889bec34a8c3592826786b9c05f3647c5d433f8cfee8c82cb79c3bc55d49bc"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/gc-probe-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/gc-probe-manifest.json",
       "bytes": 555,
       "sha256": "2c6b9098cf713937d84b1ee3c383746ebfd2eb031dc44b9c63ad08345c99e228"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/gc-window-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/gc-window-manifest.json",
       "bytes": 670,
       "sha256": "07c77d2c07b760d1ed626bac0e9742ac24cc066db90b29005949c85f83f6d783"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/README_EFFECTIVE25.md",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/readme_effective25.md",
       "bytes": 3327,
       "sha256": "d717e393adaf9569d95a7231a58c18462e8109ea9654c8841b67e2338470f361"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/README_GC_PROBE.md",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/readme_gc_probe.md",
       "bytes": 3121,
       "sha256": "6de337bd69dc1c1160a0a90962f9f079440ac3b0dc152ac09764c1101f6beb39"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/README_GC_WINDOW.md",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/readme_gc_window.md",
       "bytes": 4319,
       "sha256": "d4f21ae5b15ca4ca009822450abee9e537dbc1399d78a0521be1d0db8a0fc968"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/run_effective25.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/run_effective25.py",
       "bytes": 1968,
       "sha256": "86251d28e9c9970c12bcec23dea1088c9b80afb61dd484167497fa18960e9c4b"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/run_effective25_gc_probe.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/run_effective25_gc_probe.py",
       "bytes": 6536,
       "sha256": "163fd7295ad69c3a048521b8871e618184487aee820bfa87ba1395553e3ba30f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/base/run_effective25_gc_window.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/base/run_effective25_gc_window.py",
       "bytes": 7903,
       "sha256": "3432a742c207a62f5b99ccbf585e517185eb550572507034332230d9956424ce"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/entry25-live-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/entry25-live-manifest.json",
       "bytes": 25491,
       "sha256": "00879aa1d75813cdbc1cb644706b369e465615cb340c6a739b67e5fd9fa3adf8"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/entry25_candidate.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/entry25_candidate.py",
       "bytes": 1502,
       "sha256": "8781385123c7a97c9273ee7aa69c27eaf2bb0f75655eb23a7f18a1ba323e8c47"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/entry25_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/entry25_guard.py",
       "bytes": 5803,
       "sha256": "2f151a87811b5e6e5deffc77ca6400526066e89d60cf99c66ccf197a6907fcba"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/entry25_report.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/entry25_report.py",
       "bytes": 6014,
       "sha256": "d27652e781b66d2161e7c0b69c1692dc83ee350dae9865df070f9e28a4cad7b3"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/entry25_worker.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/entry25_worker.py",
       "bytes": 1812,
       "sha256": "077d88447ebba2014b78ef9af5ff5d47ae95eb50cb6ad4bf14b231efacd818b4"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/provenance/entry25_board_check.json",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/provenance/entry25_board_check.json",
       "bytes": 37228,
       "sha256": "4eb23826ed23d16fec772eab490cdf35a43ad3e9b2ae642337c05cecb842efca"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/provenance/entry25_board_check.txt",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/provenance/entry25_board_check.txt",
       "bytes": 1351,
       "sha256": "ad7082a598cce2f0e45597ef63397615c538934fe52c4d2bc00bf1fa208defbc"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/README_ENTRY25_LIVE.md",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/readme_entry25_live.md",
       "bytes": 3637,
       "sha256": "f7223c48da9a174d3510974b17cecf28f3d01462675d74a2655626111ef4db9f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/frozen/run_entry25_live.py",
+      "path": "board_runtime/v3b25_native100_heart_video/frozen/run_entry25_live.py",
       "bytes": 5049,
       "sha256": "e2cb60bc0f7c81526ad8dc93e52bb2fe305eae07a61cfab5f653150224f9863b"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/heart-snapshot-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/heart-snapshot-manifest.json",
       "bytes": 1274,
       "sha256": "6d4dc83a22e34285fc9ad3eec374b8abc82e07bdf3ea7fc8d1c4205ff3477834"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/heart-video5-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/heart-video5-manifest.json",
       "bytes": 35696,
       "sha256": "064cdd483305fb0941538f79489bfb033f05f8998ad2e7bd86a7829cd5901f2c"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/heart_snapshot_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/heart_snapshot_guard.py",
       "bytes": 3785,
       "sha256": "224c18fc3517cc98dac38e28305e3751a9c0197040aebe8f47d57634535b336a"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/heart_snapshot_worker.py",
+      "path": "board_runtime/v3b25_native100_heart_video/heart_snapshot_worker.py",
       "bytes": 4921,
       "sha256": "fdb543f5fb53d72744bf74cffb69aa7e95ff2340783e1a28a88caf004e260935"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/heart_v3b25.bit",
+      "path": "board_runtime/v3b25_native100_heart_video/heart_v3b25.bit",
       "bytes": 4045676,
       "sha256": "aacedae31a82010d24f086aa8815250282c97ecfd1d5b1b551b0a7bf20fb1cd5"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/heart_v3b25.hwh",
+      "path": "board_runtime/v3b25_native100_heart_video/heart_v3b25.hwh",
       "bytes": 911497,
       "sha256": "2f17d4f4eb255ced45f9f27bfbd2600767d77faab5144365fb33ec3510487866"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/heart_v3b25_yuyv.bit",
+      "path": "board_runtime/v3b25_native100_heart_video/heart_v3b25_yuyv.bit",
       "bytes": 4045676,
       "sha256": "99a19202c167738b934cfb3247eae836425a68f510c3ec35fffd83c4b1a8b0a2"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/heart_v3b25_yuyv.hwh",
+      "path": "board_runtime/v3b25_native100_heart_video/heart_v3b25_yuyv.hwh",
       "bytes": 1065159,
       "sha256": "6a57237e2ed1f21f07d8d09d7898aacd0424bc14cac16e8280274cc11478f313"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/heart_video_binding.py",
+      "path": "board_runtime/v3b25_native100_heart_video/heart_video_binding.py",
       "bytes": 3192,
       "sha256": "201045cdc9991eaa7f2dba5a566aeb17066e0adc22459c33c9c4ac22bf9afb71"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/heart_video_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/heart_video_guard.py",
       "bytes": 5016,
       "sha256": "43f70d1df63710f4f35537e543fdf57ea8dade2277b6bb325f91383c701d809d"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/heart_video_worker.py",
+      "path": "board_runtime/v3b25_native100_heart_video/heart_video_worker.py",
       "bytes": 2389,
       "sha256": "51006e068e40449d3876bfcc4e0952a6bc9b98a42164852f5b4fe6d70666699a"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/HeartSnapshot25.ipynb",
+      "path": "board_runtime/v3b25_native100_heart_video/heartsnapshot25.ipynb",
       "bytes": 2021,
       "sha256": "7085e4160e57360cf61e1374fb8e6f1e5ef03f172cf62efe8f71782cd620fa94"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/HeartVideo60.ipynb",
+      "path": "board_runtime/v3b25_native100_heart_video/heartvideo60.ipynb",
       "bytes": 2053,
       "sha256": "2dab22ad812a363f196f1389d1b2704311934c463690db3152668eb2ee3a5cf6"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/iic_handoff.py",
+      "path": "board_runtime/v3b25_native100_heart_video/iic_handoff.py",
       "bytes": 4269,
       "sha256": "9296c88608f02827ecca16481492debd37ecc857b50c7b425d4817582adee5b6"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/iic_handoff_binding.py",
+      "path": "board_runtime/v3b25_native100_heart_video/iic_handoff_binding.py",
       "bytes": 2036,
       "sha256": "a54d68fc79916b5331bcfc4c3f77b3499e998e1bc92512920fd8d422f784303b"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/iic_handoff_build.py",
+      "path": "board_runtime/v3b25_native100_heart_video/iic_handoff_build.py",
       "bytes": 6190,
       "sha256": "71abc232bc1126c280369b23990253b04b4bc3827aebdf254131e8e54838f553"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/iic_handoff_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/iic_handoff_guard.py",
       "bytes": 3430,
       "sha256": "6d8dd29abb74cd80acc7108dc87033f69560fcaf8bbb3335f34cb5a94f5e6579"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/iic_handoff_worker.py",
+      "path": "board_runtime/v3b25_native100_heart_video/iic_handoff_worker.py",
       "bytes": 1464,
       "sha256": "72a12a555832915841c9054881690d5338cca275b38e13268e8ef0e059d285f1"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint-artifacts.json",
+      "path": "board_runtime/v3b25_native100_heart_video/joint-artifacts.json",
       "bytes": 1356,
       "sha256": "cf9c7f988ed011a99b0149ce71708511c81d4855e72a1461313d14bb12678f33"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint-heart-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/joint-heart-manifest.json",
       "bytes": 84017,
       "sha256": "3f2170941f20de3104f71bbdfed5c0eaa258d9a6dffaf203576877dc71929d97"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_boundary.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_boundary.py",
       "bytes": 6525,
       "sha256": "71c36ffdeb435c5f73f0fc3c8e4ebb4ba15aacda13bb9513b4be0e995ffff588"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_boundary_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_boundary_guard.py",
       "bytes": 8758,
       "sha256": "1f23acf14a6c9e1ee66fed4199f6f925a438d1ab191f6dad4098d549a4d7e207"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_boundary_worker.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_boundary_worker.py",
       "bytes": 3053,
       "sha256": "45063ff8f9283c53beb72f93432d02985ed221ca4e6b4802c2b4a05f86301668"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_concurrent_binding.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_concurrent_binding.py",
       "bytes": 5834,
       "sha256": "e18c14e88077387aa8ca4c8904d3941a9317a342c954028892b82fa89395b629"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_concurrent_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_concurrent_guard.py",
       "bytes": 12794,
       "sha256": "322508542fb46daff3c693db6c2576a931e66fb726aa0c05c352e7a00fa7ade1"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_concurrent_owner.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_concurrent_owner.py",
       "bytes": 4707,
       "sha256": "a738f023c6eb6965dfb3f7024fdb6facff172e6c0819a2d3fd1a0d2a0a5c728c"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_concurrent_worker.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_concurrent_worker.py",
       "bytes": 6206,
       "sha256": "389833b21533a51042fa0bd3ae7b4e475f3f38d76fb8bf54fa7e639ed6ed3582"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_heart_binding.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_heart_binding.py",
       "bytes": 5659,
       "sha256": "f31a55706bf0b5e0522e2274cd061306d1eec826284b49d2b8e9b7ea33b8f4e1"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_heart_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_heart_guard.py",
       "bytes": 4979,
       "sha256": "c332809da961fbdba7b0005d63b0be6d12d80d7cfd859629c7ac5609d43d28a0"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_heart_worker.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_heart_worker.py",
       "bytes": 2748,
       "sha256": "9032cdd80791d0392c068353ce2d8ecad2212f5daf0a3f8071ab749a4bc0dea7"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_iic.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_iic.py",
       "bytes": 14900,
       "sha256": "790c428e9cc3857ce28620aedd694866d31479c96e72f004dffa04ad62c11615"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_iic_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_iic_guard.py",
       "bytes": 2295,
       "sha256": "6b5b892dca95132730e8f8c610b1e0251536a136f799d0e4ac731c699c62613b"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_iic_native.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_iic_native.py",
       "bytes": 11420,
       "sha256": "20780a05c5b09f1dbc0b09bd67595a248ee15fa4af291d58e759aef492248abf"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_iic_native_build.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_iic_native_build.py",
       "bytes": 6197,
       "sha256": "18b352692fe10601a4a9fa1f977e8d9c7318b78102e4716908c22904ea7db1ed"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_iic_native_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_iic_native_guard.py",
       "bytes": 2268,
       "sha256": "53d4a6baea61dffc2ef12809c0eee9c4401ea00638ab7c50221c29381db38825"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_native_joint_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_native_joint_guard.py",
       "bytes": 3828,
       "sha256": "db34aee62778f36e5dd2976cdc4e22333bf2be24de408aeed79fe61d98ca1e7b"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_overlap.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_overlap.py",
       "bytes": 7363,
       "sha256": "7746c3bb38f35d47959f634d84cf5626516854b36f34ed6585ea35248428a88f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_overlap_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_overlap_guard.py",
       "bytes": 7111,
       "sha256": "c71d093314a651275406f6ca88ba0450cd846298feafabe7088b9a7a025674e7"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_overlap_worker.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_overlap_worker.py",
       "bytes": 3573,
       "sha256": "955cbdfa5c4d5b26759bbcf94812d0cdddca1cfe96cc69fc656d25ab2df906fb"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_owner.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_owner.py",
       "bytes": 13086,
       "sha256": "5ec45d6e8a37037591734fa8a92e6bd5129e648c54cca1e5485a6e5fda563562"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_shared_video.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_shared_video.py",
       "bytes": 5373,
       "sha256": "e47d8aed5e85fa27745577b9e8c3e4512c2f9d160b3e37de4c5cade52eb122ba"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_snapshot.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_snapshot.py",
       "bytes": 2344,
       "sha256": "6aabd59be4269796915abe5f3535253abd635fe442d3b3bcd80b4a07e432a4e0"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_snapshot_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_snapshot_guard.py",
       "bytes": 2933,
       "sha256": "21262dda7ebf100855b0573488d28da502e0f2d467880ced7659d1522404055d"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_snapshot_worker.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_snapshot_worker.py",
       "bytes": 1062,
       "sha256": "2edaaece33b192e733dc9445a6f152797e6f5378ee9ef34d4a6ad64702ed1e1e"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_startup.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_startup.py",
       "bytes": 7123,
       "sha256": "53efd7a5a9964fe00182199d17f7c9107dccb8d68fee4fb175f8c755156ad702"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_startup_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_startup_guard.py",
       "bytes": 5636,
       "sha256": "ae3bb4d56cb8aebce79089ae8103f876acf223093d5fe3efa447b426fddce106"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_startup_worker.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_startup_worker.py",
       "bytes": 3235,
       "sha256": "34adec67788812e9f7bfaf3c5a3f67f2dc01d0f1a8f7622eb55472dbb4e7b426"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_video_five.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_video_five.py",
       "bytes": 7212,
       "sha256": "592676c7e62841ab0fdb7568b27210929e543dbc70fe48213e4a89c82d5c0250"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_video_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_video_guard.py",
       "bytes": 6146,
       "sha256": "eb6f989f42670261efcd5a47997575239ed3bb9af3c6c6d929db65be879a7954"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_video_live.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_video_live.py",
       "bytes": 7355,
       "sha256": "f4fbaf123bb35545ec5435fa3d346a343bf110bc3388d85c48529504728d21d9"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_video_live_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_video_live_guard.py",
       "bytes": 8130,
       "sha256": "d9988f09acc9c61ea4e6b9992dabce19666d91175e65813ee82aba8b4b485dad"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_video_pack.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_video_pack.py",
       "bytes": 4476,
       "sha256": "01f303a076b872a82174cecf7fcd9596b97053963f5f94bf623a493a3f2a0c45"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_video_pack_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_video_pack_guard.py",
       "bytes": 3372,
       "sha256": "0f8b42c312272d95d968373acf533200d60941ca705265d9655cca976a355578"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_video_runtime.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_video_runtime.py",
       "bytes": 11978,
       "sha256": "db8b866ed868e90758c099382adceaaeb9ac1f5c86f3204cfc06427934e5664c"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/joint_video_transport.py",
+      "path": "board_runtime/v3b25_native100_heart_video/joint_video_transport.py",
       "bytes": 9206,
       "sha256": "0a9c840f8358af9aa71cd85679a2b9b2db82e8e9fb17d3040cb7685c751fcfa6"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/JointHeart25.ipynb",
+      "path": "board_runtime/v3b25_native100_heart_video/jointheart25.ipynb",
       "bytes": 1912,
       "sha256": "5c674965880e8c71754c496ceff6afd6c44d109cfc62414c7742dac7045d81e5"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/native-arm-evidence.zip",
+      "path": "board_runtime/v3b25_native100_heart_video/native-arm-evidence.zip",
       "bytes": 89848,
       "sha256": "82b49d16e05b17cc45a921b9850430def6c5ab4f473c81d25b1ddf3f09146041"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/native-arm-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/native-arm-manifest.json",
       "bytes": 38017,
       "sha256": "2f220c2ba33ef93a2ee4ff4518043d8eabe7dabd4e5346981c90ab310d3f6e5f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/native-build/_v3b25_statistics_dot.cpython-310-arm-linux-gnueabihf.so",
+      "path": "board_runtime/v3b25_native100_heart_video/native-build/_v3b25_statistics_dot.cpython-310-arm-linux-gnueabihf.so",
       "bytes": 13156,
       "sha256": "4dc17698315564f4d2ac50b5e3d1607fecfe12f2520dafa9f4aaa40ff4e50c78"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/native-heart-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/native-heart-manifest.json",
       "bytes": 37915,
       "sha256": "327a1090631a905f8bf13bda0391a5b92a76d85f5530df6dc34af4a1e51d9da2"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/native-input.zip",
+      "path": "board_runtime/v3b25_native100_heart_video/native-input.zip",
       "bytes": 583416,
       "sha256": "e49c3ac12ed0822be9987ad01eb2004a9811ae03608efdb94c3e1eb82238f1bb"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/native-prepared.json",
+      "path": "board_runtime/v3b25_native100_heart_video/native-prepared.json",
       "bytes": 10204,
       "sha256": "63a993da6dae6773ad6e6f0af76cea6a89379ee25d22c6029ecf5a95d2638b7c"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/native_heart_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/native_heart_guard.py",
       "bytes": 4153,
       "sha256": "a28f5c1496ae7f960939b9f3cff42db352b11a29865767a089995b29461f2e4b"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/native_heart_prepare.py",
+      "path": "board_runtime/v3b25_native100_heart_video/native_heart_prepare.py",
       "bytes": 8607,
       "sha256": "914cd0419a244207f2275e4e0781cd4f3c3ac3ed742284483d04189eff26161a"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/native_heart_worker.py",
+      "path": "board_runtime/v3b25_native100_heart_video/native_heart_worker.py",
       "bytes": 3124,
       "sha256": "430c09b3ae406a7a9eac3aad5eb5451a93e89935cf74019cd8d282afed16d927"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/NativeHeartVideo60.ipynb",
+      "path": "board_runtime/v3b25_native100_heart_video/nativeheartvideo60.ipynb",
       "bytes": 2448,
       "sha256": "10630051b19dcf55b6dcbfcdc52f12b3d43851cf03b6703db8b2e7ccefc8ea40"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/ps_budget_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/ps_budget_guard.py",
       "bytes": 6084,
       "sha256": "ba78c4fb8afc025136c90e69c2789bd97c2fd67f5d0b7632951e067ada77ca6c"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/ps_budget_runtime.py",
+      "path": "board_runtime/v3b25_native100_heart_video/ps_budget_runtime.py",
       "bytes": 10126,
       "sha256": "ac9215314394f5e5cc2ee47cc271b8cd6e086e803cda9c201372e075de5e3637"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/README_BROWSER_HEART.md",
+      "path": "board_runtime/v3b25_native100_heart_video/readme_browser_heart.md",
       "bytes": 2244,
       "sha256": "4bbca010c3eda0c3136115d873a370fb6289def73dbbcf4011ee0a1bd5923c8e"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/README_HEART.md",
+      "path": "board_runtime/v3b25_native100_heart_video/readme_heart.md",
       "bytes": 2378,
       "sha256": "4a457317879d8a97fb1055c5207f288e2c769bb020d7e13eddd93726be064ee3"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/README_HEART_SNAPSHOT.md",
+      "path": "board_runtime/v3b25_native100_heart_video/readme_heart_snapshot.md",
       "bytes": 2352,
       "sha256": "164cf80c955820a50aa80ba4e56d6e97559c71b9eb5bb3ab3b91e2dcbde476d5"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/README_HEART_VIDEO.md",
+      "path": "board_runtime/v3b25_native100_heart_video/readme_heart_video.md",
       "bytes": 1930,
       "sha256": "eae50ea80c3958a0901270145690a4b29496f082373052c0c1d25b66f0837baf"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/README_NATIVE_HEART.md",
+      "path": "board_runtime/v3b25_native100_heart_video/readme_native_heart.md",
       "bytes": 1719,
       "sha256": "8c05b3a20d759a559bbef85fbba6db27e151e7d29e27260a93f154510d03f7a9"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/README_YUYV_VIDEO.md",
+      "path": "board_runtime/v3b25_native100_heart_video/readme_yuyv_video.md",
       "bytes": 1846,
       "sha256": "68da0079ae49cde810807d6370340ab3126a48c161873bb95922decb50602fda"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/run_browser_heart.py",
+      "path": "board_runtime/v3b25_native100_heart_video/run_browser_heart.py",
       "bytes": 4230,
       "sha256": "eaa06138f5c59c0bf6414b7ae7725d8321be108bde2be7487cf14c51cb9b00be"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/run_driver_preload.py",
+      "path": "board_runtime/v3b25_native100_heart_video/run_driver_preload.py",
       "bytes": 6521,
       "sha256": "437dd9093da8af54b9f37aa2ef44c4c3695822bf8f18ee8633c3ab895506d796"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/run_heart_snapshot.py",
+      "path": "board_runtime/v3b25_native100_heart_video/run_heart_snapshot.py",
       "bytes": 4155,
       "sha256": "394159bdb6a4fde329b5ee721d46f161080b61dee4d5feae25290ec041dd1a03"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/run_heart_video.py",
+      "path": "board_runtime/v3b25_native100_heart_video/run_heart_video.py",
       "bytes": 3823,
       "sha256": "1af706455c0769fad69b58bb287625faa5bf73f480809002312365d360fe5ee5"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/run_iic_handoff.py",
+      "path": "board_runtime/v3b25_native100_heart_video/run_iic_handoff.py",
       "bytes": 5599,
       "sha256": "63bb105b994457a41a03be117dd5ee0f4c757fdcaae991ce2fcb55af84c616b2"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/run_joint_boundary.py",
+      "path": "board_runtime/v3b25_native100_heart_video/run_joint_boundary.py",
       "bytes": 4264,
       "sha256": "2156ea364e30b9bd3b02c44cd8f9a30cc29874b3ea3c0b91b4779ad041183e10"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/run_joint_concurrent5.py",
+      "path": "board_runtime/v3b25_native100_heart_video/run_joint_concurrent5.py",
       "bytes": 4678,
       "sha256": "dcede880dd8a9e4c483deeb814438d2c339f46527a4c07ef80c4e2c4d66b2eea"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/run_joint_heart.py",
+      "path": "board_runtime/v3b25_native100_heart_video/run_joint_heart.py",
       "bytes": 4236,
       "sha256": "267a7278001ce0e9db9a9f695955ef38dbf34b246732ac1ada36821b4269b776"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/run_joint_overlap.py",
+      "path": "board_runtime/v3b25_native100_heart_video/run_joint_overlap.py",
       "bytes": 3680,
       "sha256": "cafda1f53412dafbf2c189ae2f87e5c60b2fa09e9b6941bdec2652c4c59476cf"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/run_joint_snapshot.py",
+      "path": "board_runtime/v3b25_native100_heart_video/run_joint_snapshot.py",
       "bytes": 4052,
       "sha256": "9e77547ea4c10d7c188c9e865af841e59ca15b07e79b3b2a4dc1099b84161e4e"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/run_joint_startup.py",
+      "path": "board_runtime/v3b25_native100_heart_video/run_joint_startup.py",
       "bytes": 4006,
       "sha256": "bd7d14cab0294d399dc2bb6f51957da38d99cb0b2b4ef9559cc91891cd5a072a"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/run_native_heart.py",
+      "path": "board_runtime/v3b25_native100_heart_video/run_native_heart.py",
       "bytes": 6053,
       "sha256": "35a0d124c310480d2252bb2b3063c64ee3ba378baa6b140532834c5bc7488564"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/run_startup180.py",
+      "path": "board_runtime/v3b25_native100_heart_video/run_startup180.py",
       "bytes": 9395,
       "sha256": "8cb4d0e7c5c1caacd7efdcc4197e81e87eb45dea33a42b4595828a8683df87ab"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/run_yuyv_video.py",
+      "path": "board_runtime/v3b25_native100_heart_video/run_yuyv_video.py",
       "bytes": 9695,
       "sha256": "c0b615cfca3b29b16049709ea566bbffb2b8da6fea3844133ca47c686c514fe8"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/statistics25_core.py",
+      "path": "board_runtime/v3b25_native100_heart_video/statistics25_core.py",
       "bytes": 4873,
       "sha256": "3dd078a474a0de193d08bf8b366e8a8fdce94cc9ed6784ea06b1b4fcea834524"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/statistics25_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/statistics25_guard.py",
       "bytes": 4689,
       "sha256": "a21900c75ca4de521da2793132168c980b76f584d84be41406c3fb4ffa93ff8f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/statistics25_native.c",
+      "path": "board_runtime/v3b25_native100_heart_video/statistics25_native.c",
       "bytes": 8757,
       "sha256": "a3758e091fbb66ab5fd9817c847dee44a294c34a07bd56ac04e2a42621ee0b59"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/statistics25_native.py",
+      "path": "board_runtime/v3b25_native100_heart_video/statistics25_native.py",
       "bytes": 4764,
       "sha256": "d9517b12a50e50b93370dd4825648fede042e4e56be89fd450f3c2a43b47b716"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/statistics25_native_build.py",
+      "path": "board_runtime/v3b25_native100_heart_video/statistics25_native_build.py",
       "bytes": 4576,
       "sha256": "ed3ef5c9d6be5badff911fe500e377f092c469834b76856090d7aca597eb2af9"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/statistics25_native_trial.py",
+      "path": "board_runtime/v3b25_native100_heart_video/statistics25_native_trial.py",
       "bytes": 5772,
       "sha256": "7efcc4000daf2546e3e3de32e85a72667bb9639ba0b176c6609149ecee58503f"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/statistics25_replay.py",
+      "path": "board_runtime/v3b25_native100_heart_video/statistics25_replay.py",
       "bytes": 8634,
       "sha256": "35c7e00fff36893e2c4dae9bdd698cbad1c44a8e7faba70e5bce6478ffbfb028"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/vision_reference.py",
+      "path": "board_runtime/v3b25_native100_heart_video/vision_reference.py",
       "bytes": 6399,
       "sha256": "cc75be1d71f100a383118367d82a230ea4ea853e8c12d2d87a43b180b02a8df9"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/yuyv-artifacts.json",
+      "path": "board_runtime/v3b25_native100_heart_video/yuyv-artifacts.json",
       "bytes": 1062,
       "sha256": "c7b04df5496ca5720edd8aad687461594777f8f122a69f36a65ace88e627ba92"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/yuyv-video-manifest.json",
+      "path": "board_runtime/v3b25_native100_heart_video/yuyv-video-manifest.json",
       "bytes": 1645,
       "sha256": "b91add10c68ebab68d6dfa0238bb65b4af0543acef8e8cb53337626dae36c9a8"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/yuyv_joint_binding.py",
+      "path": "board_runtime/v3b25_native100_heart_video/yuyv_joint_binding.py",
       "bytes": 13774,
       "sha256": "38d70f8ed2e4f16ea50f87467ad296f1781140fc6d7c79f73a96dc84d1ce3aa5"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/yuyv_joint_guard.py",
+      "path": "board_runtime/v3b25_native100_heart_video/yuyv_joint_guard.py",
       "bytes": 10000,
       "sha256": "c33456f3138332dbb605a7008cb5111445195f95ed4b2de8a818913924b49ef5"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/yuyv_joint_worker.py",
+      "path": "board_runtime/v3b25_native100_heart_video/yuyv_joint_worker.py",
       "bytes": 2238,
       "sha256": "bfb309ba7dd549eba0d446e6f47922602549318fcf14b06beb42a2203dd4f5d8"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/yuyv_owner.py",
+      "path": "board_runtime/v3b25_native100_heart_video/yuyv_owner.py",
       "bytes": 6041,
       "sha256": "46744a7fca3727257564dd6334b027bc6bc748a5457460d471f9d6e9e4c08ee8"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/yuyv_reference.py",
+      "path": "board_runtime/v3b25_native100_heart_video/yuyv_reference.py",
       "bytes": 1716,
       "sha256": "6588cc784133edc06a9366670b8924344db91ab8856c61d84357b566effeadda"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/yuyv_runtime.py",
+      "path": "board_runtime/v3b25_native100_heart_video/yuyv_runtime.py",
       "bytes": 10210,
       "sha256": "d997276b4e188ee1b430b1b96a2ffdf7d46055564475b3deac9597910ffb379c"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/yuyv_transport.py",
+      "path": "board_runtime/v3b25_native100_heart_video/yuyv_transport.py",
       "bytes": 8959,
       "sha256": "b5280840f9371485e204c9179701867994e7460fc122454aeea453bbe384f4ed"
     },
     {
-      "path": "board_runtime/v3b25 native100 heart video/YuyvVideo.ipynb",
+      "path": "board_runtime/v3b25_native100_heart_video/yuyvvideo.ipynb",
       "bytes": 1966,
       "sha256": "c499aff8056d43af0edb13b3ec32e6779e39157577cecbc51aab78efedc54a66"
     },
@@ -4832,9 +4835,269 @@
       "sha256": "306990f81b2dc7de21fb0a2019544051eae9168dfe1751a832e8ae4ef8352d3c"
     },
     {
+      "path": "build/evidence/base_cdc.rpt",
+      "bytes": 22903,
+      "sha256": "5df1abe83910d2cb34cc2b416f2a919ee7bc2a5edbaf80fbcb75793a61c94826"
+    },
+    {
+      "path": "build/evidence/base_check_timing.rpt",
+      "bytes": 3388,
+      "sha256": "4c970246e89c489fb9fd886b55c6a8bacab9fa2900677ac39daa150b38545267"
+    },
+    {
+      "path": "build/evidence/base_clock_interaction.rpt",
+      "bytes": 2104,
+      "sha256": "d88ffea5b667aaf95aa585266da9cfd55debafb75d8eaf2a2d221260aabdf16a"
+    },
+    {
+      "path": "build/evidence/base_clocks.rpt",
+      "bytes": 2929,
+      "sha256": "15d72177e4f69659abc7441ae88c20c59c557297bd27e98422eee1ed8d8892f3"
+    },
+    {
+      "path": "build/evidence/base_display_dma_utilization.rpt",
+      "bytes": 11031,
+      "sha256": "21a06a2cd1aa3cc37cffb5acec2ab36d2627c4d7e55485e870c9538a0738d6a2"
+    },
+    {
+      "path": "build/evidence/base_drc.rpt",
+      "bytes": 56397,
+      "sha256": "ac1f2e49f93d01d890c0d73d1f94fbd900939863994fa2a54952dd0659ef5b6f"
+    },
+    {
+      "path": "build/evidence/base_exceptions.rpt",
+      "bytes": 7953,
+      "sha256": "f3312e8c2b92d50acb0265e8f600108a20e686fbb84b62cf11ecb029937edfee"
+    },
+    {
+      "path": "build/evidence/base_hdmi-clock-model.tsv",
+      "bytes": 118,
+      "sha256": "eaa2689e04129c65183511f11f64084f395a6214c3a77dbd1283444f3f948d86"
+    },
+    {
+      "path": "build/evidence/base_hdmi_out_utilization.rpt",
+      "bytes": 11684,
+      "sha256": "30c30ce5b283bc590e96754ceea1d1bb0e403503660e9df240c28e12b8f8d2a3"
+    },
+    {
+      "path": "build/evidence/base_hdmi_vdma_utilization.rpt",
+      "bytes": 10977,
+      "sha256": "e428f4430202622457f7da291a057da845a946cc8652da52e8ea829b59de32f7"
+    },
+    {
+      "path": "build/evidence/base_heart_main_0_utilization.rpt",
+      "bytes": 11103,
+      "sha256": "e3981722be75e3e7b67f7750a0de4f605347a236bca06dbbe44b3c148ef2716c"
+    },
+    {
+      "path": "build/evidence/base_hierarchical_utilization.rpt",
+      "bytes": 261372,
+      "sha256": "471193bffcbecc65097e07b2daa906812d94afe0c732c12858c9290a7afde55c"
+    },
+    {
+      "path": "build/evidence/base_io.rpt",
+      "bytes": 125041,
+      "sha256": "170d65dc66a57ff4205af4bff80fe2877b47ae33ed3c0a86359df3e6dc724ee1"
+    },
+    {
+      "path": "build/evidence/base_main-core.json",
+      "bytes": 143,
+      "sha256": "87db910c6a5338dea8894dd86776c014e3f7c709bc23a19ded3f3b09d677979a"
+    },
+    {
+      "path": "build/evidence/base_pins.tsv",
+      "bytes": 328,
+      "sha256": "c10d39fa8d91df336875f3d3d7645b50bbf66280727f1cf1053a3b33b69e15ca"
+    },
+    {
+      "path": "build/evidence/base_raw-metrics.json",
+      "bytes": 212,
+      "sha256": "8463ce8df3268badceeddb129c811ba23363a7707d96684794c4a7c58c2950a7"
+    },
+    {
+      "path": "build/evidence/base_synth_utilization.rpt",
+      "bytes": 299662,
+      "sha256": "08611c5f7e686bcf67e62a3f904b016165ea524bc2c327d132a3b63d89847096"
+    },
+    {
+      "path": "build/evidence/base_timing_summary.rpt",
+      "bytes": 138486,
+      "sha256": "515eaecbfbb4c56284b4a9404cc0473a8d1ff43e7c36688156cbba9d229ac121"
+    },
+    {
+      "path": "build/evidence/base_utilization.rpt",
+      "bytes": 12390,
+      "sha256": "b3acc4502a284871452454cb3f125b9dd1d32d05603ca85fe411e87b2a69dc3b"
+    },
+    {
+      "path": "build/evidence/base_vision_0_utilization.rpt",
+      "bytes": 11147,
+      "sha256": "c9274d05263654f7ecff44d1461e9a3536f553c3a6b0b1d5e1382d8ddf2bac6b"
+    },
+    {
+      "path": "build/evidence/base_vision_dma_utilization.rpt",
+      "bytes": 10941,
+      "sha256": "e189bc90612c63bea32f2b7d05d86817710f4d6dcef4ca03e04fb5917b378da4"
+    },
+    {
+      "path": "build/evidence/base_vision_packet_utilization.rpt",
+      "bytes": 10548,
+      "sha256": "0133f3fe56a2811b135e90109fe8b22d03892e9b5c809dc20f8fabcc90a073aa"
+    },
+    {
+      "path": "build/evidence/base_worst_hold.rpt",
+      "bytes": 70541,
+      "sha256": "b0a6c5b532aeb1d0b4ccf78f1d878926af3bb94c3f379d12b7268544e19f1f53"
+    },
+    {
+      "path": "build/evidence/base_worst_setup.rpt",
+      "bytes": 94414,
+      "sha256": "5ef8ac42febdc58f3c60b4329522e03151ee37504cad7c906fdf7362845800dd"
+    },
+    {
+      "path": "build/evidence/external_sources.json",
+      "bytes": 10668,
+      "sha256": "4e22eaa34913c20627ec671a5aab315a919bca3e5ac9b9f2ab9236ec492d3ebb"
+    },
+    {
+      "path": "build/evidence/final_bit-write-readback.json",
+      "bytes": 142,
+      "sha256": "6f021f019b9b83a93a04f3141c5ff86b8c787b06e3fabcb4cfbca443e2916055"
+    },
+    {
+      "path": "build/evidence/final_cdc.rpt",
+      "bytes": 22915,
+      "sha256": "e8abb89a145112d071375270e58f0af16feda62dc3891b97e9ebffdce5aa1d35"
+    },
+    {
+      "path": "build/evidence/final_check_timing.rpt",
+      "bytes": 3418,
+      "sha256": "770f76e4c578ec74e70a56c5ac97aa29171b73f2c7f8f9039a5a0e929cdf8103"
+    },
+    {
+      "path": "build/evidence/final_clock_interaction.rpt",
+      "bytes": 2134,
+      "sha256": "19226be39717cd659057694c351e2ad4c76a73d4465f06bb3d9cf7b3ccaeffa8"
+    },
+    {
+      "path": "build/evidence/final_clocks.rpt",
+      "bytes": 2939,
+      "sha256": "04194952ae792eacb66a020f4ae167c581204aa1eaccf943c6b78f4eb93561ce"
+    },
+    {
+      "path": "build/evidence/final_display_dma_utilization.rpt",
+      "bytes": 11061,
+      "sha256": "0551ef5d7164f510e7a3104424af34da8409546dd1dbcf9c697ef096b05f65c9"
+    },
+    {
+      "path": "build/evidence/final_drc.rpt",
+      "bytes": 56418,
+      "sha256": "cedce725eb367c1e9be3213eba6aeb5a9814ab56224206af09b844c79bbce5e0"
+    },
+    {
+      "path": "build/evidence/final_exceptions.rpt",
+      "bytes": 7975,
+      "sha256": "6be2bd18295e0e55bf0ba4725635a14c69e899643914d339a59ec777dd7aec34"
+    },
+    {
+      "path": "build/evidence/final_hdmi-clock-model.tsv",
+      "bytes": 118,
+      "sha256": "eaa2689e04129c65183511f11f64084f395a6214c3a77dbd1283444f3f948d86"
+    },
+    {
+      "path": "build/evidence/final_hdmi_out_utilization.rpt",
+      "bytes": 11714,
+      "sha256": "cc8b394c1487edece910f21ae6d239010bc317736d8795cace68a11517ac76af"
+    },
+    {
+      "path": "build/evidence/final_hdmi_vdma_utilization.rpt",
+      "bytes": 11007,
+      "sha256": "36f8cf76e32958d8898f030e6070015c69d5d350dbc98981a131563a488fbd50"
+    },
+    {
+      "path": "build/evidence/final_heart_main_0_utilization.rpt",
+      "bytes": 11133,
+      "sha256": "465f422019f1634a1ef84679ba084aefc7de399f29178c59a4c3e7a20ddd0cf9"
+    },
+    {
+      "path": "build/evidence/final_hierarchical_utilization.rpt",
+      "bytes": 261402,
+      "sha256": "3017b373e827a391e48e94de36669ddd62994555571e00147953551d7b40931f"
+    },
+    {
+      "path": "build/evidence/final_io.rpt",
+      "bytes": 125051,
+      "sha256": "ace4814008e888865fa351f9f0b4fe4aa1ae1c5f5aa593f11078af47db71231d"
+    },
+    {
+      "path": "build/evidence/final_main-core.json",
+      "bytes": 143,
+      "sha256": "87db910c6a5338dea8894dd86776c014e3f7c709bc23a19ded3f3b09d677979a"
+    },
+    {
+      "path": "build/evidence/final_pins.tsv",
+      "bytes": 328,
+      "sha256": "c10d39fa8d91df336875f3d3d7645b50bbf66280727f1cf1053a3b33b69e15ca"
+    },
+    {
+      "path": "build/evidence/final_raw-metrics.json",
+      "bytes": 213,
+      "sha256": "180c84ca17d600c0dee34e14365d2560f54b7f476f5337d3a9543f55063162d7"
+    },
+    {
+      "path": "build/evidence/final_route_status.rpt",
+      "bytes": 651,
+      "sha256": "b98111f725174791bab4f2fc8a3da39cf5e9f4a67853ecfb842a0ee7edea78f7"
+    },
+    {
+      "path": "build/evidence/final_timing_summary.rpt",
+      "bytes": 135753,
+      "sha256": "41767deabc026c30d037c410190392fe14b02c607a86fccfbf7b4ef105ae2d91"
+    },
+    {
+      "path": "build/evidence/final_utilization.rpt",
+      "bytes": 12416,
+      "sha256": "474363d752a8aa8c7aec82eb723627a8d65f947992006d75d69d6eb587bd8a25"
+    },
+    {
+      "path": "build/evidence/final_vision_0_utilization.rpt",
+      "bytes": 11177,
+      "sha256": "273a37f882115b372b6e78be3e33be19ba1e65e641a585adee061d3d22e97f60"
+    },
+    {
+      "path": "build/evidence/final_vision_dma_utilization.rpt",
+      "bytes": 10971,
+      "sha256": "91ea9c0576b4068175d18d29c4f9ecbb181624410d977d4108be45f4ec97253f"
+    },
+    {
+      "path": "build/evidence/final_vision_packet_utilization.rpt",
+      "bytes": 10578,
+      "sha256": "287709152f0812209275af750e01527aca738224b80b7b752ba6e61cb9d6bf71"
+    },
+    {
+      "path": "build/evidence/final_worst_hold.rpt",
+      "bytes": 70571,
+      "sha256": "e61bfd7a0cef821dc17aac47d89edfe707450938172879a6d7e64602ba6e4d91"
+    },
+    {
+      "path": "build/evidence/final_worst_setup.rpt",
+      "bytes": 80575,
+      "sha256": "e1e843a390e11b7eddf6f8fe6406b509f543cc90f1621fb041c6bc68c99f4b7f"
+    },
+    {
+      "path": "build/evidence/final_write_drc.rpt",
+      "bytes": 56416,
+      "sha256": "ea46355bbafb1b8284ca23e3c2b39ceb9f573bd6339bf87b311f1c0e3051e9d1"
+    },
+    {
+      "path": "build/evidence/report_sources.json",
+      "bytes": 18328,
+      "sha256": "c33b67a5109702f96f5fb3ad090efcb4ad2b820cb31c207f3006ae3a2182949e"
+    },
+    {
       "path": "build/external_dependencies.md",
-      "bytes": 3930,
-      "sha256": "addacb4df7515e4628fff2584f152e47f1d964708485bc9bb99c6ac8fa3532f1"
+      "bytes": 3455,
+      "sha256": "0d32773d76165752b6d3595b3faf2d977ffaa3c1e12a56da95a6b62ced27e6cd"
     },
     {
       "path": "build/inputs/final/design_1.bd",
@@ -5142,6 +5405,16 @@
       "sha256": "2edede1121f8f69892e27f783f172689b1c0ac86dbf0302aaf23d784ac873985"
     },
     {
+      "path": "build/inputs/physical-inputs.json",
+      "bytes": 37652,
+      "sha256": "a5c0c98f7862cbb28e7170b0444ae9dfea169669c5cd201704a5cad998bddf0d"
+    },
+    {
+      "path": "build/inputs/physical-inputs.zip",
+      "bytes": 237688,
+      "sha256": "65aff0a989f24a89531b5b1757f15b77230ce08bfa8770da4e2f386afd10301d"
+    },
+    {
       "path": "build/inputs/pins.xdc",
       "bytes": 1032,
       "sha256": "594a20b7160811148e5cb1d219b06e9481272f98ae642c7de716973b2c55ae73"
@@ -5157,14 +5430,19 @@
       "sha256": "594a20b7160811148e5cb1d219b06e9481272f98ae642c7de716973b2c55ae73"
     },
     {
-      "path": "build/README.md",
-      "bytes": 1953,
-      "sha256": "a39c4d6834f0616cb9d3ac9d3c06fcdcf221d2367e511ba0e15ae559794c994c"
+      "path": "build/readme.md",
+      "bytes": 6565,
+      "sha256": "644380ba517d88050a04b54eb603f737e52b5724c33a85db543a87c7b8bbffed"
     },
     {
       "path": "build/rebuild.py",
-      "bytes": 6223,
-      "sha256": "25c5dc75e3d6c61b48f5bcfade668157781f637500c1c15ea3c363fd19a0ecc4"
+      "bytes": 13316,
+      "sha256": "d8bc99ebdf7bc9d129b802bec6122c25ead55ba1ab2d1dfa80b15c572b638a96"
+    },
+    {
+      "path": "build/scripts/generate-hls.tcl",
+      "bytes": 871,
+      "sha256": "588a5810cac6b032360f8cee823e65eded05940d61967a8234c71da8cb26bddf"
     },
     {
       "path": "build/scripts/main-joint-route.tcl",
@@ -5187,6 +5465,16 @@
       "sha256": "759c0bc7f66cc4937dc6f78f43d994309c6ae714d73c9dc77f2acea422f9e8e0"
     },
     {
+      "path": "build/tests/test_rebuild.py",
+      "bytes": 7408,
+      "sha256": "ccda124a3a15fd37e11c8751411bb739346e457dd6498433ae923cfa224a9d5d"
+    },
+    {
+      "path": "build/validation.json",
+      "bytes": 3700,
+      "sha256": "b0a6a59b04e9123b813f49f4a5a95406b91a7addf792b4db4b6dc2a3c49ff6e2"
+    },
+    {
       "path": "data/joint_test_summary.json",
       "bytes": 472,
       "sha256": "f00c1f4fc82ed68a26729d93bd13cf4603db6c9e4885c1aa67e14f4ff2243d73"
@@ -5197,7 +5485,7 @@
       "sha256": "bdacece52305673a54eaf5b8361cc13ea2624a46cf798831f27462c5e4239041"
     },
     {
-      "path": "data/measured_20261102/README.md",
+      "path": "data/measured_20261102/readme.md",
       "bytes": 1190,
       "sha256": "86c83f57c615d88121fcd580449c8f146147bc345b17547c55acc08201962c66"
     },
@@ -5207,17 +5495,22 @@
       "sha256": "541fcbdee354a8fcc952a68da4c3774647a611ced34f423c38810a84bd1306b0"
     },
     {
-      "path": "data/README.md",
+      "path": "data/readme.md",
       "bytes": 1295,
       "sha256": "aba9dcf83cf9903f765d66575f457e082293125013a43dc4fb789de9508ee4db"
     },
     {
-      "path": "LICENSE",
+      "path": "deployment_map.json",
+      "bytes": 331757,
+      "sha256": "acf00d6b2cd66dc017513a120464dbccfbcbf30367d9203e89a5446b7548263e"
+    },
+    {
+      "path": "license",
       "bytes": 1091,
       "sha256": "ef97de10541cb16a08e21bcd1d46fdd252a42ef4e337c4d6f3d1052819be17c4"
     },
     {
-      "path": "licenses/hardware/AMD_OFFICIAL_LICENSE_SOURCES.json",
+      "path": "licenses/hardware/amd_official_license_sources.json",
       "bytes": 3132,
       "sha256": "ebb754dafb3ff7f6206ea27748db601a5ae2c5a53b25c25d2cb20f3841398f2c"
     },
@@ -5287,24 +5580,34 @@
       "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
     },
     {
-      "path": "licenses/video/README.md",
+      "path": "licenses/video/readme.md",
       "bytes": 829,
       "sha256": "cfb53d8169cbbdbe19e0daf7cfeb9efb1103cb99d70d5bf1442945a551577e6a"
     },
     {
-      "path": "LICENSES.md",
+      "path": "licenses.md",
       "bytes": 1350,
       "sha256": "62fabef73e68c8a4fa4af2ab08ff7cd0c808ee9ccd8b4fb57fc6cc97d0e0a1bc"
     },
     {
-      "path": "public_selection_notes.md",
-      "bytes": 2668,
-      "sha256": "ffbb20a0e0254a5ff94c5bec4c286b7e7c6316eb2fc6aff09e2b8e6e211b32b1"
+      "path": "prepare_delivery.py",
+      "bytes": 6228,
+      "sha256": "b41f5079192010b5c48a31ea38a60c1ecdd9bd771ffbcfc8b640df230f7f9973"
     },
     {
-      "path": "README.md",
-      "bytes": 8878,
-      "sha256": "7c1f539887284093d4a4f2caf161bc5c5c783d473b19e77af12eae216d37d36f"
+      "path": "public_selection_notes.md",
+      "bytes": 3003,
+      "sha256": "9ccc923961fcb668ae7ccbfa804f6da572263b16a55e34d8dc0969ce3609aaa3"
+    },
+    {
+      "path": "readme.md",
+      "bytes": 10564,
+      "sha256": "6c1cb6ea2e4635c35f4b1d4cc99ab481c14781879a42038b7a4304092f3e0d5e"
+    },
+    {
+      "path": "release_changes.md",
+      "bytes": 2127,
+      "sha256": "75f7c41697a4638fb99bddd129889b5acd095099190efafeebde6aefc99a1a56"
     },
     {
       "path": "report/materials/amd_health_poster_bilingual_anonymous.pdf",
@@ -5357,22 +5660,22 @@
       "sha256": "698d65b7b5cbbdc060d5265a4f52c5c75d58bb3bd0abfb2f24675e202171db14"
     },
     {
-      "path": "report/materials/POSTER_METADATA.md",
+      "path": "report/materials/poster_metadata.md",
       "bytes": 1274,
       "sha256": "aad2620c7fe792bb8d0f7ff2301ae6f2e2979a5f0d13883a866401af81cbcee8"
     },
     {
-      "path": "report/materials/README.md",
-      "bytes": 4513,
-      "sha256": "5a3f12503db520e816dcb07f192bedbcde888056f82218cdae68d1d1ff9c68a2"
+      "path": "report/materials/readme.md",
+      "bytes": 4848,
+      "sha256": "d30f65534bad0b2b55b1406053b3c2759a579bcfa391e1f91789f244d5536ac9"
     },
     {
-      "path": "report/materials/README_submission.md",
-      "bytes": 2401,
-      "sha256": "385b9775a1e31524597391fddfec976d23de29a83b6287a82c8a972e17aeeaaa"
+      "path": "report/materials/readme_submission.md",
+      "bytes": 2736,
+      "sha256": "1d8eda646e74367d88bca55ba7847b240c4496af7960d4dbbb94f13a214bad58"
     },
     {
-      "path": "report/materials/SHA256SUMS.txt",
+      "path": "report/materials/sha256sums.txt",
       "bytes": 1863,
       "sha256": "db9d3ebf14600a52af81b11128d4e0567035e2da9675710832f8aa9abaad3161"
     },
@@ -5398,18 +5701,18 @@
     },
     {
       "path": "report/materials/usage_guide.md",
-      "bytes": 8426,
-      "sha256": "e6d2ce0e97fa6dbda1edf4b1c27ba314cb013b0dcd78481cab0fe3849a61084e"
+      "bytes": 8761,
+      "sha256": "5b507d41a7b151b6d3c35ce50789264cf1c335cdbfbe1283e16eefe4e9a5fa32"
     },
     {
       "path": "report/materials/usage_guide_public.md",
-      "bytes": 8649,
-      "sha256": "c65f0357dabe628aa7f5476f1dbe30cd90d33194d7673effa1a39c80889cad1a"
+      "bytes": 8984,
+      "sha256": "7ef95f25f955b9d41c1d2dfefd26d89eb33d23b827a9164cdb1d6a4df521640a"
     },
     {
-      "path": "report/README.md",
-      "bytes": 3551,
-      "sha256": "d9897bfd0626099cfeea62d4d655262ddb01cc998a5b9afe49ce905012209634"
+      "path": "report/readme.md",
+      "bytes": 3886,
+      "sha256": "1163db235fa78d84cc3bae77778ac3e054a1a76c5dcb6e04e0a9a0420b4883df"
     },
     {
       "path": "reproduction/collect_environment_metadata.py",
@@ -5418,8 +5721,13 @@
     },
     {
       "path": "reproduction/current_source_identity.json",
-      "bytes": 123979,
-      "sha256": "ded47bd6ba8328c37f3937c90eeb2ddc518efc2dc65c8b3263663f2ec4d8f898"
+      "bytes": 124114,
+      "sha256": "7b641fdbfa056b149ba155fc1dc3febf4e698de51008e62714a93f3d3d30bb51"
+    },
+    {
+      "path": "reproduction/deployment_validation.md",
+      "bytes": 3052,
+      "sha256": "e8be5d9a63fa1e9a09db65bb4f2513c24ba35c952c9c0c7af4c842446d18e272"
     },
     {
       "path": "reproduction/environment_evidence_lock.json",
@@ -5434,7 +5742,7 @@
     {
       "path": "reproduction/native_dependency.md",
       "bytes": 1456,
-      "sha256": "64b819271f4744b48e3bd73f41fd646b423ca39863effe62d788e403c887370b"
+      "sha256": "c3a4ea91a0916e2a5599a2b22c1d9e47e897d1467e57f5e3c98dd0c41f5bec5d"
     },
     {
       "path": "reproduction/source_run_20261102.json",
@@ -5443,13 +5751,13 @@
     },
     {
       "path": "runtime_closure.json",
-      "bytes": 3417,
-      "sha256": "03aff476608153133ae214563a3f5995be25e20ed900e1f17c92e00a8f827baa"
+      "bytes": 3820,
+      "sha256": "b73b4edf7c80206e53647300f6e236f691ab4331961b271516616875ee6d8627"
     },
     {
       "path": "runtime_closure.md",
-      "bytes": 3138,
-      "sha256": "5f6b8acd58e54f014889c324524e55dfef6ed3205e934be97b6070a1e2766709"
+      "bytes": 3499,
+      "sha256": "ec7a12f359b307bc953d3c9c9b290bc7a5fa8624c694493723c78c47441e8a1b"
     },
     {
       "path": "sim/hardware_validation_summary.json",
@@ -5457,7 +5765,7 @@
       "sha256": "66b1279e99647b13dae5765652a274042ac4f87a17c3cf1c613231af85b5f736"
     },
     {
-      "path": "sim/README.md",
+      "path": "sim/readme.md",
       "bytes": 1359,
       "sha256": "f92dec77fc4706673be7cb10123b5ad205cea7ff41af1c5d2b24d1431c971ec2"
     },
@@ -5517,14 +5825,14 @@
       "sha256": "dd16dd6de9a056355180e0c9a7e9cfdb079e99ec5661dbbe13604ec0c4d2ff47"
     },
     {
-      "path": "skill/LICENSE",
+      "path": "skill/license",
       "bytes": 1112,
       "sha256": "e47c97e80a8efb01a853d5d647c82aa52818ccfbdfd299c3289ba75a649c3937"
     },
     {
-      "path": "skill/README.md",
-      "bytes": 3151,
-      "sha256": "3061e722d9f05f846b30e544131e4953ed102b67519debc8b5b13ed758934303"
+      "path": "skill/readme.md",
+      "bytes": 3478,
+      "sha256": "2dc5bbc4c39aefd3d149ab97523282fd44d1907cb06271b1c1aebc431b8c629d"
     },
     {
       "path": "skill/skills/fpga-kernel-verification/agents/openai.yaml",
@@ -5532,7 +5840,7 @@
       "sha256": "6f8bf0a5e1f24aace9dd8046d55f4b2fedaafbb9c7ccb128b151d97ebae701cd"
     },
     {
-      "path": "skill/skills/fpga-kernel-verification/LICENSE",
+      "path": "skill/skills/fpga-kernel-verification/license",
       "bytes": 1112,
       "sha256": "e47c97e80a8efb01a853d5d647c82aa52818ccfbdfd299c3289ba75a649c3937"
     },
@@ -5542,7 +5850,7 @@
       "sha256": "9cab713eb9836cb66a0748828c2e2c6939c804f2cb89fb097e1269c84156d16f"
     },
     {
-      "path": "skill/skills/fpga-kernel-verification/SKILL.md",
+      "path": "skill/skills/fpga-kernel-verification/skill.md",
       "bytes": 3439,
       "sha256": "f5f5ab58483fd898aa7552ef2ab32363c511360e82b52357f0069d4fce4a1218"
     },
@@ -5552,7 +5860,7 @@
       "sha256": "e6da99c572dedda3fdbf0135e5afa544d12de06d38ad95c3174674283ac4cfcc"
     },
     {
-      "path": "skill/skills/ps-pl-performance/LICENSE",
+      "path": "skill/skills/ps-pl-performance/license",
       "bytes": 1112,
       "sha256": "e47c97e80a8efb01a853d5d647c82aa52818ccfbdfd299c3289ba75a649c3937"
     },
@@ -5567,7 +5875,7 @@
       "sha256": "8ac0ac8f70c4ccbf9178fd48397751ebbb0c62a3af7371b1a349bdd652731502"
     },
     {
-      "path": "skill/skills/ps-pl-performance/SKILL.md",
+      "path": "skill/skills/ps-pl-performance/skill.md",
       "bytes": 3278,
       "sha256": "21df4dd52695e7836d8eb542d8c170af581d97c6d00017bfb790cb0fd926b484"
     },
@@ -5577,7 +5885,7 @@
       "sha256": "d596e217b94acd96a3636a20eb01da05c88643ed91b02db01f0e55d6dad92513"
     },
     {
-      "path": "skill/skills/pynq-board-session/LICENSE",
+      "path": "skill/skills/pynq-board-session/license",
       "bytes": 1112,
       "sha256": "e47c97e80a8efb01a853d5d647c82aa52818ccfbdfd299c3289ba75a649c3937"
     },
@@ -5592,7 +5900,7 @@
       "sha256": "a526eba5609b836b43da86bfbb318bf09c0c725747fc141c466c310145b3a365"
     },
     {
-      "path": "skill/skills/pynq-board-session/SKILL.md",
+      "path": "skill/skills/pynq-board-session/skill.md",
       "bytes": 3450,
       "sha256": "5187c12e59a1020e74695608e11bc458096474db2737baa7a2381ea9cc2ffea5"
     },
@@ -5617,7 +5925,7 @@
       "sha256": "c999add9847142ea3abce9623b450f1bf5e8723b85a33b28c84b2a4c7a5d30a4"
     },
     {
-      "path": "skill/skills/pynq-dma-lifecycle/LICENSE",
+      "path": "skill/skills/pynq-dma-lifecycle/license",
       "bytes": 1112,
       "sha256": "e47c97e80a8efb01a853d5d647c82aa52818ccfbdfd299c3289ba75a649c3937"
     },
@@ -5637,7 +5945,7 @@
       "sha256": "631d15a440623262394425727b6a9bec4c5fa38f7d0707e9f6347527e1e72fc0"
     },
     {
-      "path": "skill/skills/pynq-dma-lifecycle/SKILL.md",
+      "path": "skill/skills/pynq-dma-lifecycle/skill.md",
       "bytes": 3372,
       "sha256": "c1c93438bcf1bbeda954c360827e685bc4aec4cf932569d3dd2a89d6d479155e"
     },
@@ -5667,7 +5975,7 @@
       "sha256": "d4d1433628dd4b9ac30df2ed34a592825db2b15b4d9e5b48997c3cadbdbbfe96"
     },
     {
-      "path": "skill/skills/pynq-notebook-delivery/LICENSE",
+      "path": "skill/skills/pynq-notebook-delivery/license",
       "bytes": 1112,
       "sha256": "e47c97e80a8efb01a853d5d647c82aa52818ccfbdfd299c3289ba75a649c3937"
     },
@@ -5687,7 +5995,7 @@
       "sha256": "ffd550adf467fcbbb98d859a293ecb3a2d12fdce83073090e4932cbc02f0551e"
     },
     {
-      "path": "skill/skills/pynq-notebook-delivery/SKILL.md",
+      "path": "skill/skills/pynq-notebook-delivery/skill.md",
       "bytes": 3847,
       "sha256": "e595ee56ee4bf25bf1e77a9cda5fe5891535f25379c8779c69ceffde4e8d148f"
     },
@@ -5732,7 +6040,7 @@
       "sha256": "84051bf64f90aac48d10ee8abb7b29183eb4e446905db31b9462a5bc6b94e7f0"
     },
     {
-      "path": "skill/skills/pynq-overlay-portability/LICENSE",
+      "path": "skill/skills/pynq-overlay-portability/license",
       "bytes": 1112,
       "sha256": "e47c97e80a8efb01a853d5d647c82aa52818ccfbdfd299c3289ba75a649c3937"
     },
@@ -5757,7 +6065,7 @@
       "sha256": "e534ab0b3a85ec2979f06031f15300222b4f4d545f7927b9fbb645100dcb8d2b"
     },
     {
-      "path": "skill/skills/pynq-overlay-portability/SKILL.md",
+      "path": "skill/skills/pynq-overlay-portability/skill.md",
       "bytes": 3667,
       "sha256": "97df6168c972ce4621310ed82d7001398808d720f922aa3aa85bc4afec861ce8"
     },
@@ -5782,7 +6090,7 @@
       "sha256": "1d410426ab1b2d90b4defd6948ad21492c9bd8ee8dc4834f5bc299a74f70a936"
     },
     {
-      "path": "skill/skills/pynq-ps-pl-profiler/LICENSE",
+      "path": "skill/skills/pynq-ps-pl-profiler/license",
       "bytes": 1112,
       "sha256": "e47c97e80a8efb01a853d5d647c82aa52818ccfbdfd299c3289ba75a649c3937"
     },
@@ -5822,7 +6130,7 @@
       "sha256": "c7bc3190a0f5f77a28dc52001d156327fd218dbf069088854f4e09d1b6df9634"
     },
     {
-      "path": "skill/skills/pynq-ps-pl-profiler/SKILL.md",
+      "path": "skill/skills/pynq-ps-pl-profiler/skill.md",
       "bytes": 4414,
       "sha256": "0ca49409e1f78a178aa8e97e2cc7789df2a76bb6e4081beb49e8760a0e327db7"
     },
@@ -5837,7 +6145,7 @@
       "sha256": "9e0f64bf8710763470c71ecf2e7feb59728f0ae676507280fc19d1c05187d50c"
     },
     {
-      "path": "skill/skills/pynq-result-audit/LICENSE",
+      "path": "skill/skills/pynq-result-audit/license",
       "bytes": 1112,
       "sha256": "e47c97e80a8efb01a853d5d647c82aa52818ccfbdfd299c3289ba75a649c3937"
     },
@@ -5852,7 +6160,7 @@
       "sha256": "d1ac3a7d9a51136a2f797d5b2ef0249d214fc16d5bf5ea1f9ad8b126b0debbba"
     },
     {
-      "path": "skill/skills/pynq-result-audit/SKILL.md",
+      "path": "skill/skills/pynq-result-audit/skill.md",
       "bytes": 3233,
       "sha256": "de0284a32cd47d23a6cdbf719ec253c955f1b6205db1dfc00907a31eaa0796de"
     },
@@ -5877,7 +6185,7 @@
       "sha256": "9927edb29a1cd4371f510ef9f1149b859ea4fa67cac58740ba1b5bb4c7fe0fa0"
     },
     {
-      "path": "src/hls/LICENSE",
+      "path": "src/hls/license",
       "bytes": 1506,
       "sha256": "6d822a20e645291ace79180f0ae94f604b9d5fb81165e302b2c7b8cd7bf83fc3"
     },
@@ -6077,7 +6385,7 @@
       "sha256": "807a7d5f75d658f57f682fc55bd781ee114d559212a47f645e844a2b351d8f73"
     },
     {
-      "path": "src/identity_reference/README.md",
+      "path": "src/identity_reference/readme.md",
       "bytes": 889,
       "sha256": "ef9d77c877f9e2262734089876f1abb0e62427f90eb8e1300a07b93b2885819c"
     },
@@ -6197,7 +6505,7 @@
       "sha256": "0a2a3aad9a6e0b7141235881577c606422fee11ebd8298f38e354a2a4a5dcc2f"
     },
     {
-      "path": "src/ps/BrowserHeartVideo60.ipynb",
+      "path": "src/ps/browserheartvideo60.ipynb",
       "bytes": 2097,
       "sha256": "59d4ff3abbded384f1203838e1605b305a8fb2b9781e96eb474de05465db9f42"
     },
@@ -6277,12 +6585,12 @@
       "sha256": "529b788bcb5e8c58c7a784d7867ad052aaf51327ffdeaf80548b2e5fda207c15"
     },
     {
-      "path": "src/ps/CompactJoint25.ipynb",
+      "path": "src/ps/compactjoint25.ipynb",
       "bytes": 3011,
       "sha256": "54704c9ef4cf2271660ac0c6614bc6cc819ac9fc1753754da6713ab2a27811b9"
     },
     {
-      "path": "src/ps/Continuous25.ipynb",
+      "path": "src/ps/continuous25.ipynb",
       "bytes": 2738,
       "sha256": "926fb7eb36592778897cc9f54a6a8596f94b66fd9c4a5ef0102624baf42bf8f1"
     },
@@ -6312,7 +6620,7 @@
       "sha256": "77f2fcf8b93a15fe5d1218e4f81a669438d45ce89697e6939ddcaf93248eb1bd"
     },
     {
-      "path": "src/ps/ContinuousDemo25.ipynb",
+      "path": "src/ps/continuousdemo25.ipynb",
       "bytes": 3067,
       "sha256": "31d69d9eb397b6ec139165e2893a2723238af7fdad99393514cd86cbe644ea31"
     },
@@ -6367,7 +6675,7 @@
       "sha256": "54bdcb9baaeb2464c4679ad1ffc3db0e1003af5872fcdf57662976ab1cfe7d68"
     },
     {
-      "path": "src/ps/EvidenceReuse60.ipynb",
+      "path": "src/ps/evidencereuse60.ipynb",
       "bytes": 4033,
       "sha256": "ca43d28c41e9f55eeacdd8368c20f48e86892c9e6b5d7206c174851349f52332"
     },
@@ -6397,7 +6705,7 @@
       "sha256": "5e9c15ea68fd517827d18201bcebd7f693ad10ebf3dad6c9292d6623f667f7f2"
     },
     {
-      "path": "src/ps/FifoTiming5.ipynb",
+      "path": "src/ps/fifotiming5.ipynb",
       "bytes": 3110,
       "sha256": "7d6a4133a0e7f5a1c42c82e8054ba027273ee0eeec9d3b26a79a05848197d864"
     },
@@ -6977,12 +7285,12 @@
       "sha256": "e2cb60bc0f7c81526ad8dc93e52bb2fe305eae07a61cfab5f653150224f9863b"
     },
     {
-      "path": "src/ps/FullMotion25.ipynb",
+      "path": "src/ps/fullmotion25.ipynb",
       "bytes": 2613,
       "sha256": "eca230222bc2bbca869097c5c0a4e83484d93712398df45d38f5432b64b3c1b9"
     },
     {
-      "path": "src/ps/GilJoint25.ipynb",
+      "path": "src/ps/giljoint25.ipynb",
       "bytes": 2952,
       "sha256": "5b3718d4a68792d287523dab42b7c684333ac71ff353eee0daac3623bc7edd08"
     },
@@ -6997,7 +7305,7 @@
       "sha256": "9c17c574dab8af7d613006a9406a20b5f8ed89abf49c34fc1e05f79635dc90de"
     },
     {
-      "path": "src/ps/HandoffLive60.ipynb",
+      "path": "src/ps/handofflive60.ipynb",
       "bytes": 2750,
       "sha256": "3187fd36df6e8c517ad7b5c6beb05922aadc1006ec3c387650ab6a858d5a11a8"
     },
@@ -7042,12 +7350,12 @@
       "sha256": "51006e068e40449d3876bfcc4e0952a6bc9b98a42164852f5b4fe6d70666699a"
     },
     {
-      "path": "src/ps/HeartSnapshot25.ipynb",
+      "path": "src/ps/heartsnapshot25.ipynb",
       "bytes": 1972,
       "sha256": "bd274265ebd0892ce2f414ff0582423288c3a48fbd1979411f0ec71baf2ac287"
     },
     {
-      "path": "src/ps/HeartVideo60.ipynb",
+      "path": "src/ps/heartvideo60.ipynb",
       "bytes": 2004,
       "sha256": "038a751a9d6d1f892144a9fa760a5cf49fbdf361043bd816794fe8da96ba734f"
     },
@@ -7072,7 +7380,7 @@
       "sha256": "1e5f77608fa990d80ac828d3dfddfe6137d3697501404cdfdec550fbc50735b5"
     },
     {
-      "path": "src/ps/HybridDisplay25.ipynb",
+      "path": "src/ps/hybriddisplay25.ipynb",
       "bytes": 2653,
       "sha256": "264dd57c67aede9fc3c9ec8bcec7d2ac3e154317db5ea9c15d8eb98cbee2c6d2"
     },
@@ -7297,17 +7605,17 @@
       "sha256": "0a9c840f8358af9aa71cd85679a2b9b2db82e8e9fb17d3040cb7685c751fcfa6"
     },
     {
-      "path": "src/ps/JointExit60.ipynb",
+      "path": "src/ps/jointexit60.ipynb",
       "bytes": 2045,
       "sha256": "512398d8b53fbb83f420b4ce45106d96ead3e21f16c4ef4d2f7169347788b265"
     },
     {
-      "path": "src/ps/JointHeart25.ipynb",
+      "path": "src/ps/jointheart25.ipynb",
       "bytes": 1864,
       "sha256": "61ff7280490cacde2a8436d40a7376409fdfe63a6fd9a7e382b91a2e2ca3d5bd"
     },
     {
-      "path": "src/ps/Journal60.ipynb",
+      "path": "src/ps/journal60.ipynb",
       "bytes": 3904,
       "sha256": "633661929780ae71eeae66f1f1eed2052917f42c0678941eabefdb681d249ab0"
     },
@@ -7372,12 +7680,12 @@
       "sha256": "69002a4e3994b1d4b2ffbfc6b8b06ca06b864e12d90c025d6b9773be8cb61cc9"
     },
     {
-      "path": "src/ps/LeanJoint60.ipynb",
+      "path": "src/ps/leanjoint60.ipynb",
       "bytes": 3062,
       "sha256": "876832eea225a26a88bda8524a98fdd1bb31da42b7104eb0af65928797156de5"
     },
     {
-      "path": "src/ps/LeanPS60.ipynb",
+      "path": "src/ps/leanps60.ipynb",
       "bytes": 2819,
       "sha256": "ea01650d2adc7ee5fdb72e88f691f6441d8381d8bb6f127925a80b216c19b47f"
     },
@@ -7477,12 +7785,12 @@
       "sha256": "4aa0c327f9e4e759354c530939b2c1887d10bb17df02d507f619a0589333482d"
     },
     {
-      "path": "src/ps/MainSpatial25.ipynb",
+      "path": "src/ps/mainspatial25.ipynb",
       "bytes": 2355,
       "sha256": "ef098c746a5be64b18ebb4b11b3771c4dcd282a8c6562a3ab435bc8dd532d94c"
     },
     {
-      "path": "src/ps/MainSpatialCopy25.ipynb",
+      "path": "src/ps/mainspatialcopy25.ipynb",
       "bytes": 2622,
       "sha256": "e5a6742bcbb367d4d40377f9356a4de89a59c78a18ecada2fcc6757118e59df5"
     },
@@ -7527,7 +7835,7 @@
       "sha256": "430c09b3ae406a7a9eac3aad5eb5451a93e89935cf74019cd8d282afed16d927"
     },
     {
-      "path": "src/ps/NativeHeartVideo60.ipynb",
+      "path": "src/ps/nativeheartvideo60.ipynb",
       "bytes": 2392,
       "sha256": "6887590b8306caf8c49b1d16bb022142c0d57e186b692ad07673aa213d41381f"
     },
@@ -7582,17 +7890,17 @@
       "sha256": "a13e6842a7faf07b8d9a35a2e4bd9415f4c9ab06df978d9c5b5e7f8c0700a223"
     },
     {
-      "path": "src/ps/OwnerFlatLive60.ipynb",
+      "path": "src/ps/ownerflatlive60.ipynb",
       "bytes": 3343,
       "sha256": "2357ed3fe825e97d834572aefe077abdc6cde354316e43395dc8b17b31817515"
     },
     {
-      "path": "src/ps/OwnerSchedule60.ipynb",
+      "path": "src/ps/ownerschedule60.ipynb",
       "bytes": 3801,
       "sha256": "7397c238b569fd93e824657b72c6beec5e2551c08bda6f0aa631bc0ea85a4b1a"
     },
     {
-      "path": "src/ps/PlainExit60.ipynb",
+      "path": "src/ps/plainexit60.ipynb",
       "bytes": 3066,
       "sha256": "93a56eb3248c6d2e5254c032a2029c77d605cff6052890996af9c3281a54bfe4"
     },
@@ -7667,7 +7975,7 @@
       "sha256": "58eeeed28f11b6f99a1559d44a813c2d1c65db0a96ca008a1c26daa31d014116"
     },
     {
-      "path": "src/ps/PsWireLive60.ipynb",
+      "path": "src/ps/pswirelive60.ipynb",
       "bytes": 2952,
       "sha256": "1d9e633517569effad5de178b9b345299d5a4e915b47c3aa605d989ab7772171"
     },
@@ -7712,7 +8020,7 @@
       "sha256": "8f083f9b0a5950db0ca23065f318eb0c81b4de90d037bf015c1d76b07b916bb0"
     },
     {
-      "path": "src/ps/RouteRecovery60.ipynb",
+      "path": "src/ps/routerecovery60.ipynb",
       "bytes": 2797,
       "sha256": "aee65d04b619da57ee083b190bb0ca2bfe54f70f7f5e0b08819fbd09131d22e2"
     },
@@ -7902,7 +8210,7 @@
       "sha256": "4036e472b3c3934c026b33567a00ec543d3e591cb1bc8db7774b4aab47058008"
     },
     {
-      "path": "src/ps/Sample40Joint25.ipynb",
+      "path": "src/ps/sample40joint25.ipynb",
       "bytes": 2887,
       "sha256": "824c194800cf2c2b4b8b809e459d3a94f1308e360240f4aa9452cd20806b32a2"
     },
@@ -7937,7 +8245,7 @@
       "sha256": "d01145547981977b7255cda956efe03b80039cbb8444b7b396d453f065f8bb6e"
     },
     {
-      "path": "src/ps/ScalarLive60.ipynb",
+      "path": "src/ps/scalarlive60.ipynb",
       "bytes": 2918,
       "sha256": "df86f077fce5424cc42f938079f7fa38b9fb21fc7f4af30b397cacde4e97da41"
     },
@@ -7962,7 +8270,7 @@
       "sha256": "560f873d984635a388ed8e18836ab80fe604449bfb033f586bc8eb018a3d357e"
     },
     {
-      "path": "src/ps/ScheduledLive60.ipynb",
+      "path": "src/ps/scheduledlive60.ipynb",
       "bytes": 3506,
       "sha256": "116bcd29a6e2d92e3c1626a20942200891f2696dfe7b0731b90dd07ac246b281"
     },
@@ -8007,7 +8315,7 @@
       "sha256": "f695774ad1565354449c6cade0b4af8cefbc5a76ca40b9bc66560b8e3593f50a"
     },
     {
-      "path": "src/ps/ShadowFusion25.ipynb",
+      "path": "src/ps/shadowfusion25.ipynb",
       "bytes": 2712,
       "sha256": "00c134573d4708bdebd61b7a666d4ba414bf1777779ec38b0c8e3d236d48e37b"
     },
@@ -8077,7 +8385,7 @@
       "sha256": "26425f8cef1fb69cc1688321df3fe076f94b53a8c9710ab1cb0814168291b8df"
     },
     {
-      "path": "src/ps/SpatialCamera60.ipynb",
+      "path": "src/ps/spatialcamera60.ipynb",
       "bytes": 2094,
       "sha256": "742baa6a6177025712ca14207999a63544b7109e42e7b5bc133664edbf28fd02"
     },
@@ -8097,7 +8405,7 @@
       "sha256": "d2c1c572e9e5350119a21c915a8a5dd8f27486b2722730b68f0437f6034de52c"
     },
     {
-      "path": "src/ps/StartupDigest5.ipynb",
+      "path": "src/ps/startupdigest5.ipynb",
       "bytes": 3421,
       "sha256": "1255a2c97cfb75c9718072c771660bf00a957a9b1aed14cedaa9108537d9c65f"
     },
@@ -8122,7 +8430,7 @@
       "sha256": "e1d0a31fcf48ccd0f642c4e78585679159b4e2bc9428893cee8f5ec32d7f6d68"
     },
     {
-      "path": "src/ps/StateWireLive60.ipynb",
+      "path": "src/ps/statewirelive60.ipynb",
       "bytes": 3265,
       "sha256": "f22bfcdd58fc724c1af43f1151a422ba55777f948d32cba37ceddab0c58eda8c"
     },
@@ -8187,17 +8495,17 @@
       "sha256": "4b9f6ad1106eb868b3db6f219fe4b4d33a6bf7004b3d47ac35223fb917f75ee8"
     },
     {
-      "path": "src/ps/StatusJoint5.ipynb",
+      "path": "src/ps/statusjoint5.ipynb",
       "bytes": 3341,
       "sha256": "9ac069d932ea62ef727d4aec6d87ffae365cc7ea7b40d38b4465b98ba0382f53"
     },
     {
-      "path": "src/ps/StatusJoint60.ipynb",
+      "path": "src/ps/statusjoint60.ipynb",
       "bytes": 3413,
       "sha256": "28ee81ecaa9b4dd691778845eaf92d57726c589130cdc97b0426e1b698a69e18"
     },
     {
-      "path": "src/ps/StatusJoint60AB.ipynb",
+      "path": "src/ps/statusjoint60ab.ipynb",
       "bytes": 2898,
       "sha256": "0c6a8057c04f91608be561fbf48791339235c09b8393e5f4c83f6eeb2a9ac51c"
     },
@@ -8262,7 +8570,7 @@
       "sha256": "1fe11aa0061a4d4702775be6d392cb90ea9fcf18e4c5585785fe7f278846c62d"
     },
     {
-      "path": "src/ps/VideoProcess25.ipynb",
+      "path": "src/ps/videoprocess25.ipynb",
       "bytes": 4383,
       "sha256": "5fbdac550a8ab7cc7483ace65d153dd90bcb63d681134fc4273ecf8f2b737a56"
     },
@@ -8312,14 +8620,14 @@
       "sha256": "b5280840f9371485e204c9179701867994e7460fc122454aeea453bbe384f4ed"
     },
     {
-      "path": "src/ps/YuyvVideo.ipynb",
+      "path": "src/ps/yuyvvideo.ipynb",
       "bytes": 1914,
       "sha256": "0c1475d395e31af544a82e71a1747dfbed73f6e0351d371e6e4f0541e83d020d"
     },
     {
-      "path": "src/README.md",
-      "bytes": 2066,
-      "sha256": "46f93c9ea172e9ee0f6b00341e83abf97c4b0dac11d78db84da70542fcd39701"
+      "path": "src/readme.md",
+      "bytes": 2401,
+      "sha256": "0d0755d867c894b9e3c07c0ae2bedbb3bf0fc7b212276e90da94958b85c834c8"
     },
     {
       "path": "src/reference/main_heart_assessment.py",
@@ -8542,9 +8850,14 @@
       "sha256": "9ceede8f82b66a1db731903e8fa99d632da6b6347492279881511672f15ba0b6"
     },
     {
+      "path": "tests/test_prepare_delivery.py",
+      "bytes": 4464,
+      "sha256": "b43b6a20f0167ab9b31618e004a8801b5c0b6f2c4775591c015a3157c279cf42"
+    },
+    {
       "path": "verify_public_source.py",
-      "bytes": 1303,
-      "sha256": "77129604aebd3db866d1775530a059ab8ed1ca0f8b6cc730403c4e4caf1f76be"
+      "bytes": 2242,
+      "sha256": "43c7d2793102ad50d3fc71acb82cab99f56d84cdc47b3c68ef2311da615a5128"
     },
     {
       "path": "video/delivery.json",
@@ -8552,14 +8865,22 @@
       "sha256": "036737a5e4f23432489457fb9b78df37714d56dbbd79d5159573c8d4ec75ac5d"
     },
     {
-      "path": "video/README.md",
+      "path": "video/readme.md",
       "bytes": 991,
-      "sha256": "9ef02dafe88bc6145e5caa547523a172c74acdc73a37d81f959170d1ac22d687"
+      "sha256": "b905b03d3da2336f229a055691255dad30fff05226d30759ef0afd2b50d4b72f"
     }
   ],
   "video_asset_filename": "trusted_hr_browser_colors_final_20261102.mp4",
   "video_asset_sha256": "204a94c7161e3a7c00e777edfecd7c6a53cbca8a5f4a29e41d1dde9e3814f8d2",
   "anonymous_bilingual_posters_included": true,
   "poster_template_identity_metadata_removed": true,
-  "publication_update_scope": "Anonymous poster inclusion and metadata cleanup, documentation and distribution checksums only; all board_runtime bytes preserved."
+  "publication_update_scope": "Normalized public paths with byte-preserved deployment; complete source-input contract and pinned dependency generation; new release tag.",
+  "release_tag": "v2026.11.03",
+  "deployment_map": "deployment_map.json",
+  "storage_paths_lowercase_ascii": true,
+  "deployment_checked_on": [
+    "Windows",
+    "Linux case-sensitive filesystem"
+  ],
+  "clean_hardware_source_build_completed": true
 }

@@ -1,6 +1,8 @@
+> **2026-11-03 部署说明：** 当前仓库使用合规存储名称。本文件中的原 Notebook 名称及运行步骤仅适用于执行 `python3 -B prepare_delivery.py runtime --output ../trusted_heart_demo` 后生成的目录；请先按根目录 `readme.md` 完成准备与校验，勿直接运行仓库内的规范化副本。
+
 # 可信心率观测系统使用与核验说明
 
-本文件保留报告配套的历史操作与80.652秒联合记录。当前下载部署入口为 `board_runtime/runtime/ContinuousDemo25.ipynb`，须完整复制两同级运行／原生依赖目录；最新33.193811316秒、832条、166帧实测与环境边界以[当前板端说明](../../board/README.md)及[根README](../../README.md)为准。旧记录不与本次记录混用。
+本文件保留报告配套的历史操作与80.652秒联合记录。当前下载部署入口为 `board_runtime/runtime/ContinuousDemo25.ipynb`，须完整复制两同级运行／原生依赖目录；最新33.193811316秒、832条、166帧实测与环境边界以[当前板端说明](../../board/readme.md)及[根README](../../readme.md)为准。旧记录不与本次记录混用。
 
 作品名称：基于FPGA的个体健康趋势预警——面向多模态感知的可信心率观测系统。
 

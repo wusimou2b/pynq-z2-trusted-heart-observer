@@ -1,0 +1,302 @@
+[
+  {
+    "file": "base_cdc.rpt",
+    "original_report_sha256": "5b5742b3589c85222cb847196c2659a52b8512c03c90924a3c403a0afee685d2",
+    "published_sha256": "5df1abe83910d2cb34cc2b416f2a919ee7bc2a5edbaf80fbcb75793a61c94826",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_check_timing.rpt",
+    "original_report_sha256": "201dc81b6551ba91b790086a7fb7f4bc755e1dca21c4e7fec9678847875d2ddf",
+    "published_sha256": "4c970246e89c489fb9fd886b55c6a8bacab9fa2900677ac39daa150b38545267",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_clock_interaction.rpt",
+    "original_report_sha256": "4b34f8e95aaeebaa1cd033e2745cb8b083972fec04be0716e8ac1521cba81f55",
+    "published_sha256": "d88ffea5b667aaf95aa585266da9cfd55debafb75d8eaf2a2d221260aabdf16a",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_clocks.rpt",
+    "original_report_sha256": "168aeb17e9c095dd1d56b23479e4a1045e04650d1bfe1d22b5bca718664dece3",
+    "published_sha256": "15d72177e4f69659abc7441ae88c20c59c557297bd27e98422eee1ed8d8892f3",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_display_dma_utilization.rpt",
+    "original_report_sha256": "68f232624fe8086b39e9598031fe85e3ba91ea779afbfa73af95ee2743050b14",
+    "published_sha256": "21a06a2cd1aa3cc37cffb5acec2ab36d2627c4d7e55485e870c9538a0738d6a2",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_drc.rpt",
+    "original_report_sha256": "743fba40962bf218f9965c5a557e8efe4e90e1765625a0ed1c749570e277fe5f",
+    "published_sha256": "ac1f2e49f93d01d890c0d73d1f94fbd900939863994fa2a54952dd0659ef5b6f",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_exceptions.rpt",
+    "original_report_sha256": "88c1eff0e03c77e656fafa5ca5ccb08b905415a0419d485e9af2c823e28b6263",
+    "published_sha256": "f3312e8c2b92d50acb0265e8f600108a20e686fbb84b62cf11ecb029937edfee",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_hdmi_out_utilization.rpt",
+    "original_report_sha256": "c8598b438fae64e8e43aaf92b94b7cecc9723bec9b6a22cf43401f2cf5e43028",
+    "published_sha256": "30c30ce5b283bc590e96754ceea1d1bb0e403503660e9df240c28e12b8f8d2a3",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_hdmi_vdma_utilization.rpt",
+    "original_report_sha256": "5fcb490057b0393c6bab62977ae560cf35db5f3a4ab25fe68a959caafc895cac",
+    "published_sha256": "e428f4430202622457f7da291a057da845a946cc8652da52e8ea829b59de32f7",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_heart_main_0_utilization.rpt",
+    "original_report_sha256": "db6734f783d4737661586034fafb71bc8e21530bbf01c1ce595703a71902e816",
+    "published_sha256": "e3981722be75e3e7b67f7750a0de4f605347a236bca06dbbe44b3c148ef2716c",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_hierarchical_utilization.rpt",
+    "original_report_sha256": "33c8ab85de4cb03e3cf305b6fb491d427364315e5cfdd1fba97e1c3ff97ae47e",
+    "published_sha256": "471193bffcbecc65097e07b2daa906812d94afe0c732c12858c9290a7afde55c",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_io.rpt",
+    "original_report_sha256": "890c71c0eb8425c30f71cce546d423f0925840312aa03c4f2b19f2d6853509c6",
+    "published_sha256": "170d65dc66a57ff4205af4bff80fe2877b47ae33ed3c0a86359df3e6dc724ee1",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_synth_utilization.rpt",
+    "original_report_sha256": "52993440711191d6d97ddbf85610bb0e5eb0f0610eb46a8581f2f9f8f5904c08",
+    "published_sha256": "08611c5f7e686bcf67e62a3f904b016165ea524bc2c327d132a3b63d89847096",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_timing_summary.rpt",
+    "original_report_sha256": "90852f1715512509e9af51249098120260c89ad504b999c57552391457196d49",
+    "published_sha256": "515eaecbfbb4c56284b4a9404cc0473a8d1ff43e7c36688156cbba9d229ac121",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_utilization.rpt",
+    "original_report_sha256": "656638164c9a4fcac5ef4a444a874230b704729eee39c20fa2185cf2a8659070",
+    "published_sha256": "b3acc4502a284871452454cb3f125b9dd1d32d05603ca85fe411e87b2a69dc3b",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_vision_0_utilization.rpt",
+    "original_report_sha256": "6cd405915ecffd4aa8f9622f3f6f13f0f3c1725a148de400067a43e1f7e77c3d",
+    "published_sha256": "c9274d05263654f7ecff44d1461e9a3536f553c3a6b0b1d5e1382d8ddf2bac6b",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_vision_dma_utilization.rpt",
+    "original_report_sha256": "860f7732cf3a40787e42009233f25c7245079b0ceb6a8a4a4a26c1cc102f3740",
+    "published_sha256": "e189bc90612c63bea32f2b7d05d86817710f4d6dcef4ca03e04fb5917b378da4",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_vision_packet_utilization.rpt",
+    "original_report_sha256": "cbb0406379ed2e052b4cd5e545d2e6e61cb97da5cc7c2b6d5eb45ebc9fc66061",
+    "published_sha256": "0133f3fe56a2811b135e90109fe8b22d03892e9b5c809dc20f8fabcc90a073aa",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_worst_hold.rpt",
+    "original_report_sha256": "16efeff91f55a9bd502c952dc99838db7e412d402665af2ecb312db7509e3dd5",
+    "published_sha256": "b0a6c5b532aeb1d0b4ccf78f1d878926af3bb94c3f379d12b7268544e19f1f53",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_worst_setup.rpt",
+    "original_report_sha256": "9e9976b859972f92e577a43118b1e227fc81c758f641cf8b5dd5152673f0bbf5",
+    "published_sha256": "5ef8ac42febdc58f3c60b4329522e03151ee37504cad7c906fdf7362845800dd",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_main-core.json",
+    "original_report_sha256": "87db910c6a5338dea8894dd86776c014e3f7c709bc23a19ded3f3b09d677979a",
+    "published_sha256": "87db910c6a5338dea8894dd86776c014e3f7c709bc23a19ded3f3b09d677979a",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_raw-metrics.json",
+    "original_report_sha256": "8463ce8df3268badceeddb129c811ba23363a7707d96684794c4a7c58c2950a7",
+    "published_sha256": "8463ce8df3268badceeddb129c811ba23363a7707d96684794c4a7c58c2950a7",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_hdmi-clock-model.tsv",
+    "original_report_sha256": "eaa2689e04129c65183511f11f64084f395a6214c3a77dbd1283444f3f948d86",
+    "published_sha256": "eaa2689e04129c65183511f11f64084f395a6214c3a77dbd1283444f3f948d86",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "base_pins.tsv",
+    "original_report_sha256": "c10d39fa8d91df336875f3d3d7645b50bbf66280727f1cf1053a3b33b69e15ca",
+    "published_sha256": "c10d39fa8d91df336875f3d3d7645b50bbf66280727f1cf1053a3b33b69e15ca",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_cdc.rpt",
+    "original_report_sha256": "4315b72678832cdbcfbce72fb2e6598f9cc1ae96e40b3105af5981d14133cad0",
+    "published_sha256": "e8abb89a145112d071375270e58f0af16feda62dc3891b97e9ebffdce5aa1d35",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_check_timing.rpt",
+    "original_report_sha256": "b41e3583ed3c2323b24881ee8866fc3b824d52f23e37a67ef4774638ab88ed44",
+    "published_sha256": "770f76e4c578ec74e70a56c5ac97aa29171b73f2c7f8f9039a5a0e929cdf8103",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_clock_interaction.rpt",
+    "original_report_sha256": "dc81c0e02fc67e5af9836aa8ed39105771640c741e7797806d57a02d7d47c815",
+    "published_sha256": "19226be39717cd659057694c351e2ad4c76a73d4465f06bb3d9cf7b3ccaeffa8",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_clocks.rpt",
+    "original_report_sha256": "2e536f6b825ab2d036ee26243c48dd2ba6ef6030275de4d1eeca0154423f3b9e",
+    "published_sha256": "04194952ae792eacb66a020f4ae167c581204aa1eaccf943c6b78f4eb93561ce",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_display_dma_utilization.rpt",
+    "original_report_sha256": "0148bc81c2cf52eb64c7d0b424866d3840110cbf168035716c1c9aa49d95f456",
+    "published_sha256": "0551ef5d7164f510e7a3104424af34da8409546dd1dbcf9c697ef096b05f65c9",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_drc.rpt",
+    "original_report_sha256": "c8b4466dff398999c2f2093b0e56cb10c587f6013ac3f37be3d73190a410d761",
+    "published_sha256": "cedce725eb367c1e9be3213eba6aeb5a9814ab56224206af09b844c79bbce5e0",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_exceptions.rpt",
+    "original_report_sha256": "d74bd3041d2b51488cb16f3a7dbcb2eb330f35b7275626697c2731d1f28cd881",
+    "published_sha256": "6be2bd18295e0e55bf0ba4725635a14c69e899643914d339a59ec777dd7aec34",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_hdmi_out_utilization.rpt",
+    "original_report_sha256": "01e5fee1f171b0690617f1b2852f7625789cd748a39ddf0575852c09eee7a78f",
+    "published_sha256": "cc8b394c1487edece910f21ae6d239010bc317736d8795cace68a11517ac76af",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_hdmi_vdma_utilization.rpt",
+    "original_report_sha256": "642cb967a07ff3afa1857e6d8c90436fc6eecaf41129022b2d9cf90e2a21d7ea",
+    "published_sha256": "36f8cf76e32958d8898f030e6070015c69d5d350dbc98981a131563a488fbd50",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_heart_main_0_utilization.rpt",
+    "original_report_sha256": "230254dbea22e1f64e0169a6aa5372c2ce4d70b861261b44373a54daa2931759",
+    "published_sha256": "465f422019f1634a1ef84679ba084aefc7de399f29178c59a4c3e7a20ddd0cf9",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_hierarchical_utilization.rpt",
+    "original_report_sha256": "5428249428a5b0456e983e5fcf4b43bd993996b505a2d1e128c685094819758c",
+    "published_sha256": "3017b373e827a391e48e94de36669ddd62994555571e00147953551d7b40931f",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_io.rpt",
+    "original_report_sha256": "0be75f431e484d5fc6efe72341bb6ab9c6a1452e3bca74dcd1d1a9f7104e08b5",
+    "published_sha256": "ace4814008e888865fa351f9f0b4fe4aa1ae1c5f5aa593f11078af47db71231d",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_timing_summary.rpt",
+    "original_report_sha256": "fea31415766f9b3ebee7e7693d719a0e7a8bb73af43110b67b3eabe2ec388555",
+    "published_sha256": "41767deabc026c30d037c410190392fe14b02c607a86fccfbf7b4ef105ae2d91",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_utilization.rpt",
+    "original_report_sha256": "a1a6d34adf8e7d2be6fd6a30e1b48c793610d506d4014efc589e1175debf90ee",
+    "published_sha256": "474363d752a8aa8c7aec82eb723627a8d65f947992006d75d69d6eb587bd8a25",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_vision_0_utilization.rpt",
+    "original_report_sha256": "d899b6d07fbc9430f4e261b6aec86244433725f7f87776a28ee2e308f839a0ad",
+    "published_sha256": "273a37f882115b372b6e78be3e33be19ba1e65e641a585adee061d3d22e97f60",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_vision_dma_utilization.rpt",
+    "original_report_sha256": "9d9ca054e601992d45d1cdcb834b70ece779e79cca25481c1b7372abf8daac13",
+    "published_sha256": "91ea9c0576b4068175d18d29c4f9ecbb181624410d977d4108be45f4ec97253f",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_vision_packet_utilization.rpt",
+    "original_report_sha256": "180ca530e383ec86d24b360963c364a87c9f571fe0a733fc5e4e00f88f7985aa",
+    "published_sha256": "287709152f0812209275af750e01527aca738224b80b7b752ba6e61cb9d6bf71",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_worst_hold.rpt",
+    "original_report_sha256": "353f485340aab6b9a561046539e740b4bd68df2150db01fa54c553046d3f32ef",
+    "published_sha256": "e61bfd7a0cef821dc17aac47d89edfe707450938172879a6d7e64602ba6e4d91",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_worst_setup.rpt",
+    "original_report_sha256": "87e92e853c29a4a6513b390c036ac9c4d263bf00e11a350f3c3c82afc006d8be",
+    "published_sha256": "e1e843a390e11b7eddf6f8fe6406b509f543cc90f1621fb041c6bc68c99f4b7f",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_main-core.json",
+    "original_report_sha256": "87db910c6a5338dea8894dd86776c014e3f7c709bc23a19ded3f3b09d677979a",
+    "published_sha256": "87db910c6a5338dea8894dd86776c014e3f7c709bc23a19ded3f3b09d677979a",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_raw-metrics.json",
+    "original_report_sha256": "180c84ca17d600c0dee34e14365d2560f54b7f476f5337d3a9543f55063162d7",
+    "published_sha256": "180c84ca17d600c0dee34e14365d2560f54b7f476f5337d3a9543f55063162d7",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_hdmi-clock-model.tsv",
+    "original_report_sha256": "eaa2689e04129c65183511f11f64084f395a6214c3a77dbd1283444f3f948d86",
+    "published_sha256": "eaa2689e04129c65183511f11f64084f395a6214c3a77dbd1283444f3f948d86",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_pins.tsv",
+    "original_report_sha256": "c10d39fa8d91df336875f3d3d7645b50bbf66280727f1cf1053a3b33b69e15ca",
+    "published_sha256": "c10d39fa8d91df336875f3d3d7645b50bbf66280727f1cf1053a3b33b69e15ca",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_route_status.rpt",
+    "original_report_sha256": "b98111f725174791bab4f2fc8a3da39cf5e9f4a67853ecfb842a0ee7edea78f7",
+    "published_sha256": "b98111f725174791bab4f2fc8a3da39cf5e9f4a67853ecfb842a0ee7edea78f7",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_write_drc.rpt",
+    "original_report_sha256": "801441137bf2e2964257faefb24d22adb14960bc72e2d66db0675c1ca2f58ac9",
+    "published_sha256": "ea46355bbafb1b8284ca23e3c2b39ceb9f573bd6339bf87b311f1c0e3051e9d1",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  },
+  {
+    "file": "final_bit-write-readback.json",
+    "original_report_sha256": "6f021f019b9b83a93a04f3141c5ff86b8c787b06e3fabcb4cfbca443e2916055",
+    "published_sha256": "6f021f019b9b83a93a04f3141c5ff86b8c787b06e3fabcb4cfbca443e2916055",
+    "redaction": "Host identity and local build directory only; report metrics unchanged; line endings normalized to LF."
+  }
+]
