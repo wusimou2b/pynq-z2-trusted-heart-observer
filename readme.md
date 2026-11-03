@@ -11,7 +11,7 @@
 | [src/readme.md](src/readme.md) | RTL/ROM、PS、HLS 及算法参考源码 |
 | [build/readme.md](build/readme.md) | BD、XDC、Tcl 及源码重建边界 |
 | [skill/readme.md](skill/readme.md) | 八项完整工程 Skills、工具、样例、测试及许可 |
-| [report/readme.md](report/readme.md) | 29 页设计报告、独立协作记录、中英合并两页海报及单页英文打印版 |
+| [report/readme.md](report/readme.md) | 33 页新版匿名设计报告、29 页旧公开报告、独立协作记录与匿名海报 |
 | [runtime_closure.md](runtime_closure.md) | 当前运行集合的身份、实测及未验证项 |
 | [reproduction/source_run_20261102.json](reproduction/source_run_20261102.json) | 本次保存运行的可发布摘要 |
 | [data/readme.md](data/readme.md) | 用户实测数据及历史摘要的来源 |

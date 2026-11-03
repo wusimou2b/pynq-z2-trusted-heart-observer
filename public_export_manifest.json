@@ -5602,7 +5602,7 @@
     {
       "path": "readme.md",
       "bytes": 10808,
-      "sha256": "9ff124cd3bb14984086eabf78020c799d66ccaa87f2ab2c159dda72c71e730a0"
+      "sha256": "bc2a13c4fbb2ddc56166f1ce70c549c62ff00485b6916993da896105064928f6"
     },
     {
       "path": "release_changes.md",
@@ -5666,38 +5666,38 @@
     },
     {
       "path": "report/materials/readme.md",
-      "bytes": 4848,
-      "sha256": "d30f65534bad0b2b55b1406053b3c2759a579bcfa391e1f91789f244d5536ac9"
+      "bytes": 5345,
+      "sha256": "0752faded100a63f4b20b4572eb83dde32c678614faf3be5654e8745c8c8adf5"
     },
     {
       "path": "report/materials/readme_submission.md",
-      "bytes": 2736,
-      "sha256": "1d8eda646e74367d88bca55ba7847b240c4496af7960d4dbbb94f13a214bad58"
+      "bytes": 2988,
+      "sha256": "c05d4bbbe272b503e16c63a457effa7cd5917d5ed652ce169449a1a2ab7258ef"
     },
     {
       "path": "report/materials/sha256sums.txt",
       "bytes": 1863,
-      "sha256": "db9d3ebf14600a52af81b11128d4e0567035e2da9675710832f8aa9abaad3161"
+      "sha256": "c688b2cb0f7a724902111a503fb65627b6708f95d7977f3b9ec487cb9a3fe548"
     },
     {
       "path": "report/materials/technical_report_anonymous.docx",
-      "bytes": 7063979,
-      "sha256": "d86c912dc5b6a25ea7902feec8c1d30ce8b8305f1a94ddc52d1061787a57fb45"
+      "bytes": 4489668,
+      "sha256": "d8b0ac55bf4763a8449b2f8f7793d1e8c2a8131e3b441a1ebc40364318300739"
     },
     {
       "path": "report/materials/technical_report_anonymous.pdf",
-      "bytes": 2794726,
-      "sha256": "836d9bbbaad729b6c8c1266775d6e4da325c3db9631194a113b4ab84249b19c9"
+      "bytes": 7213107,
+      "sha256": "df1c30a83333b8dd80fbf2628052e4651f9c5fa0bc0650bdb55b0d7edf7d4b64"
     },
     {
       "path": "report/materials/technical_report_public.docx",
-      "bytes": 7064209,
-      "sha256": "1069a6e13925c889bee5479485d25cc3da2a585e3c00c10d36d9eca4268a2149"
+      "bytes": 8255102,
+      "sha256": "aacda86830d71573019073073ff83d13b4c4a61a4ebd93112801acaca7e612fb"
     },
     {
       "path": "report/materials/technical_report_public.pdf",
-      "bytes": 2795481,
-      "sha256": "01bdf05e6063259ff0bdd2b4872c2ebfebf39826241e101a37b0b314d9279a15"
+      "bytes": 3341761,
+      "sha256": "8d834e9791497f04487b57205b79de92f2b8093840ee942adecee624ffeac2dd"
     },
     {
       "path": "report/materials/usage_guide.md",
@@ -5711,8 +5711,8 @@
     },
     {
       "path": "report/readme.md",
-      "bytes": 3886,
-      "sha256": "1163db235fa78d84cc3bae77778ac3e054a1a76c5dcb6e04e0a9a0420b4883df"
+      "bytes": 4477,
+      "sha256": "94d99761b9b20db1bfe03500cab0ad4096c222ae37f092d3a9ed0e86a6848a91"
     },
     {
       "path": "reproduction/collect_environment_metadata.py",
@@ -8874,8 +8874,8 @@
   "video_asset_sha256": "204a94c7161e3a7c00e777edfecd7c6a53cbca8a5f4a29e41d1dde9e3814f8d2",
   "anonymous_bilingual_posters_included": true,
   "poster_template_identity_metadata_removed": true,
-  "publication_update_scope": "Clarify working directory for runtime verification; preserve the frozen runtime, hardware build inputs and all safety behavior.",
-  "release_tag": "v2026.11.03-r1",
+  "publication_update_scope": "Update the 33-page user report; irreversibly mask the device barcode in both current reports; remove identifying metadata from new report copies while retaining requested links and other content; refresh material and source checksums.",
+  "release_tag": "v2026.11.04",
   "deployment_map": "deployment_map.json",
   "storage_paths_lowercase_ascii": true,
   "deployment_checked_on": [

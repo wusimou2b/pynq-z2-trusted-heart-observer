@@ -8,16 +8,18 @@
 
 | 材料 | 文件 |
 |---|---|
-| 29页设计报告 | technical_report_anonymous.docx / technical_report_anonymous.pdf |
+| 33页新版匿名设计报告 | technical_report_anonymous.docx / technical_report_anonymous.pdf |
 | 中英合并两页匿名海报 | amd_health_poster_bilingual_anonymous.pptx / amd_health_poster_bilingual_anonymous.pdf |
 | 一页中文展示海报 | amd_health_poster_zh_submission.pptx / amd_health_poster_zh_submission.pdf |
 | 一页英文海报 | amd_health_poster_en_submission.pptx / amd_health_poster_en_submission.pdf |
 | 8页大模型协作记录 | llm_collaboration_record_anonymous.docx / llm_collaboration_record_anonymous.pdf |
 | 板端使用和核验说明 | usage_guide.md |
 
-当前公开部署入口为 `board_runtime/runtime/ContinuousDemo25.ipynb`，完整目录与环境说明见[根README](../../readme.md)和[板端说明](../../board/readme.md)。以下80.652秒／2021条／403帧属于报告的历史联合运行；最新33.193811316秒／832条／166帧另行记录。运行时按使用说明依次完成四单元操作，结束时正常停止、保存与释放资源。联合运行测试在PPG/IMU 25Hz及视频目标5fps下记录约80.7秒，处理保存2021条、配对2020条、1条未配对记录禁止数值发布、视频403帧。软件对照、RTL核验、真实采集与PL资源时序分别列明测量范围。
+当前公开部署入口为 `board_runtime/runtime/ContinuousDemo25.ipynb`，完整目录与环境说明见[根README](../../readme.md)和[板端说明](../../board/readme.md)。新版匿名报告以另一次115.984秒／2905条／579帧记录为主要实采案例；当前公开源码所附记录33.193811316秒／832条／166帧与旧报告80.652秒／2021条／403帧为不同运行，不应合并。运行时按使用说明依次完成四单元操作，结束时正常停止、保存与释放资源。软件对照、RTL核验、真实采集与PL资源时序分别列明测量范围。
 
 本索引指向正式匿名技术材料。源码构建、环境依赖及工程目录对照应与工程附带README和构建脚本一并核验；本索引不替代工程从零复现步骤。
+
+2026-11-04 更新：新版报告根据用户要求保留 GitHub 账号链接和图片内容，并遮盖设备条码及相应数字。文档发布副本已清理作者及办公软件用户标识；账号链接可能具有可追溯性，是否满足特定竞赛盲审要求须按实际规则另行确认。
 
 两页合并海报与单页英文现场打印版分开使用；单页英文按适配A4打印。公开PPTX已清理非可视模板身份元数据，视觉内容保持；对应PDF保留原字节。非匿名海报及签名授权书只在本地交付目录中。
 
