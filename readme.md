@@ -57,10 +57,10 @@ for name in ('pynq', 'numpy', 'scipy', 'pandas', 'opencv-python', 'ipython', 'ip
         print(name, 'no distribution metadata; check system package installation')
 PY
 python3 -m pip check
-python3 -B board_runtime/verify_portable.py
+python3 -B ../trusted_heart_demo/board_runtime/verify_portable.py
 ```
 
-若改了外层目录名，将最后一行换成实际目录。校验器会核对 957 个清单成员和原身份链，不启动硬件。OpenCV 等系统安装的包可能没有同名 pip 元数据，应同时核对原系统包记录。
+此代码块从源码仓库根目录执行；最后一行使用上一步生成的仓库外目录。若准备时选择了其他输出位置，请将最后一行替换为该位置下 `board_runtime/verify_portable.py` 的实际路径。不要直接校验仓库内规范化存储副本。校验器会核对 957 个清单成员和原身份链，不启动硬件。OpenCV 等系统安装的包可能没有同名 pip 元数据，应同时核对原系统包记录。
 
 缺包时，在**同一个板端 Python 环境**中按成功环境的镜像、系统仓库或已保存 wheel 补齐 PYNQ、NumPy、SciPy、pandas、OpenCV、IPython、ipykernel 和经典 Notebook；保留上述已知版本，记录未锁定组件的实际版本。安装核对过的本地兼容 wheel 可用 `python3 -m pip install --no-deps /path/to/matching_package.whl`，再执行 `python3 -m pip check`。仓库没有凭空补全的完整 lock，也没有在新 SD 系统上完成安装验收。普通 PC 不具备这些 ARM 库的运行 ABI。
 

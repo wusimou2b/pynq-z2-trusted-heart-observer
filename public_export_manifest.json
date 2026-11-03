@@ -5601,8 +5601,8 @@
     },
     {
       "path": "readme.md",
-      "bytes": 10564,
-      "sha256": "6c1cb6ea2e4635c35f4b1d4cc99ab481c14781879a42038b7a4304092f3e0d5e"
+      "bytes": 10808,
+      "sha256": "9ff124cd3bb14984086eabf78020c799d66ccaa87f2ab2c159dda72c71e730a0"
     },
     {
       "path": "release_changes.md",
@@ -8874,8 +8874,8 @@
   "video_asset_sha256": "204a94c7161e3a7c00e777edfecd7c6a53cbca8a5f4a29e41d1dde9e3814f8d2",
   "anonymous_bilingual_posters_included": true,
   "poster_template_identity_metadata_removed": true,
-  "publication_update_scope": "Normalized public paths with byte-preserved deployment; complete source-input contract and pinned dependency generation; new release tag.",
-  "release_tag": "v2026.11.03",
+  "publication_update_scope": "Clarify working directory for runtime verification; preserve the frozen runtime, hardware build inputs and all safety behavior.",
+  "release_tag": "v2026.11.03-r1",
   "deployment_map": "deployment_map.json",
   "storage_paths_lowercase_ascii": true,
   "deployment_checked_on": [
