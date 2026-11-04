@@ -92,4 +92,4 @@
 - 性能、资源与验证范围：技术报告3.3及联合运行测试结果表。
 
 
-- 独立协作记录（公开入口版）：`llm_collaboration_record_public.docx` / `llm_collaboration_record_public.pdf`。
+- 独立协作记录（公开入口版）：`llm_collaboration_record_anonymous.docx` / `llm_collaboration_record_anonymous.pdf`。

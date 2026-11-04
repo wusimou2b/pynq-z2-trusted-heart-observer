@@ -1,0 +1,61 @@
+{
+  "source_commit": "f23f7b88837a4c396ad1cfa1970f824b85be69fd",
+  "tag": "v2026.11.03-r1",
+  "scope": "One new empty directory, single execute command; offline cache with 27 SHA-verified pinned dependencies; no board access; no replacement of frozen runtime bit/HWH.",
+  "command": "python -B build/rebuild.py --output <new-outside-source-dir> --execute --vivado <Vivado-2024.1> --hls <Vitis-HLS-2024.1> --external-cache <verified-cache>",
+  "input_archive_sha256": "65aff0a989f24a89531b5b1757f15b77230ce08bfa8770da4e2f386afd10301d",
+  "stages": [
+    {
+      "name": "hls_color_convert",
+      "returncode": 0
+    },
+    {
+      "name": "hls_pixel_unpack",
+      "returncode": 0
+    },
+    {
+      "name": "prepare",
+      "returncode": 0
+    },
+    {
+      "name": "route",
+      "returncode": 0
+    },
+    {
+      "name": "postroute",
+      "returncode": 0
+    },
+    {
+      "name": "bitstream",
+      "returncode": 0
+    }
+  ],
+  "metrics": {
+    "wns_ns": 0.012,
+    "whs_ns": 0.051,
+    "axi_period_ns": 10.0,
+    "drc_errors": 0,
+    "drc_critical": 0,
+    "route_status": "postroute_logic_equivalent_optimization",
+    "all_pins_verified": true,
+    "external_interface_timing_reviewed": false
+  },
+  "artifacts": {
+    "artifacts\\heart_v3b25.bit": "d415566af8e0c11d3996046109150d73ea391efd7cdaaf206c61d2494a13d0bf",
+    "artifacts\\heart_v3b25.hwh": "47edb48085eca57c2f56ec23e92a1dc4eb2c7007eae45c784f984c78037478c5"
+  },
+  "clean_build_completed": true,
+  "hardware_accessed": false,
+  "runtime_assets_replaced": false,
+  "complete_system_acceptance": false,
+  "log_sha256": {
+    "build-result.json": "a5bc718e00e059102d1607ea8f6a240648ca66e51bd85e57200e0077dcc7a043",
+    "hls_color_convert-console.log": "e21f657b95644063ffef6fcfd4cf89e4277b3b30e884f52cd1c2e32e229d7a5e",
+    "hls_pixel_unpack-console.log": "702d254696f1964ceec534c90ee80c39345a770e40e775446cdc26b46490f56a",
+    "prepare-console.log": "566cdcf0756b800d7d2d522190a7f36d403c81b69bb0a7df5f5a0df6df3e4d52",
+    "route-console.log": "1144b98328adbf2ccbb4232e44b509f28320308295c8573a08e507c2765cdceb",
+    "postroute-console.log": "7ea7b983510370ad8174a4a9042b572c7a14d05d7375338c2401687ca36756db",
+    "bitstream-console.log": "c637acb426147309e9f5da1bd051c2852eeea4ac000411050e96577950eb636a",
+    "postroute/reports/raw-metrics.json": "180c84ca17d600c0dee34e14365d2560f54b7f476f5337d3a9543f55063162d7"
+  }
+}

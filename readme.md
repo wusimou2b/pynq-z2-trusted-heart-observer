@@ -11,7 +11,7 @@
 | [src/readme.md](src/readme.md) | RTL/ROM、PS、HLS 及算法参考源码 |
 | [build/readme.md](build/readme.md) | BD、XDC、Tcl 及源码重建边界 |
 | [skill/readme.md](skill/readme.md) | 八项完整工程 Skills、工具、样例、测试及许可 |
-| [report/readme.md](report/readme.md) | 33 页新版匿名设计报告、29 页旧公开报告、独立协作记录与匿名海报 |
+| [report/readme.md](report/readme.md) | 七章设计报告（Word 和 PDF）与独立协作记录 |
 | [runtime_closure.md](runtime_closure.md) | 当前运行集合的身份、实测及未验证项 |
 | [reproduction/source_run_20261102.json](reproduction/source_run_20261102.json) | 本次保存运行的可发布摘要 |
 | [data/readme.md](data/readme.md) | 用户实测数据及历史摘要的来源 |
@@ -98,3 +98,28 @@ python3 -B ../trusted_heart_demo/board_runtime/verify_portable.py
 本次修订仅处理发布标签、提交文件命名和构建输入。入口映射与原运行身份验证见 [部署验证](reproduction/deployment_validation.md)，构建方式与实际验证范围见 [构建说明](build/readme.md)。本地已从源码执行 HLS C 仿真/综合、Vivado 综合布局布线，并补回历史使用但原入口遗漏的布线后优化阶段，生成独立新 bit/HWH；最终 WNS +0.012 ns、WHS +0.051 ns，DRC Error/Critical 均为 0。完整过程保留了基础布线失败与补阶段后的成功记录，见 [构建验证](build/validation.json)。新产物没有替换运行集合，也没有上板验证。不要把源码构建完成等同于新 SD 环境、实时性能或完整系统验收通过。
 
 使用 Skills 前执行 `python3 -B prepare_delivery.py skills --output ../trusted_heart_skills`，再从生成目录的 `skill/skills/` 安装；该步骤恢复加载器要求的 `SKILL.md` 和原示例文件名。仓库里小写的 `skill.md` 用于审阅。
+
+> 本版本基于提交 `c7537b4618e5aebc9ac99d5b63e94fb9fb00748c`，补充 retry6 实测数值、独立重建证据和七章报告，并移除海报及重复稿。`board_runtime` 恢复后的文件字节与冻结版一致。
+
+retry6 的 115.984 秒、2905 点实测见 `data/measured_retry6_20261102/` 与 `board/results/retry6_20261102/`；独立重建的 bit/HWH（未上板）见 `build/rebuilt_evidence_20261103/`。实验口径和局限以对应目录说明为准。
+
+
+## Git 存储模板
+
+本仓库为符合文件命名要求，将原 `.gitattributes` 和 `.gitignore` 分别保存为 `git_attributes_template.txt`、`git_ignore_template.txt`，内容保持原样。如需将模板恢复为 Git 隐藏文件，可在本地工作副本复制并保持未提交；`.gitattributes` 的 `* -text` 用于避免 Git 更改清单锁定文件的换行，但恢复隐藏文件名可能不满足仓库命名要求。
+
+运行部署使用 `prepare_delivery.py` 将规范化存储名恢复为原工作路径，并逐项核对内容。保存版路径规范化不修改冻结运行文件内容、Notebook、bit/HWH 或原保护。
+
+
+## Git 检出时保持文件字节
+
+仓库按提交规范保存小写名称，未提交 Git 隐藏属性文件。Git 下载器可能按本机设置转换换行，导致已锁定文件校验失败。请以禁用自动换行转换的方式检出，并在进入仓库后保留该配置：
+
+```sh
+git -c core.autocrlf=false clone https://github.com/wusimou2b/pynq-z2-trusted-heart-observer.git
+cd pynq-z2-trusted-heart-observer
+git config core.autocrlf false
+python3 -B verify_public_source.py
+```
+
+GitHub 自动生成的源码 ZIP 不经过 Git 换行转换。文件核验仍须成功，之后再运行准备脚本。

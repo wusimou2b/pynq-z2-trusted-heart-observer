@@ -1,3 +1,5 @@
+> This published variant excludes all posters; the following is a historical publication note.
+
 # Submission delivery revision — 2026-11-03
 
 This revision addresses three publication defects without changing the frozen

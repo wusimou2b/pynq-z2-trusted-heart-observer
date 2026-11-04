@@ -1,0 +1,898 @@
+{
+  "schema": "trusted_heart_public_csv_subset_provenance_v1",
+  "authorised_user_measured_data": true,
+  "all_rows_retained": true,
+  "all_numeric_values_unmodified": true,
+  "source_archive_not_repacked_or_renamed": true,
+  "files": [
+    {
+      "source_archive_label": "original_delivery/data/baselines/frozen_retry6/continuous-results.zip",
+      "source_archive_sha256": "d4be2d7906cfcc2e44989f0a67d2ff4549616fbb3b51d33033e423e58708a0b7",
+      "member": "continuous-results/capture/raw.csv",
+      "source_member_sha256": "f23f28463b82f81bc18d0920edd30f9316dfc087ea184e93e0d7b46a3278592a",
+      "target_path": "data/measured_retry6_20261102/raw.csv",
+      "target_sha256": "f23f28463b82f81bc18d0920edd30f9316dfc087ea184e93e0d7b46a3278592a",
+      "bytes": 664996,
+      "rows": 2905,
+      "source_columns": [
+        "sequence",
+        "timestamp_us",
+        "read_timestamp_us",
+        "nominal_timestamp_us",
+        "timestamp_policy",
+        "time_s",
+        "ir_raw",
+        "ax_g",
+        "ay_g",
+        "az_g",
+        "pair_ok",
+        "accel_valid",
+        "mpu_ax_raw",
+        "mpu_ay_raw",
+        "mpu_az_raw",
+        "accel_repeat_count",
+        "fifo_batch_size",
+        "max30102_overflow",
+        "pl_fifo_ok",
+        "error",
+        "phase",
+        "phase_index",
+        "phase_elapsed_s",
+        "batch_id",
+        "max_write_pointer",
+        "max_read_pointer",
+        "max_available",
+        "ppg_read_completed_ns",
+        "mpu_read_completed_ns",
+        "capture_loop_ns"
+      ],
+      "retained_columns": [
+        "sequence",
+        "timestamp_us",
+        "read_timestamp_us",
+        "nominal_timestamp_us",
+        "timestamp_policy",
+        "time_s",
+        "ir_raw",
+        "ax_g",
+        "ay_g",
+        "az_g",
+        "pair_ok",
+        "accel_valid",
+        "mpu_ax_raw",
+        "mpu_ay_raw",
+        "mpu_az_raw",
+        "accel_repeat_count",
+        "fifo_batch_size",
+        "max30102_overflow",
+        "pl_fifo_ok",
+        "error",
+        "phase",
+        "phase_index",
+        "phase_elapsed_s",
+        "batch_id",
+        "max_write_pointer",
+        "max_read_pointer",
+        "max_available",
+        "ppg_read_completed_ns",
+        "mpu_read_completed_ns",
+        "capture_loop_ns"
+      ],
+      "removed_columns": [],
+      "column_mapping": [
+        {
+          "source": "sequence",
+          "target": "sequence"
+        },
+        {
+          "source": "timestamp_us",
+          "target": "timestamp_us"
+        },
+        {
+          "source": "read_timestamp_us",
+          "target": "read_timestamp_us"
+        },
+        {
+          "source": "nominal_timestamp_us",
+          "target": "nominal_timestamp_us"
+        },
+        {
+          "source": "timestamp_policy",
+          "target": "timestamp_policy"
+        },
+        {
+          "source": "time_s",
+          "target": "time_s"
+        },
+        {
+          "source": "ir_raw",
+          "target": "ir_raw"
+        },
+        {
+          "source": "ax_g",
+          "target": "ax_g"
+        },
+        {
+          "source": "ay_g",
+          "target": "ay_g"
+        },
+        {
+          "source": "az_g",
+          "target": "az_g"
+        },
+        {
+          "source": "pair_ok",
+          "target": "pair_ok"
+        },
+        {
+          "source": "accel_valid",
+          "target": "accel_valid"
+        },
+        {
+          "source": "mpu_ax_raw",
+          "target": "mpu_ax_raw"
+        },
+        {
+          "source": "mpu_ay_raw",
+          "target": "mpu_ay_raw"
+        },
+        {
+          "source": "mpu_az_raw",
+          "target": "mpu_az_raw"
+        },
+        {
+          "source": "accel_repeat_count",
+          "target": "accel_repeat_count"
+        },
+        {
+          "source": "fifo_batch_size",
+          "target": "fifo_batch_size"
+        },
+        {
+          "source": "max30102_overflow",
+          "target": "max30102_overflow"
+        },
+        {
+          "source": "pl_fifo_ok",
+          "target": "pl_fifo_ok"
+        },
+        {
+          "source": "error",
+          "target": "error"
+        },
+        {
+          "source": "phase",
+          "target": "phase"
+        },
+        {
+          "source": "phase_index",
+          "target": "phase_index"
+        },
+        {
+          "source": "phase_elapsed_s",
+          "target": "phase_elapsed_s"
+        },
+        {
+          "source": "batch_id",
+          "target": "batch_id"
+        },
+        {
+          "source": "max_write_pointer",
+          "target": "max_write_pointer"
+        },
+        {
+          "source": "max_read_pointer",
+          "target": "max_read_pointer"
+        },
+        {
+          "source": "max_available",
+          "target": "max_available"
+        },
+        {
+          "source": "ppg_read_completed_ns",
+          "target": "ppg_read_completed_ns"
+        },
+        {
+          "source": "mpu_read_completed_ns",
+          "target": "mpu_read_completed_ns"
+        },
+        {
+          "source": "capture_loop_ns",
+          "target": "capture_loop_ns"
+        }
+      ],
+      "byte_preserved": true
+    },
+    {
+      "source_archive_label": "original_delivery/data/baselines/frozen_retry6/continuous-results.zip",
+      "source_archive_sha256": "d4be2d7906cfcc2e44989f0a67d2ff4549616fbb3b51d33033e423e58708a0b7",
+      "member": "continuous-results/capture/results.csv",
+      "source_member_sha256": "fbbbabeb65716f38bb86f99cb64d34d3cf8b55891d74eb94d772907c2079f7f4",
+      "target_path": "data/measured_retry6_20261102/results.csv",
+      "target_sha256": "fbbbabeb65716f38bb86f99cb64d34d3cf8b55891d74eb94d772907c2079f7f4",
+      "bytes": 2437714,
+      "rows": 2905,
+      "source_columns": [
+        "sequence",
+        "time_s",
+        "valid",
+        "reset_reason",
+        "learning_update",
+        "raw",
+        "mean",
+        "nlms_candidate",
+        "joint_output",
+        "nlms_mix",
+        "motion",
+        "motion_ready",
+        "contact_ok",
+        "contact_ready",
+        "raw_quality",
+        "mean_quality",
+        "nlms_quality",
+        "joint_quality",
+        "selected_route",
+        "selected_signal",
+        "bpm",
+        "output_allowed",
+        "reason_cn",
+        "magnitude_reference",
+        "reference_x",
+        "reference_y",
+        "reference_z",
+        "internal_weight_clipped",
+        "joint_reason",
+        "joint_protection",
+        "motion_rms_g",
+        "raw_quality_reason",
+        "mean_quality_reason",
+        "nlms_quality_reason",
+        "joint_quality_reason",
+        "selected_quality",
+        "output_ibi_count",
+        "output_peak_age_samples",
+        "output_filtered_counts",
+        "route_changed",
+        "raw_bpm",
+        "mean_bpm",
+        "nlms_bpm",
+        "joint_bpm",
+        "backend_source",
+        "beta_int",
+        "pl_sequence",
+        "pl_epoch",
+        "pl_status",
+        "pl_latency_cycles",
+        "control_changed",
+        "ppg_read_completed_ns",
+        "raw_saved_ns",
+        "process_enqueued_ns",
+        "processing_started_ns",
+        "processing_finished_ns",
+        "pl_call_ns",
+        "result_enqueued_ns",
+        "processing_queue_wait_ns",
+        "result_queue_wait_ns",
+        "read_to_result_ns",
+        "ps_processing_ns",
+        "source_first",
+        "source_last",
+        "source_first_time_s",
+        "source_last_time_s",
+        "available_time_s",
+        "signal_time_s",
+        "support_first",
+        "support_last",
+        "support_first_time_s",
+        "support_last_time_s",
+        "generation",
+        "slot_valid",
+        "slot_contact_ready",
+        "slot_reason",
+        "first_read_completed_ns",
+        "first_raw_saved_ns",
+        "publication_allowed",
+        "publication_bpm",
+        "publication_reason"
+      ],
+      "retained_columns": [
+        "sequence",
+        "time_s",
+        "valid",
+        "reset_reason",
+        "learning_update",
+        "raw",
+        "mean",
+        "nlms_candidate",
+        "joint_output",
+        "nlms_mix",
+        "motion",
+        "motion_ready",
+        "contact_ok",
+        "contact_ready",
+        "raw_quality",
+        "mean_quality",
+        "nlms_quality",
+        "joint_quality",
+        "selected_route",
+        "selected_signal",
+        "bpm",
+        "output_allowed",
+        "reason_cn",
+        "magnitude_reference",
+        "reference_x",
+        "reference_y",
+        "reference_z",
+        "internal_weight_clipped",
+        "joint_reason",
+        "joint_protection",
+        "motion_rms_g",
+        "raw_quality_reason",
+        "mean_quality_reason",
+        "nlms_quality_reason",
+        "joint_quality_reason",
+        "selected_quality",
+        "output_ibi_count",
+        "output_peak_age_samples",
+        "output_filtered_counts",
+        "route_changed",
+        "raw_bpm",
+        "mean_bpm",
+        "nlms_bpm",
+        "joint_bpm",
+        "backend_source",
+        "beta_int",
+        "pl_sequence",
+        "pl_epoch",
+        "pl_status",
+        "pl_latency_cycles",
+        "control_changed",
+        "ppg_read_completed_ns",
+        "raw_saved_ns",
+        "process_enqueued_ns",
+        "processing_started_ns",
+        "processing_finished_ns",
+        "pl_call_ns",
+        "result_enqueued_ns",
+        "processing_queue_wait_ns",
+        "result_queue_wait_ns",
+        "read_to_result_ns",
+        "ps_processing_ns",
+        "source_first",
+        "source_last",
+        "source_first_time_s",
+        "source_last_time_s",
+        "available_time_s",
+        "signal_time_s",
+        "support_first",
+        "support_last",
+        "support_first_time_s",
+        "support_last_time_s",
+        "generation",
+        "slot_valid",
+        "slot_contact_ready",
+        "slot_reason",
+        "first_read_completed_ns",
+        "first_raw_saved_ns",
+        "publication_allowed",
+        "publication_bpm",
+        "publication_reason"
+      ],
+      "removed_columns": [],
+      "column_mapping": [
+        {
+          "source": "sequence",
+          "target": "sequence"
+        },
+        {
+          "source": "time_s",
+          "target": "time_s"
+        },
+        {
+          "source": "valid",
+          "target": "valid"
+        },
+        {
+          "source": "reset_reason",
+          "target": "reset_reason"
+        },
+        {
+          "source": "learning_update",
+          "target": "learning_update"
+        },
+        {
+          "source": "raw",
+          "target": "raw"
+        },
+        {
+          "source": "mean",
+          "target": "mean"
+        },
+        {
+          "source": "nlms_candidate",
+          "target": "nlms_candidate"
+        },
+        {
+          "source": "joint_output",
+          "target": "joint_output"
+        },
+        {
+          "source": "nlms_mix",
+          "target": "nlms_mix"
+        },
+        {
+          "source": "motion",
+          "target": "motion"
+        },
+        {
+          "source": "motion_ready",
+          "target": "motion_ready"
+        },
+        {
+          "source": "contact_ok",
+          "target": "contact_ok"
+        },
+        {
+          "source": "contact_ready",
+          "target": "contact_ready"
+        },
+        {
+          "source": "raw_quality",
+          "target": "raw_quality"
+        },
+        {
+          "source": "mean_quality",
+          "target": "mean_quality"
+        },
+        {
+          "source": "nlms_quality",
+          "target": "nlms_quality"
+        },
+        {
+          "source": "joint_quality",
+          "target": "joint_quality"
+        },
+        {
+          "source": "selected_route",
+          "target": "selected_route"
+        },
+        {
+          "source": "selected_signal",
+          "target": "selected_signal"
+        },
+        {
+          "source": "bpm",
+          "target": "bpm"
+        },
+        {
+          "source": "output_allowed",
+          "target": "output_allowed"
+        },
+        {
+          "source": "reason_cn",
+          "target": "reason_cn"
+        },
+        {
+          "source": "magnitude_reference",
+          "target": "magnitude_reference"
+        },
+        {
+          "source": "reference_x",
+          "target": "reference_x"
+        },
+        {
+          "source": "reference_y",
+          "target": "reference_y"
+        },
+        {
+          "source": "reference_z",
+          "target": "reference_z"
+        },
+        {
+          "source": "internal_weight_clipped",
+          "target": "internal_weight_clipped"
+        },
+        {
+          "source": "joint_reason",
+          "target": "joint_reason"
+        },
+        {
+          "source": "joint_protection",
+          "target": "joint_protection"
+        },
+        {
+          "source": "motion_rms_g",
+          "target": "motion_rms_g"
+        },
+        {
+          "source": "raw_quality_reason",
+          "target": "raw_quality_reason"
+        },
+        {
+          "source": "mean_quality_reason",
+          "target": "mean_quality_reason"
+        },
+        {
+          "source": "nlms_quality_reason",
+          "target": "nlms_quality_reason"
+        },
+        {
+          "source": "joint_quality_reason",
+          "target": "joint_quality_reason"
+        },
+        {
+          "source": "selected_quality",
+          "target": "selected_quality"
+        },
+        {
+          "source": "output_ibi_count",
+          "target": "output_ibi_count"
+        },
+        {
+          "source": "output_peak_age_samples",
+          "target": "output_peak_age_samples"
+        },
+        {
+          "source": "output_filtered_counts",
+          "target": "output_filtered_counts"
+        },
+        {
+          "source": "route_changed",
+          "target": "route_changed"
+        },
+        {
+          "source": "raw_bpm",
+          "target": "raw_bpm"
+        },
+        {
+          "source": "mean_bpm",
+          "target": "mean_bpm"
+        },
+        {
+          "source": "nlms_bpm",
+          "target": "nlms_bpm"
+        },
+        {
+          "source": "joint_bpm",
+          "target": "joint_bpm"
+        },
+        {
+          "source": "backend_source",
+          "target": "backend_source"
+        },
+        {
+          "source": "beta_int",
+          "target": "beta_int"
+        },
+        {
+          "source": "pl_sequence",
+          "target": "pl_sequence"
+        },
+        {
+          "source": "pl_epoch",
+          "target": "pl_epoch"
+        },
+        {
+          "source": "pl_status",
+          "target": "pl_status"
+        },
+        {
+          "source": "pl_latency_cycles",
+          "target": "pl_latency_cycles"
+        },
+        {
+          "source": "control_changed",
+          "target": "control_changed"
+        },
+        {
+          "source": "ppg_read_completed_ns",
+          "target": "ppg_read_completed_ns"
+        },
+        {
+          "source": "raw_saved_ns",
+          "target": "raw_saved_ns"
+        },
+        {
+          "source": "process_enqueued_ns",
+          "target": "process_enqueued_ns"
+        },
+        {
+          "source": "processing_started_ns",
+          "target": "processing_started_ns"
+        },
+        {
+          "source": "processing_finished_ns",
+          "target": "processing_finished_ns"
+        },
+        {
+          "source": "pl_call_ns",
+          "target": "pl_call_ns"
+        },
+        {
+          "source": "result_enqueued_ns",
+          "target": "result_enqueued_ns"
+        },
+        {
+          "source": "processing_queue_wait_ns",
+          "target": "processing_queue_wait_ns"
+        },
+        {
+          "source": "result_queue_wait_ns",
+          "target": "result_queue_wait_ns"
+        },
+        {
+          "source": "read_to_result_ns",
+          "target": "read_to_result_ns"
+        },
+        {
+          "source": "ps_processing_ns",
+          "target": "ps_processing_ns"
+        },
+        {
+          "source": "source_first",
+          "target": "source_first"
+        },
+        {
+          "source": "source_last",
+          "target": "source_last"
+        },
+        {
+          "source": "source_first_time_s",
+          "target": "source_first_time_s"
+        },
+        {
+          "source": "source_last_time_s",
+          "target": "source_last_time_s"
+        },
+        {
+          "source": "available_time_s",
+          "target": "available_time_s"
+        },
+        {
+          "source": "signal_time_s",
+          "target": "signal_time_s"
+        },
+        {
+          "source": "support_first",
+          "target": "support_first"
+        },
+        {
+          "source": "support_last",
+          "target": "support_last"
+        },
+        {
+          "source": "support_first_time_s",
+          "target": "support_first_time_s"
+        },
+        {
+          "source": "support_last_time_s",
+          "target": "support_last_time_s"
+        },
+        {
+          "source": "generation",
+          "target": "generation"
+        },
+        {
+          "source": "slot_valid",
+          "target": "slot_valid"
+        },
+        {
+          "source": "slot_contact_ready",
+          "target": "slot_contact_ready"
+        },
+        {
+          "source": "slot_reason",
+          "target": "slot_reason"
+        },
+        {
+          "source": "first_read_completed_ns",
+          "target": "first_read_completed_ns"
+        },
+        {
+          "source": "first_raw_saved_ns",
+          "target": "first_raw_saved_ns"
+        },
+        {
+          "source": "publication_allowed",
+          "target": "publication_allowed"
+        },
+        {
+          "source": "publication_bpm",
+          "target": "publication_bpm"
+        },
+        {
+          "source": "publication_reason",
+          "target": "publication_reason"
+        }
+      ],
+      "byte_preserved": true
+    }
+  ],
+  "privacy_scan": {
+    "checks": {
+      "raw": {
+        "suspicious_header_hits": 0,
+        "secret_path_or_identifier_value_hits": 0,
+        "source_stop_identifier_value_hits": 0,
+        "numeric_or_enum_columns_only": true
+      },
+      "results": {
+        "suspicious_header_hits": 0,
+        "secret_path_or_identifier_value_hits": 0,
+        "source_stop_identifier_value_hits": 0,
+        "numeric_or_enum_columns_only": true
+      }
+    },
+    "text_enum_columns": {
+      "raw": {
+        "timestamp_policy": {
+          "unique_values": 1,
+          "allowed_enum_values": [
+            "nominal_backprojection"
+          ]
+        },
+        "phase": {
+          "unique_values": 1,
+          "allowed_enum_values": [
+            "static"
+          ]
+        }
+      },
+      "results": {
+        "reset_reason": {
+          "unique_values": 1,
+          "allowed_enum_values": [
+            "原始安全代号／有效区间变化"
+          ]
+        },
+        "motion": {
+          "unique_values": 3,
+          "allowed_enum_values": [
+            "heavy",
+            "light",
+            "static"
+          ]
+        },
+        "raw_quality": {
+          "unique_values": 3,
+          "allowed_enum_values": [
+            "bad",
+            "good",
+            "medium"
+          ]
+        },
+        "mean_quality": {
+          "unique_values": 3,
+          "allowed_enum_values": [
+            "bad",
+            "good",
+            "medium"
+          ]
+        },
+        "nlms_quality": {
+          "unique_values": 3,
+          "allowed_enum_values": [
+            "bad",
+            "good",
+            "medium"
+          ]
+        },
+        "joint_quality": {
+          "unique_values": 3,
+          "allowed_enum_values": [
+            "bad",
+            "good",
+            "medium"
+          ]
+        },
+        "selected_route": {
+          "unique_values": 4,
+          "allowed_enum_values": [
+            "mean",
+            "nlms",
+            "none",
+            "raw"
+          ]
+        },
+        "reason_cn": {
+          "unique_values": 4,
+          "allowed_enum_values": [
+            "25Hz精细峰时刻心率估计",
+            "PPG／加速度未配对或无效",
+            "等待接触／运动／质量历史",
+            "等待选路后有效峰／心率范围或峰龄阻断"
+          ]
+        },
+        "joint_reason": {
+          "unique_values": 7,
+          "allowed_enum_values": [
+            "actual_gain_protection",
+            "benefit_confirmed",
+            "candidate_axis_worsening",
+            "cooldown",
+            "history_short",
+            "insufficient_magnitude_benefit",
+            "poor_power"
+          ]
+        },
+        "raw_quality_reason": {
+          "unique_values": 5,
+          "allowed_enum_values": [
+            "峰间隔不稳定",
+            "接触许可未就绪／波形无效",
+            "等待质量统计窗口",
+            "质量中",
+            "质量优"
+          ]
+        },
+        "mean_quality_reason": {
+          "unique_values": 5,
+          "allowed_enum_values": [
+            "峰间隔不稳定",
+            "接触许可未就绪／波形无效",
+            "等待质量统计窗口",
+            "质量中",
+            "质量优"
+          ]
+        },
+        "nlms_quality_reason": {
+          "unique_values": 5,
+          "allowed_enum_values": [
+            "峰间隔不稳定",
+            "接触许可未就绪／波形无效",
+            "等待质量统计窗口",
+            "质量中",
+            "质量优"
+          ]
+        },
+        "joint_quality_reason": {
+          "unique_values": 5,
+          "allowed_enum_values": [
+            "峰间隔不稳定",
+            "接触许可未就绪／波形无效",
+            "等待质量统计窗口",
+            "质量中",
+            "质量优"
+          ]
+        },
+        "selected_quality": {
+          "unique_values": 3,
+          "allowed_enum_values": [
+            "bad",
+            "good",
+            "medium"
+          ]
+        },
+        "backend_source": {
+          "unique_values": 1,
+          "allowed_enum_values": [
+            "pl_mmio"
+          ]
+        },
+        "slot_reason": {
+          "unique_values": 2,
+          "allowed_enum_values": [
+            "PPG／加速度未配对或无效",
+            "等待原始接触恢复"
+          ]
+        },
+        "publication_reason": {
+          "unique_values": 3,
+          "allowed_enum_values": [
+            "25Hz精细峰时刻心率估计",
+            "会话非运行态／故障阻断",
+            "原始安全许可／结果新鲜度阻断"
+          ]
+        }
+      }
+    },
+    "method": "Checked headers and every distinct nonnumeric value; rejected credentials, known original stop identifiers, opaque IDs, absolute paths, email and URLs. Numeric device counters/timestamps and controlled quality/reason enums retained."
+  },
+  "summary": {
+    "path": "board/results/retry6_20261102/summary.json",
+    "sha256": "20b23a9399cad064404f279d290e0462142e35ea5c477914a08018a8cc57aea6",
+    "derived_from": "verified_saved_record_facts_v1",
+    "facts_snapshot_sha256": "f7e66b56d552144bebb66994e1ebb5f8ec161487c950de0d6cf67d3bf17bb689",
+    "source_private_paths_and_stop_request_not_copied": true
+  }
+}

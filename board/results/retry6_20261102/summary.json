@@ -1,0 +1,274 @@
+{
+  "schema": "trusted_heart_retry6_public_derived_summary_v1",
+  "document_kind": "derived_public_summary_not_original_log",
+  "run_label": "2026-11-02 continuous-capacity retry6",
+  "date": "2026-11-02",
+  "scope": "Authorized user-measured numeric data and saved-record audit; no new acquisition or board execution.",
+  "original_archive": {
+    "label": "original_delivery/data/baselines/frozen_retry6/continuous-results.zip",
+    "sha256": "d4be2d7906cfcc2e44989f0a67d2ff4549616fbb3b51d33033e423e58708a0b7",
+    "bytes": 2254704,
+    "included_in_public_subset": false
+  },
+  "identity": {
+    "run_label": "2026-11-02 continuous-capacity retry6 historical live run",
+    "mode": "baseline",
+    "protocol": "static",
+    "duration_mode": "manual_until_stop_v1",
+    "automatic_formal_stop": false,
+    "automatic_retry": false,
+    "continuous_owner_manifest_sha256": "c67736f0769f4c04410c239410b3505b4bd448d1ac576132f5872510fcc4b91f",
+    "effective_manifest_sha256": "400883a9049ad8684fbc15102032cfe8dc0a1daaabda8110423f31959ec054b1",
+    "a3c_manifest_sha256": "1a4b0d959eecd595cfbede46c84646612e194edf137842a3534aff3094256edf",
+    "config_identity_sha256": "78930760b6990f2e10f68f4b806dcac501e42cbfc6d81988bff3f44aa0aa3407",
+    "pairing_policy_version": "a3r_causal_reuse80_v1",
+    "clock_policy_version": "ce_fifo_count_host80_v1",
+    "bit_sha256": "0a91f3f16740edb5fb7f947945fa5c965b83efd298df9e00250c9934087a8f7c",
+    "hwh_sha256": "b652e060e8954e480ca03be4f90c239a83b0b131e6503fccf504d64d000a626a",
+    "same_bit_hwh_as_33s": true,
+    "same_effective_manifest_as_33s": true,
+    "same_run_or_config_as_33s": false,
+    "main_core_version": 131073,
+    "vision_core_version": 131072
+  },
+  "conditions": {
+    "raw_hz": 25,
+    "processing_hz": 25,
+    "video_target_fps": 5,
+    "iic_runtime": "original_pynq_sensorbus",
+    "iic_implementation_unchanged": true,
+    "main_heart_compute": true,
+    "video_separate_process": true,
+    "shadow_heart_control_enabled": false,
+    "pairing_scope": "bounded_causal_historical_imu_read_reuse",
+    "model_time_is_hardware_timestamp": false
+  },
+  "capture": {
+    "elapsed_seconds": 115.984024602,
+    "read": 2905,
+    "processed": 2905,
+    "paired": 2904,
+    "unpaired": 1,
+    "raw_saved": 2905,
+    "results_saved": 2905,
+    "record_rate_hz": 25.046552833189985,
+    "sensor_errors": 0,
+    "pl_fifo_errors": 0,
+    "timestamp_errors": 0,
+    "max30102_overflow_events": 0,
+    "max30102_overflow_count": 0,
+    "queue_high_water": {
+      "raw": 2,
+      "processing": 7,
+      "results": 2
+    },
+    "queue_full": {
+      "raw": 0,
+      "processing": 0,
+      "results": 0
+    },
+    "queues_drained": true,
+    "fault": null,
+    "cleanup_complete": true,
+    "stop_reason": "manual_stop",
+    "capture_loop_overruns": 252
+  },
+  "pl_snapshot": {
+    "schema": "v3b25_main_sample_snapshot_v1",
+    "accepted": 2905,
+    "completed": 2905,
+    "driver_samples": 2905,
+    "epoch": 1,
+    "core_epoch": 1,
+    "legacy_nlms_snapshot_issued": false,
+    "nlms_latency_cycles_measured": false
+  },
+  "video": {
+    "metrics": {
+      "completed_frames": 579,
+      "records_saved": 579,
+      "valid_difference_frames": 562,
+      "missed_target_slots": 0,
+      "formal_elapsed_seconds": 115.976451476,
+      "application_submit_fps": 4.992392788632763,
+      "max_frame_processing_ms": 207.776701,
+      "grabs_total": 2915,
+      "preparation_grabs": 6,
+      "formal_grabs": 2909,
+      "selected_grabs": 580,
+      "unselected_formal_grabs": 2329,
+      "terminal_grabs": 0,
+      "terminal_retrieves": 0,
+      "formal_submitted_frames": 579,
+      "tail_completed_frames": 0
+    },
+    "fault": null,
+    "stop_reason": "stop_requested",
+    "process_exitcode": 0,
+    "camera_released": true,
+    "buffers_released": true,
+    "cleanup_complete": true,
+    "actual_lease_released": true,
+    "joint_cleanup_complete": true,
+    "post_reference_frames_checked": 2,
+    "post_reference_all_frames_verified": false,
+    "hdmi_closed": true,
+    "owned_dma_status": {
+      "vision_dma": {
+        "halted": true,
+        "status": 4097,
+        "control": 65538,
+        "error_bits": 0
+      },
+      "hdmi_vdma": {
+        "halted": true,
+        "status": 69633,
+        "control": 69640,
+        "error_bits": 0
+      },
+      "display_dma": {
+        "halted": true,
+        "status": 4097,
+        "control": 65538,
+        "error_bits": 0
+      }
+    },
+    "cleanup_scope": "owned_video_dma_and_vision_reset_only"
+  },
+  "stop_release": {
+    "manual_request": true,
+    "manual_stop": true,
+    "owner_natural_exit": true,
+    "owner_exitcode": 0,
+    "ps_natural_exit": true,
+    "ps_forced_termination": false,
+    "ps_exitcode": 0,
+    "resources_released": true,
+    "cleanup_complete": true,
+    "original_error": null,
+    "identity_error": null,
+    "parent_error": null
+  },
+  "independent_csv_verification": {
+    "raw_rows": 2905,
+    "result_rows": 2905,
+    "raw_sequences_contiguous": true,
+    "result_sequences_contiguous": true,
+    "paired_rows": 2904,
+    "unpaired_rows": 1,
+    "publication_allowed_rows": 2125,
+    "internal_output_allowed_rows": 2129,
+    "backend_source_counts": {
+      "pl_mmio": 2905
+    },
+    "read_to_result_ns": {
+      "count": 2905,
+      "max_ms": 305.565384,
+      "mean_ms": 74.89209059621342,
+      "over_1000ms": 0
+    },
+    "processing_queue_wait_ns": {
+      "count": 2905,
+      "max_ms": 227.43651,
+      "mean_ms": 21.704843435111876,
+      "over_1000ms": 0
+    },
+    "ps_processing_ns": {
+      "count": 2905,
+      "max_ms": 93.612289,
+      "mean_ms": 23.305476550774525,
+      "over_1000ms": 0
+    },
+    "pl_call_ns": {
+      "count": 2905,
+      "max_ms": 59.25045,
+      "mean_ms": 8.027376206196214,
+      "over_1000ms": 0
+    }
+  },
+  "stable_window_evidence": [
+    {
+      "basis": "Complete input-to-storage path",
+      "facts": "2905 raw/read/process/result rows; raw and result sequence0..2904 continuous; PL accepted/completed/driver_samples2905."
+    },
+    {
+      "basis": "Observed backlog and freshness remained bounded in this window",
+      "facts": "queue_full raw/processing/results all0; high-water2/7/2; maxread_to_result305.565384ms and>1s count0."
+    },
+    {
+      "basis": "Concurrent video and normal manual stop/cleanup",
+      "facts": "579 completed/recorded application frames; missed slots0; PS/owner/video exit0 with queues drained and resources released."
+    }
+  ],
+  "retained_raw_limits": {
+    "manual_session_passed": false,
+    "false_top_level_checks": [
+      "video_original",
+      "video_journal",
+      "video_manual_admission",
+      "original_binding"
+    ],
+    "strict_realtime_verified": false,
+    "accuracy_verified": false,
+    "board_ddr_verified": false,
+    "full_v3b_acceptance_passed": false,
+    "capture_loop_overruns": 252,
+    "startup_discarded_samples": 32,
+    "startup_overflow_count": 31,
+    "formal_max30102_overflow_events": 0,
+    "budget_transaction": {
+      "schema": "native40_python_step1_v1",
+      "sample_hard_seconds": 0.04,
+      "warning_seconds": 0.02,
+      "main_init_stop_seconds": 0.02,
+      "successful_samples": 2905,
+      "over20_transactions": 85,
+      "max_successful_transaction_ns": 47374363,
+      "retained_longtail_limit": 64,
+      "failure": null,
+      "new_clock_calls": 0,
+      "new_per_sample_ipc_messages": 0,
+      "scope": "Original C checks the same absolute deadline through ACK; software return is checked against the original outer step. No retry.",
+      "native_successful_transactions": 2905,
+      "native_deadline_seconds": 0.04,
+      "python_default_step_seconds": 1.0,
+      "python_return_over40": 2,
+      "max_python_return_ns": 47374363,
+      "native_duration_measured": false,
+      "transaction_duration_scope": "Python start-to-return wall including handoff, not C duration",
+      "protection_scope_changed": true
+    },
+    "one_cancelled_inflight_video_frame": 1,
+    "application_frame_count_not_physical_refresh_or_camera_exposures": true,
+    "publication_allowed_count_not_clinical_accuracy_or_screen_draw_count": true,
+    "single_historical_window_not_repetition_or_unlimited_stability": true,
+    "no_new_board_run_or_changed_guard": true,
+    "video_stop_cancellation": {
+      "original_stop_reason": "fault",
+      "expected_stop_cancellation": true,
+      "stop_was_requested": true,
+      "cancelled_inflight_frames": 1
+    },
+    "cleanup_does_not_restore_old_overlay": true
+  },
+  "definitions": {
+    "publication_allowed_rows": "Number of result rows with publication_allowed=true; not clinical accuracy or physical redraw count.",
+    "application_video_frames": "Completed/submitted application frames, not physical display refreshes or sensor exposure count.",
+    "read_to_result_ns": "Host read-completion to result wall time, not isolated C/native compute time.",
+    "scope": "One historical window; all original false and overrun fields retained, not full-system or strict real-time acceptance."
+  },
+  "csv_files": [
+    {
+      "target_path": "data/measured_retry6_20261102/raw.csv",
+      "target_sha256": "f23f28463b82f81bc18d0920edd30f9316dfc087ea184e93e0d7b46a3278592a",
+      "rows": 2905,
+      "bytes": 664996
+    },
+    {
+      "target_path": "data/measured_retry6_20261102/results.csv",
+      "target_sha256": "fbbbabeb65716f38bb86f99cb64d34d3cf8b55891d74eb94d772907c2079f7f4",
+      "rows": 2905,
+      "bytes": 2437714
+    }
+  ]
+}
